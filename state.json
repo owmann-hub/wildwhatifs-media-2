@@ -120,7 +120,7 @@
       "premise": "What if you jumped into a tunnel through the Earth?",
       "notes": "Journey. Counter: depth km + speed. Crust → mantle glow → core (5,000+°C) → you fly out the other side ~42 min later (no air resistance) and fall back. Tourist on the other side takes a selfie.",
       "tiktok": true,
-      "style": "B_silent_cinematic"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-15",
@@ -128,7 +128,7 @@
       "premise": "What if your house was left alone for 1,000 years?",
       "notes": "Time-lapse (progress-bar counter like the 1000-years reference). Years 1→1,000: weeds, roof caves, trees through the floor, deer on Main St. Your phone still at 1%. NO TikTok (monthly quota).",
       "tiktok": false,
-      "style": "D_warm_explainer"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-16",
@@ -136,7 +136,7 @@
       "premise": "What if the Moon got 10x closer every 5 seconds?",
       "notes": "Environment star. Counter: Moon distance (384,400 km →). Tides rise, Moon fills the sky, Roche limit: it breaks into a ring. Neighbor's telescope becomes useless (too close).",
       "tiktok": true,
-      "style": "B_silent_cinematic"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-17",
@@ -144,7 +144,7 @@
       "premise": "What if your voice got 10x louder with every word?",
       "notes": "Counter: decibels. Whisper → shout → jet engine → windows shatter → measurable earthquake → payoff: in space no one hears you (no air).",
       "tiktok": true,
-      "style": "C_first_person_story"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-18",
@@ -152,7 +152,7 @@
       "premise": "What if you dove to the deepest point of the ocean?",
       "notes": "Journey. Counter: depth m + pressure. Reef → twilight zone → anglerfish glow → Titanic depth (3,800 m) → Challenger Deep ~10,900 m, ~1,000x surface pressure. Bioluminescence = glow polish.",
       "tiktok": true,
-      "style": "D_warm_explainer"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-19",
@@ -160,7 +160,7 @@
       "premise": "What if your hair doubled in length every second?",
       "notes": "Counter: hair length. Bathroom → fills house → spills down street → wraps the city → wraps the Earth around second 26. Barber faints.",
       "tiktok": true,
-      "style": "C_first_person_story"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-20",
@@ -176,7 +176,7 @@
       "premise": "What if a mosquito grew 10x bigger every 5 seconds?",
       "notes": "Environment star + funny rival. Counter: mosquito size. Ear buzz → cat-sized → car-sized → blocks the sun. You try the fly swatter every beat.",
       "tiktok": true,
-      "style": "B_silent_cinematic"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-22",
@@ -184,7 +184,7 @@
       "premise": "What if you never had to sleep again?",
       "notes": "Time-lapse. Counter: days awake + 'extra hours gained'. Funny montage of what you do with 8 extra hours/day; payoff: you finish every series ever made. NO TikTok (monthly quota).",
       "tiktok": false,
-      "style": "D_warm_explainer"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-23",
@@ -192,7 +192,7 @@
       "premise": "What if your weight doubled every 5 seconds?",
       "notes": "Counter: kg. Scale breaks → floor → you sink into the street → mantle → you become denser than a neutron star → black hole tease. Pizza delivery guy at the door.",
       "tiktok": true,
-      "style": "C_first_person_story"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-24",
@@ -200,7 +200,7 @@
       "premise": "What if the Earth spun 2x faster every minute?",
       "notes": "Environment star (inverse of the 'Earth stopped spinning' reference, original take). Counter: day length + equator speed. Days flicker, winds, you get lighter at the equator, oceans bulge.",
       "tiktok": true,
-      "style": "B_silent_cinematic"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-25",
@@ -208,7 +208,7 @@
       "premise": "What if you jumped from the edge of space?",
       "notes": "Journey. Counter: altitude + fall speed. 39 km capsule (real record jumps ~39–41 km), break the sound barrier, parachute over a city. Grandma on a lawn chair below.",
       "tiktok": true,
-      "style": "C_first_person_story"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-26",
@@ -216,7 +216,7 @@
       "premise": "What if your Thanksgiving dinner never stopped growing?",
       "notes": "US Thanksgiving (Nov 26). Counter: turkey size. Plate → table → dining room → neighborhood → visible from space. Uncle still asks for seconds.",
       "tiktok": true,
-      "style": "D_warm_explainer"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-27",
@@ -232,7 +232,7 @@
       "premise": "What if you swallowed a marble-sized black hole?",
       "notes": "Counter: time left / mass. Inside-body x-ray visuals → house → planet. Keep it cartoon, no gore.",
       "tiktok": true,
-      "style": "WINNER"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-29",
@@ -240,7 +240,7 @@
       "premise": "What if you walked around the entire Earth?",
       "notes": "Time-lapse journey. Counter: km walked + days (~40,000 km). Shoes worn out, crosses deserts, swims oceans (cheat with a raft). NO TikTok (monthly quota).",
       "tiktok": false,
-      "style": "WINNER"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-30",
@@ -248,7 +248,7 @@
       "premise": "What if time moved 10x faster every 5 seconds — just for you?",
       "notes": "Month finale. Counter: time multiplier. World slows to a freeze, raindrops hang, light turns red, you see the stars move. Ends with a December tease.",
       "tiktok": true,
-      "style": "WINNER"
+      "style": "A_explainer"
     }
   ],
   "style_notes": [
@@ -269,6 +269,8 @@
     "goal": "Find which style gets the best YouTube Shorts retention and growth; ~4 videos per style by Nov 27.",
     "metrics": "averageViewPercentage, averageViewDuration, engagedViews, subscribersGained per 1k views (vidIQ vidiq_channel_analytics, dimensions=[video], 5 credits).",
     "winner": null,
-    "weekly_results": []
+    "weekly_results": [],
+    "active": false,
+    "note": "Owner wants the style test as an idea only for now (Nov 8). Keep every video in A_explainer until the owner approves the test. Weekly review still reports numbers."
   }
 }
