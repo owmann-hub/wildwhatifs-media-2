@@ -33,7 +33,8 @@
       "instagram": {
         "status": "pending",
         "due": "2026-11-09T07:00"
-      }
+      },
+      "style": "A_explainer"
     },
     {
       "slug": "sneeze",
@@ -53,7 +54,8 @@
       "instagram": {
         "status": "pending",
         "due": "2026-11-10T07:00"
-      }
+      },
+      "style": "A_explainer"
     },
     {
       "slug": "heat",
@@ -73,7 +75,8 @@
       "instagram": {
         "status": "pending",
         "due": "2026-11-11T07:00"
-      }
+      },
+      "style": "A_explainer"
     }
   ],
   "premise_bank": [
@@ -92,140 +95,160 @@
       "slug": "shrink",
       "premise": "What if you shrank 10x every 5 seconds?",
       "notes": "Part 2 of grow. Counter: height (1.8 m → atom). Room → carpet jungle → dust mite → skin cell → DNA → atom. Look: switch to glowing x-ray/wireframe world as you get tiny. Payoff: you're now so small that... part 3 tease.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-12",
       "slug": "hiccups",
       "premise": "What if every hiccup launched you 10x higher?",
       "notes": "Part 2 of sneeze. Counter: hiccup # + altitude. Backyard → rooftop → clouds → plane window (passenger waves) → space → passing the Moon. Rival angle: little sister counting hiccups. Ends 'hic' teaser.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-13",
       "slug": "freeze",
       "premise": "What if your body temperature never stopped dropping?",
       "notes": "Part 2 of heat. Counter: °C down to −273. Drink freezes, frost spreads over street, −78 dry-ice snow, −183 air turns to liquid drops around you, −273 absolute zero. Mom offers hot cocoa.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-14",
       "slug": "tunnel",
       "premise": "What if you jumped into a tunnel through the Earth?",
       "notes": "Journey. Counter: depth km + speed. Crust → mantle glow → core (5,000+°C) → you fly out the other side ~42 min later (no air resistance) and fall back. Tourist on the other side takes a selfie.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "B_silent_cinematic"
     },
     {
       "post_date": "2026-11-15",
       "slug": "abandoned",
       "premise": "What if your house was left alone for 1,000 years?",
       "notes": "Time-lapse (progress-bar counter like the 1000-years reference). Years 1→1,000: weeds, roof caves, trees through the floor, deer on Main St. Your phone still at 1%. NO TikTok (monthly quota).",
-      "tiktok": false
+      "tiktok": false,
+      "style": "D_warm_explainer"
     },
     {
       "post_date": "2026-11-16",
       "slug": "moon",
       "premise": "What if the Moon got 10x closer every 5 seconds?",
       "notes": "Environment star. Counter: Moon distance (384,400 km →). Tides rise, Moon fills the sky, Roche limit: it breaks into a ring. Neighbor's telescope becomes useless (too close).",
-      "tiktok": true
+      "tiktok": true,
+      "style": "B_silent_cinematic"
     },
     {
       "post_date": "2026-11-17",
       "slug": "voice",
       "premise": "What if your voice got 10x louder with every word?",
       "notes": "Counter: decibels. Whisper → shout → jet engine → windows shatter → measurable earthquake → payoff: in space no one hears you (no air).",
-      "tiktok": true
+      "tiktok": true,
+      "style": "C_first_person_story"
     },
     {
       "post_date": "2026-11-18",
       "slug": "ocean",
       "premise": "What if you dove to the deepest point of the ocean?",
       "notes": "Journey. Counter: depth m + pressure. Reef → twilight zone → anglerfish glow → Titanic depth (3,800 m) → Challenger Deep ~10,900 m, ~1,000x surface pressure. Bioluminescence = glow polish.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "D_warm_explainer"
     },
     {
       "post_date": "2026-11-19",
       "slug": "hair",
       "premise": "What if your hair doubled in length every second?",
       "notes": "Counter: hair length. Bathroom → fills house → spills down street → wraps the city → wraps the Earth around second 26. Barber faints.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "C_first_person_story"
     },
     {
       "post_date": "2026-11-20",
       "slug": "planets",
       "premise": "What if you stood on every planet for 5 seconds?",
       "notes": "Tour. Counter: planet + your weight + temperature. Mercury → Venus (crushing heat) → Mars → Jupiter (no ground) → Saturn → Uranus → Neptune. Same pose + selfie on each.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-21",
       "slug": "mosquito",
       "premise": "What if a mosquito grew 10x bigger every 5 seconds?",
       "notes": "Environment star + funny rival. Counter: mosquito size. Ear buzz → cat-sized → car-sized → blocks the sun. You try the fly swatter every beat.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "B_silent_cinematic"
     },
     {
       "post_date": "2026-11-22",
       "slug": "nosleep",
       "premise": "What if you never had to sleep again?",
       "notes": "Time-lapse. Counter: days awake + 'extra hours gained'. Funny montage of what you do with 8 extra hours/day; payoff: you finish every series ever made. NO TikTok (monthly quota).",
-      "tiktok": false
+      "tiktok": false,
+      "style": "D_warm_explainer"
     },
     {
       "post_date": "2026-11-23",
       "slug": "weight",
       "premise": "What if your weight doubled every 5 seconds?",
       "notes": "Counter: kg. Scale breaks → floor → you sink into the street → mantle → you become denser than a neutron star → black hole tease. Pizza delivery guy at the door.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "C_first_person_story"
     },
     {
       "post_date": "2026-11-24",
       "slug": "spin",
       "premise": "What if the Earth spun 2x faster every minute?",
       "notes": "Environment star (inverse of the 'Earth stopped spinning' reference, original take). Counter: day length + equator speed. Days flicker, winds, you get lighter at the equator, oceans bulge.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "B_silent_cinematic"
     },
     {
       "post_date": "2026-11-25",
       "slug": "spacejump",
       "premise": "What if you jumped from the edge of space?",
       "notes": "Journey. Counter: altitude + fall speed. 39 km capsule (real record jumps ~39–41 km), break the sound barrier, parachute over a city. Grandma on a lawn chair below.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "C_first_person_story"
     },
     {
       "post_date": "2026-11-26",
       "slug": "thanksgiving",
       "premise": "What if your Thanksgiving dinner never stopped growing?",
       "notes": "US Thanksgiving (Nov 26). Counter: turkey size. Plate → table → dining room → neighborhood → visible from space. Uncle still asks for seconds.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "D_warm_explainer"
     },
     {
       "post_date": "2026-11-27",
       "slug": "burp",
       "premise": "What if your burp was the loudest sound on Earth?",
       "notes": "After Thanksgiving. Counter: decibels vs famous loud events (rockets, volcano). Shockwave rolls across town; payoff: the turkey from yesterday says thanks.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-28",
       "slug": "blackhole",
       "premise": "What if you swallowed a marble-sized black hole?",
       "notes": "Counter: time left / mass. Inside-body x-ray visuals → house → planet. Keep it cartoon, no gore.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "WINNER"
     },
     {
       "post_date": "2026-11-29",
       "slug": "walkearth",
       "premise": "What if you walked around the entire Earth?",
       "notes": "Time-lapse journey. Counter: km walked + days (~40,000 km). Shoes worn out, crosses deserts, swims oceans (cheat with a raft). NO TikTok (monthly quota).",
-      "tiktok": false
+      "tiktok": false,
+      "style": "WINNER"
     },
     {
       "post_date": "2026-11-30",
       "slug": "fasttime",
       "premise": "What if time moved 10x faster every 5 seconds — just for you?",
       "notes": "Month finale. Counter: time multiplier. World slows to a freeze, raindrops hang, light turns red, you see the stars move. Ends with a December tease.",
-      "tiktok": true
+      "tiktok": true,
+      "style": "WINNER"
     }
   ],
   "style_notes": [
@@ -235,5 +258,17 @@
     "One-sentence caption per beat in italic serif OR word-by-word pop captions; never both at the same spot.",
     "Endings loop or restart (run-speed ref restarts at 'Minute 0'), or tease the part 2 that is already in the plan.",
     "Do not copy other creators' premises, characters or captions; take the format, not the content."
-  ]
+  ],
+  "styles": {
+    "A_explainer": "Current style. Female narrator (Kokoro af_heart, speed 1.1), 2nd person 'you', big title + pill counter, word-by-word captions, 40–48 s.",
+    "B_silent_cinematic": "NO voiceover (like the electrons / Earth-stops-spinning / run-speed references). Music + sound design carry it. One short italic serif line per beat (e.g. 'You do not. Nothing does.'), elegant small serif counter top-left with a sub-label and an upgrading tier badge, slower camera, colour-graded cinematic look. 35–45 s.",
+    "C_first_person_story": "A character tells it as 'I…' (like the golden-drops / Roblox school-story references): opens mid-drama ('I looked in the mirror this morning, and…'), states the world's rule, personal stakes, a twist, cliffhanger. Fast and emotional (~3.5–4 words/s), expressive blocky character with big eyes/mouth reacting every beat, word-by-word captions. Male voice (Kokoro am_puck or am_michael). 61–75 s so TikTok counts it as > 1 min.",
+    "D_warm_explainer": "Calm, comforting 'you' narrator with a small joke in every beat (like the 'everyone slept 1,000 years' reference: 'At least the rent has finally gone down', 'Earth is slowly cleaning out its attic'). Timeline/progress-bar counter, cozy lighting, a cute side character (raccoon/parrot style). Male voice (Kokoro bm_george or am_michael), ~2.6 words/s, 61–75 s."
+  },
+  "style_test": {
+    "goal": "Find which style gets the best YouTube Shorts retention and growth; ~4 videos per style by Nov 27.",
+    "metrics": "averageViewPercentage, averageViewDuration, engagedViews, subscribersGained per 1k views (vidIQ vidiq_channel_analytics, dimensions=[video], 5 credits).",
+    "winner": null,
+    "weekly_results": []
+  }
 }
