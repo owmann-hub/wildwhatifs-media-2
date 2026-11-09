@@ -309,7 +309,23 @@
       "Also export a no-music version for TikTok (music_gain 0), so the owner can add a trending sound in the app (copyrighted songs are never baked into the file).",
       "Busy, living world (owner, Nov 9): pedestrians walking on the sidewalks, cars actually driving on the streets (not only parked), more bystanders who all react (stop, point, run, film with phones).",
       "Anything flying through the sky shares it with planes/helicopters/birds that pass close by (the flying person passes a plane, a passenger at the window reacts).",
-      "Breakage must read instantly: when something punches through a wall/door, the hole is a crisp cartoon cut-out of its exact silhouette (star pose, arms and legs out), shown in a 0.5 s slow-motion beat from the far side with light shining through the hole and dust puffing out of the outline, then debris bursts outward. Never a random scatter of blocks."
+      "Breakage must read instantly: when something punches through a wall/door, the hole is a crisp cartoon cut-out of its exact silhouette (star pose, arms and legs out), shown in a 0.5 s slow-motion beat from the far side with light shining through the hole and dust puffing out of the outline, then debris bursts outward. Never a random scatter of blocks.",
+      "Pacing (owner, Nov 9 — middle point between our 4 s and the reference's 1.4 s): a new shot or a big camera move every ~2–2.5 s.",
+      "Use a continuous follow-camera when it helps (e.g. follow the character while he flies instead of cutting away).",
+      "2–4 object close-ups/inserts per video (the cat mid-air, the hat, the mailbox, a glass shard, a bystander's phone screen filming it). Keep inventing small interactive touches like these — the owner wants more of them.",
+      "The counter changes meaning per chapter (e.g. SNEEZE SPEED → DISTANCE FLOWN → TIME TO LANDING) and always moves: ticking decimals, colour shifts to orange/red as danger rises.",
+      "Every milestone gets a real-world comparison SHOWN on screen, side by side, with a small label (a jet next to the sneeze wind, a bullet racing it, a rocket at escape velocity, a satellite) so viewers instantly get what the number means.",
+      "Name tags only for a character's first appearance (intro), optional.",
+      "Recurring cast links the episodes (shared universe): MITTENS the cat appears regularly (give her a proper intro the first time — people love animals), plus Dave the neighbour and the main character.",
+      "Special cartoon faces at peak moments: heart eyes, star eyes, tears, sweat drop, dizzy swirl.",
+      "Occasionally (not every video) a fake live-chat/phone-comment overlay or a background bystander shouting a funny line.",
+      "Floating particles (embers, dust motes, sparkles) present but subtle — not too much, not too little.",
+      "Ending: return to the opening scene but changed (loop + twist), then the question, then a 'Part 2' tease.",
+      "Character voices: every speech bubble is also voiced, in natural Kokoro voices (main character am_michael, Dave am_fenrir, grandma bf_emma), mixed slightly under the narrator. Narrator stays af_heart."
     ]
+  },
+  "tests": {
+    "color_grade_per_chapter": "TEST only on a few videos (each chapter gets its own colour tone); compare views; NOT part of the norm.",
+    "music_only": "1–2 videos this month with no narrator (music + small italic one-liners, like the dig / nothing-bad references). Voice stays the default."
   }
 }
