@@ -306,7 +306,10 @@
       "Aerial/city shots use makeSuburb(): a block grid with streets both ways, gable roofs, lawns, driveways, trees, cars and pools. No plain boxes on a flat green plane.",
       "Numbers sit on the left side as a small counter (drawSideCounter: small label, big number, italic comparison note like 'faster than sound'), placed under the title, as in the reference videos. Never a big box in the middle of the screen. Keep the right edge clear (platform buttons).",
       "Sound: always a background song (music2.song: drums, bass, arp, lead that build with the intensity curve) plus environment beds (music2.amb: city/wind/space/fire) under the voice and SFX. Music must sit clearly under the voice (music_gain ≈ 0.38, amb gain ≈ 0.25–0.3).",
-      "Also export a no-music version for TikTok (music_gain 0), so the owner can add a trending sound in the app (copyrighted songs are never baked into the file)."
+      "Also export a no-music version for TikTok (music_gain 0), so the owner can add a trending sound in the app (copyrighted songs are never baked into the file).",
+      "Busy, living world (owner, Nov 9): pedestrians walking on the sidewalks, cars actually driving on the streets (not only parked), more bystanders who all react (stop, point, run, film with phones).",
+      "Anything flying through the sky shares it with planes/helicopters/birds that pass close by (the flying person passes a plane, a passenger at the window reacts).",
+      "Breakage must read instantly: when something punches through a wall/door, the hole is a crisp cartoon cut-out of its exact silhouette (star pose, arms and legs out), shown in a 0.5 s slow-motion beat from the far side with light shining through the hole and dust puffing out of the outline, then debris bursts outward. Never a random scatter of blocks."
     ]
   }
 }
