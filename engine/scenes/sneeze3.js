@@ -2,7 +2,7 @@ import { clamp, lerp, smooth, easeOut, easeInOut, pulse, rng, makePerson, drawTi
 
 export const S = [3.5, 7.75, 12.0, 17.3, 23.1, 28.25, 32.3];
 const PAY = 39.4, BLESS = 42.1, CLOSE = 43.9, HIC = 46.0, TOTAL = 46.8;
-const LAND = 39.25, LANDZ = -1500;
+const LAND = 39.25, LANDZ = -1470;
 const speeds = [16, 162, 1620, 16200, 162000, 1620000, 16200000];
 const mults = ['x1', 'x10', 'x100', 'x1,000', 'x10,000', 'x100,000', 'x1,000,000'];
 

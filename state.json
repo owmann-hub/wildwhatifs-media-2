@@ -58,7 +58,9 @@
         "status": "pending",
         "due": "2026-11-10T07:00"
       },
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-sneeze-nomusic.mp4",
+      "version": "v3 (new visual standard, owner-approved Nov 9)"
     },
     {
       "slug": "heat",
