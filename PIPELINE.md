@@ -48,3 +48,10 @@ without asking them. Never publish a video that failed the quality check; skip t
 ## Housekeeping
 - Delete mp4s from videos/ once all three platforms are posted for more than 3 days.
 - If `.git` grows above 800 MB, recreate history: orphan branch with current files, force-push main.
+
+## Manual fallback (owner's request, Nov 8)
+The owner wants all ~30 posts a month on every platform. Whenever a platform can't be posted automatically
+(Metricool quota reached, a Sunday TikTok marked skipped_quota, or any tool error), the run's final message —
+which arrives on the owner's phone — must START with "📲 Your turn — post on <platform>", followed by the raw
+video download link, title, caption + hashtags and the AI-label reminder. Mark the status "manual_requested".
+Keep that mp4 for at least 7 days.
