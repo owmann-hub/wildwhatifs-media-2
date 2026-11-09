@@ -143,11 +143,12 @@
     },
     {
       "post_date": "2026-11-17",
-      "slug": "voice",
-      "premise": "What if your voice got 10x louder with every word?",
-      "notes": "Counter: decibels. Whisper → shout → jet engine → windows shatter → measurable earthquake → payoff: in space no one hears you (no air).",
+      "slug": "asteroid",
+      "premise": "What if the asteroid had missed the dinosaurs?",
+      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
       "tiktok": true,
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "replaced": "voice"
     },
     {
       "post_date": "2026-11-18",
@@ -159,11 +160,12 @@
     },
     {
       "post_date": "2026-11-19",
-      "slug": "hair",
-      "premise": "What if your hair doubled in length every second?",
-      "notes": "Counter: hair length. Bathroom → fills house → spills down street → wraps the city → wraps the Earth around second 26. Barber faints.",
+      "slug": "moon-never",
+      "premise": "What if the Moon never formed?",
+      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
       "tiktok": true,
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "replaced": "hair"
     },
     {
       "post_date": "2026-11-20",
@@ -175,35 +177,39 @@
     },
     {
       "post_date": "2026-11-21",
-      "slug": "mosquito",
-      "premise": "What if a mosquito grew 10x bigger every 5 seconds?",
-      "notes": "Environment star + funny rival. Counter: mosquito size. Ear buzz → cat-sized → car-sized → blocks the sun. You try the fly swatter every beat.",
+      "slug": "rings",
+      "premise": "What if Earth had rings like Saturn?",
+      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
       "tiktok": true,
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "replaced": "mosquito"
     },
     {
       "post_date": "2026-11-22",
-      "slug": "nosleep",
-      "premise": "What if you never had to sleep again?",
-      "notes": "Time-lapse. Counter: days awake + 'extra hours gained'. Funny montage of what you do with 8 extra hours/day; payoff: you finish every series ever made. NO TikTok (monthly quota).",
+      "slug": "humans-gone",
+      "premise": "What if humans disappeared tomorrow?",
+      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
       "tiktok": false,
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "replaced": "nosleep"
     },
     {
       "post_date": "2026-11-23",
-      "slug": "weight",
-      "premise": "What if your weight doubled every 5 seconds?",
-      "notes": "Counter: kg. Scale breaks → floor → you sink into the street → mantle → you become denser than a neutron star → black hole tease. Pizza delivery guy at the door.",
+      "slug": "pangaea",
+      "premise": "What if the continents never split apart?",
+      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
       "tiktok": true,
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "replaced": "weight"
     },
     {
       "post_date": "2026-11-24",
-      "slug": "spin",
-      "premise": "What if the Earth spun 2x faster every minute?",
-      "notes": "Environment star (inverse of the 'Earth stopped spinning' reference, original take). Counter: day length + equator speed. Days flicker, winds, you get lighter at the equator, oceans bulge.",
+      "slug": "stopspin",
+      "premise": "What if Earth stopped spinning for 1 second?",
+      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
       "tiktok": true,
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "replaced": "spin"
     },
     {
       "post_date": "2026-11-25",
@@ -223,11 +229,12 @@
     },
     {
       "post_date": "2026-11-27",
-      "slug": "burp",
-      "premise": "What if your burp was the loudest sound on Earth?",
-      "notes": "After Thanksgiving. Counter: decibels vs famous loud events (rockets, volcano). Shockwave rolls across town; payoff: the turkey from yesterday says thanks.",
+      "slug": "iceage",
+      "premise": "What if the Ice Age never ended?",
+      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
       "tiktok": true,
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "replaced": "burp"
     },
     {
       "post_date": "2026-11-28",
@@ -239,11 +246,12 @@
     },
     {
       "post_date": "2026-11-29",
-      "slug": "walkearth",
-      "premise": "What if you walked around the entire Earth?",
-      "notes": "Time-lapse journey. Counter: km walked + days (~40,000 km). Shoes worn out, crosses deserts, swims oceans (cheat with a raft). NO TikTok (monthly quota).",
+      "slug": "drain",
+      "premise": "What if the oceans drained 1 meter every second?",
+      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
       "tiktok": false,
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "replaced": "walkearth"
     },
     {
       "post_date": "2026-11-30",
