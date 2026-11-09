@@ -280,7 +280,39 @@
     "goal": "Find which style gets the best YouTube Shorts retention and growth; ~4 videos per style by Nov 27.",
     "metrics": "averageViewPercentage, averageViewDuration, engagedViews, subscribersGained per 1k views (vidIQ vidiq_channel_analytics, dimensions=[video], 5 credits).",
     "winner": null,
-    "weekly_results": [],
+    "weekly_results": [
+      {
+        "review_date": "2026-11-09",
+        "window": "2026-11-08..2026-11-09",
+        "posted_youtube": [
+          {
+            "slug": "grow",
+            "id": "MkeqbgAvJi8",
+            "style": "A_explainer",
+            "post_date": "2026-11-08"
+          }
+        ],
+        "analytics_rows": 0,
+        "by_style": {
+          "A_explainer": {
+            "videos": 1,
+            "videos_older_48h": 0,
+            "data": "none yet (YouTube Analytics returned 0 rows; usual 24-72h reporting lag)"
+          },
+          "B_silent_cinematic": {
+            "videos": 0
+          },
+          "C_first_person_story": {
+            "videos": 0
+          },
+          "D_warm_explainer": {
+            "videos": 0
+          }
+        },
+        "verdict": "too early",
+        "note": "Style test not active (owner approval pending); only A_explainer posted. sneeze due 2026-11-09 21:00, heat 2026-11-10."
+      }
+    ],
     "active": false,
     "note": "Owner wants the style test as an idea only for now (Nov 8). Keep every video in A_explainer until the owner approves the test. Weekly review still reports numbers."
   },
