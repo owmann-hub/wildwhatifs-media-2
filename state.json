@@ -275,5 +275,16 @@
     "weekly_results": [],
     "active": false,
     "note": "Owner wants the style test as an idea only for now (Nov 8). Keep every video in A_explainer until the owner approves the test. Weekly review still reports numbers."
+  },
+  "hook_rules": {
+    "approved": "2026-11-09 by owner",
+    "rules": [
+      "Length 30–38 s total (Instagram data: viewers left at ~20 s of 48 s, 42% watched, 35% skip).",
+      "Cold open: the first 0.0–1.0 s shows the MOST extreme moment of the video (the payoff image), with the counter already moving fast and the title on screen; then a whoosh cut to 'the start'.",
+      "Hook line ≤ 2 s and must start at 0.1 s. No slow intro, no static counter at 0.",
+      "A new visual change every 2–3 s; cut beats that don't escalate.",
+      "Looping ending: the last frame matches/flows into the first frame so the video replays seamlessly; no long outro, the 'follow for part 2' line ≤ 1.5 s.",
+      "End with a one-line question to drive comments (e.g. 'Which hiccup would you survive?') and repeat it in the caption."
+    ]
   }
 }

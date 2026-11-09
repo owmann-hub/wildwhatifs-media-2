@@ -22,7 +22,7 @@ without asking them. Never publish a video that failed the quality check; skip t
 2. Use the `plan_november` entry whose post_date is the next unfilled date (follow its premise and notes; mark it made). If there is no plan entry, pick from `premise_bank`. Read `style_notes` and apply them. Never repeat a made premise.
    Build the video in the style named by the plan entry's `style` (definitions in state.json `styles`); "WINNER" means use `style_test.winner` (fall back to A_explainer if none). Save the style on the queue item.
    If `plan_november[*].tiktok` is false for that date, set the item's tiktok status to "skipped_quota" when queueing it.
-3. Script (30–48 s, or 61–75 s for styles C and D): hook in first 2 s, live counter that drives the story, 6–8 escalating beats with scale changes (street → city → planet/space),
+3. Script — FOLLOW state.json `hook_rules` (owner-approved Nov 9): 30–38 s, cold open on the most extreme moment, hook line ≤ 2 s, looping ending, closing question. Then: hook in first 2 s, live counter that drives the story, 6–8 escalating beats with scale changes (street → city → planet/space),
    a human/funny angle in every beat, an open loop paid off at the end, close teasing part 2. ~2.6 spoken words/s. Fact-check numbers with a web search.
 4. Engine setup: `cd engine && npm i three@0.170 playwright@1.63`; Chrome at /usr/bin/google-chrome (else `npx playwright install chromium` and change executablePath);
    `pip install --break-system-packages kokoro-onnx soundfile scipy`; download `kokoro-v1.0.onnx` and `voices-v1.0.bin` from
@@ -35,7 +35,7 @@ without asking them. Never publish a video that failed the quality check; skip t
 8. Full render at 720x1280: `W=720 H=1280 node render.mjs <slug> video ../videos/tmp.mp4 0 <TOTAL> 30` (≈25–30 min; run in background and poll).
 9. Sound: write scripts/<slug>_cue.json (see grow/sneeze/heat cues) → `python3 mix.py`; captions: `python3 captions.py <slug>`;
    final: ffmpeg burn `ass=` + mux audio with loudnorm I=-14, then re-encode CRF 23 maxrate 7M to `videos/<yyyy-mm-dd>-<slug>.mp4`.
-10. QA: grab 8 frames from the final mp4 and look at them; check duration 30–48 s, audio present (volumedetect max ≈ -1 dB).
+10. QA: grab 8 frames from the final mp4 and look at them; check duration 30–38 s, the first second shows the cold-open image, and the last frame loops into the first, audio present (volumedetect max ≈ -1 dB).
 11. Commit + push the mp4, the new scene/script files and the updated state.json (append queue item with title, caption, hashtags, due times).
 
 ## Publishing runs
