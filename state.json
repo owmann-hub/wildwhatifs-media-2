@@ -355,14 +355,14 @@
       "Occasionally (not every video) a fake live-chat/phone-comment overlay or a background bystander shouting a funny line.",
       "Floating particles (embers, dust motes, sparkles) present but subtle — not too much, not too little.",
       "Ending: return to the opening scene but changed (loop + twist), then the question, then a 'Part 2' tease.",
-      "Character voices: every speech bubble is also voiced, in natural Kokoro voices (main character am_michael, Dave am_fenrir, grandma bf_emma), mixed slightly under the narrator. Narrator stays af_heart.",
       "Title (owner loved the 'boyfriend' reference, Nov 9): flash cold open (0.5 s of the craziest moment + one punch word like 'SNIP.'), then the title types in word by word over a wide establishing shot, holds ~3 s and then animates OUT (by ~5 s). After that only the side counter stays at the top. Optional time-jump card ('⏮ 3 minutes earlier').",
       "Counter sub-label shows place + time and updates with the story ('YOUR APARTMENT · 9:41 PM' → 'DOWNTOWN · 9:43 PM' → 'EARTH ORBIT').",
       "Talking characters: short punchy speech bubbles in quick back-and-forth (white rounded bubble, 2–6 words), mouths moving while they talk, extreme close-up faces for big reactions (huge eyes, wide open mouth), countdown numbers (3, 2, 1) popping next to the bubbles when tension builds.",
       "Crowds: when the story scales up, show LOTS of people (hundreds to thousands, instanced) filling streets, plus people in the background of normal shots.",
       "Buildings with detail: lit windows, varied facades and heights, dusk/evening light when it fits — never plain boxes.",
       "Switch perspective when it matters: first-person (hands on the steering wheel, hands holding the object) for the start or key moments, then third-person behind/side views, and back to first-person for the ending (owner approved Nov 9). Body/'what if YOU' premises: short POV start; calm world/history premises can stay mostly POV; comedy/action stays mostly third-person.",
-      "Shareable ending line when it fits the topic (e.g. 'Send this to your boyfriend.') instead of only 'follow'."
+      "Shareable ending line when it fits the topic (e.g. 'Send this to your boyfriend.') instead of only 'follow'.",
+      "Character voices (owner, Nov 9): voiced lines in natural Kokoro voices (main character am_michael, Dave am_fenrir, grandma bf_emma) ONLY in the gaps between narrator lines — never talking over the narrator, and keep them few (3–4 per video: sneezes/reactions/one funny line). Speech bubbles can still appear silently while the narrator talks."
     ]
   },
   "tests": {
