@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+import * as THREE from 'three';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+
+const params = new URLSearchParams(location.search);
+const W = +params.get('w') || 1080, H = +params.get('h') || 1920;
+const sceneName = params.get('scene');
+window.RES = H / 1280;
+
+const renderer = new THREE.WebGLRenderer({ antialias: false, preserveDrawingBuffer: true, logarithmicDepthBuffer: true });
+renderer.setPixelRatio(1);
+renderer.setSize(W, H);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFShadowMap;
+
+const out = document.createElement('canvas');
+out.width = W; out.height = H;
+document.body.appendChild(out);
+const ctx = out.getContext('2d');
+
+const mod = await import(`./scenes/${sceneName}.js?v=${Date.now()}`);
+const S = await mod.create({ THREE, renderer, W, H });
+const VOFF = -H * (+params.get('voff') || 0.09);
+const composer = new EffectComposer(renderer);
+composer.setSize(W, H);
+const rp = new RenderPass(S.scene, S.camera); composer.addPass(rp);
+const bloom = new UnrealBloomPass(new THREE.Vector2(W / 2, H / 2), 0.6, 0.5, 0.85);
+composer.addPass(bloom);
+composer.addPass(new OutputPass());
+
+// film grain texture
+const grain = document.createElement('canvas'); grain.width = 256; grain.height = 256;
+{ const g = grain.getContext('2d'); const d = g.createImageData(256, 256);
+  for (let i = 0; i < d.data.length; i += 4) { const v = Math.random() * 255; d.data[i] = d.data[i+1] = d.data[i+2] = v; d.data[i+3] = 255; }
+  g.putImageData(d, 0, 0); }
+
+window.renderFrame = (t, quality = 0.9) => {
+  const st = S.update(t) || {};
+  if (st.scene) { rp.scene = st.scene; rp.camera = st.camera; }
+  const cm = st.camera || S.camera; cm.setViewOffset(W, H, 0, (st.voff ?? 1) * VOFF, W, H);
+  bloom.strength = st.bloom ?? 0.6;
+  bloom.threshold = st.bloomThreshold ?? 0.85;
+  bloom.radius = st.bloomRadius ?? 0.5;
+  renderer.toneMappingExposure = st.exposure ?? 1.0;
+  composer.render();
+  ctx.setTransform(1,0,0,1,0,0);
+  // camera shake applied in 2D as small offset + scale
+  const sh = st.shake || 0;
+  const ox = sh ? (Math.sin(t*93.1)+Math.sin(t*57.3))*sh*12 : 0;
+  const oy = sh ? (Math.cos(t*81.7)+Math.sin(t*43.9))*sh*12 : 0;
+  const sc = 1 + sh*0.03;
+  ctx.drawImage(renderer.domElement, -W*(sc-1)/2+ox, -H*(sc-1)/2+oy, W*sc, H*sc);
+  // vignette
+  const vg = ctx.createRadialGradient(W/2, H/2, H*0.28, W/2, H/2, H*0.72);
+  vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, `rgba(0,0,0,${st.vignette ?? 0.55})`);
+  ctx.fillStyle = vg; ctx.fillRect(0, 0, W, H);
+  // flash
+  if (st.flash) { ctx.fillStyle = st.flashColor || `rgba(255,255,255,${st.flash})`; if(!st.flashColor) ctx.fillStyle=`rgba(255,255,255,${st.flash})`; ctx.fillRect(0,0,W,H); }
+  // grain
+  ctx.globalAlpha = 0.06; ctx.globalCompositeOperation = 'overlay';
+  const gx = Math.floor((t*997)%256), gy = Math.floor((t*541)%256);
+  ctx.fillStyle = ctx.createPattern(grain, 'repeat');
+  ctx.save(); ctx.translate(-gx, -gy); ctx.fillRect(0, 0, W+256, H+256); ctx.restore();
+  ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+  if (S.hud) { ctx.save(); ctx.scale(W / 1080, H / 1920); S.hud(ctx, t, st); ctx.restore(); }
+  return out.toDataURL('image/jpeg', quality);
+};
+window.sceneInfo = S.info || {};
+window.ready = true;
+</script>
+</body></html>

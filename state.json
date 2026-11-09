@@ -1,0 +1,52 @@
+{
+  "timezone": "America/Buenos_Aires",
+  "schedule": {"instagram": "07:00", "youtube": "21:00", "tiktok": "23:05"},
+  "metricool": {"blogId": "7970179", "free_plan_posts_per_month": 20, "posts_used": {"2026-11": 1}},
+  "zapier_youtube_connection_id": "024e8223-8129-8378-ae74-36264dc05b99",
+  "instagram_platformAccountId": "29226914170279337",
+  "queue": [
+    {
+      "slug": "grow",
+      "post_date": "2026-11-08",
+      "file": "videos/2026-11-grow.mp4",
+      "title": "What If You Grew 10x Bigger Every 5 Seconds? 😳",
+      "caption": "At 18,000 km tall you'd be taller than Earth is wide… and a stubbed toe would take almost 2 days to hurt 💀 Part 2: you shrink. Follow so you don't miss it.",
+      "hashtags": "#whatif #whatifscenario #science #3danimation #giant #space #funfacts",
+      "youtube": {"status": "posted", "id": "MkeqbgAvJi8"},
+      "tiktok": {"status": "scheduled", "metricool_id": 421209953},
+      "instagram": {"status": "pending", "due": "2026-11-09T07:00"}
+    },
+    {
+      "slug": "sneeze",
+      "post_date": "2026-11-09",
+      "file": "videos/2026-11-sneeze.mp4",
+      "title": "What If Every Sneeze Was 10x Stronger? 🤧",
+      "caption": "Sneeze 3 breaks the sound barrier. Sneeze 7 launches you across the city. Granny still said bless you 👵 Which sneeze would you survive?",
+      "hashtags": "#whatif #sneeze #physics #science #3danimation #funny #funfacts",
+      "youtube": {"status": "pending", "due": "2026-11-09T21:00"},
+      "tiktok": {"status": "pending", "due": "2026-11-09T23:05"},
+      "instagram": {"status": "pending", "due": "2026-11-10T07:00"}
+    },
+    {
+      "slug": "heat",
+      "post_date": "2026-11-10",
+      "file": "videos/2026-11-heat.mp4",
+      "title": "What If Your Body Temperature Never Stopped Rising? 🔥",
+      "caption": "100°C: you boil your sweat. 1,538°C: steel melts. 5,500°C: you're as hot as the surface of the Sun… and mom still says bring a jacket 🧥",
+      "hashtags": "#whatif #science #temperature #sun #3danimation #funfacts #physics",
+      "youtube": {"status": "pending", "due": "2026-11-10T21:00"},
+      "tiktok": {"status": "pending", "due": "2026-11-10T23:05"},
+      "instagram": {"status": "pending", "due": "2026-11-11T07:00"}
+    }
+  ],
+  "premise_bank": [
+    "What if you shrank 10x every 5 seconds? (part 2 of grow)",
+    "What if your hiccups launched you 10 m higher each time? (teased in sneeze)",
+    "What if your voice got 10x louder with every word?",
+    "What if gravity only got stronger on YOU?",
+    "What if you ran 10x faster every second?",
+    "What if your burp was the loudest sound on Earth?",
+    "What if you stopped blinking for 24 hours?"
+  ],
+  "made": ["grow", "sneeze", "heat"]
+}
