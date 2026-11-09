@@ -41,6 +41,14 @@ export function makePerson(THREE, o = {}) {
   const pR = new THREE.Mesh(pupG, dark); pR.position.set(0, 0, 0.026); eyeR.add(pR);
   const nose = new THREE.Mesh(new THREE.ConeGeometry(0.025, 0.06, 5), skin); nose.rotation.x = Math.PI / 2; nose.position.set(0, 0.11, 0.17); headPivot.add(nose);
   const mouth = new THREE.Mesh(new THREE.BoxGeometry(0.07, 0.012, 0.01), dark); mouth.position.set(0, 0.05, 0.155); headPivot.add(mouth);
+  // expressive extras: brows, bigger cartoon eyes, open-mouth shape, cheeks
+  const es = o.eyeScale ?? 1.35; eyeL.scale.setScalar(es); eyeR.scale.setScalar(es); eyeL.userData.s = eyeR.userData.s = es;
+  eyeL.position.y = eyeR.position.y = 0.175; eyeL.position.x = -0.066; eyeR.position.x = 0.066;
+  const browG = new THREE.BoxGeometry(0.075, 0.016, 0.02);
+  const browL = new THREE.Mesh(browG, hair); browL.position.set(-0.066, 0.238, 0.142); headPivot.add(browL);
+  const browR = new THREE.Mesh(browG, hair); browR.position.set(0.066, 0.238, 0.142); headPivot.add(browR);
+  const mouthO = new THREE.Mesh(new THREE.SphereGeometry(0.04, 12, 8), new THREE.MeshStandardMaterial({ color: 0x3a0d0d, roughness: 0.6 })); mouthO.position.set(0, 0.05, 0.142); mouthO.scale.set(1, 0.6, 0.35); mouthO.visible = false; headPivot.add(mouthO);
+  const smile = new THREE.Mesh(new THREE.TorusGeometry(0.035, 0.007, 6, 12, Math.PI), dark); smile.rotation.z = Math.PI; smile.position.set(0, 0.068, 0.15); smile.visible = false; headPivot.add(smile);
   const mkLimb = (len, r, mat, endMat, endSize) => {
     const p = new THREE.Group();
     const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r * 0.85, len, 6), mat); m.position.y = -len / 2; p.add(m);
@@ -52,7 +60,7 @@ export function makePerson(THREE, o = {}) {
   const legL = mkLimb(0.78, 0.075, pants, shoe, [0.12, 0.09, 0.27]); legL.position.set(-0.1, 0.82, 0); g.add(legL);
   const legR = mkLimb(0.78, 0.075, pants, shoe, [0.12, 0.09, 0.27]); legR.position.set(0.1, 0.82, 0); g.add(legR);
   g.traverse(m => { if (m.isMesh) { m.castShadow = true; m.receiveShadow = true; } });
-  return { group: g, torso, headPivot, head, armL, armR, legL, legR, mouth, eyeL, eyeR, mats };
+  return { group: g, torso, headPivot, head, armL, armR, legL, legR, mouth, eyeL, eyeR, pL, pR, browL, browR, mouthO, smile, mats, seed: o.seed ?? 1 };
 }
 
 // ---------- HUD ----------
@@ -235,4 +243,202 @@ export function makeBurst(THREE, n, o) {
     mat.opacity = (o.opacity ?? 0.9) * (1 - clamp(dt0 / (o.life[1] + (o.delay ?? 0))) ** 2);
   };
   return pts;
+}
+
+// side gauge (left edge — right edge is covered by TikTok/Reels/Shorts buttons)
+// p: 0..1 current position; ticks: [{p,label}] ; value: big readout ; label: small header
+export function drawGauge(ctx, W, H, o) {
+  const x = o.x ?? 84, y0 = o.top ?? H * 0.60, y1 = o.bottom ?? H * 0.25; // y0 = bottom of scale
+  const col = o.color ?? '#ffd23f', p = clamp(o.p), bump = o.bump || 0;
+  const yy = (q) => lerp(y0, y1, q);
+  ctx.save(); ctx.textBaseline = 'middle';
+  // track
+  ctx.fillStyle = 'rgba(8,10,20,0.55)'; ctx.beginPath(); ctx.roundRect(x - 16, y1 - 16, 32, y0 - y1 + 32, 16); ctx.fill();
+  // fill
+  const g = ctx.createLinearGradient(0, y0, 0, y1); g.addColorStop(0, o.colorLow ?? col); g.addColorStop(1, o.colorHigh ?? col);
+  ctx.fillStyle = g; ctx.shadowColor = o.glow ?? col; ctx.shadowBlur = 18 + bump * 30;
+  ctx.beginPath(); ctx.roundRect(x - 9, yy(p), 18, Math.max(18, y0 - yy(p) + 9), 9); ctx.fill(); ctx.shadowBlur = 0;
+  // ticks
+  for (const tk of o.ticks || []) {
+    const ty = yy(tk.p), passed = p >= tk.p - 1e-3;
+    ctx.fillStyle = passed ? '#ffffff' : 'rgba(255,255,255,0.45)';
+    ctx.fillRect(x + 20, ty - 2, 16, 4);
+    if (tk.label) { ctx.font = `800 ${o.tickSize ?? 36}px ${FONT}`; ctx.textAlign = 'left';
+      strokeText(ctx, tk.label, x + 44, ty, passed ? '#ffffff' : 'rgba(255,255,255,0.55)', 'rgba(0,0,0,0.85)', 6); }
+  }
+  // marker bubble with live value
+  const my = yy(p); const s = 1 + bump * 0.22;
+  ctx.translate(x, my); ctx.scale(s, s);
+  ctx.font = `900 ${o.size ?? 58}px ${FONT}`; const vw = ctx.measureText(o.value).width;
+  ctx.font = `800 24px ${FONT}`; const lw = ctx.measureText(o.label || '').width;
+  const bw = Math.max(vw, lw) + 76, bh = (o.size ?? 58) + (o.label ? 54 : 30);
+  ctx.fillStyle = 'rgba(8,10,20,0.78)'; ctx.strokeStyle = col; ctx.lineWidth = 4;
+  ctx.beginPath(); ctx.roundRect(-30, -bh / 2, bw, bh, 22); ctx.fill(); ctx.stroke();
+  ctx.beginPath(); ctx.arc(0, 0, 11, 0, Math.PI * 2); ctx.fillStyle = '#fff'; ctx.fill();
+  ctx.textAlign = 'left';
+  if (o.label) { ctx.font = `800 24px ${FONT}`; ctx.fillStyle = col; ctx.fillText(o.label, 24, -bh / 2 + 26); }
+  ctx.font = `900 ${o.size ?? 58}px ${FONT}`; ctx.shadowColor = o.glow ?? col; ctx.shadowBlur = 16 + bump * 30;
+  ctx.fillStyle = '#fff'; ctx.fillText(o.value, 24, o.label ? 14 : 2);
+  ctx.restore();
+}
+
+// ---------- character life ----------
+// face: brows 'neutral'|'up'|'worried'|'angry'|'squint', eyes 0..1.6 open, mouth 'flat'|'o'|'open'|'smile'|'grit', look [x,y] pupils
+export function setFace(P, f = {}) {
+  const b = f.brows ?? 'neutral'; const by = { neutral: 0.238, up: 0.262, worried: 0.25, angry: 0.226, squint: 0.222 }[b];
+  const br = { neutral: 0, up: 0.08, worried: 0.32, angry: -0.38, squint: -0.15 }[b];
+  P.browL.position.y = P.browR.position.y = by; P.browL.rotation.z = -br; P.browR.rotation.z = br;
+  const e = (f.eyes ?? 1) * P.eyeL.userData.s; P.eyeL.scale.set(P.eyeL.userData.s, e, P.eyeL.userData.s); P.eyeR.scale.set(P.eyeR.userData.s, e, P.eyeR.userData.s);
+  const m = f.mouth ?? 'flat'; P.mouth.visible = m === 'flat' || m === 'grit'; P.mouth.scale.set(m === 'grit' ? 1.4 : 1, m === 'grit' ? 2.2 : 1, 1);
+  P.mouthO.visible = m === 'o' || m === 'open'; P.mouthO.scale.set(m === 'o' ? 0.7 : 1.15, m === 'o' ? 0.9 : (f.open ?? 1.3), 0.35);
+  P.smile.visible = m === 'smile';
+  const lk = f.look ?? [0, 0]; P.pL.position.set(lk[0] * 0.012, lk[1] * 0.012, 0.026); P.pR.position.copy(P.pL.position);
+}
+// additive idle motion: breathing, blink, head micro-motion, weight shift. call AFTER poses.
+export function life(P, t, amt = 1, o = {}) {
+  const sd = P.seed * 1.37;
+  P.torso.scale.y = 1 + 0.025 * Math.sin(t * 2.3 + sd) * amt;
+  P.headPivot.rotation.x += 0.03 * Math.sin(t * 1.7 + sd) * amt;
+  P.headPivot.rotation.y += 0.07 * Math.sin(t * 0.9 + sd * 2) * amt;
+  P.headPivot.rotation.z += 0.03 * Math.sin(t * 1.3 + sd) * amt;
+  P.armL.rotation.z += 0.04 * Math.sin(t * 2.3 + sd) * amt; P.armR.rotation.z -= 0.04 * Math.sin(t * 2.3 + sd) * amt;
+  P.group.rotation.z += 0.012 * Math.sin(t * 0.8 + sd) * amt;
+  if (!o.noBlink) { const ph = (t + sd * 0.7) % 3.3; if (ph < 0.13) { const k = 1 - Math.sin(ph / 0.13 * Math.PI); P.eyeL.scale.y *= Math.max(0.08, k); P.eyeR.scale.y *= Math.max(0.08, k); } }
+  if (!o.noDart) { const dx = Math.sin(Math.floor(t / 1.1 + sd) * 12.9898) * 0.5; P.pL.position.x += dx * 0.006; P.pR.position.x += dx * 0.006; }
+}
+// speech bubble anchored at screen point (x,y in 1080x1920 space)
+export function drawBubble(ctx, x, y, text, age, o = {}) {
+  const dur = o.dur ?? 1.6; if (age < 0 || age > dur) return;
+  const pop = age < 0.15 ? 0.5 + 0.5 * easeOut(age / 0.15) + 0.1 * Math.sin(age / 0.15 * Math.PI) : 1; const a = clamp((dur - age) / 0.2);
+  ctx.save(); ctx.font = `900 ${o.size ?? 52}px ${FONT}`; const w = ctx.measureText(text).width + 56, h = (o.size ?? 52) + 40;
+  const cx = clamp(x, w / 2 + 30, 1080 - w / 2 - 30); ctx.globalAlpha = a; ctx.translate(cx, y); ctx.scale(pop, pop);
+  ctx.fillStyle = '#ffffff'; ctx.strokeStyle = '#111'; ctx.lineWidth = 6;
+  ctx.beginPath(); ctx.roundRect(-w / 2, -h - 26, w, h, 26); ctx.moveTo(-14, -28); ctx.lineTo(0, 0); ctx.lineTo(16, -28); ctx.fill(); ctx.stroke();
+  ctx.fillStyle = '#fff'; ctx.fillRect(-12, -34, 26, 12);
+  ctx.fillStyle = '#111'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(text, 0, -h / 2 - 26);
+  ctx.restore();
+}
+// reference-style small counter on the left: tiny label, big number, sub note
+export function drawSideCounter(ctx, W, H, o) {
+  const x = o.x ?? 56, y = o.y ?? H * 0.268, bump = o.bump || 0;
+  ctx.save(); ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+  ctx.font = `800 34px ${FONT}`; strokeText(ctx, o.label, x, y, o.color ?? '#ffd23f', 'rgba(0,0,0,0.8)', 6);
+  ctx.translate(x, y + 86); ctx.scale(1 + bump * 0.15, 1 + bump * 0.15);
+  ctx.font = `900 ${o.size ?? 84}px ${FONT}`; ctx.shadowColor = o.glow ?? 'rgba(0,0,0,0.6)'; ctx.shadowBlur = 10 + bump * 30;
+  strokeText(ctx, o.value, 0, 0, '#ffffff', 'rgba(0,0,0,0.85)', 9); ctx.shadowBlur = 0;
+  if (o.note) { ctx.font = `700 italic 40px ${FONT}`; strokeText(ctx, o.note, 2, 58, 'rgba(255,255,255,0.92)', 'rgba(0,0,0,0.8)', 6); }
+  ctx.restore();
+}
+
+// ---------- realistic-ish suburb seen from above ----------
+// lots on a block grid with two-way streets, gable roofs, driveways, lawns, trees, cars, pools.
+// returns { group, houses:[{x,z,w,d,h,roofIdx,bodyIdx}], trees:[{x,z,s,idx}], wave(origin, r, width, t) }
+export function makeSuburb(THREE, o = {}) {
+  const R = rng(o.seed ?? 21); const L = o.lot ?? 22; const nx = o.nx ?? 60, nz0 = o.nz0 ?? -100, nz1 = o.nz1 ?? 30;
+  const skip = o.skip ?? (() => false); const detail = o.detail ?? (() => true); const OX = o.ox ?? 0, OZ = o.oz ?? 0;
+  const G = new THREE.Group();
+  const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), v = new THREE.Vector3(), sc = new THREE.Vector3(), col = new THREE.Color(), e = new THREE.Euler();
+  const lots = [];
+  const BX = 5, BZ = 3; // lots per block
+  const streetX = [], streetZ = [];
+  for (let gx = -nx; gx <= nx; gx++) { if (gx % BX === 0) { streetX.push(gx * L + OX); continue; }
+    for (let gz = nz0; gz <= nz1; gz++) { if (gz % BZ === 0) { if (gx === -nx + 1) streetZ.push(gz * L + OZ); continue; }
+      const x = gx * L + OX, z = gz * L + OZ; if (skip(x, z)) continue; lots.push({ x, z, gx, gz, r: R(), r2: R(), r3: R(), det: detail(x, z) }); } }
+  // ground: lawns tinted per lot
+  const lawn = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 0.05, 1), new THREE.MeshStandardMaterial({ roughness: 1 }), lots.length);
+  lots.forEach((l, i) => { m4.compose(v.set(l.x, 0.01, l.z), q.identity(), sc.set(L - 0.6, 1, L - 0.6)); lawn.setMatrixAt(i, m4); lawn.setColorAt(i, col.setHSL(0.24 + l.r3 * 0.06, 0.38 + l.r2 * 0.15, 0.30 + l.r * 0.1)); });
+  lawn.receiveShadow = true; G.add(lawn);
+  // streets + sidewalks + center dashes
+  const roadM = new THREE.MeshStandardMaterial({ color: 0x4d5056, roughness: 0.95 }), walkM = new THREE.MeshStandardMaterial({ color: 0xbdb8ae, roughness: 1 });
+  const spanX = (2 * nx + 1) * L, z0 = nz0 * L + OZ, z1 = nz1 * L + OZ, spanZ = z1 - z0 + L;
+  for (const x of streetX) { const r = new THREE.Mesh(new THREE.PlaneGeometry(9, spanZ), roadM); r.rotation.x = -Math.PI / 2; r.position.set(x, 0.03, (z0 + z1) / 2); G.add(r);
+    for (const s of [-1, 1]) { const w = new THREE.Mesh(new THREE.PlaneGeometry(2, spanZ), walkM); w.rotation.x = -Math.PI / 2; w.position.set(x + s * 5.6, 0.04, (z0 + z1) / 2); G.add(w); } }
+  for (const z of streetZ) { const r = new THREE.Mesh(new THREE.PlaneGeometry(spanX, 9), roadM); r.rotation.x = -Math.PI / 2; r.position.set(OX, 0.035, z); G.add(r);
+    for (const s of [-1, 1]) { const w = new THREE.Mesh(new THREE.PlaneGeometry(spanX, 2), walkM); w.rotation.x = -Math.PI / 2; w.position.set(OX, 0.045, z + s * 5.6); G.add(w); } }
+  const dashes = []; for (const x of streetX) if (Math.abs(x) < 900) for (let z = z0; z < z1; z += 9) dashes.push([x, z, 0]); for (const z of streetZ) for (let x = -900; x < 900; x += 9) dashes.push([x, z, 1]);
+  const dash = new THREE.InstancedMesh(new THREE.PlaneGeometry(0.25, 3.5), new THREE.MeshBasicMaterial({ color: 0xe8d36a }), dashes.length);
+  dashes.forEach(([x, z, r], i) => { m4.compose(v.set(x, 0.06, z), q.setFromEuler(e.set(-Math.PI / 2, 0, r ? Math.PI / 2 : 0)), sc.set(1, 1, 1)); dash.setMatrixAt(i, m4); }); G.add(dash);
+  // houses: body + gable roof (triangular prism), facing nearest x-street
+  const wallPal = [0xf2efe8, 0xe9dfcc, 0xd9d4cb, 0xc9d6df, 0xe8d2b8, 0xf4e8d0, 0xb8c4b0, 0xd8c3b5, 0xa7b5c2];
+  const roofPal = [0x4a4d52, 0x5a3b2e, 0x7a3a2a, 0x3d4650, 0x6b5f55, 0x2f3338, 0x8a4b35];
+  const bodyG = new THREE.BoxGeometry(1, 1, 1).translate(0, 0.5, 0);
+  const roofG = new THREE.CylinderGeometry(0.62, 0.62, 1, 3, 1).rotateZ(Math.PI / 2).rotateX(-Math.PI / 2).translate(0, 0.31, 0); // gable prism along x, apex up
+  const body = new THREE.InstancedMesh(bodyG, new THREE.MeshStandardMaterial({ roughness: 0.85 }), lots.length);
+  const roof = new THREE.InstancedMesh(roofG, new THREE.MeshStandardMaterial({ roughness: 0.8, flatShading: true }), lots.length);
+  const drive = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 0.06, 1), walkM, lots.length);
+  const houses = [];
+  lots.forEach((l, i) => { const w = 9 + l.r * 4, d = 8 + l.r2 * 3, h = 3.2 + (l.r3 > 0.7 ? 2.8 : 0) + l.r * 0.5; const rot = l.r3 > 0.5 ? 0 : Math.PI / 2;
+    const hx = l.x + (l.r2 - 0.5) * 3, hz = l.z - 2 + (l.r - 0.5) * 2;
+    m4.compose(v.set(hx, 0, hz), q.setFromEuler(e.set(0, rot, 0)), sc.set(w, h, d)); body.setMatrixAt(i, m4); body.setColorAt(i, col.set(wallPal[Math.floor(l.r * 97) % wallPal.length]));
+    const rh = 2.2 + l.r2 * 1.2;
+    m4.compose(v.set(hx, h, hz), q.setFromEuler(e.set(0, rot, 0)), sc.set(w * 1.08, rh * 0.8, d * 0.93)); roof.setMatrixAt(i, m4); roof.setColorAt(i, col.set(roofPal[Math.floor(l.r2 * 89) % roofPal.length]));
+    m4.compose(v.set(hx + w * 0.35, 0.02, l.z + L * 0.3), q.identity(), sc.set(3.2, 1, L * 0.42)); drive.setMatrixAt(i, m4);
+    houses.push({ x: hx, z: hz, w, d, h, rh, rot, i, col: roofPal[Math.floor(l.r2 * 89) % roofPal.length] }); });
+  body.castShadow = roof.castShadow = true; body.receiveShadow = true; G.add(body, roof, drive);
+  // trees, cars, pools only on detail lots
+  const tl = [], cl = [], pl = [];
+  lots.forEach(l => { if (!l.det) return; const n = 1 + Math.floor(l.r * 3.2); for (let k = 0; k < n; k++) { const a = R(), b = R(); tl.push([l.x + (a - 0.5) * L * 0.85, l.z + (b > 0.5 ? 1 : -1) * (6 + R() * 3.5), 1.6 + R() * 1.6, R()]); }
+    if (l.r2 > 0.55) cl.push([l.x + 4.5 + (l.r - 0.5), l.z + L * 0.32, Math.PI / 2, R()]); if (l.r3 > 0.86) pl.push([l.x - 4, l.z + 6.5]); });
+  for (const x of streetX) for (let z = z0; z < z1; z += 13) { if (Math.abs(x) > 700 || R() > 0.35) continue; cl.push([x + (R() > 0.5 ? 2.2 : -2.2), z + R() * 6, 0, R()]); }
+  const crownG = new THREE.IcosahedronGeometry(1, 1).translate(0, 2.4, 0);
+  const trees = new THREE.InstancedMesh(crownG, new THREE.MeshStandardMaterial({ roughness: 0.9, flatShading: true }), tl.length);
+  const tdat = tl.map(([x, z, s, r], i) => { m4.compose(v.set(x, 0, z), q.identity(), sc.set(s, s * (0.9 + r * 0.4), s)); trees.setMatrixAt(i, m4); trees.setColorAt(i, col.setHSL(0.25 + r * 0.08, 0.45, 0.22 + r * 0.12)); return { x, z, s, r, i }; });
+  trees.castShadow = true; G.add(trees);
+  const carPal = [0xd8342c, 0x2d6fd6, 0xf2f2f2, 0x1d1f22, 0x9aa3ad, 0xe0b84a, 0x3c7a4a];
+  const cars = new THREE.InstancedMesh(new THREE.BoxGeometry(4.3, 1.4, 1.9).translate(0, 0.7, 0), new THREE.MeshStandardMaterial({ roughness: 0.35, metalness: 0.2 }), cl.length);
+  const cdat = cl.map(([x, z, ry, r], i) => { m4.compose(v.set(x, 0, z), q.setFromEuler(e.set(0, ry, 0)), sc.set(1, 1, 1)); cars.setMatrixAt(i, m4); cars.setColorAt(i, col.set(carPal[Math.floor(r * 70) % carPal.length])); return { x, z, ry, r, i }; });
+  cars.castShadow = true; G.add(cars);
+  const pools = new THREE.InstancedMesh(new THREE.BoxGeometry(5, 0.08, 3), new THREE.MeshStandardMaterial({ color: 0x3fb6e0, roughness: 0.1, metalness: 0.1, emissive: 0x0a3a50 }), Math.max(1, pl.length));
+  pl.forEach(([x, z], i) => { m4.compose(v.set(x, 0.06, z), q.identity(), sc.set(1, 1, 1)); pools.setMatrixAt(i, m4); }); G.add(pools);
+  // ----- shockwave response: roofs rip off and tumble outward, trees flatten, cars slide -----
+  const tmp = new THREE.Vector3();
+  function wave(ox, oz, r, width = 60, power = 1) {
+    for (const hs of houses) { const dx = hs.x - ox, dz = hs.z - oz, d = Math.hypot(dx, dz); const past = r - d; if (d > r + 2 || d < 1) { if (hs.moved && r <= 0) { hs.moved = false; } continue; }
+      const u = clamp(past / width); const age = past / Math.max(1, width) * 1.2; const ux = dx / d, uz = dz / d; const strength = power * clamp(1 - d / (o.waveFade ?? 1400));
+      if (strength < 0.15) continue; hs.moved = true;
+      const fly = age * 28 * strength, up = Math.sin(clamp(age, 0, 1) * Math.PI) * 10 * strength + age * 4 * strength;
+      m4.compose(v.set(hs.x + ux * fly, hs.h + up, hs.z + uz * fly), q.setFromEuler(e.set(age * 2.2 * uz * strength, hs.rot + age * 1.5 * strength, -age * 2.2 * ux * strength)), sc.set(hs.w * 1.08, hs.rh * 0.8, hs.d * 0.93));
+      roof.setMatrixAt(hs.i, m4); }
+    for (const tr of tdat) { const dx = tr.x - ox, dz = tr.z - oz, d = Math.hypot(dx, dz); if (d > r + 2 || d < 1) continue; const strength = power * clamp(1 - d / (o.waveFade ?? 1400)); const u = clamp((r - d) / 20) * strength;
+      m4.compose(v.set(tr.x, 0, tr.z), q.setFromEuler(e.set(dz / d * u * 1.2, 0, -dx / d * u * 1.2)), sc.set(tr.s, tr.s * (0.9 + tr.r * 0.4), tr.s)); trees.setMatrixAt(tr.i, m4); }
+    for (const c of cdat) { const dx = c.x - ox, dz = c.z - oz, d = Math.hypot(dx, dz); if (d > r + 2 || d < 1) continue; const strength = power * clamp(1 - d / (o.waveFade ?? 1400)); const age = (r - d) / width;
+      const fly = age * 18 * strength; m4.compose(v.set(c.x + dx / d * fly, Math.sin(clamp(age, 0, 1) * Math.PI) * 4 * strength, c.z + dz / d * fly), q.setFromEuler(e.set(age * 3 * strength, c.ry + age * 2 * strength, 0)), sc.set(1, 1, 1)); cars.setMatrixAt(c.i, m4); }
+    roof.instanceMatrix.needsUpdate = trees.instanceMatrix.needsUpdate = cars.instanceMatrix.needsUpdate = true;
+  }
+  return { group: G, houses, trees: tdat, cars: cdat, wave, streetX, streetZ };
+}
+
+// ---------- expanding shockwave visual: dust wall ring + translucent shell + ground scorch ring ----------
+export function softTex(THREE, size = 64) {
+  const c = document.createElement('canvas'); c.width = c.height = size; const x = c.getContext('2d');
+  const g = x.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2); g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(0.5, 'rgba(255,255,255,0.45)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+  x.fillStyle = g; x.fillRect(0, 0, size, size); const t = new THREE.CanvasTexture(c); return t;
+}
+export function makeShockwave(THREE, o = {}) {
+  const G = new THREE.Group(); const R = rng(o.seed ?? 5); const n = o.n ?? 900;
+  // dust wall: sprites on a ring, billowing
+  const pos = new Float32Array(n * 3), seeds = Array.from({ length: n }, () => [R() * Math.PI * 2, R(), R(), R()]);
+  const geo = new THREE.BufferGeometry(); geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const dust = new THREE.Points(geo, new THREE.PointsMaterial({ map: softTex(THREE), color: o.dustColor ?? 0xd8cbb5, size: o.size ?? 26, transparent: true, opacity: 0.85, depthWrite: false, sizeAttenuation: true }));
+  dust.frustumCulled = false; G.add(dust);
+  // translucent expanding shell with bright rim
+  const shellMat = new THREE.ShaderMaterial({ transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide, uniforms: { op: { value: 0 }, tint: { value: new THREE.Color(o.color ?? 0xdff1ff) } },
+    vertexShader: 'varying vec3 vN; varying vec3 vV; void main(){ vec4 mv = modelViewMatrix*vec4(position,1.); vN = normalize(normalMatrix*normal); vV = normalize(-mv.xyz); gl_Position = projectionMatrix*mv; }',
+    fragmentShader: 'uniform float op; uniform vec3 tint; varying vec3 vN; varying vec3 vV; void main(){ float f = pow(1.0-abs(dot(vN,vV)), 3.0); gl_FragColor = vec4(tint*(0.15+1.6*f), op*(0.08+0.9*f)); }' });
+  const shell = new THREE.Mesh(new THREE.SphereGeometry(1, 64, 32, 0, Math.PI * 2, 0, o.hemi === false ? Math.PI : Math.PI / 2), shellMat); G.add(shell);
+  // ground ring flash
+  const ringMat = new THREE.MeshBasicMaterial({ map: softTex(THREE, 128), color: o.ringColor ?? 0xfff3d6, transparent: true, opacity: 0, depthWrite: false, blending: THREE.AdditiveBlending });
+  const ring = new THREE.Mesh(new THREE.RingGeometry(0.9, 1.0, 96), ringMat); ring.rotation.x = -Math.PI / 2; ring.position.y = 0.3; G.add(ring);
+  G.visible = false;
+  // r: current radius, age 0..1 life fraction, h: dust height scale
+  G.userData.set = (r, life, h = 1) => {
+    G.visible = life > 0 && life < 1; if (!G.visible) return;
+    const fade = 1 - life;
+    for (let i = 0; i < n; i++) { const [a, s1, s2, s3] = seeds[i]; const rr = r * (0.9 + s1 * 0.14) - s2 * r * 0.08 * life; const y = (s3 ** 1.6) * r * 0.16 * h * (0.4 + life);
+      pos[i * 3] = Math.cos(a) * rr; pos[i * 3 + 1] = y; pos[i * 3 + 2] = Math.sin(a) * rr; }
+    geo.attributes.position.needsUpdate = true; dust.material.opacity = (o.opacity ?? 0.9) * Math.min(1, fade * 1.6); dust.material.size = (o.size ?? 26) * (0.6 + r / (o.sizeR ?? 300));
+    shell.scale.setScalar(r); shellMat.uniforms.op.value = 0.9 * fade ** 1.5;
+    ring.scale.setScalar(r * 1.02); ringMat.opacity = 0.8 * fade;
+  };
+  return G;
 }

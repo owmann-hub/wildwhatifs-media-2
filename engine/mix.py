@@ -6,6 +6,7 @@ SR = 44100
 cue = json.load(open(sys.argv[1]))
 T = cue["total"]; N = int(T * SR)
 rng = np.random.default_rng(3)
+import music2
 mus = np.zeros((N, 2)); sfx = np.zeros((N, 2)); vo = np.zeros(N)
 
 def place(buf, x, t, gain=1.0, pan=0.0):
@@ -112,6 +113,10 @@ for ev in cue["events"]:
         if sr != SR: x = signal.resample_poly(x, SR, sr)
         place(vo, x, t, g)
     elif k == "music": place(mus, music(ev["start"], ev["end"], ev.get("key", 45), ev["ints"], ev.get("bpm", 100)), ev["start"], g)
+    elif k == "song": place(mus, music2.song(ev["start"], ev["end"], ev.get("key", 57), ev.get("bpm", 112), ev["ints"]), ev["start"], g)
+    elif k == "amb":
+        x = music2.amb(ev["kind"], ev["end"] - ev["start"]); f = int(min(1.0, (ev["end"] - ev["start"]) / 3) * SR)
+        x[:f] *= np.linspace(0, 1, f); x[-f:] *= np.linspace(1, 0, f); place(sfx, x, ev["start"], g)
     elif k == "boom": place(sfx, boom(ev.get("dur", 1.6)), t, g, p)
     elif k == "whoosh": place(sfx, whoosh(ev.get("dur", 0.7)), t - ev.get("dur", 0.7) * 0.6, g, p)
     elif k == "riser": place(sfx, riser(ev["dur"]), t - ev["dur"], g, p)

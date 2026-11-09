@@ -287,5 +287,18 @@
       "End with a one-line question to drive comments (e.g. 'Which hiccup would you survive?') and repeat it in the caption."
     ]
   },
-  "tiktok_manual_until": "2026-11-15"
+  "tiktok_manual_until": "2026-11-15",
+  "visual_rules": {
+    "approved": "2026-11-09 by owner (feedback: videos felt dry, characters dead, effects just a beam/light)",
+    "reference_test": "sneeze v3 (engine/scenes/sneeze3.js) is the template to copy patterns from",
+    "rules": [
+      "Characters must feel alive: use lib.js setFace() every frame (brows, eye size, mouth shape, pupil look direction) with a different expression for each beat, then life() for breathing, blinking, glances and idle sway. Characters react to every event (shock, cringe, look at the damage).",
+      "Add at least one other character who reacts: a neighbor, a pet, a family member. Use 3–6 short speech bubbles (drawBubble, 1–3 words, funny) anchored to heads, as in the reference videos ('Still good.', 'MY HAT!').",
+      "Big events are EXPANDING WAVES, never a beam or a single flash: makeShockwave() (dust wall ring, glowing shell, ground ring) plus a reaction in the world as the front passes (suburb.wave(): roofs rip off and tumble, trees flatten, cars slide). Each topic gets its own fitting spreading effect (a heat wave that browns lawns outward, a frost front, a crack network, a flood front, etc.).",
+      "Aerial/city shots use makeSuburb(): a block grid with streets both ways, gable roofs, lawns, driveways, trees, cars and pools. No plain boxes on a flat green plane.",
+      "Numbers sit on the left side as a small counter (drawSideCounter: small label, big number, italic comparison note like 'faster than sound'), placed under the title, as in the reference videos. Never a big box in the middle of the screen. Keep the right edge clear (platform buttons).",
+      "Sound: always a background song (music2.song: drums, bass, arp, lead that build with the intensity curve) plus environment beds (music2.amb: city/wind/space/fire) under the voice and SFX. Music must sit clearly under the voice (music_gain ≈ 0.38, amb gain ≈ 0.25–0.3).",
+      "Also export a no-music version for TikTok (music_gain 0), so the owner can add a trending sound in the app (copyrighted songs are never baked into the file)."
+    ]
+  }
 }

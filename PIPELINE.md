@@ -28,12 +28,15 @@ without asking them. Never publish a video that failed the quality check; skip t
    `pip install --break-system-packages kokoro-onnx soundfile scipy`; download `kokoro-v1.0.onnx` and `voices-v1.0.bin` from
    https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/ into engine/models/.
 5. Voice: `python3 tts.py <slug> af_heart 1.1` (script JSON in engine/scripts/<slug>.json). Time every beat from the real line durations.
-6. Write a NEW scene module `engine/scenes/<slug>.js` (use lib.js helpers: makePerson, makeVoxelHouse, makeEarth, makeBurst, makeSkyDome, drawTitle/drawCounter/drawCaption).
+6. Write a NEW scene module `engine/scenes/<slug>.js`. FOLLOW state.json `visual_rules` (owner-approved Nov 9) and copy patterns from `engine/scenes/sneeze3.js`:
+   setFace()+life() on every character every frame, a reacting side character with speech bubbles (drawBubble), expanding waves via makeShockwave()+makeSuburb().wave() instead of beams/flashes,
+   makeSuburb() for any town seen from above, drawSideCounter() for the numbers (never the old centre drawCounter box). Other helpers: makePerson, makeVoxelHouse, makeEarth, makeBurst, makeSkyDome, drawTitle, drawCaption.
    Vary setting, colours, character and camera from previous episodes (YouTube penalises templated, mass-produced content).
 7. Stills first: `W=540 H=960 ./sheet.sh <slug> t1,t2,...` → LOOK at the contact sheet; fix blown-out frames, subjects hidden behind the HUD (top 35 %),
    camera inside objects, empty frames. Iterate until every beat reads clearly.
 8. Full render at 720x1280: `W=720 H=1280 node render.mjs <slug> video ../videos/tmp.mp4 0 <TOTAL> 30` (≈25–30 min; run in background and poll).
-9. Sound: write scripts/<slug>_cue.json (see grow/sneeze/heat cues) → `python3 mix.py`; captions: `python3 captions.py <slug>`;
+9. Sound: write scripts/<slug>_cue.json (copy scripts/sneeze_cue2.json: a `song` event with an intensity curve + `amb` beds per location, music_gain 0.38) → `python3 mix.py cue out.wav`;
+   also mix a no-music version (music_gain 0) → `videos/<yyyy-mm-dd>-<slug>-nomusic.mp4` for the owner's manual TikTok posts (they add a trending sound in-app); captions: `python3 captions.py <slug>`;
    final: ffmpeg burn `ass=` + mux audio with loudnorm I=-14, then re-encode CRF 23 maxrate 7M to `videos/<yyyy-mm-dd>-<slug>.mp4`.
 10. QA: grab 8 frames from the final mp4 and look at them; check duration 30–38 s, the first second shows the cold-open image, and the last frame loops into the first, audio present (volumedetect max ≈ -1 dB).
 11. Commit + push the mp4, the new scene/script files and the updated state.json (append queue item with title, caption, hashtags, due times).
@@ -55,3 +58,5 @@ The owner wants all ~30 posts a month on every platform. Whenever a platform can
 which arrives on the owner's phone — must START with "📲 Your turn — post on <platform>", followed by the raw
 video download link, title, caption + hashtags and the AI-label reminder. Mark the status "manual_requested".
 Keep that mp4 for at least 7 days.
+For TikTok, if the queue item has `file_tiktok` (the no-music version), give THAT link and add the line
+"Add a trending sound in TikTok at ~15–20% volume (voice must stay clear)".
