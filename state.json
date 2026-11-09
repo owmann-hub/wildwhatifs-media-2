@@ -1,7 +1,17 @@
 {
   "timezone": "America/Buenos_Aires",
-  "schedule": {"instagram": "07:00", "youtube": "21:00", "tiktok": "23:05"},
-  "metricool": {"blogId": "7970179", "free_plan_posts_per_month": 20, "posts_used": {"2026-11": 1}},
+  "schedule": {
+    "instagram": "07:00",
+    "youtube": "21:00",
+    "tiktok": "23:05"
+  },
+  "metricool": {
+    "blogId": "7970179",
+    "free_plan_posts_per_month": 20,
+    "posts_used": {
+      "2026-11": 1
+    }
+  },
   "zapier_youtube_connection_id": "024e8223-8129-8378-ae74-36264dc05b99",
   "instagram_platformAccountId": "29226914170279337",
   "queue": [
@@ -12,9 +22,18 @@
       "title": "What If You Grew 10x Bigger Every 5 Seconds? 😳",
       "caption": "At 18,000 km tall you'd be taller than Earth is wide… and a stubbed toe would take almost 2 days to hurt 💀 Part 2: you shrink. Follow so you don't miss it.",
       "hashtags": "#whatif #whatifscenario #science #3danimation #giant #space #funfacts",
-      "youtube": {"status": "posted", "id": "MkeqbgAvJi8"},
-      "tiktok": {"status": "scheduled", "metricool_id": 421209953},
-      "instagram": {"status": "pending", "due": "2026-11-09T07:00"}
+      "youtube": {
+        "status": "posted",
+        "id": "MkeqbgAvJi8"
+      },
+      "tiktok": {
+        "status": "scheduled",
+        "metricool_id": 421209953
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-09T07:00"
+      }
     },
     {
       "slug": "sneeze",
@@ -23,9 +42,18 @@
       "title": "What If Every Sneeze Was 10x Stronger? 🤧",
       "caption": "Sneeze 3 breaks the sound barrier. Sneeze 7 launches you across the city. Granny still said bless you 👵 Which sneeze would you survive?",
       "hashtags": "#whatif #sneeze #physics #science #3danimation #funny #funfacts",
-      "youtube": {"status": "pending", "due": "2026-11-09T21:00"},
-      "tiktok": {"status": "pending", "due": "2026-11-09T23:05"},
-      "instagram": {"status": "pending", "due": "2026-11-10T07:00"}
+      "youtube": {
+        "status": "pending",
+        "due": "2026-11-09T21:00"
+      },
+      "tiktok": {
+        "status": "pending",
+        "due": "2026-11-09T23:05"
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-10T07:00"
+      }
     },
     {
       "slug": "heat",
@@ -34,19 +62,178 @@
       "title": "What If Your Body Temperature Never Stopped Rising? 🔥",
       "caption": "100°C: you boil your sweat. 1,538°C: steel melts. 5,500°C: you're as hot as the surface of the Sun… and mom still says bring a jacket 🧥",
       "hashtags": "#whatif #science #temperature #sun #3danimation #funfacts #physics",
-      "youtube": {"status": "pending", "due": "2026-11-10T21:00"},
-      "tiktok": {"status": "pending", "due": "2026-11-10T23:05"},
-      "instagram": {"status": "pending", "due": "2026-11-11T07:00"}
+      "youtube": {
+        "status": "pending",
+        "due": "2026-11-10T21:00"
+      },
+      "tiktok": {
+        "status": "pending",
+        "due": "2026-11-10T23:05"
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-11T07:00"
+      }
     }
   ],
   "premise_bank": [
-    "What if you shrank 10x every 5 seconds? (part 2 of grow)",
-    "What if your hiccups launched you 10 m higher each time? (teased in sneeze)",
-    "What if your voice got 10x louder with every word?",
+    "What if you stopped blinking for 24 hours?",
     "What if gravity only got stronger on YOU?",
-    "What if you ran 10x faster every second?",
-    "What if your burp was the loudest sound on Earth?",
-    "What if you stopped blinking for 24 hours?"
+    "What if your shadow came alive?"
   ],
-  "made": ["grow", "sneeze", "heat"]
+  "made": [
+    "grow",
+    "sneeze",
+    "heat"
+  ],
+  "plan_november": [
+    {
+      "post_date": "2026-11-11",
+      "slug": "shrink",
+      "premise": "What if you shrank 10x every 5 seconds?",
+      "notes": "Part 2 of grow. Counter: height (1.8 m → atom). Room → carpet jungle → dust mite → skin cell → DNA → atom. Look: switch to glowing x-ray/wireframe world as you get tiny. Payoff: you're now so small that... part 3 tease.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-12",
+      "slug": "hiccups",
+      "premise": "What if every hiccup launched you 10x higher?",
+      "notes": "Part 2 of sneeze. Counter: hiccup # + altitude. Backyard → rooftop → clouds → plane window (passenger waves) → space → passing the Moon. Rival angle: little sister counting hiccups. Ends 'hic' teaser.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-13",
+      "slug": "freeze",
+      "premise": "What if your body temperature never stopped dropping?",
+      "notes": "Part 2 of heat. Counter: °C down to −273. Drink freezes, frost spreads over street, −78 dry-ice snow, −183 air turns to liquid drops around you, −273 absolute zero. Mom offers hot cocoa.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-14",
+      "slug": "tunnel",
+      "premise": "What if you jumped into a tunnel through the Earth?",
+      "notes": "Journey. Counter: depth km + speed. Crust → mantle glow → core (5,000+°C) → you fly out the other side ~42 min later (no air resistance) and fall back. Tourist on the other side takes a selfie.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-15",
+      "slug": "abandoned",
+      "premise": "What if your house was left alone for 1,000 years?",
+      "notes": "Time-lapse (progress-bar counter like the 1000-years reference). Years 1→1,000: weeds, roof caves, trees through the floor, deer on Main St. Your phone still at 1%. NO TikTok (monthly quota).",
+      "tiktok": false
+    },
+    {
+      "post_date": "2026-11-16",
+      "slug": "moon",
+      "premise": "What if the Moon got 10x closer every 5 seconds?",
+      "notes": "Environment star. Counter: Moon distance (384,400 km →). Tides rise, Moon fills the sky, Roche limit: it breaks into a ring. Neighbor's telescope becomes useless (too close).",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-17",
+      "slug": "voice",
+      "premise": "What if your voice got 10x louder with every word?",
+      "notes": "Counter: decibels. Whisper → shout → jet engine → windows shatter → measurable earthquake → payoff: in space no one hears you (no air).",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-18",
+      "slug": "ocean",
+      "premise": "What if you dove to the deepest point of the ocean?",
+      "notes": "Journey. Counter: depth m + pressure. Reef → twilight zone → anglerfish glow → Titanic depth (3,800 m) → Challenger Deep ~10,900 m, ~1,000x surface pressure. Bioluminescence = glow polish.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-19",
+      "slug": "hair",
+      "premise": "What if your hair doubled in length every second?",
+      "notes": "Counter: hair length. Bathroom → fills house → spills down street → wraps the city → wraps the Earth around second 26. Barber faints.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-20",
+      "slug": "planets",
+      "premise": "What if you stood on every planet for 5 seconds?",
+      "notes": "Tour. Counter: planet + your weight + temperature. Mercury → Venus (crushing heat) → Mars → Jupiter (no ground) → Saturn → Uranus → Neptune. Same pose + selfie on each.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-21",
+      "slug": "mosquito",
+      "premise": "What if a mosquito grew 10x bigger every 5 seconds?",
+      "notes": "Environment star + funny rival. Counter: mosquito size. Ear buzz → cat-sized → car-sized → blocks the sun. You try the fly swatter every beat.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-22",
+      "slug": "nosleep",
+      "premise": "What if you never had to sleep again?",
+      "notes": "Time-lapse. Counter: days awake + 'extra hours gained'. Funny montage of what you do with 8 extra hours/day; payoff: you finish every series ever made. NO TikTok (monthly quota).",
+      "tiktok": false
+    },
+    {
+      "post_date": "2026-11-23",
+      "slug": "weight",
+      "premise": "What if your weight doubled every 5 seconds?",
+      "notes": "Counter: kg. Scale breaks → floor → you sink into the street → mantle → you become denser than a neutron star → black hole tease. Pizza delivery guy at the door.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-24",
+      "slug": "spin",
+      "premise": "What if the Earth spun 2x faster every minute?",
+      "notes": "Environment star (inverse of the 'Earth stopped spinning' reference, original take). Counter: day length + equator speed. Days flicker, winds, you get lighter at the equator, oceans bulge.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-25",
+      "slug": "spacejump",
+      "premise": "What if you jumped from the edge of space?",
+      "notes": "Journey. Counter: altitude + fall speed. 39 km capsule (real record jumps ~39–41 km), break the sound barrier, parachute over a city. Grandma on a lawn chair below.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-26",
+      "slug": "thanksgiving",
+      "premise": "What if your Thanksgiving dinner never stopped growing?",
+      "notes": "US Thanksgiving (Nov 26). Counter: turkey size. Plate → table → dining room → neighborhood → visible from space. Uncle still asks for seconds.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-27",
+      "slug": "burp",
+      "premise": "What if your burp was the loudest sound on Earth?",
+      "notes": "After Thanksgiving. Counter: decibels vs famous loud events (rockets, volcano). Shockwave rolls across town; payoff: the turkey from yesterday says thanks.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-28",
+      "slug": "blackhole",
+      "premise": "What if you swallowed a marble-sized black hole?",
+      "notes": "Counter: time left / mass. Inside-body x-ray visuals → house → planet. Keep it cartoon, no gore.",
+      "tiktok": true
+    },
+    {
+      "post_date": "2026-11-29",
+      "slug": "walkearth",
+      "premise": "What if you walked around the entire Earth?",
+      "notes": "Time-lapse journey. Counter: km walked + days (~40,000 km). Shoes worn out, crosses deserts, swims oceans (cheat with a raft). NO TikTok (monthly quota).",
+      "tiktok": false
+    },
+    {
+      "post_date": "2026-11-30",
+      "slug": "fasttime",
+      "premise": "What if time moved 10x faster every 5 seconds — just for you?",
+      "notes": "Month finale. Counter: time multiplier. World slows to a freeze, raindrops hang, light turns red, you see the stars move. Ends with a December tease.",
+      "tiktok": true
+    }
+  ],
+  "style_notes": [
+    "Counter variety: big pill (ours), elegant serif top-left with small sub-label (electrons/earth-spin/run-speed refs), progress bar for time-lapses (1000-years ref).",
+    "Add a tier badge under the counter that upgrades each beat (e.g. HUMAN → BUILDING → MOUNTAIN → PLANET), like the run-speed ref's rank tags.",
+    "Expressive character faces and reactions at each beat (Roblox school-story ref); one recurring side character per episode (neighbor, granny, mom, rival).",
+    "One-sentence caption per beat in italic serif OR word-by-word pop captions; never both at the same spot.",
+    "Endings loop or restart (run-speed ref restarts at 'Minute 0'), or tease the part 2 that is already in the plan.",
+    "Do not copy other creators' premises, characters or captions; take the format, not the content."
+  ]
 }

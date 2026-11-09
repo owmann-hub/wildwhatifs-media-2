@@ -19,7 +19,8 @@ without asking them. Never publish a video that failed the quality check; skip t
 
 ## Production run (one new video per day, keep the queue 2 days ahead)
 1. Clone this repo. If fewer than 2 queue items have youtube.status == "pending", make a new video dated the day after the last post_date.
-2. Pick the next premise from `premise_bank` (remove it when used). Optionally check one vidIQ outlier search for a fresher body-scale premise. Never repeat a made premise.
+2. Use the `plan_november` entry whose post_date is the next unfilled date (follow its premise and notes; mark it made). If there is no plan entry, pick from `premise_bank`. Read `style_notes` and apply them. Never repeat a made premise.
+   If `plan_november[*].tiktok` is false for that date, set the item's tiktok status to "skipped_quota" when queueing it.
 3. Script (30–48 s): hook in first 2 s, live counter that drives the story, 6–8 escalating beats with scale changes (street → city → planet/space),
    a human/funny angle in every beat, an open loop paid off at the end, close teasing part 2. ~2.6 spoken words/s. Fact-check numbers with a web search.
 4. Engine setup: `cd engine && npm i three@0.170 playwright@1.63`; Chrome at /usr/bin/google-chrome (else `npx playwright install chromium` and change executablePath);
