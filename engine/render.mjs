@@ -21,7 +21,7 @@ const browser = await chromium.launch({ executablePath: '/usr/bin/google-chrome'
 const page = await browser.newPage({ viewport: { width: 400, height: 400 } });
 page.on('console', m => console.log('[page]', m.text()));
 page.on('pageerror', e => console.log('[pageerror]', e.message));
-await page.goto(`http://localhost:${port}/page.html?scene=${scene}&w=${W}&h=${H}&dbg=${process.env.DBG||''}`);
+await page.goto(`http://localhost:${port}/page.html?scene=${scene}&w=${W}&h=${H}&dbg=${process.env.DBG||''}${process.env.VOFF!==undefined?'&voff='+process.env.VOFF:''}${process.env.NOHUD?'&nohud=1':''}`);
 await page.waitForFunction('window.ready === true', null, { timeout: 120000 });
 
 const toBuf = (d) => Buffer.from(d.split(',')[1], 'base64');
@@ -31,7 +31,7 @@ if (mode === 'stills') {
   for (const ts of a.split(',')) {
     const t = +ts;
     // warm up stateful sims by stepping to t
-    const d = await page.evaluate(([t]) => window.renderFrame(t, 0.88), [t]);
+    const d = await page.evaluate(([t, q]) => window.renderFrame(t, q), [t, +(process.env.Q || 0.88)]);
     fs.writeFileSync(path.join(outArg, `${scene}_${t.toFixed(2).padStart(6,'0')}.jpg`), toBuf(d));
   }
 } else {
