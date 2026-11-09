@@ -405,7 +405,19 @@ export function makeSuburb(THREE, o = {}) {
       const fly = age * 18 * strength; m4.compose(v.set(c.x + dx / d * fly, Math.sin(clamp(age, 0, 1) * Math.PI) * 4 * strength, c.z + dz / d * fly), q.setFromEuler(e.set(age * 3 * strength, c.ry + age * 2 * strength, 0)), sc.set(1, 1, 1)); cars.setMatrixAt(c.i, m4); }
     roof.instanceMatrix.needsUpdate = trees.instanceMatrix.needsUpdate = cars.instanceMatrix.needsUpdate = true;
   }
-  return { group: G, houses, trees: tdat, cars: cdat, wave, streetX, streetZ };
+  // night windows: small glowing quads on house fronts (lit when o.night)
+  let winMesh = null;
+  if (o.windows) { const wl = []; houses.forEach(hs => { const n = hs.h > 5 ? 4 : 2; for (let k = 0; k < n; k++) { if (R() < 0.3) continue; const fx = (k % 2 ? 0.25 : -0.25) * hs.w, fy = (k < 2 ? 0.45 : 0.75) * hs.h; wl.push([hs, fx, fy, R()]); } });
+    winMesh = new THREE.InstancedMesh(new THREE.PlaneGeometry(1.6, 1.1), new THREE.MeshBasicMaterial({ color: 0xffffff, toneMapped: false }), wl.length);
+    wl.forEach(([hs, fx, fy, r], i) => { const c = Math.cos(hs.rot), sn = Math.sin(hs.rot); const off = hs.d / 2 + 0.03; const x = hs.x + fx * c + off * sn, z = hs.z - fx * sn + off * c;
+      m4.compose(v.set(x, fy, z), q.setFromEuler(e.set(0, hs.rot, 0)), sc.set(1, 1, 1)); winMesh.setMatrixAt(i, m4); winMesh.setColorAt(i, col.setHSL(0.1 + r * 0.04, 0.8, 0.55 + r * 0.2)); });
+    G.add(winMesh); }
+  // heat front: lawns brown and trees scorch inside radius r (call every frame with growing r)
+  const lawnBase = lots.map(l => [0.24 + l.r3 * 0.06, 0.38 + l.r2 * 0.15, 0.30 + l.r * 0.1]);
+  function tint(ox, oz, r, width = 60) { lots.forEach((l, i) => { const d = Math.hypot(l.x - ox, l.z - oz); const u = clamp((r - d) / width); const b = lawnBase[i];
+      col.setHSL(lerp(b[0], 0.08, u), lerp(b[1], 0.45, u), lerp(b[2], 0.22, u)); lawn.setColorAt(i, col); }); lawn.instanceColor.needsUpdate = true;
+    tdat.forEach(tr => { const d = Math.hypot(tr.x - ox, tr.z - oz); const u = clamp((r - d) / width); col.setHSL(lerp(0.25 + tr.r * 0.08, 0.05, u), lerp(0.45, 0.7, u), lerp(0.22 + tr.r * 0.12, 0.3, u)); trees.setColorAt(tr.i, col); }); trees.instanceColor.needsUpdate = true; }
+  return { group: G, houses, trees: tdat, cars: cdat, wave, tint, winMesh, streetX, streetZ };
 }
 
 // ---------- expanding shockwave visual: dust wall ring + translucent shell + ground scorch ring ----------
@@ -440,5 +452,72 @@ export function makeShockwave(THREE, o = {}) {
     shell.scale.setScalar(r); shellMat.uniforms.op.value = 0.9 * fade ** 1.5;
     ring.scale.setScalar(r * 1.02); ringMat.opacity = 0.8 * fade;
   };
+  return G;
+}
+
+// ---------- title that types in word by word, holds, then slides out (owner rule Nov 9) ----------
+export function drawTitleTimed(ctx, W, H, lines, t, accent = '#ffd23f', o = {}) {
+  const t0 = o.start ?? 0.6, outAt = o.outAt ?? 4.3, outDur = 0.45, wps = o.wps ?? 9; if (t < t0 || t > outAt + outDur) return;
+  const words = []; lines.forEach((ln, li) => ln.text.split(' ').forEach(w => words.push({ w, li, accent: ln.accent, size: ln.size })));
+  const shown = Math.floor((t - t0) * wps) + 1; const ou = clamp((t - outAt) / outDur);
+  ctx.save(); ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.globalAlpha = 1 - ou; ctx.translate(0, -ou * 160);
+  const y0 = H * (o.y ?? 0.155);
+  lines.forEach((ln, li) => { const s = fitText(ctx, ln.text, W * 0.88, ln.size || 84); const full = ctx.measureText(ln.text).width; let x = (W - full) / 2; const y = y0 + li * s * 1.08;
+    const ws = words.filter(w => w.li === li); const before = words.indexOf(ws[0]);
+    ws.forEach((w, k) => { const idx = before + k; const tw = ctx.measureText(w.w + ' ').width; if (idx < shown) { const age = (t - t0) - idx / wps; const pop = age < 0.12 ? 0.7 + 0.3 * easeOut(age / 0.12) : 1;
+        ctx.save(); ctx.translate(x + tw / 2, y); ctx.scale(pop, pop); ctx.shadowColor = 'rgba(0,0,0,0.6)'; ctx.shadowBlur = 18; ctx.shadowOffsetY = 6; ctx.font = `900 ${s}px ${FONT}`;
+        strokeText(ctx, w.w, -tw / 2, 0, ln.accent ? accent : '#ffffff', 'rgba(0,0,0,0.92)', s * 0.16); ctx.restore(); } x += tw; }); });
+  ctx.restore();
+}
+// big punch word for the cold open
+export function drawPunch(ctx, W, H, text, age, o = {}) { const dur = o.dur ?? 0.6; if (age < 0 || age > dur) return; const s = o.size ?? 190;
+  const pop = age < 0.1 ? 1.4 - 0.4 * easeOut(age / 0.1) : 1; ctx.save(); ctx.globalAlpha = clamp((dur - age) / 0.1); ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.translate(W / 2, H * (o.y ?? 0.45)); ctx.rotate(-0.06); ctx.scale(pop, pop);
+  ctx.font = `900 ${s}px ${FONT}`; ctx.shadowColor = 'rgba(0,0,0,0.7)'; ctx.shadowBlur = 30; strokeText(ctx, text, 0, 0, o.color ?? '#ffffff', '#000', s * 0.14); ctx.restore(); }
+// small name tag above a character (first appearance only)
+export function drawTag(ctx, x, y, text, age, o = {}) { const dur = o.dur ?? 2.2; if (age < 0 || age > dur) return; const a = clamp(Math.min(age / 0.15, (dur - age) / 0.3));
+  ctx.save(); ctx.globalAlpha = a; ctx.font = `900 34px ${FONT}`; const w = ctx.measureText(text).width + 36; const cx = clamp(x, w / 2 + 20, 1060 - w / 2);
+  ctx.fillStyle = o.bg ?? '#ffd23f'; ctx.beginPath(); ctx.roundRect(cx - w / 2, y - 26, w, 52, 14); ctx.fill(); ctx.fillStyle = '#111'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(text, cx, y + 1); ctx.restore(); }
+
+// ---------- cheap instanced crowd: bystanders walk in, stop, raise glowing phones ----------
+export function makeCrowd(THREE, n, o = {}) {
+  const R = rng(o.seed ?? 31); const G = new THREE.Group();
+  const bodyG = new THREE.CylinderGeometry(0.2, 0.17, 1.15, 7).translate(0, 0.95, 0), headG = new THREE.IcosahedronGeometry(0.15, 1).translate(0, 1.7, 0), legG = new THREE.BoxGeometry(0.28, 0.42, 0.18).translate(0, 0.21, 0);
+  const body = new THREE.InstancedMesh(bodyG, new THREE.MeshStandardMaterial({ roughness: 0.8, flatShading: true }), n);
+  const head = new THREE.InstancedMesh(headG, new THREE.MeshStandardMaterial({ roughness: 0.7, flatShading: true }), n);
+  const legs = new THREE.InstancedMesh(legG, new THREE.MeshStandardMaterial({ color: 0x2b2f3a, roughness: 0.9 }), n);
+  const phone = new THREE.InstancedMesh(new THREE.BoxGeometry(0.09, 0.16, 0.02), new THREE.MeshBasicMaterial({ color: 0xcfe6ff }), n);
+  const shirts = [0xc94f4f, 0x3a7bd5, 0xf2c14e, 0x4caf7a, 0x8e5bb5, 0xeeeeee, 0x333333, 0xf28c38, 0x2bb3b1], skins = [0xf1c6a5, 0xd8a47e, 0xb5835a, 0x8d5a3b, 0x5c3a24];
+  const col = new THREE.Color(), m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), v = new THREE.Vector3(), s1 = new THREE.Vector3(1, 1, 1), e = new THREE.Euler();
+  const P = []; for (let i = 0; i < n; i++) { const tgt = o.target(R, i), src = o.source ? o.source(R, i, tgt) : [tgt[0] + (R() - 0.5) * 30, tgt[1] + (R() - 0.5) * 30];
+    P.push({ tgt, src, arrive: (o.arrive ? o.arrive(R, i) : R() * 10), speed: 1.3 + R() * 0.6, sc: 0.85 + R() * 0.25, ph: R() * 6.28 });
+    body.setColorAt(i, col.set(shirts[Math.floor(R() * shirts.length)])); head.setColorAt(i, col.set(skins[Math.floor(R() * skins.length)])); }
+  G.add(body, head, legs, phone); body.castShadow = true; [body, head, legs, phone].forEach(m => m.frustumCulled = false);
+  G.userData.update = (t, lookAt = [0, 0]) => {
+    for (let i = 0; i < n; i++) { const p = P[i]; const d = Math.hypot(p.tgt[0] - p.src[0], p.tgt[1] - p.src[1]); const walkT = d / p.speed; const t0 = p.arrive - walkT; let u = clamp((t - t0) / walkT);
+      const x = lerp(p.src[0], p.tgt[0], u), z = lerp(p.src[1], p.tgt[1], u); const walking = u > 0 && u < 1; const vis = t > t0 - 0.01 || (o.alwaysVisible);
+      const ry = walking ? Math.atan2(p.tgt[0] - p.src[0], p.tgt[1] - p.src[1]) : Math.atan2(lookAt[0] - x, lookAt[1] - z);
+      const bob = walking ? Math.abs(Math.sin(t * 9 + p.ph)) * 0.06 : 0.01 * Math.sin(t * 2 + p.ph);
+      q.setFromEuler(e.set(0, ry, walking ? 0 : 0.03 * Math.sin(t + p.ph))); const sc = vis ? p.sc : 0.0001;
+      m4.compose(v.set(x, bob, z), q, s1.set(sc, sc, sc)); body.setMatrixAt(i, m4); head.setMatrixAt(i, m4); legs.setMatrixAt(i, m4);
+      const film = !walking && u >= 1 && (o.film ? o.film(t, i) : true);
+      if (film) { v.set(x + Math.sin(ry) * 0.32 * sc, 1.55 * sc + bob, z + Math.cos(ry) * 0.32 * sc); m4.compose(v, q, s1.set(sc, sc, sc)); } else m4.compose(v.set(0, -10, 0), q, s1.set(0.0001, 0.0001, 0.0001));
+      phone.setMatrixAt(i, m4); }
+    body.instanceMatrix.needsUpdate = head.instanceMatrix.needsUpdate = legs.instanceMatrix.needsUpdate = phone.instanceMatrix.needsUpdate = true;
+  };
+  return G;
+}
+// cars that actually drive along a straight road (x axis), stop when told
+export function makeTraffic(THREE, n, o = {}) {
+  const R = rng(o.seed ?? 41); const G = new THREE.Group(); const cars = [];
+  const pal = [0xd8342c, 0x2d6fd6, 0xf2f2f2, 0x1d1f22, 0x9aa3ad, 0xe0b84a, 0x3c7a4a];
+  for (let i = 0; i < n; i++) { const g = new THREE.Group(); const m = new THREE.MeshStandardMaterial({ color: pal[i % pal.length], roughness: 0.35, metalness: 0.2, flatShading: true });
+    const b = new THREE.Mesh(new THREE.BoxGeometry(4.2, 0.8, 1.8), m); b.position.y = 0.65; g.add(b); const tp = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.6, 1.6), m); tp.position.set(-0.2, 1.3, 0); g.add(tp);
+    const hl = new THREE.MeshBasicMaterial({ color: 0xfff2c4 }); for (const s of [-0.6, 0.6]) { const l = new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.16, 0.3), hl); l.position.set(2.11, 0.75, s); g.add(l); }
+    const tl = new THREE.MeshBasicMaterial({ color: 0xff2a2a }); for (const s of [-0.6, 0.6]) { const l = new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.16, 0.3), tl); l.position.set(-2.11, 0.75, s); g.add(l); }
+    g.traverse(x => { if (x.isMesh) x.castShadow = true; }); G.add(g);
+    const dir = i % 2 ? 1 : -1; cars.push({ g, dir, lane: o.z + (dir > 0 ? -1.8 : 1.8), x0: (R() - 0.5) * (o.span ?? 160), v: 9 + R() * 5 }); }
+  // stopAt(t): time when cars brake to a halt (people get out to look)
+  G.userData.update = (t, stopAt = 1e9) => { const span = o.span ?? 160; for (const c of cars) { const tt = t < stopAt ? t : stopAt + Math.min(t - stopAt, 1.2) * (1 - Math.min(t - stopAt, 1.2) / 2.4);
+      let x = c.x0 + c.dir * c.v * tt; x = ((x + span / 2) % span + span) % span - span / 2; c.g.position.set(x, 0, c.lane); c.g.rotation.y = c.dir > 0 ? 0 : Math.PI; } };
   return G;
 }

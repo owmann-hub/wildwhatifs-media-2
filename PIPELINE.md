@@ -28,7 +28,7 @@ without asking them. Never publish a video that failed the quality check; skip t
    `pip install --break-system-packages kokoro-onnx soundfile scipy`; download `kokoro-v1.0.onnx` and `voices-v1.0.bin` from
    https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/ into engine/models/.
 5. Voice: `python3 tts.py <slug> af_heart 1.1` (script JSON in engine/scripts/<slug>.json). Time every beat from the real line durations.
-6. Write a NEW scene module `engine/scenes/<slug>.js`. FOLLOW state.json `visual_rules` (owner-approved Nov 9) and copy patterns from `engine/scenes/sneeze3.js`:
+6. Write a NEW scene module `engine/scenes/<slug>.js`. FOLLOW state.json `visual_rules` (owner-approved Nov 9) and copy patterns from `engine/scenes/sneeze3.js` and `engine/scenes/heat3.js` (title in/out, POV start/end, crowd, traffic, Mittens, heat fronts, side counter with place/time):
    setFace()+life() on every character every frame, a reacting side character with speech bubbles (drawBubble), expanding waves via makeShockwave()+makeSuburb().wave() instead of beams/flashes,
    makeSuburb() for any town seen from above, drawSideCounter() for the numbers (never the old centre drawCounter box). Other helpers: makePerson, makeVoxelHouse, makeEarth, makeBurst, makeSkyDome, drawTitle, drawCaption.
    Vary setting, colours, character and camera from previous episodes (YouTube penalises templated, mass-produced content).
