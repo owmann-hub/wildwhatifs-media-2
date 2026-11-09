@@ -47,12 +47,17 @@
       "caption": "Sneeze 3 breaks the sound barrier. Sneeze 7 launches you across the city. Granny still said bless you 👵 Which sneeze would you survive?",
       "hashtags": "#whatif #sneeze #physics #science #3danimation #funny #funfacts",
       "youtube": {
-        "status": "pending",
-        "due": "2026-11-09T21:00"
+        "status": "posted",
+        "id": "2f7V9mG-kag",
+        "url": "https://www.youtube.com/shorts/2f7V9mG-kag",
+        "posted_at": "2026-11-09T20:58"
       },
       "tiktok": {
-        "status": "manual",
-        "due": "2026-11-09T23:05"
+        "status": "manual_requested",
+        "due": "2026-11-09T23:05",
+        "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
+        "file": "videos/2026-11-sneeze-nomusic.mp4",
+        "keep_until": "2026-11-16"
       },
       "instagram": {
         "status": "pending",
