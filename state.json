@@ -92,6 +92,34 @@
         "due": "2026-11-11T07:00"
       },
       "style": "A_explainer"
+    },
+    {
+      "slug": "shrink",
+      "post_date": "2026-11-11",
+      "file": "videos/2026-11-shrink.mp4",
+      "title": "What If You Never Stopped Shrinking? 🔬",
+      "caption": "18 cm: your cat is the size of an elephant. 180 microns: a dust mite stares you down. 0.2 nm: you're the size of a single atom 😳 How small would you go?",
+      "hashtags": "#whatif #science #microscopic #atoms #3danimation #funfacts #physics",
+      "youtube": {
+        "status": "pending",
+        "due": "2026-11-11T21:00"
+      },
+      "tiktok": {
+        "status": "manual",
+        "due": "2026-11-11T23:05",
+        "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
+        "file": "videos/2026-11-shrink-nomusic.mp4",
+        "keep_until": "2026-11-18"
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-12T07:00"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-shrink-nomusic.mp4",
+      "version": "v3 visual standard + Nov 9 hook_rules (35.3 s, cold open on the atom moment, looping ending)",
+      "duration_s": 35.3,
+      "notes": "Part 2 of grow. Facts checked: house cat ~25 cm at shoulder (x10 = elephant), dust mite 0.25-0.3 mm, corneocyte (skin flake) ~30-40 um, E. coli ~2 um, visible light 380-700 nm, DNA helix ~2 nm wide, atoms ~0.1-0.5 nm. Hero 'Chris' voice clips not used: audio/voices/hero_chris/ is not in the repo (gitignored) and the single library mp3 in fetched/ is unlabeled, so lines could not be identified without listening; speech bubbles carry the hero's reactions instead."
     }
   ],
   "premise_bank": [
@@ -102,7 +130,8 @@
   "made": [
     "grow",
     "sneeze",
-    "heat"
+    "heat",
+    "shrink"
   ],
   "plan_november": [
     {
@@ -111,7 +140,8 @@
       "premise": "What if you shrank 10x every 5 seconds?",
       "notes": "Part 2 of grow. Counter: height (1.8 m → atom). Room → carpet jungle → dust mite → skin cell → DNA → atom. Look: switch to glowing x-ray/wireframe world as you get tiny. Payoff: you're now so small that... part 3 tease.",
       "tiktok": true,
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "made": "2026-11-10"
     },
     {
       "post_date": "2026-11-12",
