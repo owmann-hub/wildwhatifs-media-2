@@ -62,8 +62,11 @@
         "posted_at": "2026-11-09T23:05 (owner confirmed 23:37)"
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-10T07:00"
+        "status": "posted",
+        "due": "2026-11-10T07:00",
+        "media_id": "18644528320050018",
+        "permalink": "https://www.instagram.com/reel/DfjpG5wDrYG/",
+        "posted_at": "2026-11-10T07:01"
       },
       "style": "A_explainer",
       "file_tiktok": "videos/2026-11-sneeze-nomusic.mp4",
