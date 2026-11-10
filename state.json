@@ -80,12 +80,17 @@
       "caption": "100°C: you boil your sweat. 1,538°C: steel melts. 5,500°C: you're as hot as the surface of the Sun… and mom still says bring a jacket 🧥",
       "hashtags": "#whatif #science #temperature #sun #3danimation #funfacts #physics",
       "youtube": {
-        "status": "pending",
-        "due": "2026-11-10T21:00"
+        "status": "posted",
+        "id": "dFJFxw1hvh4",
+        "url": "https://www.youtube.com/shorts/dFJFxw1hvh4",
+        "posted_at": "2026-11-10T20:59"
       },
       "tiktok": {
-        "status": "manual",
-        "due": "2026-11-10T23:05"
+        "status": "manual_requested",
+        "due": "2026-11-10T23:05",
+        "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
+        "file": "videos/2026-11-heat-nomusic.mp4",
+        "keep_until": "2026-11-17"
       },
       "instagram": {
         "status": "pending",
