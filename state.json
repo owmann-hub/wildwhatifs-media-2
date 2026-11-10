@@ -147,41 +147,41 @@
     },
     {
       "post_date": "2026-11-12",
-      "slug": "hiccups",
-      "premise": "What if every hiccup launched you 10x higher?",
-      "notes": "Part 2 of sneeze. Counter: hiccup # + altitude. Backyard → rooftop → clouds → plane window (passenger waves) → space → passing the Moon. Rival angle: little sister counting hiccups. Ends 'hic' teaser.",
+      "slug": "gravity2x",
+      "premise": "What if gravity doubled for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
       "style": "A_explainer"
     },
     {
       "post_date": "2026-11-13",
-      "slug": "freeze",
-      "premise": "What if your body temperature never stopped dropping?",
-      "notes": "Part 2 of heat. Counter: °C down to −273. Drink freezes, frost spreads over street, −78 dry-ice snow, −183 air turns to liquid drops around you, −273 absolute zero. Mom offers hot cocoa.",
+      "slug": "sunoff",
+      "premise": "What if the Sun switched off for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
       "style": "A_explainer"
     },
     {
       "post_date": "2026-11-14",
-      "slug": "tunnel",
-      "premise": "What if you jumped into a tunnel through the Earth?",
-      "notes": "Journey. Counter: depth km + speed. Crust → mantle glow → core (5,000+°C) → you fly out the other side ~42 min later (no air resistance) and fall back. Tourist on the other side takes a selfie.",
+      "slug": "friction",
+      "premise": "What if friction disappeared for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
       "style": "A_explainer"
     },
     {
       "post_date": "2026-11-15",
-      "slug": "abandoned",
-      "premise": "What if your house was left alone for 1,000 years?",
-      "notes": "Time-lapse (progress-bar counter like the 1000-years reference). Years 1→1,000: weeds, roof caves, trees through the floor, deer on Main St. Your phone still at 1%. NO TikTok (monthly quota).",
-      "tiktok": false,
+      "slug": "water",
+      "premise": "What if all the water on Earth vanished for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
+      "tiktok": true,
       "style": "A_explainer"
     },
     {
       "post_date": "2026-11-16",
-      "slug": "moon",
-      "premise": "What if the Moon got 10x closer every 5 seconds?",
-      "notes": "Environment star. Counter: Moon distance (384,400 km →). Tides rise, Moon fills the sky, Roche limit: it breaks into a ring. Neighbor's telescope becomes useless (too close).",
+      "slug": "jump",
+      "premise": "What if everyone on Earth jumped at the same time?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
       "style": "A_explainer"
     },
@@ -189,16 +189,15 @@
       "post_date": "2026-11-17",
       "slug": "asteroid",
       "premise": "What if the asteroid had missed the dinosaurs?",
-      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
-      "style": "A_explainer",
-      "replaced": "voice"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-18",
-      "slug": "ocean",
-      "premise": "What if you dove to the deepest point of the ocean?",
-      "notes": "Journey. Counter: depth m + pressure. Reef → twilight zone → anglerfish glow → Titanic depth (3,800 m) → Challenger Deep ~10,900 m, ~1,000x surface pressure. Bioluminescence = glow polish.",
+      "slug": "magnet",
+      "premise": "What if Earth's magnetic field switched off for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
       "style": "A_explainer"
     },
@@ -206,16 +205,15 @@
       "post_date": "2026-11-19",
       "slug": "moon-never",
       "premise": "What if the Moon never formed?",
-      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
-      "style": "A_explainer",
-      "replaced": "hair"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-20",
-      "slug": "planets",
-      "premise": "What if you stood on every planet for 5 seconds?",
-      "notes": "Tour. Counter: planet + your weight + temperature. Mercury → Venus (crushing heat) → Mars → Jupiter (no ground) → Saturn → Uranus → Neptune. Same pose + selfie on each.",
+      "slug": "glass",
+      "premise": "What if all the glass on Earth disappeared for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
       "style": "A_explainer"
     },
@@ -223,51 +221,47 @@
       "post_date": "2026-11-21",
       "slug": "rings",
       "premise": "What if Earth had rings like Saturn?",
-      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
-      "style": "A_explainer",
-      "replaced": "mosquito"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-22",
       "slug": "humans-gone",
       "premise": "What if humans disappeared tomorrow?",
-      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
-      "tiktok": false,
-      "style": "A_explainer",
-      "replaced": "nosleep"
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
+      "tiktok": true,
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-23",
       "slug": "pangaea",
       "premise": "What if the continents never split apart?",
-      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
-      "style": "A_explainer",
-      "replaced": "weight"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-24",
       "slug": "stopspin",
       "premise": "What if Earth stopped spinning for 1 second?",
-      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
-      "style": "A_explainer",
-      "replaced": "spin"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-25",
-      "slug": "spacejump",
-      "premise": "What if you jumped from the edge of space?",
-      "notes": "Journey. Counter: altitude + fall speed. 39 km capsule (real record jumps ~39–41 km), break the sound barrier, parachute over a city. Grandma on a lawn chair below.",
+      "slug": "power",
+      "premise": "What if all electricity stopped for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
       "style": "A_explainer"
     },
     {
       "post_date": "2026-11-26",
-      "slug": "thanksgiving",
-      "premise": "What if your Thanksgiving dinner never stopped growing?",
-      "notes": "US Thanksgiving (Nov 26). Counter: turkey size. Plate → table → dining room → neighborhood → visible from space. Uncle still asks for seconds.",
+      "slug": "food",
+      "premise": "What if all the food on Earth doubled in size for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
       "style": "A_explainer"
     },
@@ -275,16 +269,15 @@
       "post_date": "2026-11-27",
       "slug": "iceage",
       "premise": "What if the Ice Age never ended?",
-      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
-      "style": "A_explainer",
-      "replaced": "burp"
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-28",
-      "slug": "blackhole",
-      "premise": "What if you swallowed a marble-sized black hole?",
-      "notes": "Counter: time left / mass. Inside-body x-ray visuals → house → planet. Keep it cartoon, no gore.",
+      "slug": "slowlight",
+      "premise": "What if light slowed to walking speed for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
       "style": "A_explainer"
     },
@@ -292,16 +285,15 @@
       "post_date": "2026-11-29",
       "slug": "drain",
       "premise": "What if the oceans drained 1 meter every second?",
-      "notes": "Owner-picked 'nothing bad happened to Earth' style (ref Nov 9): cinematic, a big rewinding/forward YEARS counter top-left, planet-scale beats, sky/landscape start that returns at the end (loop). Still apply visual_rules.",
-      "tiktok": false,
-      "style": "A_explainer",
-      "replaced": "walkearth"
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
+      "tiktok": true,
+      "style": "A_explainer"
     },
     {
       "post_date": "2026-11-30",
-      "slug": "fasttime",
-      "premise": "What if time moved 10x faster every 5 seconds — just for you?",
-      "notes": "Month finale. Counter: time multiplier. World slows to a freeze, raindrops hang, light turns red, you see the stars move. Ends with a December tease.",
+      "slug": "timefreeze",
+      "premise": "What if time froze for everyone but you for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
       "tiktok": true,
       "style": "A_explainer"
     }
@@ -410,5 +402,19 @@
   "tests": {
     "color_grade_per_chapter": "TEST only on a few videos (each chapter gets its own colour tone); compare views; NOT part of the norm.",
     "music_only": "1–2 videos this month with no narrator (music + small italic one-liners, like the dig / nothing-bad references). Voice stays the default."
+  },
+  "format_v4": {
+    "approved": "2026-11-10 by owner. SUPERSEDES hook_rules/visual_rules wherever they conflict.",
+    "why": "Own data: viewers give ~22 s (YouTube 23 s avg, Instagram 22 s) on 47 s videos. Reference account @man_ia_c (297K followers, 5M likes, 24 videos): its hits are all 'What if <basic thing> disappeared for 5 seconds?' (19M, 14.1M, 6M, 5.2M, 4.2M) with one fixed look.",
+    "rules": [
+      "PREMISE: happens to the WHOLE WORLD (not one person), with a short time limit: 'What if <something basic> <vanished/doubled/stopped> for 5 seconds?'. History premises ('what if the asteroid missed') are also fine.",
+      "COUNTER = COUNTDOWN: open on a calm, detailed everyday scene with '<THING> DISAPPEARS IN 0:05.000' ticking down in milliseconds on the left; at zero the event happens; then a second counter runs '0:01 … 0:05' through the consequences, one clear consequence per second, each bigger in scale (street → city → planet). Then 'it comes back' and the aftermath.",
+      "HOOK (owner): 2.5–3 s, shown clearly and slightly slowed — the most extreme consequence — with one teaser narrator line, then a '<< N SECONDS EARLIER' card, then the calm start. Never a 0.5 s flash.",
+      "LENGTH: 25–30 s for YouTube/Instagram/TikTok. (A 61–70 s TikTok cut only once the account nears 10K followers and the owner confirms the rewards programme is open to him.)",
+      "ONE LOCKED LOOK for at least 10 videos: same title style and position, same countdown style, same calm-opening structure, same music family, city = engine/scenes/nyc.js style (street grid, towers with windows, taxis, crowds, park, rivers). Do not restyle between videos.",
+      "LESS TEXT: title, countdown, word-by-word captions. At most 2 speech bubbles and 1 punch caption per video. No step-by-step 'stage 1…7' escalation.",
+      "KEEP from before: detailed city, crowds, expanding waves, background song + ambience, loop ending (last shot flows into the hook), Mittens as a small recurring background detail (never the focus), narrator af_heart, hero voice clips only in gaps.",
+      "SUBSCRIBE: no 'follow for part 2' line. (Owner is choosing between: viewers pick tomorrow's what-if in comments / crediting the winner / Mittens survival counter — do not add until he picks.)"
+    ]
   }
 }
