@@ -91,7 +91,9 @@
         "status": "pending",
         "due": "2026-11-11T07:00"
       },
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-heat-nomusic.mp4",
+      "version": "v3 (new visual standard; owner said he likes it, Nov 10)"
     },
     {
       "slug": "shrink",
