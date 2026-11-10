@@ -53,12 +53,13 @@
         "posted_at": "2026-11-09T20:58"
       },
       "tiktok": {
-        "status": "posted_manual",
+        "status": "posted_manually",
         "due": "2026-11-09T23:05",
         "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
         "file": "videos/2026-11-sneeze-nomusic.mp4",
         "keep_until": "2026-11-16",
-        "confirmed_by_owner": "2026-11-10"
+        "confirmed_by_owner": "2026-11-10",
+        "posted_at": "2026-11-09T23:05 (owner confirmed 23:37)"
       },
       "instagram": {
         "status": "pending",
