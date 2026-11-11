@@ -1,459 +1,482 @@
 {
- "timezone": "America/Buenos_Aires",
- "schedule": {
-  "instagram": "07:00",
-  "youtube": "21:00",
-  "tiktok": "23:05"
- },
- "metricool": {
-  "blogId": "7970179",
-  "free_plan_posts_per_month": 20,
-  "posts_used": {
-   "2026-11": 1
-  }
- },
- "zapier_youtube_connection_id": "024e8223-8129-8378-ae74-36264dc05b99",
- "instagram_platformAccountId": "29226914170279337",
- "queue": [
-  {
-   "slug": "grow",
-   "post_date": "2026-11-08",
-   "file": "videos/2026-11-grow.mp4",
-   "title": "What If You Grew 10x Bigger Every 5 Seconds? 😳",
-   "caption": "At 18,000 km tall you'd be taller than Earth is wide… and a stubbed toe would take almost 2 days to hurt 💀 Part 2: you shrink. Follow so you don't miss it.",
-   "hashtags": "#whatif #whatifscenario #science #3danimation #giant #space #funfacts",
-   "youtube": {
-    "status": "posted",
-    "id": "MkeqbgAvJi8"
-   },
-   "tiktok": {
-    "status": "posted",
-    "metricool_id": 421209953,
-    "url": "https://www.tiktok.com/@wild.what.if/video/7705987049412693255"
-   },
-   "instagram": {
-    "status": "posted",
-    "media_id": "17990144022082114",
-    "permalink": "https://www.instagram.com/reel/DfhETBuApuC/",
-    "posted_at": "2026-11-09T07:00"
-   },
-   "style": "A_explainer"
+  "timezone": "America/Buenos_Aires",
+  "schedule": {
+    "instagram": "07:00",
+    "youtube": "21:00",
+    "tiktok": "23:05"
   },
-  {
-   "slug": "sneeze",
-   "post_date": "2026-11-09",
-   "file": "videos/2026-11-sneeze.mp4",
-   "title": "What If Every Sneeze Was 10x Stronger? 🤧",
-   "caption": "Sneeze 3 breaks the sound barrier. Sneeze 7 launches you across the city. Granny still said bless you 👵 Which sneeze would you survive?",
-   "hashtags": "#whatif #sneeze #physics #science #3danimation #funny #funfacts",
-   "youtube": {
-    "status": "posted",
-    "id": "2f7V9mG-kag",
-    "url": "https://www.youtube.com/shorts/2f7V9mG-kag",
-    "posted_at": "2026-11-09T20:58"
-   },
-   "tiktok": {
-    "status": "posted_manually",
-    "due": "2026-11-09T23:05",
-    "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
-    "file": "videos/2026-11-sneeze-nomusic.mp4",
-    "keep_until": "2026-11-16",
-    "confirmed_by_owner": "2026-11-10",
-    "posted_at": "2026-11-09T23:05 (owner confirmed 23:37)"
-   },
-   "instagram": {
-    "status": "posted",
-    "due": "2026-11-10T07:00",
-    "media_id": "18644528320050018",
-    "permalink": "https://www.instagram.com/reel/DfjpG5wDrYG/",
-    "posted_at": "2026-11-10T07:01"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-sneeze-nomusic.mp4",
-   "version": "v3 (new visual standard, owner-approved Nov 9)"
+  "metricool": {
+    "blogId": "7970179",
+    "free_plan_posts_per_month": 20,
+    "posts_used": {
+      "2026-11": 1
+    }
   },
-  {
-   "slug": "heat",
-   "post_date": "2026-11-10",
-   "file": "videos/2026-11-heat.mp4",
-   "title": "What If Your Body Temperature Never Stopped Rising? 🔥",
-   "caption": "100°C: you boil your sweat. 1,538°C: steel melts. 5,500°C: you're as hot as the surface of the Sun… and mom still says bring a jacket 🧥",
-   "hashtags": "#whatif #science #temperature #sun #3danimation #funfacts #physics",
-   "youtube": {
-    "status": "posted",
-    "id": "dFJFxw1hvh4",
-    "url": "https://www.youtube.com/shorts/dFJFxw1hvh4",
-    "posted_at": "2026-11-10T20:59"
-   },
-   "tiktok": {
-    "status": "manual_requested",
-    "due": "2026-11-10T23:05",
-    "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
-    "file": "videos/2026-11-heat-nomusic.mp4",
-    "keep_until": "2026-11-17"
-   },
-   "instagram": {
-    "status": "posted",
-    "due": "2026-11-11T07:00",
-    "media_id": "17888706291622928",
-    "permalink": "https://www.instagram.com/reel/DfmN5SMgccN/",
-    "posted_at": "2026-11-11T07:01"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-heat-nomusic.mp4",
-   "version": "v3 (new visual standard; owner said he likes it, Nov 10)"
-  },
-  {
-   "slug": "shrink",
-   "post_date": "2026-11-11",
-   "file": "videos/2026-11-shrink.mp4",
-   "title": "What If You Never Stopped Shrinking? 🔬",
-   "caption": "18 cm: your cat is the size of an elephant. 180 microns: a dust mite stares you down. 0.2 nm: you're the size of a single atom 😳 How small would you go?",
-   "hashtags": "#whatif #science #microscopic #atoms #3danimation #funfacts #physics",
-   "youtube": {
-    "status": "pending",
-    "due": "2026-11-11T21:00"
-   },
-   "tiktok": {
-    "status": "manual",
-    "due": "2026-11-11T23:05",
-    "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
-    "file": "videos/2026-11-shrink-nomusic.mp4",
-    "keep_until": "2026-11-18"
-   },
-   "instagram": {
-    "status": "pending",
-    "due": "2026-11-12T07:00"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-shrink-nomusic.mp4",
-   "version": "v3 visual standard + Nov 9 hook_rules (35.3 s, cold open on the atom moment, looping ending)",
-   "duration_s": 35.3,
-   "notes": "Part 2 of grow. Facts checked: house cat ~25 cm at shoulder (x10 = elephant), dust mite 0.25-0.3 mm, corneocyte (skin flake) ~30-40 um, E. coli ~2 um, visible light 380-700 nm, DNA helix ~2 nm wide, atoms ~0.1-0.5 nm. Hero 'Chris' voice clips not used: audio/voices/hero_chris/ is not in the repo (gitignored) and the single library mp3 in fetched/ is unlabeled, so lines could not be identified without listening; speech bubbles carry the hero's reactions instead."
-  },
-  {
-   "slug": "gravity2x",
-   "post_date": "2026-11-12",
-   "file": "videos/2026-11-12-gravity2x.mp4",
-   "title": "What If Gravity Doubled for 5 Seconds? 🌍",
-   "caption": "Second 1: you weigh double. Second 3: every plane sinks. Second 5: the space station drops a football field 😳 Could you stay standing?",
-   "hashtags": "#whatif #science #gravity #physics #space #3danimation #funfacts",
-   "youtube": {
-    "status": "pending",
-    "due": "2026-11-12T21:00"
-   },
-   "tiktok": {
-    "status": "manual",
-    "due": "2026-11-12T23:05",
-    "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
-    "file": "videos/2026-11-12-gravity2x-nomusic.mp4",
-    "keep_until": "2026-11-19"
-   },
-   "instagram": {
-    "status": "pending",
-    "due": "2026-11-13T07:00"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-12-gravity2x-nomusic.mp4",
-   "version": "format_v4 (locked NYC look, countdown 0:05 -> event, world-scale) + hook_rules: 30.0 s, cold open on the kneeling-crowd moment with the x2 counter running, hook line 0.1-1.44 s, '6 SECONDS EARLIER' card, looping ending (countdown hits zero again -> first frame)",
-   "duration_s": 30.0,
-   "notes": "Facts checked: weight doubles (2 g, roller-coaster-level force, tolerable for seconds); plane whose lift stays at 1 g sinks 1/2*9.8*5^2 = 122 m in 5 s; Moon's pull toward Earth is GM/r^2 = 0.0027 m/s^2, doubling adds 1/2*0.0027*25 = 3.4 cm; ISS (g = 8.7 m/s^2 at 400 km) drops 1/2*8.7*25 = 109 m, about one football field (and about the ISS's own truss length); old balconies/water tanks 'start to crack' is hedged (structural safety factors ~1.5-2). Moon/Earth distance not to scale. QA: 30.0 s, max -0.9 dB, voice-over-bed margin 14 dB, last frame matches first. Hero 'Chris' clips not used (library not in repo); 2 speech bubbles + 1 punch caption per format_v4."
-  }
- ],
- "premise_bank": [
-  "What if you stopped blinking for 24 hours?",
-  "What if gravity only got stronger on YOU?",
-  "What if your shadow came alive?"
- ],
- "made": [
-  "grow",
-  "sneeze",
-  "heat",
-  "shrink",
-  "gravity2x"
- ],
- "plan_november": [
-  {
-   "post_date": "2026-11-11",
-   "slug": "shrink",
-   "premise": "What if you shrank 10x every 5 seconds?",
-   "notes": "Part 2 of grow. Counter: height (1.8 m → atom). Room → carpet jungle → dust mite → skin cell → DNA → atom. Look: switch to glowing x-ray/wireframe world as you get tiny. Payoff: you're now so small that... part 3 tease.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "made": "2026-11-10"
-  },
-  {
-   "post_date": "2026-11-12",
-   "slug": "gravity2x",
-   "premise": "What if gravity doubled for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "made": "2026-11-11"
-  },
-  {
-   "post_date": "2026-11-13",
-   "slug": "sunoff",
-   "premise": "What if the Sun switched off for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-14",
-   "slug": "friction",
-   "premise": "What if friction disappeared for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-15",
-   "slug": "water",
-   "premise": "What if all the water on Earth vanished for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-16",
-   "slug": "jump",
-   "premise": "What if everyone on Earth jumped at the same time?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-17",
-   "slug": "asteroid",
-   "premise": "What if the asteroid had missed the dinosaurs?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-18",
-   "slug": "magnet",
-   "premise": "What if Earth's magnetic field switched off for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-19",
-   "slug": "moon-never",
-   "premise": "What if the Moon never formed?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-20",
-   "slug": "glass",
-   "premise": "What if all the glass on Earth disappeared for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-21",
-   "slug": "rings",
-   "premise": "What if Earth had rings like Saturn?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-22",
-   "slug": "humans-gone",
-   "premise": "What if humans disappeared tomorrow?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-23",
-   "slug": "pangaea",
-   "premise": "What if the continents never split apart?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-24",
-   "slug": "stopspin",
-   "premise": "What if Earth stopped spinning for 1 second?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-25",
-   "slug": "power",
-   "premise": "What if all electricity stopped for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-26",
-   "slug": "food",
-   "premise": "What if all the food on Earth doubled in size for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-27",
-   "slug": "iceage",
-   "premise": "What if the Ice Age never ended?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-28",
-   "slug": "slowlight",
-   "premise": "What if light slowed to walking speed for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-29",
-   "slug": "drain",
-   "premise": "What if the oceans drained 1 meter every second?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  },
-  {
-   "post_date": "2026-11-30",
-   "slug": "timefreeze",
-   "premise": "What if time froze for everyone but you for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer"
-  }
- ],
- "style_notes": [
-  "Counter variety: big pill (ours), elegant serif top-left with small sub-label (electrons/earth-spin/run-speed refs), progress bar for time-lapses (1000-years ref).",
-  "Add a tier badge under the counter that upgrades each beat (e.g. HUMAN → BUILDING → MOUNTAIN → PLANET), like the run-speed ref's rank tags.",
-  "Expressive character faces and reactions at each beat (Roblox school-story ref); one recurring side character per episode (neighbor, granny, mom, rival).",
-  "One-sentence caption per beat in italic serif OR word-by-word pop captions; never both at the same spot.",
-  "Endings loop or restart (run-speed ref restarts at 'Minute 0'), or tease the part 2 that is already in the plan.",
-  "Do not copy other creators' premises, characters or captions; take the format, not the content."
- ],
- "styles": {
-  "A_explainer": "Current style. Female narrator (Kokoro af_heart, speed 1.1), 2nd person 'you', big title + pill counter, word-by-word captions, 40–48 s.",
-  "B_silent_cinematic": "NO voiceover (like the electrons / Earth-stops-spinning / run-speed references). Music + sound design carry it. One short italic serif line per beat (e.g. 'You do not. Nothing does.'), elegant small serif counter top-left with a sub-label and an upgrading tier badge, slower camera, colour-graded cinematic look. 35–45 s.",
-  "C_first_person_story": "A character tells it as 'I…' (like the golden-drops / Roblox school-story references): opens mid-drama ('I looked in the mirror this morning, and…'), states the world's rule, personal stakes, a twist, cliffhanger. Fast and emotional (~3.5–4 words/s), expressive blocky character with big eyes/mouth reacting every beat, word-by-word captions. Male voice (Kokoro am_puck or am_michael). 61–75 s so TikTok counts it as > 1 min.",
-  "D_warm_explainer": "Calm, comforting 'you' narrator with a small joke in every beat (like the 'everyone slept 1,000 years' reference: 'At least the rent has finally gone down', 'Earth is slowly cleaning out its attic'). Timeline/progress-bar counter, cozy lighting, a cute side character (raccoon/parrot style). Male voice (Kokoro bm_george or am_michael), ~2.6 words/s, 61–75 s."
- },
- "style_test": {
-  "goal": "Find which style gets the best YouTube Shorts retention and growth; ~4 videos per style by Nov 27.",
-  "metrics": "averageViewPercentage, averageViewDuration, engagedViews, subscribersGained per 1k views (vidIQ vidiq_channel_analytics, dimensions=[video], 5 credits).",
-  "winner": null,
-  "weekly_results": [
-   {
-    "review_date": "2026-11-09",
-    "window": "2026-11-08..2026-11-09",
-    "posted_youtube": [
-     {
+  "zapier_youtube_connection_id": "024e8223-8129-8378-ae74-36264dc05b99",
+  "instagram_platformAccountId": "29226914170279337",
+  "queue": [
+    {
       "slug": "grow",
-      "id": "MkeqbgAvJi8",
-      "style": "A_explainer",
-      "post_date": "2026-11-08"
-     }
-    ],
-    "analytics_rows": 0,
-    "by_style": {
-     "A_explainer": {
-      "videos": 1,
-      "videos_older_48h": 0,
-      "data": "none yet (YouTube Analytics returned 0 rows; usual 24-72h reporting lag)"
-     },
-     "B_silent_cinematic": {
-      "videos": 0
-     },
-     "C_first_person_story": {
-      "videos": 0
-     },
-     "D_warm_explainer": {
-      "videos": 0
-     }
+      "post_date": "2026-11-08",
+      "file": "videos/2026-11-grow.mp4",
+      "title": "What If You Grew 10x Bigger Every 5 Seconds? 😳",
+      "caption": "At 18,000 km tall you'd be taller than Earth is wide… and a stubbed toe would take almost 2 days to hurt 💀 Part 2: you shrink. Follow so you don't miss it.",
+      "hashtags": "#whatif #whatifscenario #science #3danimation #giant #space #funfacts",
+      "youtube": {
+        "status": "posted",
+        "id": "MkeqbgAvJi8"
+      },
+      "tiktok": {
+        "status": "posted",
+        "metricool_id": 421209953,
+        "url": "https://www.tiktok.com/@wild.what.if/video/7705987049412693255"
+      },
+      "instagram": {
+        "status": "posted",
+        "media_id": "17990144022082114",
+        "permalink": "https://www.instagram.com/reel/DfhETBuApuC/",
+        "posted_at": "2026-11-09T07:00"
+      },
+      "style": "A_explainer"
     },
-    "verdict": "too early",
-    "note": "Style test not active (owner approval pending); only A_explainer posted. sneeze due 2026-11-09 21:00, heat 2026-11-10."
-   }
+    {
+      "slug": "sneeze",
+      "post_date": "2026-11-09",
+      "file": "videos/2026-11-sneeze.mp4",
+      "title": "What If Every Sneeze Was 10x Stronger? 🤧",
+      "caption": "Sneeze 3 breaks the sound barrier. Sneeze 7 launches you across the city. Granny still said bless you 👵 Which sneeze would you survive?",
+      "hashtags": "#whatif #sneeze #physics #science #3danimation #funny #funfacts",
+      "youtube": {
+        "status": "posted",
+        "id": "2f7V9mG-kag",
+        "url": "https://www.youtube.com/shorts/2f7V9mG-kag",
+        "posted_at": "2026-11-09T20:58"
+      },
+      "tiktok": {
+        "status": "posted_manually",
+        "due": "2026-11-09T23:05",
+        "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
+        "file": "videos/2026-11-sneeze-nomusic.mp4",
+        "keep_until": "2026-11-16",
+        "confirmed_by_owner": "2026-11-10",
+        "posted_at": "2026-11-09T23:05 (owner confirmed 23:37)"
+      },
+      "instagram": {
+        "status": "posted",
+        "due": "2026-11-10T07:00",
+        "media_id": "18644528320050018",
+        "permalink": "https://www.instagram.com/reel/DfjpG5wDrYG/",
+        "posted_at": "2026-11-10T07:01"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-sneeze-nomusic.mp4",
+      "version": "v3 (new visual standard, owner-approved Nov 9)"
+    },
+    {
+      "slug": "heat",
+      "post_date": "2026-11-10",
+      "file": "videos/2026-11-heat.mp4",
+      "title": "What If Your Body Temperature Never Stopped Rising? 🔥",
+      "caption": "100°C: you boil your sweat. 1,538°C: steel melts. 5,500°C: you're as hot as the surface of the Sun… and mom still says bring a jacket 🧥",
+      "hashtags": "#whatif #science #temperature #sun #3danimation #funfacts #physics",
+      "youtube": {
+        "status": "posted",
+        "id": "dFJFxw1hvh4",
+        "url": "https://www.youtube.com/shorts/dFJFxw1hvh4",
+        "posted_at": "2026-11-10T20:59"
+      },
+      "tiktok": {
+        "status": "manual_requested",
+        "due": "2026-11-10T23:05",
+        "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
+        "file": "videos/2026-11-heat-nomusic.mp4",
+        "keep_until": "2026-11-17"
+      },
+      "instagram": {
+        "status": "posted",
+        "due": "2026-11-11T07:00",
+        "media_id": "17888706291622928",
+        "permalink": "https://www.instagram.com/reel/DfmN5SMgccN/",
+        "posted_at": "2026-11-11T07:01"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-heat-nomusic.mp4",
+      "version": "v3 (new visual standard; owner said he likes it, Nov 10)"
+    },
+    {
+      "slug": "shrink",
+      "post_date": "2026-11-11",
+      "file": "videos/2026-11-shrink.mp4",
+      "title": "What If You Never Stopped Shrinking? 🔬",
+      "caption": "18 cm: your cat is the size of an elephant. 180 microns: a dust mite stares you down. 0.2 nm: you're the size of a single atom 😳 How small would you go?",
+      "hashtags": "#whatif #science #microscopic #atoms #3danimation #funfacts #physics",
+      "youtube": {
+        "status": "pending",
+        "due": "2026-11-11T21:00"
+      },
+      "tiktok": {
+        "status": "manual",
+        "due": "2026-11-11T23:05",
+        "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
+        "file": "videos/2026-11-shrink-nomusic.mp4",
+        "keep_until": "2026-11-18"
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-12T07:00"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-shrink-nomusic.mp4",
+      "version": "v3 visual standard + Nov 9 hook_rules (35.3 s, cold open on the atom moment, looping ending)",
+      "duration_s": 35.3,
+      "notes": "Part 2 of grow. Facts checked: house cat ~25 cm at shoulder (x10 = elephant), dust mite 0.25-0.3 mm, corneocyte (skin flake) ~30-40 um, E. coli ~2 um, visible light 380-700 nm, DNA helix ~2 nm wide, atoms ~0.1-0.5 nm. Hero 'Chris' voice clips not used: audio/voices/hero_chris/ is not in the repo (gitignored) and the single library mp3 in fetched/ is unlabeled, so lines could not be identified without listening; speech bubbles carry the hero's reactions instead."
+    },
+    {
+      "slug": "gravity2x",
+      "post_date": "2026-11-12",
+      "file": "videos/2026-11-12-gravity2x.mp4",
+      "title": "What If Gravity Doubled for 5 Seconds? 🌍",
+      "caption": "Second 1: you weigh double. Second 3: every plane sinks. Second 5: the space station drops a football field 😳 Could you stay standing?",
+      "hashtags": "#whatif #science #gravity #physics #space #3danimation #funfacts",
+      "youtube": {
+        "status": "pending",
+        "due": "2026-11-12T21:00"
+      },
+      "tiktok": {
+        "status": "manual",
+        "due": "2026-11-12T23:05",
+        "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
+        "file": "videos/2026-11-12-gravity2x-nomusic.mp4",
+        "keep_until": "2026-11-19"
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-13T07:00"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-12-gravity2x-nomusic.mp4",
+      "version": "format_v4 (locked NYC look, countdown 0:05 -> event, world-scale) + hook_rules: 30.0 s, cold open on the kneeling-crowd moment with the x2 counter running, hook line 0.1-1.44 s, '6 SECONDS EARLIER' card, looping ending (countdown hits zero again -> first frame)",
+      "duration_s": 30.0,
+      "notes": "Facts checked: weight doubles (2 g, roller-coaster-level force, tolerable for seconds); plane whose lift stays at 1 g sinks 1/2*9.8*5^2 = 122 m in 5 s; Moon's pull toward Earth is GM/r^2 = 0.0027 m/s^2, doubling adds 1/2*0.0027*25 = 3.4 cm; ISS (g = 8.7 m/s^2 at 400 km) drops 1/2*8.7*25 = 109 m, about one football field (and about the ISS's own truss length); old balconies/water tanks 'start to crack' is hedged (structural safety factors ~1.5-2). Moon/Earth distance not to scale. QA: 30.0 s, max -0.9 dB, voice-over-bed margin 14 dB, last frame matches first. Hero 'Chris' clips not used (library not in repo); 2 speech bubbles + 1 punch caption per format_v4."
+    }
   ],
-  "active": false,
-  "note": "Owner wants the style test as an idea only for now (Nov 8). Keep every video in A_explainer until the owner approves the test. Weekly review still reports numbers."
- },
- "hook_rules": {
-  "approved": "2026-11-09 by owner",
-  "rules": [
-   "Length 30–38 s total (Instagram data: viewers left at ~20 s of 48 s, 42% watched, 35% skip).",
-   "Cold open: the first 0.0–1.0 s shows the MOST extreme moment of the video (the payoff image), with the counter already moving fast and the title on screen; then a whoosh cut to 'the start'.",
-   "Hook line ≤ 2 s and must start at 0.1 s. No slow intro, no static counter at 0.",
-   "A new visual change every 2–3 s; cut beats that don't escalate.",
-   "Looping ending: the last frame matches/flows into the first frame so the video replays seamlessly; no long outro, the 'follow for part 2' line ≤ 1.5 s.",
-   "End with a one-line question to drive comments (e.g. 'Which hiccup would you survive?') and repeat it in the caption."
-  ]
- },
- "tiktok_manual_until": "2026-11-15",
- "visual_rules": {
-  "approved": "2026-11-09 by owner (feedback: videos felt dry, characters dead, effects just a beam/light)",
-  "reference_test": "sneeze v3 (engine/scenes/sneeze3.js) is the template to copy patterns from",
-  "rules": [
-   "Characters must feel alive: use lib.js setFace() every frame (brows, eye size, mouth shape, pupil look direction) with a different expression for each beat, then life() for breathing, blinking, glances and idle sway. Characters react to every event (shock, cringe, look at the damage).",
-   "Add at least one other character who reacts: a neighbor, a pet, a family member. Use 3–6 short speech bubbles (drawBubble, 1–3 words, funny) anchored to heads, as in the reference videos ('Still good.', 'MY HAT!').",
-   "Big events are EXPANDING WAVES, never a beam or a single flash: makeShockwave() (dust wall ring, glowing shell, ground ring) plus a reaction in the world as the front passes (suburb.wave(): roofs rip off and tumble, trees flatten, cars slide). Each topic gets its own fitting spreading effect (a heat wave that browns lawns outward, a frost front, a crack network, a flood front, etc.).",
-   "Aerial/city shots use makeSuburb(): a block grid with streets both ways, gable roofs, lawns, driveways, trees, cars and pools. No plain boxes on a flat green plane.",
-   "Numbers sit on the left side as a small counter (drawSideCounter: small label, big number, italic comparison note like 'faster than sound'), placed under the title, as in the reference videos. Never a big box in the middle of the screen. Keep the right edge clear (platform buttons).",
-   "Sound: always a background song (music2.song: drums, bass, arp, lead that build with the intensity curve) plus environment beds (music2.amb: city/wind/space/fire) under the voice and SFX. Music must sit clearly under the voice (music_gain ≈ 0.38, amb gain ≈ 0.25–0.3).",
-   "Also export a no-music version for TikTok (music_gain 0), so the owner can add a trending sound in the app (copyrighted songs are never baked into the file).",
-   "Busy, living world (owner, Nov 9): pedestrians walking on the sidewalks, cars actually driving on the streets (not only parked), more bystanders who all react (stop, point, run, film with phones).",
-   "Anything flying through the sky shares it with planes/helicopters/birds that pass close by (the flying person passes a plane, a passenger at the window reacts).",
-   "Breakage must read instantly: when something punches through a wall/door, the hole is a crisp cartoon cut-out of its exact silhouette (star pose, arms and legs out), shown in a 0.5 s slow-motion beat from the far side with light shining through the hole and dust puffing out of the outline, then debris bursts outward. Never a random scatter of blocks.",
-   "Pacing (owner, Nov 9 — middle point between our 4 s and the reference's 1.4 s): a new shot or a big camera move every ~2–2.5 s.",
-   "Use a continuous follow-camera when it helps (e.g. follow the character while he flies instead of cutting away).",
-   "2–4 object close-ups/inserts per video (the cat mid-air, the hat, the mailbox, a glass shard, a bystander's phone screen filming it). Keep inventing small interactive touches like these — the owner wants more of them.",
-   "The counter changes meaning per chapter (e.g. SNEEZE SPEED → DISTANCE FLOWN → TIME TO LANDING) and always moves: ticking decimals, colour shifts to orange/red as danger rises.",
-   "Every milestone gets a real-world comparison SHOWN on screen, side by side, with a small label (a jet next to the sneeze wind, a bullet racing it, a rocket at escape velocity, a satellite) so viewers instantly get what the number means.",
-   "Name tags only for a character's first appearance (intro), optional.",
-   "Recurring cast links the episodes (shared universe): MITTENS the cat appears regularly (give her a proper intro the first time — people love animals), plus Dave the neighbour and the main character.",
-   "Special cartoon faces at peak moments: heart eyes, star eyes, tears, sweat drop, dizzy swirl.",
-   "Occasionally (not every video) a fake live-chat/phone-comment overlay or a background bystander shouting a funny line.",
-   "Floating particles (embers, dust motes, sparkles) present but subtle — not too much, not too little.",
-   "Ending: return to the opening scene but changed (loop + twist), then the question, then a 'Part 2' tease.",
-   "Title (owner loved the 'boyfriend' reference, Nov 9): flash cold open (0.5 s of the craziest moment + one punch word like 'SNIP.'), then the title types in word by word over a wide establishing shot, holds ~3 s and then animates OUT (by ~5 s). After that only the side counter stays at the top. Optional time-jump card ('⏮ 3 minutes earlier').",
-   "Counter sub-label shows place + time and updates with the story ('YOUR APARTMENT · 9:41 PM' → 'DOWNTOWN · 9:43 PM' → 'EARTH ORBIT').",
-   "Talking characters: short punchy speech bubbles in quick back-and-forth (white rounded bubble, 2–6 words), mouths moving while they talk, extreme close-up faces for big reactions (huge eyes, wide open mouth), countdown numbers (3, 2, 1) popping next to the bubbles when tension builds.",
-   "Crowds: when the story scales up, show LOTS of people (hundreds to thousands, instanced) filling streets, plus people in the background of normal shots.",
-   "Buildings with detail: lit windows, varied facades and heights, dusk/evening light when it fits — never plain boxes.",
-   "Switch perspective when it matters: first-person (hands on the steering wheel, hands holding the object) for the start or key moments, then third-person behind/side views, and back to first-person for the ending (owner approved Nov 9). Body/'what if YOU' premises: short POV start; calm world/history premises can stay mostly POV; comedy/action stays mostly third-person.",
-   "Shareable ending line when it fits the topic (e.g. 'Send this to your boyfriend.') instead of only 'follow'.",
-   "Character voices (owner, Nov 9): the main character uses the ElevenLabs 'Chris' voice clip library in engine/audio/voices/hero_chris/ (sneezes, hic, whoa, oh no, uh-oh, wait what, nope, ow, seriously, Mittens, help, excuse me, sorry, laugh, phew, wow, huh, aaah) — NOT Kokoro male voices (owner: robotic). Lines go ONLY in gaps between narrator lines, 3–4 per video. New lines: vidIQ vidiq_voiceover_generate (voiceId iP95p4xoKVk53GoZ742B, 28 credits per ≤1000 chars — batch many lines in ONE call, only when the library lacks a needed line; vidIQ has ~150 credits/month), then add 'name url' to fetch/<file>.txt and push: the fetch-media GitHub workflow downloads it into fetched/ (assets.vidiq.com is blocked from the sandbox). Side characters may keep Kokoro (granny bf_emma) until we record better ones."
-  ]
- },
- "tests": {
-  "color_grade_per_chapter": "TEST only on a few videos (each chapter gets its own colour tone); compare views; NOT part of the norm.",
-  "music_only": "1–2 videos this month with no narrator (music + small italic one-liners, like the dig / nothing-bad references). Voice stays the default."
- },
- "format_v4": {
-  "approved": "2026-11-10 by owner. SUPERSEDES hook_rules/visual_rules wherever they conflict.",
-  "why": "Own data: viewers give ~22 s (YouTube 23 s avg, Instagram 22 s) on 47 s videos. Reference account @man_ia_c (297K followers, 5M likes, 24 videos): its hits are all 'What if <basic thing> disappeared for 5 seconds?' (19M, 14.1M, 6M, 5.2M, 4.2M) with one fixed look.",
-  "rules": [
-   "PREMISE: happens to the WHOLE WORLD (not one person), with a short time limit: 'What if <something basic> <vanished/doubled/stopped> for 5 seconds?'. History premises ('what if the asteroid missed') are also fine.",
-   "COUNTER = COUNTDOWN: open on a calm, detailed everyday scene with '<THING> DISAPPEARS IN 0:05.000' ticking down in milliseconds on the left; at zero the event happens; then a second counter runs '0:01 … 0:05' through the consequences, one clear consequence per second, each bigger in scale (street → city → planet). Then 'it comes back' and the aftermath.",
-   "HOOK (owner): 2.5–3 s, shown clearly and slightly slowed — the most extreme consequence — with one teaser narrator line, then a '<< N SECONDS EARLIER' card, then the calm start. Never a 0.5 s flash.",
-   "LENGTH: 25–30 s for YouTube/Instagram/TikTok. (A 61–70 s TikTok cut only once the account nears 10K followers and the owner confirms the rewards programme is open to him.)",
-   "ONE LOCKED LOOK for at least 10 videos: same title style and position, same countdown style, same calm-opening structure, same music family, city = engine/scenes/nyc.js style (street grid, towers with windows, taxis, crowds, park, rivers). Do not restyle between videos.",
-   "LESS TEXT: title, countdown, word-by-word captions. At most 2 speech bubbles and 1 punch caption per video. No step-by-step 'stage 1…7' escalation.",
-   "KEEP from before: detailed city, crowds, expanding waves, background song + ambience, loop ending (last shot flows into the hook), Mittens as a small recurring background detail (never the focus), narrator af_heart, hero voice clips only in gaps.",
-   "SUBSCRIBE: no 'follow for part 2' line. (Owner is choosing between: viewers pick tomorrow's what-if in comments / crediting the winner / Mittens survival counter — do not add until he picks.)",
-   "SOUND (owner, Nov 11): the narrator must always be clearly heard. mix.py now ducks music AND effects/ambience under the voice and enforces a 14 dB voice-over-everything margin; it prints 'voice-over-bed margin dB'. Use music_gain ≤ 0.3 and sfx_gain ≤ 0.4, never raise them, and never bypass the margin check."
-  ]
- }
+  "premise_bank": [
+    "What if you stopped blinking for 24 hours?",
+    "What if gravity only got stronger on YOU?",
+    "What if your shadow came alive?"
+  ],
+  "made": [
+    "grow",
+    "sneeze",
+    "heat",
+    "shrink",
+    "gravity2x"
+  ],
+  "plan_november": [
+    {
+      "post_date": "2026-11-11",
+      "slug": "shrink",
+      "premise": "What if you shrank 10x every 5 seconds?",
+      "notes": "Part 2 of grow. Counter: height (1.8 m → atom). Room → carpet jungle → dust mite → skin cell → DNA → atom. Look: switch to glowing x-ray/wireframe world as you get tiny. Payoff: you're now so small that... part 3 tease.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "made": "2026-11-10"
+    },
+    {
+      "post_date": "2026-11-12",
+      "slug": "gravity2x",
+      "premise": "What if gravity doubled for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "made": "2026-11-11"
+    },
+    {
+      "post_date": "2026-11-13",
+      "slug": "sunoff",
+      "premise": "What if the Sun switched off for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-14",
+      "slug": "friction",
+      "premise": "What if friction disappeared for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-15",
+      "slug": "water",
+      "premise": "What if all the water on Earth vanished for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-16",
+      "slug": "jump",
+      "premise": "What if everyone on Earth jumped at the same time?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": true
+    },
+    {
+      "post_date": "2026-11-17",
+      "slug": "asteroid",
+      "premise": "What if the asteroid had missed the dinosaurs?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-18",
+      "slug": "magnet",
+      "premise": "What if Earth's magnetic field switched off for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-19",
+      "slug": "moon-never",
+      "premise": "What if the Moon never formed?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-20",
+      "slug": "glass",
+      "premise": "What if all the glass on Earth disappeared for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-21",
+      "slug": "rings",
+      "premise": "What if Earth had rings like Saturn?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-22",
+      "slug": "humans-gone",
+      "premise": "What if humans disappeared tomorrow?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-23",
+      "slug": "pangaea",
+      "premise": "What if the continents never split apart?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-24",
+      "slug": "stopspin",
+      "premise": "What if Earth stopped spinning for 1 second?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": true
+    },
+    {
+      "post_date": "2026-11-25",
+      "slug": "power",
+      "premise": "What if all electricity stopped for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-26",
+      "slug": "food",
+      "premise": "What if all the food on Earth doubled in size for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-27",
+      "slug": "iceage",
+      "premise": "What if the Ice Age never ended?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-28",
+      "slug": "slowlight",
+      "premise": "What if light slowed to walking speed for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-29",
+      "slug": "drain",
+      "premise": "What if the oceans drained 1 meter every second?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    },
+    {
+      "post_date": "2026-11-30",
+      "slug": "timefreeze",
+      "premise": "What if time froze for everyone but you for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer"
+    }
+  ],
+  "style_notes": [
+    "Counter variety: big pill (ours), elegant serif top-left with small sub-label (electrons/earth-spin/run-speed refs), progress bar for time-lapses (1000-years ref).",
+    "Add a tier badge under the counter that upgrades each beat (e.g. HUMAN → BUILDING → MOUNTAIN → PLANET), like the run-speed ref's rank tags.",
+    "Expressive character faces and reactions at each beat (Roblox school-story ref); one recurring side character per episode (neighbor, granny, mom, rival).",
+    "One-sentence caption per beat in italic serif OR word-by-word pop captions; never both at the same spot.",
+    "Endings loop or restart (run-speed ref restarts at 'Minute 0'), or tease the part 2 that is already in the plan.",
+    "Do not copy other creators' premises, characters or captions; take the format, not the content."
+  ],
+  "styles": {
+    "A_explainer": "Current style. Female narrator (Kokoro af_heart, speed 1.1), 2nd person 'you', big title + pill counter, word-by-word captions, 40–48 s.",
+    "B_silent_cinematic": "NO voiceover (like the electrons / Earth-stops-spinning / run-speed references). Music + sound design carry it. One short italic serif line per beat (e.g. 'You do not. Nothing does.'), elegant small serif counter top-left with a sub-label and an upgrading tier badge, slower camera, colour-graded cinematic look. 35–45 s.",
+    "C_first_person_story": "A character tells it as 'I…' (like the golden-drops / Roblox school-story references): opens mid-drama ('I looked in the mirror this morning, and…'), states the world's rule, personal stakes, a twist, cliffhanger. Fast and emotional (~3.5–4 words/s), expressive blocky character with big eyes/mouth reacting every beat, word-by-word captions. Male voice (Kokoro am_puck or am_michael). 61–75 s so TikTok counts it as > 1 min.",
+    "D_warm_explainer": "Calm, comforting 'you' narrator with a small joke in every beat (like the 'everyone slept 1,000 years' reference: 'At least the rent has finally gone down', 'Earth is slowly cleaning out its attic'). Timeline/progress-bar counter, cozy lighting, a cute side character (raccoon/parrot style). Male voice (Kokoro bm_george or am_michael), ~2.6 words/s, 61–75 s."
+  },
+  "style_test": {
+    "goal": "Find which style gets the best YouTube Shorts retention and growth; ~4 videos per style by Nov 27.",
+    "metrics": "averageViewPercentage, averageViewDuration, engagedViews, subscribersGained per 1k views (vidIQ vidiq_channel_analytics, dimensions=[video], 5 credits).",
+    "winner": null,
+    "weekly_results": [
+      {
+        "review_date": "2026-11-09",
+        "window": "2026-11-08..2026-11-09",
+        "posted_youtube": [
+          {
+            "slug": "grow",
+            "id": "MkeqbgAvJi8",
+            "style": "A_explainer",
+            "post_date": "2026-11-08"
+          }
+        ],
+        "analytics_rows": 0,
+        "by_style": {
+          "A_explainer": {
+            "videos": 1,
+            "videos_older_48h": 0,
+            "data": "none yet (YouTube Analytics returned 0 rows; usual 24-72h reporting lag)"
+          },
+          "B_silent_cinematic": {
+            "videos": 0
+          },
+          "C_first_person_story": {
+            "videos": 0
+          },
+          "D_warm_explainer": {
+            "videos": 0
+          }
+        },
+        "verdict": "too early",
+        "note": "Style test not active (owner approval pending); only A_explainer posted. sneeze due 2026-11-09 21:00, heat 2026-11-10."
+      }
+    ],
+    "active": false,
+    "note": "Owner wants the style test as an idea only for now (Nov 8). Keep every video in A_explainer until the owner approves the test. Weekly review still reports numbers."
+  },
+  "hook_rules": {
+    "approved": "2026-11-09 by owner",
+    "rules": [
+      "Length 30–38 s total (Instagram data: viewers left at ~20 s of 48 s, 42% watched, 35% skip).",
+      "Cold open: the first 0.0–1.0 s shows the MOST extreme moment of the video (the payoff image), with the counter already moving fast and the title on screen; then a whoosh cut to 'the start'.",
+      "Hook line ≤ 2 s and must start at 0.1 s. No slow intro, no static counter at 0.",
+      "A new visual change every 2–3 s; cut beats that don't escalate.",
+      "Looping ending: the last frame matches/flows into the first frame so the video replays seamlessly; no long outro, the 'follow for part 2' line ≤ 1.5 s.",
+      "End with a one-line question to drive comments (e.g. 'Which hiccup would you survive?') and repeat it in the caption."
+    ]
+  },
+  "tiktok_manual_until": "2026-12-31",
+  "visual_rules": {
+    "approved": "2026-11-09 by owner (feedback: videos felt dry, characters dead, effects just a beam/light)",
+    "reference_test": "sneeze v3 (engine/scenes/sneeze3.js) is the template to copy patterns from",
+    "rules": [
+      "Characters must feel alive: use lib.js setFace() every frame (brows, eye size, mouth shape, pupil look direction) with a different expression for each beat, then life() for breathing, blinking, glances and idle sway. Characters react to every event (shock, cringe, look at the damage).",
+      "Add at least one other character who reacts: a neighbor, a pet, a family member. Use 3–6 short speech bubbles (drawBubble, 1–3 words, funny) anchored to heads, as in the reference videos ('Still good.', 'MY HAT!').",
+      "Big events are EXPANDING WAVES, never a beam or a single flash: makeShockwave() (dust wall ring, glowing shell, ground ring) plus a reaction in the world as the front passes (suburb.wave(): roofs rip off and tumble, trees flatten, cars slide). Each topic gets its own fitting spreading effect (a heat wave that browns lawns outward, a frost front, a crack network, a flood front, etc.).",
+      "Aerial/city shots use makeSuburb(): a block grid with streets both ways, gable roofs, lawns, driveways, trees, cars and pools. No plain boxes on a flat green plane.",
+      "Numbers sit on the left side as a small counter (drawSideCounter: small label, big number, italic comparison note like 'faster than sound'), placed under the title, as in the reference videos. Never a big box in the middle of the screen. Keep the right edge clear (platform buttons).",
+      "Sound: always a background song (music2.song: drums, bass, arp, lead that build with the intensity curve) plus environment beds (music2.amb: city/wind/space/fire) under the voice and SFX. Music must sit clearly under the voice (music_gain ≈ 0.38, amb gain ≈ 0.25–0.3).",
+      "Also export a no-music version for TikTok (music_gain 0), so the owner can add a trending sound in the app (copyrighted songs are never baked into the file).",
+      "Busy, living world (owner, Nov 9): pedestrians walking on the sidewalks, cars actually driving on the streets (not only parked), more bystanders who all react (stop, point, run, film with phones).",
+      "Anything flying through the sky shares it with planes/helicopters/birds that pass close by (the flying person passes a plane, a passenger at the window reacts).",
+      "Breakage must read instantly: when something punches through a wall/door, the hole is a crisp cartoon cut-out of its exact silhouette (star pose, arms and legs out), shown in a 0.5 s slow-motion beat from the far side with light shining through the hole and dust puffing out of the outline, then debris bursts outward. Never a random scatter of blocks.",
+      "Pacing (owner, Nov 9 — middle point between our 4 s and the reference's 1.4 s): a new shot or a big camera move every ~2–2.5 s.",
+      "Use a continuous follow-camera when it helps (e.g. follow the character while he flies instead of cutting away).",
+      "2–4 object close-ups/inserts per video (the cat mid-air, the hat, the mailbox, a glass shard, a bystander's phone screen filming it). Keep inventing small interactive touches like these — the owner wants more of them.",
+      "The counter changes meaning per chapter (e.g. SNEEZE SPEED → DISTANCE FLOWN → TIME TO LANDING) and always moves: ticking decimals, colour shifts to orange/red as danger rises.",
+      "Every milestone gets a real-world comparison SHOWN on screen, side by side, with a small label (a jet next to the sneeze wind, a bullet racing it, a rocket at escape velocity, a satellite) so viewers instantly get what the number means.",
+      "Name tags only for a character's first appearance (intro), optional.",
+      "Recurring cast links the episodes (shared universe): MITTENS the cat appears regularly (give her a proper intro the first time — people love animals), plus Dave the neighbour and the main character.",
+      "Special cartoon faces at peak moments: heart eyes, star eyes, tears, sweat drop, dizzy swirl.",
+      "Occasionally (not every video) a fake live-chat/phone-comment overlay or a background bystander shouting a funny line.",
+      "Floating particles (embers, dust motes, sparkles) present but subtle — not too much, not too little.",
+      "Ending: return to the opening scene but changed (loop + twist), then the question, then a 'Part 2' tease.",
+      "Title (owner loved the 'boyfriend' reference, Nov 9): flash cold open (0.5 s of the craziest moment + one punch word like 'SNIP.'), then the title types in word by word over a wide establishing shot, holds ~3 s and then animates OUT (by ~5 s). After that only the side counter stays at the top. Optional time-jump card ('⏮ 3 minutes earlier').",
+      "Counter sub-label shows place + time and updates with the story ('YOUR APARTMENT · 9:41 PM' → 'DOWNTOWN · 9:43 PM' → 'EARTH ORBIT').",
+      "Talking characters: short punchy speech bubbles in quick back-and-forth (white rounded bubble, 2–6 words), mouths moving while they talk, extreme close-up faces for big reactions (huge eyes, wide open mouth), countdown numbers (3, 2, 1) popping next to the bubbles when tension builds.",
+      "Crowds: when the story scales up, show LOTS of people (hundreds to thousands, instanced) filling streets, plus people in the background of normal shots.",
+      "Buildings with detail: lit windows, varied facades and heights, dusk/evening light when it fits — never plain boxes.",
+      "Switch perspective when it matters: first-person (hands on the steering wheel, hands holding the object) for the start or key moments, then third-person behind/side views, and back to first-person for the ending (owner approved Nov 9). Body/'what if YOU' premises: short POV start; calm world/history premises can stay mostly POV; comedy/action stays mostly third-person.",
+      "Shareable ending line when it fits the topic (e.g. 'Send this to your boyfriend.') instead of only 'follow'.",
+      "Character voices (owner, Nov 9): the main character uses the ElevenLabs 'Chris' voice clip library in engine/audio/voices/hero_chris/ (sneezes, hic, whoa, oh no, uh-oh, wait what, nope, ow, seriously, Mittens, help, excuse me, sorry, laugh, phew, wow, huh, aaah) — NOT Kokoro male voices (owner: robotic). Lines go ONLY in gaps between narrator lines, 3–4 per video. New lines: vidIQ vidiq_voiceover_generate (voiceId iP95p4xoKVk53GoZ742B, 28 credits per ≤1000 chars — batch many lines in ONE call, only when the library lacks a needed line; vidIQ has ~150 credits/month), then add 'name url' to fetch/<file>.txt and push: the fetch-media GitHub workflow downloads it into fetched/ (assets.vidiq.com is blocked from the sandbox). Side characters may keep Kokoro (granny bf_emma) until we record better ones."
+    ]
+  },
+  "tests": {
+    "color_grade_per_chapter": "TEST only on a few videos (each chapter gets its own colour tone); compare views; NOT part of the norm.",
+    "music_only": "1–2 videos this month with no narrator (music + small italic one-liners, like the dig / nothing-bad references). Voice stays the default."
+  },
+  "format_v4": {
+    "approved": "2026-11-10 by owner. SUPERSEDES hook_rules/visual_rules wherever they conflict.",
+    "why": "Own data: viewers give ~22 s (YouTube 23 s avg, Instagram 22 s) on 47 s videos. Reference account @man_ia_c (297K followers, 5M likes, 24 videos): its hits are all 'What if <basic thing> disappeared for 5 seconds?' (19M, 14.1M, 6M, 5.2M, 4.2M) with one fixed look.",
+    "rules": [
+      "PREMISE: happens to the WHOLE WORLD (not one person), with a short time limit: 'What if <something basic> <vanished/doubled/stopped> for 5 seconds?'. History premises ('what if the asteroid missed') are also fine.",
+      "COUNTER = COUNTDOWN: open on a calm, detailed everyday scene with '<THING> DISAPPEARS IN 0:05.000' ticking down in milliseconds on the left; at zero the event happens; then a second counter runs '0:01 … 0:05' through the consequences, one clear consequence per second, each bigger in scale (street → city → planet). Then 'it comes back' and the aftermath.",
+      "HOOK (owner): 2.5–3 s, shown clearly and slightly slowed — the most extreme consequence — with one teaser narrator line, then a '<< N SECONDS EARLIER' card, then the calm start. Never a 0.5 s flash.",
+      "LENGTH: 25–30 s for YouTube/Instagram/TikTok. (A 61–70 s TikTok cut only once the account nears 10K followers and the owner confirms the rewards programme is open to him.)",
+      "ONE LOCKED LOOK for at least 10 videos: same title style and position, same countdown style, same calm-opening structure, same music family, city = engine/scenes/nyc.js style (street grid, towers with windows, taxis, crowds, park, rivers). Do not restyle between videos.",
+      "LESS TEXT: title, countdown, word-by-word captions. At most 2 speech bubbles and 1 punch caption per video. No step-by-step 'stage 1…7' escalation.",
+      "KEEP from before: detailed city, crowds, expanding waves, background song + ambience, loop ending (last shot flows into the hook), Mittens as a small recurring background detail (never the focus), narrator af_heart, hero voice clips only in gaps.",
+      "SUBSCRIBE: no 'follow for part 2' line. (Owner is choosing between: viewers pick tomorrow's what-if in comments / crediting the winner / Mittens survival counter — do not add until he picks.)",
+      "SOUND (owner, Nov 11): the narrator must always be clearly heard. mix.py now ducks music AND effects/ambience under the voice and enforces a 14 dB voice-over-everything margin; it prints 'voice-over-bed margin dB'. Use music_gain ≤ 0.3 and sfx_gain ≤ 0.4, never raise them, and never bypass the margin check."
+    ]
+  },
+  "format_v5": {
+    "approved": "2026-11-11 by owner (he preferred the narrator prototype 'What if the Sun switched off for 5 seconds?'). THIS IS THE CURRENT STANDARD. It overrides format_v4, hook_rules and visual_rules wherever they conflict.",
+    "template": "engine/scenes/sun.js + engine/scripts/sun.json + engine/scripts/sun_cue.json. Copy the STRUCTURE, never the content: every video needs its own setting details, consequences, lines and one big visual transformation (YouTube 'inauthentic content' policy: no template with only the noun swapped).",
+    "rules": [
+      "STRUCTURE (45–55 s): (1) 0–7 s calm, lived-in everyday scene, title on screen (types in, leaves by ~6 s) and a real-time countdown '<EVENT> IN 0:07.000' on the left; (2) the event; the story's 5 seconds play in ~6x SLOW MOTION over ~30 s while the counter shows '<THING> RETURNS IN 0:04.779' ticking in milliseconds; (3) it returns, ~6 s real-time aftermath, counter relabelled ('SUNLIGHT: BACK'); (4) 6 s end card.",
+      "NO cold open, no 'N seconds earlier' card, no speech bubbles, no punch captions, no word-by-word ASS captions. Text on screen = title, countdown, and one short italic serif line every 3–4 s addressed to 'you' (the narrator reads exactly those lines).",
+      "NARRATOR: yes (Kokoro af_heart, speed 1.0), reading the italic lines. 1–2 videos this month go out with NO narrator (music + lines only, cue like sun_cue_novoice.json) as a test: mark them `no_narrator_test: true` in the queue. Suggested: Nov 16 and Nov 24.",
+      "CAMERA: one continuous moving camera with at most 2–3 cuts (street → look up → rise over the city → back to a face).",
+      "ONE big visual transformation that a 10-year-old understands instantly and that keeps growing (sky goes black and the city lights up; everything floats; water vanishes). Not a list of small unrelated effects. Check the science and keep the lines accurate.",
+      "A LIVELY STREET (owner): more cars driving and more people doing specific things in the calm opening and aftermath — someone walking a dog, a jogger, a cyclist, someone on the phone, kids with balloons, a street musician, a delivery van unloading, pedestrians passing close to the camera. Never an empty street.",
+      "END CARD + COMMENTS (owner approved): black card with the title, one small line of facts, then 'What should we try next?' / 'TELL US IN THE COMMENTS'. Add to every caption: 'Comment your what-if — we make the best ones.' When a queue item has `idea_from` (a viewer's public handle), show 'Idea from a viewer comment' for the first 3 s and credit the @handle in the caption. NEVER offer prizes, giveaways or 'like/subscribe to be picked' (YouTube spam policy), never ask for likes or subs in the video.",
+      "SOUND: narrator always clearly on top (mix.py enforces a 14 dB margin; music_gain ≤ 0.3, sfx_gain ≤ 0.4). Quiet, tense bed during the slow motion; ticks; a riser into the return.",
+      "KEEP: New-York-style detailed city (or another equally detailed real-feeling place when the idea needs it), Mittens as a small background detail, AI labels on TikTok/Instagram and 'Animated · AI voice' in the YouTube description, a no-music copy for the owner's TikTok post."
+    ],
+    "rebuild": "gravity2x (post_date 2026-11-12) was made in the old structure. The next production run must FIRST rebuild it in this structure (same slug, overwrite videos/2026-11-12-gravity2x.mp4 and the -nomusic copy, update title/caption if needed). If the rebuild fails QA, leave the existing file in place so the post still goes out. Then set format_v5.rebuild to null."
+  },
+  "tiktok_note": "Owner posts TikTok by hand: the scheduler post got 8 views, his manual posts 687–1,537. He gets the TikTok reminder from the separate 22:50 task, not from the 20:57 run.",
+  "comments": {
+    "how": "Owner sends chosen comments in chat. YouTube comments: vidiq_video_comments; TikTok: vidiq_tiktok_video_comments (both cost vidIQ credits — check at most once a week). Instagram comments can't be read.",
+    "picked": []
+  }
 }
