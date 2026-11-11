@@ -419,7 +419,8 @@
       "ONE LOCKED LOOK for at least 10 videos: same title style and position, same countdown style, same calm-opening structure, same music family, city = engine/scenes/nyc.js style (street grid, towers with windows, taxis, crowds, park, rivers). Do not restyle between videos.",
       "LESS TEXT: title, countdown, word-by-word captions. At most 2 speech bubbles and 1 punch caption per video. No step-by-step 'stage 1…7' escalation.",
       "KEEP from before: detailed city, crowds, expanding waves, background song + ambience, loop ending (last shot flows into the hook), Mittens as a small recurring background detail (never the focus), narrator af_heart, hero voice clips only in gaps.",
-      "SUBSCRIBE: no 'follow for part 2' line. (Owner is choosing between: viewers pick tomorrow's what-if in comments / crediting the winner / Mittens survival counter — do not add until he picks.)"
+      "SUBSCRIBE: no 'follow for part 2' line. (Owner is choosing between: viewers pick tomorrow's what-if in comments / crediting the winner / Mittens survival counter — do not add until he picks.)",
+      "SOUND (owner, Nov 11): the narrator must always be clearly heard. mix.py now ducks music AND effects/ambience under the voice and enforces a 14 dB voice-over-everything margin; it prints 'voice-over-bed margin dB'. Use music_gain ≤ 0.3 and sfx_gain ≤ 0.4, never raise them, and never bypass the margin check."
     ]
   }
 }

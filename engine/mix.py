@@ -135,14 +135,22 @@ for ev in cue["events"]:
         m = np.ones(N); m[a:b] = 0; m[max(0, a - f):a] = np.linspace(1, 0, min(f, a)); m[b:b + f] = np.linspace(0, 1, len(m[b:b + f]))
         mus *= m[:, None]
 
-# duck music under voice
-ve = np.abs(vo); ve = lp(ve, 8); ve = ve / (ve.max() + 1e-9)
-duck = 1 - 0.55 * np.clip(ve * 4, 0, 1)
-mus *= duck[:, None]
+# duck music AND effects/ambience under the narrator (owner, Nov 11: secondary sounds were drowning the voice)
+ve = np.abs(vo); ve = lp(ve, 5); ve = ve / (ve.max() + 1e-9)
+act = np.clip(ve * 5, 0, 1)
+mus *= (1 - 0.78 * act)[:, None]
+sfx *= (1 - 0.62 * act)[:, None]
 vo_st = np.stack([vo, vo], 1)
 # light voice EQ: presence lift
 vo_st = vo_st + 0.25 * np.stack([hp(vo, 3000), hp(vo, 3000)], 1)
-mix = vo_st * 1.0 + mus * cue.get("music_gain", 0.6) + sfx * cue.get("sfx_gain", 0.5)
+bed = mus * cue.get("music_gain", 0.3) + sfx * cue.get("sfx_gain", 0.4)
+# clarity check: narrator must sit at least 14 dB above everything else while speaking
+m_ = act > 0.5
+if m_.any():
+    rv = np.sqrt((vo_st[m_] ** 2).mean()); rb = np.sqrt((bed[m_] ** 2).mean()) + 1e-9; margin = 20 * np.log10(rv / rb)
+    if margin < 14: bed *= 10 ** ((margin - 14) / 20); margin = 14.0
+    print("voice-over-bed margin dB:", round(float(margin), 1))
+mix = vo_st * 1.0 + bed
 mix = np.tanh(mix * 0.9) / 0.9
 mix /= np.abs(mix).max() + 1e-9; mix *= 0.89
 sf.write(sys.argv[2], mix, SR)
