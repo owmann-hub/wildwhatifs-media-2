@@ -93,8 +93,11 @@
         "keep_until": "2026-11-17"
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-11T07:00"
+        "status": "posted",
+        "due": "2026-11-11T07:00",
+        "media_id": "17888706291622928",
+        "permalink": "https://www.instagram.com/reel/DfmN5SMgccN/",
+        "posted_at": "2026-11-11T07:01"
       },
       "style": "A_explainer",
       "file_tiktok": "videos/2026-11-heat-nomusic.mp4",
