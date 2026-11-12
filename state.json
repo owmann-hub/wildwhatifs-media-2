@@ -37,7 +37,8 @@
         "permalink": "https://www.instagram.com/reel/DfhETBuApuC/",
         "posted_at": "2026-11-09T07:00"
       },
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "file_deleted": "2026-11-12 (housekeeping: all platforms posted >3 days)"
     },
     {
       "slug": "sneeze",
@@ -124,8 +125,11 @@
         "keep_until": "2026-11-18"
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-12T07:00"
+        "status": "posted",
+        "due": "2026-11-12T07:00",
+        "media_id": "17938713798407355",
+        "permalink": "https://www.instagram.com/reel/DfoywDQEYwO/",
+        "posted_at": "2026-11-12T07:01"
       },
       "style": "A_explainer",
       "file_tiktok": "videos/2026-11-shrink-nomusic.mp4",
