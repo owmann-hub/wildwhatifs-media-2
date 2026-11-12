@@ -142,7 +142,7 @@
       "post_date": "2026-11-12",
       "file": "videos/2026-11-12-gravity2x.mp4",
       "title": "What If Gravity Doubled for 5 Seconds? 🌍",
-      "caption": "Second 1: you weigh double. Second 3: every plane sinks. Second 5: the space station drops a football field 😳 Could you stay standing?",
+      "caption": "Your keys stop short. Everyone weighs double. Only the balloon wins 🎈 Stay for the last line. Comment your what-if — we make the best ones.",
       "hashtags": "#whatif #science #gravity #physics #space #3danimation #funfacts",
       "youtube": {
         "status": "pending",
@@ -161,9 +161,9 @@
       },
       "style": "A_explainer",
       "file_tiktok": "videos/2026-11-12-gravity2x-nomusic.mp4",
-      "version": "format_v4 (locked NYC look, countdown 0:05 -> event, world-scale) + hook_rules: 30.0 s, cold open on the kneeling-crowd moment with the x2 counter running, hook line 0.1-1.44 s, '6 SECONDS EARLIER' card, looping ending (countdown hits zero again -> first frame)",
-      "duration_s": 30.0,
-      "notes": "Facts checked: weight doubles (2 g, roller-coaster-level force, tolerable for seconds); plane whose lift stays at 1 g sinks 1/2*9.8*5^2 = 122 m in 5 s; Moon's pull toward Earth is GM/r^2 = 0.0027 m/s^2, doubling adds 1/2*0.0027*25 = 3.4 cm; ISS (g = 8.7 m/s^2 at 400 km) drops 1/2*8.7*25 = 109 m, about one football field (and about the ISS's own truss length); old balconies/water tanks 'start to crack' is hedged (structural safety factors ~1.5-2). Moon/Earth distance not to scale. QA: 30.0 s, max -0.9 dB, voice-over-bed margin 14 dB, last frame matches first. Hero 'Chris' clips not used (library not in repo); 2 speech bubbles + 1 punch caption per format_v4."
+      "version": "format_v5 rebuild (2026-11-12): calm lively street + countdown 0:07, 5 s in 6x slow motion, narrator af_heart reads the italic lines, aftermath, comments end card. Stake: you toss your keys to Dave on his balcony; gravity doubles mid-toss; second toss is caught. Answer last: the space station fell a football field.",
+      "duration_s": 49.2,
+      "notes": "Facts checked: at 2 g a toss reaches half the height (h = v^2/2g) and falls twice as far per second; weight doubles; helium balloon net lift (buoyancy - weight) scales with g, so it doubles and the balloon rises faster (terminal speed ~1.4x); a jet whose lift stays at 1 g sinks 1/2*9.8*5^2 = 122 m in 5 s; structures carry double dead load briefly (safety factors ~1.5-2); blood weight doubles; ISS (g = 8.7 m/s^2 at 400 km) drops 1/2*8.7*25 = 109 m, about a football field. QA: 49.2 s, max -1.5 dB, voice-over-bed margin 15.0 dB (no-music 16.3 dB), calm opening with title + countdown, end card present. Previous format_v4 version is in git history (commit 321926b)."
     }
   ],
   "premise_bank": [
@@ -480,7 +480,7 @@
       "OPENING STAKE (owner, Nov 11): the first 5 seconds must not be a still scene plus a question. Give 'you' (or one visible person) a small, specific thing in progress that the event interrupts — about to take a photo, a kid's balloon slipping away, a coffee being handed over, a proposal on one knee, a dog pulling its leash — and say it in the first italic line. Show how that small story ends in the aftermath (the photo, the balloon, the coffee), so the video pays off twice.",
       "ANSWER LAST: keep the biggest, most surprising consequence for the final seconds before the end card; never give it away in the opening lines or the title."
     ],
-    "rebuild": "gravity2x (post_date 2026-11-12) was made in the old structure. The next production run must FIRST rebuild it in this structure (same slug, overwrite videos/2026-11-12-gravity2x.mp4 and the -nomusic copy, update title/caption if needed). If the rebuild fails QA, leave the existing file in place so the post still goes out. Then set format_v5.rebuild to null."
+    "rebuild": null
   },
   "tiktok_note": "Owner posts TikTok by hand: the scheduler post got 8 views, his manual posts 687–1,537. He gets the TikTok reminder from the separate 22:50 task, not from the 20:57 run.",
   "comments": {

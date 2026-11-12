@@ -1,11 +1,54 @@
 [
- {"id":"hook","text":"Gravity just doubled."},
- {"id":"q","text":"What if gravity doubled... for five seconds?"},
- {"id":"l1","text":"You instantly weigh double. Knees buckle."},
- {"id":"l2","text":"Old balconies and water tanks crack."},
- {"id":"l3","text":"Planes sink over a hundred meters."},
- {"id":"l4","text":"The Moon gets pulled three centimeters closer."},
- {"id":"l5","text":"The space station drops a football field."},
- {"id":"l6","text":"Then it snaps back... and everyone feels light."},
- {"id":"close","text":"Could you stay standing?"}
+{
+"id": "n1",
+"text": "You're tossing your keys up to Dave, on the second floor."
+},
+{
+"id": "n2",
+"text": "In seven seconds, gravity doubles. Everywhere on Earth."
+},
+{
+"id": "n3",
+"text": "Your keys stop short\u2026 and drop twice as fast."
+},
+{
+"id": "n4",
+"text": "You suddenly weigh double. So does everyone."
+},
+{
+"id": "n5",
+"text": "Each step feels like carrying a second you."
+},
+{
+"id": "n6",
+"text": "Only the balloon wins. It rises even faster."
+},
+{
+"id": "n7",
+"text": "Every plane in the sky starts to sink."
+},
+{
+"id": "n8",
+"text": "In five seconds, this one drops 120 meters."
+},
+{
+"id": "n9",
+"text": "Every bridge and tower holds twice its weight."
+},
+{
+"id": "n10",
+"text": "Your heart pushes blood that weighs double."
+},
+{
+"id": "n11",
+"text": "Then, gravity lets go."
+},
+{
+"id": "n12",
+"text": "Second toss. Dave catches them."
+},
+{
+"id": "n13",
+"text": "And the space station? It just fell a football field."
+}
 ]
