@@ -1,3 +1,4 @@
+import { carGeos, pedGeos } from './lib.js';
 import { clamp, lerp, smooth, easeOut, easeInOut, pulse, rng, makePerson, drawCaption, makeSkyDome, makeBurst, makeCat, makeShockwave, softTex, setFace, life, drawBubble, drawSideCounter, drawTitleTimed, drawTag } from './lib.js';
 
 // EXAMPLE (not an official upload): sneeze, short cut, set in a New-York-style city.
@@ -42,6 +43,13 @@ export async function create({ THREE, W, H }) {
         if (vWp.y < 4.8) { float fy = vWp.y / 4.8; win = step(0.06, f.x) * step(f.x, 0.94) * step(0.12, fy) * step(fy, 0.78); glass = mix(vec3(1.0, 0.86, 0.55), vec3(0.16, 0.2, 0.26), step(0.55, hh)); }
         float d = distance(vWp.xz, uO); float broken = step(d + vWp.y * uK, uBreak) * step(0.2, hh);
         glass = mix(glass, vec3(0.015, 0.015, 0.02), broken);
+        float lod = clamp(1.0 - max(fwidth(c.x), fwidth(c.y)) * 5.0, 0.0, 1.0);
+        if (vWp.y >= 4.8) { float fr = step(0.13, f.x) * step(f.x, 0.87) * step(0.16, f.y) * step(f.y, 0.85) - win;
+          diffuseColor.rgb = mix(diffuseColor.rgb, diffuseColor.rgb * 1.22 + 0.05, fr * lod);
+          glass *= mix(1.0, mix(0.72, 1.3, (f.y - 0.22) / 0.58), lod);
+          glass *= 1.0 - lod * (0.5 * smoothstep(0.68, 0.8, f.y) + 0.3 * smoothstep(0.27, 0.18, f.x));
+          glass = mix(glass, diffuseColor.rgb * 1.15, lod * step(abs(f.x - 0.5), 0.02));
+          diffuseColor.rgb *= 1.0 - 0.1 * lod * step(f.y, 0.035); }
         diffuseColor.rgb = mix(diffuseColor.rgb, glass, win);
         float lit = vWp.y < 4.8 ? 1.0 : step(0.42, hh); totalEmissiveRadiance += win * lit * uNight * mix(vec3(1.0, 0.8, 0.5), vec3(0.75, 0.85, 1.0), step(0.8, hh)) * 0.42; }`); };
   const pal = [0x9a5b46, 0xb08968, 0xc9b79c, 0x8d8f94, 0xa39a8c, 0xd9d2c5, 0x7c4a3a, 0xb7a58f], glassPal = [0x4a5f74, 0x6f8fa8, 0x55707f, 0x8aa6b8, 0x3f4d5c];
@@ -134,14 +142,14 @@ export async function create({ THREE, W, H }) {
   // taxis & cars on the avenue (one-way uptown) + queues at the red light
   const NC = 30, cars = []; for (let k = 0; k < NC; k++) { if (k < 24) cars.push({ x: [3.4, 7.8, 12.2, 16.6][k % 4], z0: -250 + (Math.floor(k / 4) + R() * 0.7) * 84 + (k % 4) * 17, sp: 9 + R() * 4, ry: 0, c: R() < 0.72 ? 0xf5c518 : [0x1d1f22, 0xf2f2f2, 0x2d6fd6, 0xb3261e][Math.floor(R() * 4)] });
     else { const e2 = k % 2; const n = Math.floor((k - 24) / 2); cars.push({ x: e2 ? 27 + n * 6.5 : -8 - n * 6.5, z0: e2 ? 3.6 : 10.4, sp: 0, ry: e2 ? -Math.PI / 2 : Math.PI / 2, c: n === 1 ? 0x9aa3ad : 0xf5c518, still: true }); } }
-  const carB = new THREE.InstancedMesh(new THREE.BoxGeometry(1.9, 0.85, 4.5).translate(0, 0.7, 0), new THREE.MeshStandardMaterial({ roughness: 0.35, metalness: 0.25 }), NC);
-  const carT = new THREE.InstancedMesh(new THREE.BoxGeometry(1.7, 0.6, 2.3).translate(0, 1.4, -0.2), new THREE.MeshStandardMaterial({ color: 0x1c2733, roughness: 0.2, metalness: 0.5 }), NC);
+  const carB = new THREE.InstancedMesh(carGeos(THREE).body, new THREE.MeshStandardMaterial({ roughness: 0.35, metalness: 0.25 }), NC);
+  const carT = new THREE.InstancedMesh(carGeos(THREE).top, new THREE.MeshStandardMaterial({ color: 0x1c2733, roughness: 0.2, metalness: 0.5 }), NC);
   const carL = new THREE.InstancedMesh(new THREE.BoxGeometry(0.5, 0.2, 0.25).translate(0, 1.82, -0.2), new THREE.MeshBasicMaterial({ color: 0xfff6c0 }), NC);
   cars.forEach((c, k) => carB.setColorAt(k, col.set(c.c))); [carB, carT, carL].forEach(m => { m.castShadow = true; m.frustumCulled = false; A.add(m); });
   // pedestrians
   const NP = 190, peds = []; const shirts = [0xc94f4f, 0x3a7bd5, 0xf2c14e, 0x4caf7a, 0x8e5bb5, 0xeeeeee, 0x333333, 0xf28c38, 0x2bb3b1], skins = [0xf1c6a5, 0xd8a47e, 0xb5835a, 0x8d5a3b, 0x5c3a24];
-  const pB = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.2, 0.17, 1.15, 7).translate(0, 0.95, 0), new THREE.MeshStandardMaterial({ roughness: 0.8, flatShading: true }), NP);
-  const pH = new THREE.InstancedMesh(new THREE.IcosahedronGeometry(0.15, 1).translate(0, 1.7, 0), new THREE.MeshStandardMaterial({ roughness: 0.7, flatShading: true }), NP);
+  const pB = new THREE.InstancedMesh(pedGeos(THREE).body, new THREE.MeshStandardMaterial({ roughness: 0.8 }), NP);
+  const pH = new THREE.InstancedMesh(pedGeos(THREE).head, new THREE.MeshStandardMaterial({ roughness: 0.7 }), NP);
   const pL = new THREE.InstancedMesh(new THREE.BoxGeometry(0.28, 0.42, 0.18).translate(0, 0.21, 0), new THREE.MeshStandardMaterial({ color: 0x2b2f3a, roughness: 0.9 }), NP);
   for (let k = 0; k < NP; k++) { const west = R() < 0.5; const dir = R() < 0.5 ? 1 : -1, sp = 1.1 + R() * 0.6; let z0; do { z0 = -200 + R() * 400; } while (west && Math.abs(wrap(z0 + dir * sp * 7, -200, 200) + 7) < 14);
     peds.push({ x: west ? -4.2 + R() * 3.6 : 20.6 + R() * 3.8, z0, dir, sp, s: 0.88 + R() * 0.22, ph: R() * 6.28 }); pB.setColorAt(k, col.set(shirts[Math.floor(R() * shirts.length)])); pH.setColorAt(k, col.set(skins[Math.floor(R() * skins.length)])); }
