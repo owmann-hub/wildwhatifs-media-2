@@ -34,7 +34,7 @@ without asking them. Never publish a video that failed the quality check; skip t
    Vary setting, colours, character and camera from previous episodes (YouTube penalises templated, mass-produced content).
 7. Stills first: `W=540 H=960 ./sheet.sh <slug> t1,t2,...` → LOOK at the contact sheet; fix blown-out frames, subjects hidden behind the HUD (top 35 %),
    camera inside objects, empty frames. Iterate until every beat reads clearly.
-8. Full render at 720x1280: `W=720 H=1280 node render.mjs <slug> video ../videos/tmp.mp4 0 <TOTAL> 30` (≈25–30 min; run in background and poll).
+8. Full render at 720x1280: `W=720 H=1280 node render.mjs <slug> video ../videos/tmp.mp4 0 <TOTAL> 30` (since the Nov 12 polish standard ≈7 s/frame when two run at once: render the two halves in parallel as separate background jobs - `0 <T/2>` and `<T/2> <TOTAL>` - then join with ffmpeg concat; ≈80 min total; poll).
 9. Sound: write scripts/<slug>_cue.json (copy scripts/sneeze_cue2.json: a `song` event with an intensity curve + `amb` beds per location, music_gain 0.38) → `python3 mix.py cue out.wav`;
    also mix a no-music version (music_gain 0) → `videos/<yyyy-mm-dd>-<slug>-nomusic.mp4` for the owner's manual TikTok posts (they add a trending sound in-app); captions: `python3 captions.py <slug>`;
    final: ffmpeg burn `ass=` + mux audio with loudnorm I=-14, then re-encode CRF 23 maxrate 7M to `videos/<yyyy-mm-dd>-<slug>.mp4`.
