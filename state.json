@@ -164,6 +164,34 @@
       "version": "format_v5 rebuild (2026-11-12): calm lively street + countdown 0:07, 5 s in 6x slow motion, narrator af_heart reads the italic lines, aftermath, comments end card. Stake: you toss your keys to Dave on his balcony; gravity doubles mid-toss; second toss is caught. Answer last: the space station fell a football field.",
       "duration_s": 49.2,
       "notes": "Facts checked: at 2 g a toss reaches half the height (h = v^2/2g) and falls twice as far per second; weight doubles; helium balloon net lift (buoyancy - weight) scales with g, so it doubles and the balloon rises faster (terminal speed ~1.4x); a jet whose lift stays at 1 g sinks 1/2*9.8*5^2 = 122 m in 5 s; structures carry double dead load briefly (safety factors ~1.5-2); blood weight doubles; ISS (g = 8.7 m/s^2 at 400 km) drops 1/2*8.7*25 = 109 m, about a football field. QA: 49.2 s, max -1.5 dB, voice-over-bed margin 15.0 dB (no-music 16.3 dB), calm opening with title + countdown, end card present. Previous format_v4 version is in git history (commit 321926b)."
+    },
+    {
+      "slug": "sunoff",
+      "post_date": "2026-11-13",
+      "file": "videos/2026-11-13-sunoff.mp4",
+      "title": "What If the Sun Switched Off for 5 Seconds? ☀️",
+      "caption": "No sunset. No warning. Just stars at noon — and the strangest selfie in New York 📸 Stay for the last line. Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #science #sun #space #stars #3danimation #funfacts",
+      "youtube": {
+        "status": "pending",
+        "due": "2026-11-13T21:00"
+      },
+      "tiktok": {
+        "status": "manual",
+        "due": "2026-11-13T23:05",
+        "reason": "tiktok_manual_until 2026-12-31 (owner posts by hand)",
+        "file": "videos/2026-11-13-sunoff-nomusic.mp4",
+        "keep_until": "2026-11-20"
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-14T07:00"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-13-sunoff-nomusic.mp4",
+      "version": "format_v5: the owner-approved Sun prototype (sun.js) finished with the Nov 11 rules — opening stake (selfie with Mittens at the hot-dog cart, paid off by the photo of stars at noon), lively street (dog walker, jogger, cyclist, kid with balloon, busker, delivery van, phone call, coffee), answer last (8-minute delay is the final line). Narrator af_heart 1.0.",
+      "duration_s": 49.5,
+      "notes": "Facts checked: sunlight takes ~8 min 20 s to reach Earth, so the Sun went dark ~8 min before anyone could see it; the daytime sky is scattered sunlight, so it goes black at once and stars show; moonlight lags ~1.3 s (Moon-Earth light time); Jupiter is ~43 light-min from the Sun and 33-50 light-min from Earth, so it stays lit for over an hour; only the day side (~half the planet) sees it; 5 s is far too short for the air to cool. QA: 49.5 s, max -1.4 dB, voice-over-bed margin 16.2 dB (no-music 17.5 dB), calm opening with title + countdown, end card present. Scene engine/scenes/sunoff.js."
     }
   ],
   "premise_bank": [
@@ -176,7 +204,8 @@
     "sneeze",
     "heat",
     "shrink",
-    "gravity2x"
+    "gravity2x",
+    "sunoff"
   ],
   "plan_november": [
     {
@@ -203,7 +232,8 @@
       "premise": "What if the Sun switched off for 5 seconds?",
       "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
       "tiktok": true,
-      "style": "A_explainer"
+      "style": "A_explainer",
+      "made": "2026-11-12"
     },
     {
       "post_date": "2026-11-14",
