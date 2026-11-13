@@ -151,7 +151,7 @@
         "posted_at": "2026-11-12T20:58"
       },
       "tiktok": {
-        "status": "manual",
+        "status": "manual_requested",
         "due": "2026-11-12T23:05",
         "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
         "file": "videos/2026-11-12-gravity2x-nomusic.mp4",
