@@ -158,8 +158,11 @@
         "keep_until": "2026-11-19"
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-13T07:00"
+        "status": "posted",
+        "due": "2026-11-13T07:00",
+        "media_id": "18119272319276895",
+        "permalink": "https://www.instagram.com/reel/DfrUywxD4Gx/",
+        "posted_at": "2026-11-13T06:38"
       },
       "style": "A_explainer",
       "file_tiktok": "videos/2026-11-12-gravity2x-nomusic.mp4",
