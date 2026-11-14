@@ -191,8 +191,11 @@
     "keep_until": "2026-11-20"
    },
    "instagram": {
-    "status": "pending",
-    "due": "2026-11-14T07:00"
+    "status": "posted",
+    "due": "2026-11-14T07:00",
+    "media_id": "18182410279440101",
+    "permalink": "https://www.instagram.com/reel/Dft5k3tiTJ-/",
+    "posted_at": "2026-11-14T06:38"
    },
    "style": "A_explainer",
    "file_tiktok": "videos/2026-11-13-sunoff-nomusic.mp4",
