@@ -231,6 +231,35 @@
    "version": "format_v5: own place, stake and transformation built on the sun.js structure — stake: crouched tying a shoelace outside the bakery, paid off when the lace pulls tight on the first try in the aftermath; transformation: every surface turns mirror-slick and everything that was moving simply keeps going (taxi, coffee, crowd, Mittens on her chair, a sand pile flowing flat); answer last: your own joints are already almost frictionless. Narrator af_heart 1.0.",
    "duration_s": 51.8,
    "notes": "Facts checked: 50 km/h = 13.9 m/s, braking at mu≈0.8 needs ~12 m, and in 5 frictionless seconds the car covers ~70 m; dry tyre grip mu≈0.8, ice≈0.1; synovial-joint cartilage mu as low as 0.002 (Guilak 2005, Body Physics), far below ice-on-ice ≈0.03; dry sand piles at an angle of repose ≈34°, which friction sets; Manhattan blocks ≈80 m × 274 m. QA: 51.8 s, 1080x1920, 33 MB, max -1.4 dB, voice-over-bed margin 16.3 dB (no-music 17.9 dB), calm lively opening with title + countdown, end card present. Scene engine/scenes/friction.js, cue scripts/friction_cue.json."
+  },
+  {
+   "slug": "water",
+   "post_date": "2026-11-15",
+   "file": "videos/2026-11-15-water.mp4",
+   "title": "What If All the Water on Earth Vanished for 5 Seconds? 💧",
+   "caption": "The East River turns into a 12-metre mud canyon, the ferry drops, and Mittens finally likes the river 🐟 Stay for the last line. Comment your what-if — we make the best ones.",
+   "hashtags": "#whatif #science #water #ocean #3danimation #funfacts #newyork",
+   "youtube": {
+    "status": "pending",
+    "due": "2026-11-15T21:00"
+   },
+   "tiktok": {
+    "status": "manual",
+    "due": "2026-11-15T23:05",
+    "reason": "tiktok_manual_until 2026-12-31 (owner posts by hand)",
+    "file": "videos/2026-11-15-water-nomusic.mp4",
+    "keep_until": "2026-11-22"
+   },
+   "instagram": {
+    "status": "pending",
+    "due": "2026-11-16T07:00"
+   },
+   "style": "A_explainer",
+   "file_tiktok": "videos/2026-11-15-water-nomusic.mp4",
+   "place": "East River esplanade railing, Manhattan (late morning)",
+   "version": "format_v5: own place, stake and transformation built on the sun.js structure — stake: about to beat a stone-skipping record (best: four), the stone lands in a shopping cart on the dry riverbed, paid off when the next stone skips five times after the water returns; transformation: the blue drains out of the world — river becomes a 12 m mud canyon (ferry, sailboat, tug and fish drop), every cloud boils away, the harbour is a valley with Liberty on a hill, the planet from space is brown; Mittens peeks over the railing delighted, then gets soaked; answer last: ships at sea fell ~120 m. Narrator af_heart 1.0. 3 cuts (Mittens, space, back to hero).",
+   "duration_s": 53.6,
+   "notes": "Facts checked: East River ~12 m (40 ft) deep from the Battery to the Navy Yard (Wikipedia, 1939 survey); Brooklyn Bridge towers ~84 m above mean high water, deck 38.7 m (Wikipedia); Statue of Liberty 93 m ground to torch (NPS); Challenger Deep 10,935 m (NOAA/Britannica); free fall for 5 s = 0.5*9.81*25 ≈ 122 m (open-ocean depth averages ~3.7 km, so ships don't reach bottom); clouds are water droplets/ice. Premise scoped on screen: water inside living things stays. QA: 53.6 s, 1080x1920, 33.5 MB, max -1.5 dB, voice-over-bed margin 17.6 dB (no-music 19.1 dB), calm lively opening with title + countdown, end card present. Scene engine/scenes/water.js, cue scripts/water_cue.json, sfx engine/scripts/water_sfx.py."
   }
  ],
  "premise_bank": [
@@ -245,7 +274,8 @@
   "shrink",
   "gravity2x",
   "sunoff",
-  "friction"
+  "friction",
+  "water"
  ],
  "plan_november": [
   {
@@ -290,7 +320,8 @@
    "premise": "What if all the water on Earth vanished for 5 seconds?",
    "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
    "tiktok": true,
-   "style": "A_explainer"
+   "style": "A_explainer",
+   "made": "2026-11-14"
   },
   {
    "post_date": "2026-11-16",
@@ -574,6 +605,10 @@
   {
    "slug": "friction",
    "place": "pavement cafe outside a bakery (late afternoon)"
+  },
+  {
+   "slug": "water",
+   "place": "East River esplanade railing, Manhattan (late morning)"
   }
  ]
 }
