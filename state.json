@@ -184,7 +184,7 @@
     "posted_at": "2026-11-13T20:58"
    },
    "tiktok": {
-    "status": "manual",
+    "status": "manual_requested",
     "due": "2026-11-13T23:05",
     "reason": "tiktok_manual_until 2026-12-31 (owner posts by hand)",
     "file": "videos/2026-11-13-sunoff-nomusic.mp4",
