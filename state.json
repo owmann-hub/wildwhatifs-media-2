@@ -265,6 +265,41 @@
       "version": "format_v5: own place, stake and transformation built on the sun.js structure — stake: about to beat a stone-skipping record (best: four), the stone lands in a shopping cart on the dry riverbed, paid off when the next stone skips five times after the water returns; transformation: the blue drains out of the world — river becomes a 12 m mud canyon (ferry, sailboat, tug and fish drop), every cloud boils away, the harbour is a valley with Liberty on a hill, the planet from space is brown; Mittens peeks over the railing delighted, then gets soaked; answer last: ships at sea fell ~120 m. Narrator af_heart 1.0. 3 cuts (Mittens, space, back to hero).",
       "duration_s": 53.6,
       "notes": "Facts checked: East River ~12 m (40 ft) deep from the Battery to the Navy Yard (Wikipedia, 1939 survey); Brooklyn Bridge towers ~84 m above mean high water, deck 38.7 m (Wikipedia); Statue of Liberty 93 m ground to torch (NPS); Challenger Deep 10,935 m (NOAA/Britannica); free fall for 5 s = 0.5*9.81*25 ≈ 122 m (open-ocean depth averages ~3.7 km, so ships don't reach bottom); clouds are water droplets/ice. Premise scoped on screen: water inside living things stays. QA: 53.6 s, 1080x1920, 33.5 MB, max -1.5 dB, voice-over-bed margin 17.6 dB (no-music 19.1 dB), calm lively opening with title + countdown, end card present. Scene engine/scenes/water.js, cue scripts/water_cue.json, sfx engine/scripts/water_sfx.py."
+    },
+    {
+      "slug": "jump",
+      "post_date": "2026-11-16",
+      "file": "videos/2026-11-16-jump.mp4",
+      "title": "What If Everyone on Earth Jumped at the Same Time? 🦘",
+      "caption": "8.2 billion people leave the ground at once — your neighbour keeps reading his paper, the pigeon refuses, and Mittens finally gets the ice cream 🍦 Stay for the last line. Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #science #physics #3danimation #funfacts #newyork #cat",
+      "youtube": {
+        "status": "pending",
+        "due": "2026-11-16T21:00"
+      },
+      "tiktok": {
+        "status": "manual",
+        "due": "2026-11-16T23:05",
+        "reason": "tiktok_manual_until 2026-12-31 (owner posts by hand)",
+        "file": "videos/2026-11-16-jump-nomusic.mp4",
+        "keep_until": "2026-11-23"
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-17T07:00"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-16-jump-nomusic.mp4",
+      "place": "bus stop outside an ice-cream parlour on a busy avenue (early afternoon)",
+      "cast": [
+        "THE UNBOTHERED PERSON (reads his newspaper, turns a page mid-air)",
+        "THE PIGEON (does not jump, slow judging turn)",
+        "THE SALESMAN ('I JUMPED' T-shirts, walks up to you seconds after landing)"
+      ],
+      "no_narrator_test": false,
+      "version": "format_v5 + Nov 15 rules (bright look, varied shop fronts, comedy tone, fluent motion, background cast). Stake: three-scoop cone, 'don't drop it' — paid off after landing when the top scoop slides onto the bench and Mittens eats it. Transformation: nobody on Earth touches the ground — street (contact shadows under every hovering person), rooftops and avenues seen from above, then the planet from space with a lifted glowing layer over every continent (labelled 'height not to scale'). Jump airtime 0.6 s shown at 50x slow motion (bullet time), counter 'EVERYONE LANDS IN 0:00.600'. Narrator af_heart 1.0 with 2 blame lines ('This was your idea, by the way.', 'You had one job.'). 3 cuts (Mittens/pigeon, space, back to you). Answer last: Earth moved less than a thousandth of an atom's width.",
+      "duration_s": 53.6,
+      "notes": "Facts checked: world population ~8.2 billion in July 2026 (US Census Bureau IDB); Earth ~6e24 kg and total human mass ~363 billion kg for 7 billion people (Live Science / Rhett Allain) -> ~0.4 trillion kg today; 0.6 s airtime = take-off 2.94 m/s, peak 0.44 m; Earth recoil <= (4e11/5.97e24) x 0.44 m ~ 3e-14 m, < 1/1000 of a hydrogen atom (~1e-10 m), and less in reality because people spread round the globe push in different directions; Empire State Building 443.2 m to tip (CTBUH Skyscraper Center); ISS ~400 km up; 1 pm New York (EST) = 3 am Tokyo. QA: 53.6 s, 1080x1920, 23.4 MB, max -1.0 dB, voice-over-bed margin 16.3 dB (no-music 17.6 dB), calm lively opening with title + countdown, passing taxis, dog walker, kid with balloon, end card present. Reader shot (9.6-12.8 s) re-rendered after QA because a passer-by blocked it. Scene engine/scenes/jump.js, cue scripts/jump_cue.json."
     }
   ],
   "premise_bank": [
@@ -280,7 +315,8 @@
     "gravity2x",
     "sunoff",
     "friction",
-    "water"
+    "water",
+    "jump"
   ],
   "plan_november": [
     {
@@ -335,7 +371,8 @@
       "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
       "tiktok": true,
       "style": "A_explainer",
-      "no_narrator_test": false
+      "no_narrator_test": false,
+      "made": "2026-11-15"
     },
     {
       "post_date": "2026-11-17",
@@ -619,7 +656,20 @@
     {
       "slug": "water",
       "place": "East River esplanade railing, Manhattan (late morning)"
+    },
+    {
+      "slug": "jump",
+      "place": "bus stop outside an ice-cream parlour on a busy avenue (early afternoon)"
     }
   ],
-  "cast_log": []
+  "cast_log": [
+    {
+      "slug": "jump",
+      "cast": [
+        "unbothered (newspaper)",
+        "pigeon",
+        "salesman"
+      ]
+    }
+  ]
 }
