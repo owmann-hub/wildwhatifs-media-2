@@ -193,18 +193,70 @@ export function makeEarth(THREE, RE = 6371, seed = 9) {
   g.userData.earth = earth; return g;
 }
 export function makeCat(THREE, color = 0xf0a040) {
-  const m = new THREE.MeshStandardMaterial({ color, roughness: 0.75 });
-  const w = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.4 }), k = new THREE.MeshStandardMaterial({ color: 0x111111 });
+  // expressive Mittens (owner, Nov 15): big head on a pivot, large glossy eyes with eyelids, moving ears, mouth, tail.
+  // Returns the group; parts are in group.userData.cat. Drive it with setCatFace(cat, mood) and catLife(cat, t).
+  const m = new THREE.MeshStandardMaterial({ color, roughness: 0.7 });
+  const w = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.25 }), k = new THREE.MeshStandardMaterial({ color: 0x111111, roughness: 0.4 });
+  const belly = new THREE.MeshStandardMaterial({ color: 0xfff1dc, roughness: 0.8 }), pink = new THREE.MeshStandardMaterial({ color: 0xff8fa0, roughness: 0.6 });
   const g = new THREE.Group();
-  const body = new THREE.Mesh(new RoundedBoxGeometry(0.24, 0.22, 0.47, 4, 0.1), m); body.position.y = 0.22; g.add(body);
-  const head = new THREE.Mesh(new THREE.SphereGeometry(0.135, 20, 16), m); head.position.set(0, 0.38, 0.25); g.add(head);
-  for (const s of [-1, 1]) { const ear = new THREE.Mesh(new THREE.ConeGeometry(0.05, 0.1, 10), m); ear.position.set(s * 0.07, 0.5, 0.25); g.add(ear);
-    const e = new THREE.Mesh(new THREE.SphereGeometry(0.03, 8, 6), w); e.position.set(s * 0.05, 0.4, 0.36); g.add(e);
-    const p = new THREE.Mesh(new THREE.SphereGeometry(0.016, 6, 4), k); p.position.set(s * 0.05, 0.4, 0.385); g.add(p);
-    for (const z of [-0.15, 0.15]) { const leg = new THREE.Mesh(new THREE.CapsuleGeometry(0.03, 0.09, 3, 8), m); leg.position.set(s * 0.07, 0.07, z); g.add(leg); } }
-  const tail = new THREE.Mesh(new THREE.CapsuleGeometry(0.025, 0.32, 3, 8), m); tail.position.set(0, 0.38, -0.3); tail.rotation.x = -0.6; g.add(tail);
+  const body = new THREE.Mesh(new RoundedBoxGeometry(0.25, 0.23, 0.47, 5, 0.11), m); body.position.y = 0.22; g.add(body);
+  const headPivot = new THREE.Group(); headPivot.position.set(0, 0.36, 0.2); g.add(headPivot);
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.17, 28, 20), m); head.scale.set(1.12, 0.95, 0.95); head.position.set(0, 0.06, 0.06); headPivot.add(head);
+  const muzzle = new THREE.Mesh(new THREE.SphereGeometry(0.07, 16, 12), belly); muzzle.scale.set(1.25, 0.7, 0.6); muzzle.position.set(0, 0.015, 0.2); headPivot.add(muzzle);
+  const nose = new THREE.Mesh(new THREE.SphereGeometry(0.017, 10, 8), pink); nose.position.set(0, 0.04, 0.245); headPivot.add(nose);
+  const mouth = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.008, 0.008), k); mouth.position.set(0, 0.0, 0.243); headPivot.add(mouth);
+  const mouthO = new THREE.Mesh(new THREE.SphereGeometry(0.028, 12, 10), new THREE.MeshStandardMaterial({ color: 0x4a1010, roughness: 0.6 })); mouthO.scale.set(1, 1.1, 0.4); mouthO.position.set(0, -0.012, 0.238); mouthO.visible = false; headPivot.add(mouthO);
+  const smile = new THREE.Mesh(new THREE.TorusGeometry(0.026, 0.005, 6, 14, Math.PI), k); smile.rotation.z = Math.PI; smile.position.set(0, 0.012, 0.243); smile.visible = false; headPivot.add(smile);
+  const C = { body, headPivot, head, mouth, mouthO, smile, ears: [], eyes: [], pupils: [], lids: [], legs: [] };
+  for (const sx of [-1, 1]) {
+    const earP = new THREE.Group(); earP.position.set(sx * 0.105, 0.18, 0.04); headPivot.add(earP);
+    const ear = new THREE.Mesh(new THREE.ConeGeometry(0.06, 0.13, 14), m); ear.position.y = 0.05; earP.add(ear);
+    const inn = new THREE.Mesh(new THREE.ConeGeometry(0.035, 0.085, 10), pink); inn.position.set(0, 0.04, 0.022); earP.add(inn); C.ears.push(earP);
+    const e = new THREE.Mesh(new THREE.SphereGeometry(0.047, 18, 14), w); e.position.set(sx * 0.078, 0.085, 0.185); headPivot.add(e); C.eyes.push(e);
+    const p = new THREE.Mesh(new THREE.SphereGeometry(0.03, 14, 12), k); p.position.set(0, 0, 0.033); p.scale.set(1, 1, 0.6); e.add(p); C.pupils.push(p);
+    const gl = new THREE.Mesh(new THREE.SphereGeometry(0.009, 8, 6), new THREE.MeshBasicMaterial({ color: 0xffffff })); gl.position.set(0.01, 0.012, 0.022); p.add(gl);
+    const lid = new THREE.Mesh(new THREE.SphereGeometry(0.054, 16, 10, 0, Math.PI * 2, 0, Math.PI / 2), m); lid.position.copy(e.position); lid.rotation.x = -Math.PI / 2; headPivot.add(lid); C.lids.push(lid);
+    for (const z of [-0.15, 0.15]) { const leg = new THREE.Mesh(new THREE.CapsuleGeometry(0.034, 0.09, 3, 10), m); leg.position.set(sx * 0.075, 0.07, z); g.add(leg); C.legs.push(leg); }
+    for (let i = 0; i < 2; i++) { const wh = new THREE.Mesh(new THREE.CylinderGeometry(0.0025, 0.0025, 0.11, 4), w); wh.rotation.z = Math.PI / 2 + sx * (i ? 0.25 : -0.1); wh.position.set(sx * 0.12, 0.02 - i * 0.02, 0.2); headPivot.add(wh); }
+  }
+  const tailP = new THREE.Group(); tailP.position.set(0, 0.28, -0.22); g.add(tailP);
+  const tail = new THREE.Mesh(new THREE.CapsuleGeometry(0.03, 0.34, 4, 10), m); tail.position.y = 0.17; tailP.add(tail); tailP.rotation.x = -0.6; C.tail = tailP; C.tailMesh = tail;
   g.traverse(o => { if (o.isMesh) o.castShadow = true; });
+  g.userData.cat = C; g.userData.mood = 'neutral';
   return g;
+}
+// Mittens' moods: neutral | unimpressed | annoyed | shock | happy | sleepy | smug | scared. k = 0..1 blend toward the mood (call every frame).
+const CAT_MOODS = {
+  neutral:     { lid: 0.12, lidTilt: 0,    pupil: 1.0, eye: 1.0, ear: 0,    earBack: 0,   tail: -0.6, puff: 1,   mouth: 'flat' },
+  unimpressed: { lid: 0.5,  lidTilt: 0,    pupil: 0.9, eye: 1.0, ear: 0.25, earBack: 0.1, tail: -1.1, puff: 1,   mouth: 'flat' },
+  annoyed:     { lid: 0.42, lidTilt: 0.5,  pupil: 0.7, eye: 1.0, ear: 0.7,  earBack: 0.5, tail: -0.9, puff: 1.15, mouth: 'flat' },
+  shock:       { lid: 0.0,  lidTilt: 0,    pupil: 0.45, eye: 1.35, ear: -0.15, earBack: 0, tail: 0.15, puff: 2.2, mouth: 'o' },
+  scared:      { lid: 0.0,  lidTilt: -0.4, pupil: 0.5, eye: 1.3, ear: 0.9,  earBack: 0.7, tail: -1.5, puff: 1.8, mouth: 'o' },
+  happy:       { lid: 0.3,  lidTilt: -0.2, pupil: 1.25, eye: 1.05, ear: -0.1, earBack: 0, tail: 0.1,  puff: 1,   mouth: 'smile' },
+  smug:        { lid: 0.55, lidTilt: -0.35, pupil: 1.0, eye: 1.0, ear: 0,   earBack: 0,   tail: -0.2, puff: 1,   mouth: 'smile' },
+  sleepy:      { lid: 0.88, lidTilt: 0,    pupil: 1.0, eye: 1.0, ear: 0.4,  earBack: 0,   tail: -1.4, puff: 1,   mouth: 'flat' },
+};
+export function setCatFace(cat, mood = 'neutral', k = 1) {
+  const C = cat.userData.cat; if (!C) return; const M = CAT_MOODS[mood] || CAT_MOODS.neutral; cat.userData.mood = mood;
+  const S = cat.userData.catState || (cat.userData.catState = { ...CAT_MOODS.neutral });
+  for (const key of ['lid', 'lidTilt', 'pupil', 'eye', 'ear', 'earBack', 'tail', 'puff']) S[key] += (M[key] - S[key]) * k;
+  S.mouth = M.mouth;
+  C.mouth.visible = S.mouth === 'flat'; C.mouthO.visible = S.mouth === 'o'; C.smile.visible = S.mouth === 'smile';
+}
+// call every frame after setCatFace: applies the mood plus blinking, ear twitches, tail swish and breathing
+export function catLife(cat, t, amt = 1) {
+  const C = cat.userData.cat; if (!C) return; const S = cat.userData.catState || (cat.userData.catState = { ...CAT_MOODS.neutral });
+  const ph = (cat.id % 7) * 0.9, bt = (t + ph) % 3.7, blink = bt < 0.13 && S.lid < 0.8 ? Math.sin(bt / 0.13 * Math.PI) : 0;
+  const lid = Math.min(1, S.lid + blink * (1 - S.lid));
+  C.lids.forEach((l, i) => { l.rotation.x = -Math.PI / 2 + lid * Math.PI; l.rotation.z = (i ? 1 : -1) * S.lidTilt * 0.6; });
+  C.eyes.forEach(e => e.scale.setScalar(S.eye)); C.lids.forEach(l => l.scale.setScalar(S.eye));
+  C.pupils.forEach(p => p.scale.set(S.pupil, S.pupil * (S.pupil < 0.8 ? 1.5 : 1), 0.6));
+  const tw = Math.max(0, Math.sin(t * 1.3 + ph) - 0.93) * 6 * amt;
+  C.ears.forEach((e, i) => { const sx = i ? 1 : -1; e.rotation.z = -sx * (S.ear * 0.9 + (i ? tw : 0)); e.rotation.x = -S.earBack * 0.8; });
+  C.tail.rotation.x = S.tail + Math.sin(t * 1.7 + ph) * 0.08 * amt; C.tail.rotation.z = Math.sin(t * (S.mood === 'annoyed' ? 7 : 2.3) + ph) * (0.3 + (S.puff - 1) * 0.1) * amt;
+  C.tailMesh.scale.set(S.puff, 1, S.puff);
+  C.body.scale.y = 1 + Math.sin(t * 2.2 + ph) * 0.025 * amt;
+  C.headPivot.rotation.z = Math.sin(t * 0.7 + ph) * 0.04 * amt;
 }
 // voxel house: returns {mesh, vox:[{x,y,z,c}], set(i, matrix)}; origin at front-centre on ground, front faces +z
 export function makeVoxelHouse(THREE, o = {}) {
