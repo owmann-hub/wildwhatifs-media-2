@@ -25,7 +25,7 @@ export function keys(k, t, ease = easeInOut) {
 export function makePerson(THREE, o = {}) {
   // polished toy look (owner, Nov 12): rounded smooth-shaded body, capsule limbs, round head, soft materials
   const M = (c, r) => new THREE.MeshStandardMaterial({ color: c, roughness: r });
-  const skin = M(o.skin ?? 0xe0a882, 0.62), shirt = M(o.shirt ?? 0x2f7de1, 0.72), pants = M(o.pants ?? 0x2b2f3a, 0.8), shoe = M(o.shoe ?? 0xf2f2f2, 0.5), hair = M(o.hair ?? 0x3b2416, 0.85);
+  const skin = M(o.skin ?? 0xe0a882, 0.5), shirt = M(o.shirt ?? 0x2f7de1, 0.72), pants = M(o.pants ?? 0x2b2f3a, 0.8), shoe = M(o.shoe ?? 0xf2f2f2, 0.5), hair = M(o.hair ?? 0x3b2416, 0.85);
   const dark = new THREE.MeshStandardMaterial({ color: 0x111111, roughness: 0.4 });
   const g = new THREE.Group();
   const mats = { skin, shirt, pants, shoe, hair };
@@ -43,6 +43,9 @@ export function makePerson(THREE, o = {}) {
   const eyeR = new THREE.Mesh(eyeG, white); eyeR.position.set(0.062, 0.17, 0.135); headPivot.add(eyeR);
   const pL = new THREE.Mesh(pupG, dark); pL.position.set(0, 0, 0.026); eyeL.add(pL);
   const pR = new THREE.Mesh(pupG, dark); pR.position.set(0, 0, 0.026); eyeR.add(pR);
+  // glossy eyes: big dark pupils with a white glint (bright toy look, owner reference Nov 15)
+  pL.scale.setScalar(1.25); pR.scale.setScalar(1.25); const glintM = new THREE.MeshBasicMaterial({ color: 0xffffff });
+  for (const pp of [pL, pR]) { const gl = new THREE.Mesh(new THREE.SphereGeometry(0.0065, 8, 6), glintM); gl.position.set(0.007, 0.008, 0.014); pp.add(gl); }
   const nose = new THREE.Mesh(new THREE.SphereGeometry(0.026, 12, 10), skin); nose.scale.set(0.9, 0.9, 1.3); nose.position.set(0, 0.11, 0.158); headPivot.add(nose);
   const mouth = new THREE.Mesh(new THREE.BoxGeometry(0.07, 0.012, 0.01), dark); mouth.position.set(0, 0.05, 0.158); headPivot.add(mouth);
   const es = o.eyeScale ?? 1.35; eyeL.scale.setScalar(es); eyeR.scale.setScalar(es); eyeL.userData.s = eyeR.userData.s = es;

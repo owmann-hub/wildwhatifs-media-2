@@ -58,7 +58,7 @@ window.renderFrame = (t, quality = 0.9) => {
   bloom.radius = st.bloomRadius ?? 0.5;
   renderer.toneMappingExposure = st.exposure ?? 1.0;
   { const scn = st.scene || S.scene; if (!envOK.has(scn)) { let h = false; scn.traverse(o => { if (o.isHemisphereLight) h = true; }); envOK.set(scn, h); if (h && !scn.environment) scn.environment = envTex; }
-    if (envOK.get(scn)) scn.environmentIntensity = st.env ?? 0.28; }
+    if (envOK.get(scn)) scn.environmentIntensity = st.env ?? 0.4; }
   composer.render();
   ctx.setTransform(1,0,0,1,0,0);
   // camera shake applied in 2D as small offset + scale
@@ -66,7 +66,7 @@ window.renderFrame = (t, quality = 0.9) => {
   const ox = sh ? (Math.sin(t*93.1)+Math.sin(t*57.3))*sh*12 : 0;
   const oy = sh ? (Math.cos(t*81.7)+Math.sin(t*43.9))*sh*12 : 0;
   const sc = 1 + sh*0.03;
-  ctx.filter = `saturate(${st.sat ?? 1.14}) contrast(${st.contrast ?? 1.04})`;
+  ctx.filter = `saturate(${st.sat ?? 1.26}) contrast(${st.contrast ?? 1.04})`;
   ctx.drawImage(renderer.domElement, -W*(sc-1)/2+ox, -H*(sc-1)/2+oy, W*sc, H*sc);
   ctx.filter = 'none';
   // tilt-shift depth-of-field: sharp band around st.focusY (0..1 of height), soft above and below. st.dof = 0 turns it off.
