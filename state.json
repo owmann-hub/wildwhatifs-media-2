@@ -259,8 +259,11 @@
         "keep_until": "2026-11-22"
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-16T07:00"
+        "status": "posted",
+        "due": "2026-11-16T07:00",
+        "media_id": "18120797719973773",
+        "permalink": "https://www.instagram.com/reel/DfzDPpnE_up/",
+        "posted_at": "2026-11-16T06:39"
       },
       "style": "A_explainer",
       "file_tiktok": "videos/2026-11-15-water-nomusic.mp4",
