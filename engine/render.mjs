@@ -21,7 +21,7 @@ const browser = await chromium.launch({ executablePath: '/usr/bin/google-chrome'
 const page = await browser.newPage({ viewport: { width: 400, height: 400 } });
 page.on('console', m => console.log('[page]', m.text()));
 page.on('pageerror', e => console.log('[pageerror]', e.message));
-await page.goto(`http://localhost:${port}/page.html?scene=${scene}&w=${W}&h=${H}&dbg=${process.env.DBG||''}${process.env.VOFF!==undefined?'&voff='+process.env.VOFF:''}${process.env.NOHUD?'&nohud=1':''}`);
+await page.goto(`http://localhost:${port}/page.html?scene=${scene}&w=${W}&h=${H}&dbg=${process.env.DBG||''}&aa=${process.env.AA??4}${process.env.VOFF!==undefined?'&voff='+process.env.VOFF:''}${process.env.NOHUD?'&nohud=1':''}`);
 await page.waitForFunction('window.ready === true', null, { timeout: 120000 });
 
 const toBuf = (d) => Buffer.from(d.split(',')[1], 'base64');

@@ -32,7 +32,8 @@ const ctx = out.getContext('2d');
 const mod = await import(`./scenes/${sceneName}.js?v=${Date.now()}`);
 const S = await mod.create({ THREE, renderer, W, H });
 const VOFF = -H * (params.has('voff') ? +params.get('voff') : 0.09);
-const composer = new EffectComposer(renderer);
+const AA = +(new URLSearchParams(location.search).get('aa') ?? 4);
+const composer = new EffectComposer(renderer, new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples: AA }));
 composer.setSize(W, H);
 const rp = new RenderPass(S.scene, S.camera); composer.addPass(rp);
 const bloom = new UnrealBloomPass(new THREE.Vector2(W / 2, H / 2), 0.6, 0.5, 0.85);
@@ -70,12 +71,19 @@ window.renderFrame = (t, quality = 0.9) => {
   ctx.drawImage(renderer.domElement, -W*(sc-1)/2+ox, -H*(sc-1)/2+oy, W*sc, H*sc);
   ctx.filter = 'none';
   // tilt-shift depth-of-field: sharp band around st.focusY (0..1 of height), soft above and below. st.dof = 0 turns it off.
-  const dof = st.dof ?? 0.55;
+  const dof = st.dof ?? 0.32;
   if (dof > 0) { const fy = st.focusY ?? 0.56, fh = st.focusH ?? 0.2, ramp = 0.22;
     bctx.globalCompositeOperation = 'source-over'; bctx.clearRect(0, 0, W, H); bctx.filter = `blur(${(dof * 6 * window.RES).toFixed(2)}px)`; bctx.drawImage(out, -8, -8, W + 16, H + 16); bctx.filter = 'none';
     const mg = bctx.createLinearGradient(0, 0, 0, H); const c01 = v => Math.min(1, Math.max(0, v));
     mg.addColorStop(0, `rgba(0,0,0,${c01((fy - fh) / ramp)})`); mg.addColorStop(c01(fy - fh), 'rgba(0,0,0,0)'); mg.addColorStop(c01(fy + fh), 'rgba(0,0,0,0)'); mg.addColorStop(1, `rgba(0,0,0,${c01((1 - fy - fh) / ramp)})`);
     bctx.globalCompositeOperation = 'destination-in'; bctx.fillStyle = mg; bctx.fillRect(0, 0, W, H); ctx.drawImage(blurC, 0, 0); }
+  // picture-in-picture reaction cam (e.g. Mittens cam): st.inset = { scene, camera, x, y, r (fractions of W/H/W), show 0..1, ring }
+  if (st.inset && st.inset.scene && (st.inset.show ?? 1) > 0.01) { const I = st.inset, k = Math.min(1, I.show ?? 1), R = (I.r ?? 0.15) * W * (0.6 + 0.4 * k), sz = Math.min(H, Math.ceil(R * 2));
+    renderer.setRenderTarget(null); renderer.setScissorTest(true); renderer.setScissor(0, 0, sz, sz); renderer.setViewport(0, 0, sz, sz); renderer.toneMappingExposure = 1.0; renderer.clear(); renderer.render(I.scene, I.camera);
+    const cx = (I.x ?? 0.8) * W, cy = (I.y ?? 0.2) * H; ctx.save(); ctx.globalAlpha = k; ctx.shadowColor = 'rgba(0,0,0,0.45)'; ctx.shadowBlur = 18 * window.RES; ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.fillStyle = '#fff'; ctx.fill(); ctx.shadowBlur = 0;
+    ctx.beginPath(); ctx.arc(cx, cy, R - 5 * window.RES, 0, 7); ctx.clip(); ctx.drawImage(renderer.domElement, 0, H - sz, sz, sz, cx - R, cy - R, R * 2, R * 2); ctx.restore();
+    ctx.save(); ctx.globalAlpha = k; ctx.beginPath(); ctx.arc(cx, cy, R - 2.5 * window.RES, 0, 7); ctx.lineWidth = 5 * window.RES; ctx.strokeStyle = I.ring ?? '#ffffff'; ctx.stroke(); ctx.restore();
+    renderer.setScissorTest(false); renderer.setViewport(0, 0, W, H); }
   // vignette
   const vg = ctx.createRadialGradient(W/2, H/2, H*0.28, W/2, H/2, H*0.72);
   vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, `rgba(0,0,0,${st.vignette ?? 0.55})`);

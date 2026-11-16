@@ -43,7 +43,7 @@ without asking them. Never publish a video that failed the quality check; skip t
 
 ## Publishing runs
 - 06:35 run: Instagram for every queue item whose instagram.status == "pending" and due ≤ now.
-- 20:57 run: YouTube (title + " #shorts", description = caption + "\n\nAnimated · AI voice\n\n" + hashtags + " #shorts", public, not made for kids)
+- 20:57 run (TikTok is AUTOMATIC again since Nov 16 - see state.tiktok_note): YouTube (title + " #shorts", description = caption + "\n\nAnimated · AI voice\n\n" + hashtags + " #shorts", public, not made for kids)
   for the item whose post_date == today; then schedule its TikTok at 23:05 today via Metricool (title as tiktokData.title, text = title + caption + hashtags).
 - After posting: set status "posted"/"scheduled" with IDs, increment metricool.posts_used[YYYY-MM], commit + push state.json.
 - If a tool errors: do not retry in a loop; mark status "error: <message>" and continue with the other platforms.
@@ -51,6 +51,9 @@ without asking them. Never publish a video that failed the quality check; skip t
 ## Housekeeping
 - Delete mp4s from videos/ once all three platforms are posted for more than 3 days.
 - If `.git` grows above 800 MB, recreate history: orphan branch with current files, force-push main.
+
+## Final encode quality (Nov 16)
+Upscale with `-vf scale=1080:1920:flags=lanczos,unsharp=5:5:0.55:5:5:0.0`, `-crf 20 -maxrate 9M -bufsize 18M`. The renderer uses 4x anti-aliasing by default (AA env var; do not turn it off).
 
 ## Manual fallback (owner's request, Nov 8)
 The owner wants all ~30 posts a month on every platform. Whenever a platform can't be posted automatically
