@@ -581,6 +581,144 @@
         },
         "verdict": "too early",
         "note": "Style test not active (owner approval pending); only A_explainer posted. sneeze due 2026-11-09 21:00, heat 2026-11-10."
+      },
+      {
+        "review_date": "2026-11-16",
+        "window": "2026-11-08..2026-11-16",
+        "posted_youtube": [
+          {
+            "slug": "grow",
+            "id": "MkeqbgAvJi8",
+            "style": "A_explainer",
+            "post_date": "2026-11-08",
+            "views": 1431,
+            "engagedViews": 790,
+            "averageViewPercentage": 68.32,
+            "averageViewDuration_s": 33,
+            "subscribersGained": 3,
+            "likes": 35,
+            "shares": 0,
+            "subs_per_1k_views": 2.1
+          },
+          {
+            "slug": "sneeze",
+            "id": "2f7V9mG-kag",
+            "style": "A_explainer",
+            "post_date": "2026-11-09",
+            "views": 2075,
+            "engagedViews": 1319,
+            "averageViewPercentage": 84.78,
+            "averageViewDuration_s": 39,
+            "subscribersGained": 2,
+            "likes": 37,
+            "shares": 0,
+            "subs_per_1k_views": 0.96
+          },
+          {
+            "slug": "heat",
+            "id": "dFJFxw1hvh4",
+            "style": "A_explainer",
+            "post_date": "2026-11-10",
+            "views": 1630,
+            "engagedViews": 883,
+            "averageViewPercentage": 78.99,
+            "averageViewDuration_s": 34,
+            "subscribersGained": 0,
+            "likes": 24,
+            "shares": 0,
+            "subs_per_1k_views": 0.0
+          },
+          {
+            "slug": "shrink",
+            "id": "rVrXKYDmtQQ",
+            "style": "A_explainer",
+            "post_date": "2026-11-11",
+            "views": 1230,
+            "engagedViews": 541,
+            "averageViewPercentage": 82.5,
+            "averageViewDuration_s": 29,
+            "subscribersGained": 4,
+            "likes": 23,
+            "shares": 1,
+            "subs_per_1k_views": 3.25
+          },
+          {
+            "slug": "gravity2x",
+            "id": "jv39b1NMDnA",
+            "style": "A_explainer",
+            "post_date": "2026-11-12",
+            "views": 1317,
+            "engagedViews": 703,
+            "averageViewPercentage": 63.9,
+            "averageViewDuration_s": 31,
+            "subscribersGained": 3,
+            "likes": 33,
+            "shares": 0,
+            "subs_per_1k_views": 2.28
+          },
+          {
+            "slug": "sunoff",
+            "id": "_nzt_ppAkTA",
+            "style": "A_explainer",
+            "post_date": "2026-11-13",
+            "views": 1119,
+            "engagedViews": 639,
+            "averageViewPercentage": 91,
+            "averageViewDuration_s": 45,
+            "subscribersGained": 3,
+            "likes": 31,
+            "shares": 0,
+            "subs_per_1k_views": 2.68
+          },
+          {
+            "slug": "friction",
+            "id": "3Fm0DXNT6QI",
+            "style": "A_explainer",
+            "post_date": "2026-11-14",
+            "views": 1166,
+            "engagedViews": 608,
+            "averageViewPercentage": 78.97,
+            "averageViewDuration_s": 41,
+            "subscribersGained": 0,
+            "likes": 33,
+            "shares": 0,
+            "subs_per_1k_views": 0.0
+          },
+          {
+            "slug": "water",
+            "id": "-DGy7T8qaE0",
+            "style": "A_explainer",
+            "post_date": "2026-11-15",
+            "data": "no rows yet (posted <24h, reporting lag)"
+          }
+        ],
+        "analytics_rows": 7,
+        "by_style": {
+          "A_explainer": {
+            "videos": 8,
+            "videos_with_data": 7,
+            "videos_older_48h": 6,
+            "views": 9968,
+            "engagedViews": 5483,
+            "avg_engagedViews_per_video": 783,
+            "avg_averageViewPercentage": 78.35,
+            "avg_averageViewDuration_s": 36.0,
+            "subscribersGained": 15,
+            "subs_per_1k_views": 1.5,
+            "likes": 216
+          },
+          "B_silent_cinematic": {
+            "videos": 0
+          },
+          "C_first_person_story": {
+            "videos": 0
+          },
+          "D_warm_explainer": {
+            "videos": 0
+          }
+        },
+        "verdict": "too early",
+        "note": "Only A_explainer has posted, so there is nothing to compare against (test still inactive pending owner approval). Within A: best retention sunoff 91% / 45 s; weakest gravity2x 63.9% and grow 68.3%. Most subs/1k: shrink 3.25. water (-DGy7T8qaE0) had no rows yet."
       }
     ],
     "active": false,
