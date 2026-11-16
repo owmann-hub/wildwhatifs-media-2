@@ -34,17 +34,12 @@ export function makePerson(THREE, o = {}) {
   const headPivot = new THREE.Group(); headPivot.position.y = 1.5; headPivot.scale.setScalar(o.headScale ?? 1.16); g.add(headPivot);
   const neck = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.07, 0.1, 12), skin); neck.position.y = 1.5; g.add(neck);
   const head = new THREE.Mesh(new THREE.SphereGeometry(0.16, 32, 24), skin); head.position.y = 0.14; head.scale.set(1.04, 1.1, 1.02); headPivot.add(head);
-  // hair (redone Nov 16, owner: 'the hair is strange'): a full shell hugging the skull + soft tufts at the hairline. o.hairStyle: short | side | curly | long | bun | bald (default varies with seed)
+  // hair (redone Nov 16, owner: 'the hair is strange'): a full shell hugging the skull + soft tufts at the hairline. o.hairStyle: short | long | bald (other names fall back to short)
   const hairG = new THREE.Group(); hairG.position.set(0, 0.14, 0); headPivot.add(hairG);
   const hStyle = o.hairStyle ?? ['side', 'short', 'curly', 'long', 'side', 'short'][Math.abs(Math.floor(o.seed ?? 1)) % 6];
-  const hairM = new THREE.Mesh(new THREE.SphereGeometry(0.172, 32, 20, 0, Math.PI * 2, 0, Math.PI * 0.56), hair); hairM.scale.set(1.07, 1.13, 1.07); hairM.rotation.x = -0.62; if (hStyle !== 'bald') hairG.add(hairM);
-  const tuft = (x, y, z, sx, sy, sz, rz = 0, rx = 0) => { const m = new THREE.Mesh(new THREE.SphereGeometry(0.1, 16, 12), hair); m.position.set(x, y, z); m.scale.set(sx, sy, sz); m.rotation.set(rx, 0, rz); hairG.add(m); return m; };
-  if (hStyle === 'short') { tuft(0, 0.15, 0.085, 1.25, 0.42, 0.75, 0, 0.5); }
-  else if (hStyle === 'side') { tuft(-0.04, 0.155, 0.09, 1.2, 0.45, 0.75, 0.22, 0.5); tuft(0.085, 0.13, 0.085, 0.75, 0.5, 0.7, -0.5, 0.4); tuft(-0.02, 0.19, 0.02, 1.2, 0.4, 1.0, 0.1, 0.1); }
-  else if (hStyle === 'curly') { for (let i = 0; i < 16; i++) { const a = i * 2.4, r = 0.3 + 0.7 * ((i * 0.618) % 1), el = 0.25 + 0.75 * ((i * 0.37) % 1); const m = tuft(Math.cos(a) * 0.14 * r, 0.06 + el * 0.14, Math.sin(a) * 0.14 * r - 0.01, 0.62, 0.6, 0.62); if (m.position.z > 0.09 && m.position.y < 0.12) m.position.y = 0.14; } }
-  else if (hStyle === 'long' || hStyle === 'bun') { tuft(-0.03, 0.15, 0.09, 1.2, 0.42, 0.72, 0.2, 0.5); tuft(0.09, 0.12, 0.08, 0.7, 0.55, 0.7, -0.6, 0.4);
-    if (hStyle === 'long') { const back = new THREE.Mesh(new THREE.CapsuleGeometry(0.13, 0.2, 5, 16), hair); back.position.set(0, -0.13, -0.075); back.scale.set(1.2, 1, 0.62); hairG.add(back); for (const sx of [-1, 1]) { const lock = new THREE.Mesh(new THREE.CapsuleGeometry(0.045, 0.2, 4, 10), hair); lock.position.set(sx * 0.17, -0.1, 0.0); hairG.add(lock); } }
-    else { tuft(0, 0.2, -0.1, 0.8, 0.8, 0.8); } }
+  const hairM = new THREE.Mesh(new THREE.SphereGeometry(0.172, 32, 20, 0, Math.PI * 2, 0, Math.PI * 0.56), hair); hairM.scale.set(1.07, 1.13, 1.07); hairM.rotation.x = -0.5; if (hStyle !== 'bald') hairG.add(hairM);
+  // owner, Nov 16: no tufts/blobs on top of the hair - they looked unnatural. Hair = the smooth shell only (plus a flat back panel for 'long').
+  if (hStyle === 'long') { const back = new THREE.Mesh(new THREE.CapsuleGeometry(0.13, 0.2, 5, 16), hair); back.position.set(0, -0.13, -0.075); back.scale.set(1.2, 1, 0.62); hairG.add(back); }
   for (const sx of [-1, 1]) { const ear = new THREE.Mesh(new THREE.SphereGeometry(0.035, 12, 10), skin); ear.position.set(sx * 0.165, 0.13, 0); ear.scale.set(0.5, 1, 0.8); headPivot.add(ear); }
   const white = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.25 });
   const eyeG = new THREE.SphereGeometry(0.034, 16, 12), pupG = new THREE.SphereGeometry(0.018, 12, 10);
