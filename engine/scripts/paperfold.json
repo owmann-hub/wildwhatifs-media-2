@@ -1,0 +1,17 @@
+[
+ {"id": "n0", "text": "This is your electricity bill. You were supposed to pay it.", "fold": 0, "formula": "thickness(n) = 0.1 mm x 2^n (80 gsm office paper is ~0.1 mm thick); n=0 -> 0.1 mm"},
+ {"id": "n1", "text": "Instead, you fold it in half. Seven times.", "fold": 7, "formula": "0.1 mm x 2^7 = 12.8 mm = 1.28 cm"},
+ {"id": "n2", "text": "Ten folds. Taller than your coffee mug.", "fold": 10, "formula": "0.1 mm x 2^10 = 102.4 mm = 10.2 cm (a standard mug is ~9.5 cm tall)"},
+ {"id": "n3", "text": "Twelve. In real life, that took a kilometre of toilet paper.", "fold": 12, "formula": "0.1 mm x 2^12 = 409.6 mm = 41 cm. Britney Gallivan's 12 folds (2002) used ~1.2 km (4,000 ft) of toilet paper"},
+ {"id": "n4", "text": "Fourteen. It's as tall as you are. Mittens is not impressed.", "fold": 14, "formula": "0.1 mm x 2^14 = 1,638 mm = 1.64 m"},
+ {"id": "n5", "text": "Seventeen. Through the ceiling. The neighbours upstairs have questions.", "fold": 17, "formula": "0.1 mm x 2^17 = 13,107 mm = 13.1 m (kitchen ceiling ~2.2 m above the table -> passed at fold 15 = 3.3 m)"},
+ {"id": "n6", "text": "Twenty. A hundred metres. Someone's already selling T-shirts.", "fold": 20, "formula": "0.1 mm x 2^20 = 104,858 mm = 104.9 m"},
+ {"id": "n7", "text": "Twenty-three. Taller than the Burj Khalifa. This is your fault.", "fold": 23, "formula": "0.1 mm x 2^23 = 838.9 m > Burj Khalifa 828 m"},
+ {"id": "n8", "text": "Twenty-seven. Thirteen kilometres. Planes have to go around it.", "fold": 27, "formula": "0.1 mm x 2^27 = 13,421.8 m = 13.4 km > airliner cruise ~10-12 km (33,000-39,000 ft)"},
+ {"id": "n9", "text": "Thirty folds. Your electricity bill is now in space.", "fold": 30, "formula": "0.1 mm x 2^30 = 107.37 km > Karman line 100 km"},
+ {"id": "n10", "text": "Thirty-seven. It's taller than the whole Earth is wide.", "fold": 37, "formula": "0.1 mm x 2^37 = 13,744 km > Earth's diameter 12,742 km"},
+ {"id": "n11", "text": "Forty-two. It just went past the Moon.", "fold": 42, "formula": "0.1 mm x 2^42 = 439,805 km > average Earth-Moon distance 384,400 km"},
+ {"id": "n12", "text": "Fifty-one folds. It goes past the Sun.", "fold": 51, "formula": "0.1 mm x 2^51 = 2.2518e8 km = 225 million km > Earth-Sun distance 149.6 million km"},
+ {"id": "n13", "text": "And no. You still have to pay it.", "fold": 51, "formula": "punchline"},
+ {"id": "n14", "text": "Keep going to a hundred and three folds, and it's thicker than the observable universe.", "fold": 103, "formula": "0.1 mm x 2^103 = 1.014e27 m = 107 billion light-years > observable universe diameter ~93 billion ly (8.8e26 m)"}
+]

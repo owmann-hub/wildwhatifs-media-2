@@ -336,6 +336,37 @@
       "version": "format_v5 + Nov 15 rules (golden light, European town-house street with shutters/balconies/cornices and 15+ different shop fronts on both sides, comedy tone, fluent motion, background cast). Stake: a selfie with the museum's fibreglass T. rex — paid off in the aftermath: the selfie happens and the statue is now looking at you. Transformation: the asteroid arrives 7 minutes late and misses (space shot, dashed path, Earth slides away); a wave of prehistoric forest spreads from the statue, cars and passers-by never happened, every building sinks into the ferns and conifers, the statue comes alive (colour, feather crest, roar), feathered speculative dinosaurs walk past, long-necks and pterosaurs from above, the Empire State Building sinks last ('never built'). 6.2x slow motion of the 5 s story, counter 'REALITY RETURNS IN 0:04.xxx'. Narrator af_heart 1.0 with 2 blame lines ('This was your idea, by the way.', 'You wanted a selfie with a T. rex.'). Mittens: sleepy/happy -> shock -> scared -> annoyed swat at the sniffing snout -> smug -> unimpressed. 3 cuts (space, back to the plaza, the selfie view). Answer last: almost anywhere else on Earth it might not have killed them (Kaiho & Oshima 2017).",
       "duration_s": 53.4,
       "notes": "Facts checked: impact 66 million years ago, impactor about 10 km wide, ~75% of species lost incl. all non-avian dinosaurs (Chicxulub literature, e.g. Wikipedia 'Chicxulub impactor', Sky at Night); Earth orbits at ~30 km/s and its diameter is 12,742 km -> it moves its own width in ~7.1 minutes; birds are living dinosaurs (pigeon line); largest Mesozoic mammals ~badger-sized (Repenomamus, Smithsonian 'When mammals ate dinosaurs'); Kaiho & Oshima 2017 (Scientific Reports): only ~13% of Earth's surface held enough hydrocarbons/sulfur for the soot that caused the mass extinction (National Geographic / Smithsonian Nov 2017); T. rex up to ~12 m long; Empire State Building 443 m to the tip. Speculative parts are flagged in the lines ('Nobody knows what they'd look like', 'people probably never happen'). Asteroid drawn bigger and labelled as such. QA: 53.4 s, 1080x1920, 32.3 MB (no-music 32.3 MB), max -0.9 dB (no-music -0.8 dB), voice-over-bed margin 14.1 dB (no-music 14.9 dB), calm lively opening with title + countdown (taxis crossing, passers-by, kid with balloon, busker, couple, filmer), 12-frame QA sheet checked, end card present. Scene engine/scenes/asteroid.js, cue scripts/asteroid_cue.json, sfx scripts/asteroid_sfx.py."
+    },
+    {
+      "slug": "paperfold",
+      "post_date": "2026-11-18",
+      "file": "videos/2026-11-18-paperfold.mp4",
+      "title": "WHAT IF you folded paper and never stopped? 📄",
+      "caption": "It's your electricity bill. You were supposed to pay it. Instead you fold it — through the ceiling, past the planes, past the Moon, past the Sun. Mittens is not impressed 🐱 Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #paperfolding #exponential #space",
+      "youtube": {
+        "status": "pending",
+        "due": "2026-11-18T21:00"
+      },
+      "tiktok": {
+        "status": "pending",
+        "due": "2026-11-18T23:05"
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-19T07:00"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-18-paperfold-nomusic.mp4",
+      "place": "kitchen table on the first floor of a European town house, French windows open onto a cobbled shopping street (late afternoon, golden light)",
+      "cast": [
+        "THE UNBOTHERED PERSON (neighbour on the next balcony keeps watering her plants and never looks up)",
+        "THE SALESMAN ('I SAW THE BILL - FOLD 20' T-shirts on the opposite pavement, pitching straight to camera)"
+      ],
+      "no_narrator_test": false,
+      "version": "RUNAWAY FORMAT (format_v5.rules[0], first video of it). Thickness = 0.1 mm x 2^n; 12 steps of 4.4 s (folds 7,10,12,14,17,20,23,27,30,37,42,51), each with a counter roll-up (FOLD n / thickness / tier badge), one checked italic line read by af_heart 1.0, a visible change (the stack physically flips over at every fold) and one continuous pull-back camera: table -> kitchen -> out through the French window -> street -> city -> countryside -> edge of space (same scene, curved ground, sky turns dark) -> one cut -> Earth -> Moon -> Sun. Stake: the sheet is your electricity bill (punchline: 'And no. You still have to pay it.'). Blame lines: 'You were supposed to pay it', 'This is your fault', 'still have to pay it'. Mittens on the table + Mittens cam, mood changes every step (sleepy, unimpressed, annoyed, shock, unimpressed, scared, annoyed, smug, shock, sleepy, scared, smug, shock, then smug/happy). Paper drawn wider once tall, airliner and Moon drawn bigger - all labelled on screen. Golden late-afternoon light, European town houses with shutters/balconies/14 shop fronts, lively street (cars, dog walker, kid with balloon, busker, van). End card: 103 folds would be thicker than the observable universe.",
+      "duration_s": 64.6,
+      "notes": "Facts/formulas in engine/scripts/paperfold.json: 80 gsm office paper ~0.1 mm; 2^7 -> 1.28 cm, 2^10 -> 10.2 cm (mug ~9.5 cm), 2^12 -> 41 cm (Britney Gallivan's 12 folds in 2002 used ~1.2 km of toilet paper; later 13-fold attempts exist, so the end card says 'about 12-13'), 2^14 -> 1.64 m, 2^17 -> 13.1 m, 2^20 -> 104.9 m, 2^23 -> 838.9 m > Burj Khalifa 828 m, 2^27 -> 13.4 km > airliner cruise 10-12 km, 2^30 -> 107.4 km > Karman line 100 km, 2^37 -> 13,744 km > Earth diameter 12,742 km, 2^42 -> 439,805 km > Moon 384,400 km, 2^51 -> 225 million km > Sun 149.6 million km, 2^103 -> 1.01e27 m (~107 billion ly) > observable universe ~93 billion ly. QA: 64.6 s, 1080x1920, 32.3 MB (no-music 32.3 MB), max -0.6 dB (no-music -0.9 dB), voice-over-bed margin 16.3 dB (no-music 20.0 dB), title + counter from frame 0, 15-frame QA sheet checked, end card present. Encode: lanczos 1080x1920 + unsharp, CRF 21 with maxrate 4.6M (CRF 20/9M gave 57 MB, over the 40 MB repo limit). Render 2 x 969 frames at 720x1280 took ~80 min. Scene engine/scenes/paperfold.js, cue scripts/paperfold_cue.json, sfx scripts/paperfold_sfx.py."
     }
   ],
   "premise_bank": [
@@ -353,7 +384,8 @@
     "friction",
     "water",
     "jump",
-    "asteroid"
+    "asteroid",
+    "paperfold"
   ],
   "plan_november": [
     {
@@ -428,7 +460,8 @@
       "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Thickness doubles each fold: 0.1 mm x 2^n. 10 folds ~10 cm, 23 ~840 m (taller than Burj Khalifa), 30 ~107 km (edge of space), 42 ~440,000 km (past the Moon), 51 ~ the Sun. Place: kitchen table. Check every number before scripting.",
       "tiktok": true,
       "style": "A_explainer",
-      "no_narrator_test": false
+      "no_narrator_test": false,
+      "made": "2026-11-17"
     },
     {
       "post_date": "2026-11-19",
@@ -860,6 +893,10 @@
     {
       "slug": "asteroid",
       "place": "plaza of a natural-history museum on a busy avenue (late afternoon, golden light)"
+    },
+    {
+      "slug": "paperfold",
+      "place": "kitchen table on the first floor of a European town house, French windows open onto a cobbled shopping street (late afternoon, golden light)"
     }
   ],
   "cast_log": [
@@ -877,6 +914,13 @@
         "filmer",
         "bad timing (proposal)",
         "pigeon"
+      ]
+    },
+    {
+      "slug": "paperfold",
+      "cast": [
+        "unbothered (watering balcony plants)",
+        "salesman"
       ]
     }
   ]
