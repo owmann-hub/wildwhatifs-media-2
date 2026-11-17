@@ -444,13 +444,13 @@
    "made": "2026-11-15"
   },
   {
-   "post_date": "2026-11-17",
+   "post_date": "shelved",
    "slug": "asteroid",
    "premise": "What if the asteroid had missed the dinosaurs?",
    "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
    "tiktok": true,
    "style": "A_explainer",
-   "made": "2026-11-16",
+   "made": true,
    "no_narrator_test": false
   },
   {
