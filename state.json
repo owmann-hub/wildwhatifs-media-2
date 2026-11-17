@@ -286,8 +286,11 @@
         "metricool_id": 430830655
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-17T07:00"
+        "status": "posted",
+        "due": "2026-11-17T07:00",
+        "media_id": "18111394874193420",
+        "permalink": "https://www.instagram.com/reel/Df1oCuxisM0/",
+        "posted_at": "2026-11-17T06:40"
       },
       "style": "A_explainer",
       "file_tiktok": "videos/2026-11-16-jump-nomusic.mp4",
