@@ -1,5 +1,7 @@
 # Wild What Ifs — automated pipeline (read this first in every scheduled run)
 
+**Video content rules live in STANDARD.md (the owner's official list). Read it before making any video; it overrides every other rule.**
+
 Owner's standing instruction: produce and publish one "What if" Short per day on YouTube, Instagram and TikTok
 without asking them. Never publish a video that failed the quality check; skip the day instead and note why in state.json.
 
