@@ -1,938 +1,942 @@
 {
- "timezone": "America/Buenos_Aires",
- "schedule": {
-  "instagram": "07:00",
-  "youtube": "21:00",
-  "tiktok": "23:05"
- },
- "metricool": {
-  "blogId": "7970179",
-  "free_plan_posts_per_month": 20,
-  "posts_used": {
-   "2026-11": 5
-  }
- },
- "zapier_youtube_connection_id": "024e8223-8129-8378-ae74-36264dc05b99",
- "instagram_platformAccountId": "29226914170279337",
- "queue": [
-  {
-   "slug": "grow",
-   "post_date": "2026-11-08",
-   "file": "videos/2026-11-grow.mp4",
-   "title": "What If You Grew 10x Bigger Every 5 Seconds? 😳",
-   "caption": "At 18,000 km tall you'd be taller than Earth is wide… and a stubbed toe would take almost 2 days to hurt 💀 Part 2: you shrink. Follow so you don't miss it.",
-   "hashtags": "#whatif #whatifscenario #science #3danimation #giant #space #funfacts",
-   "youtube": {
-    "status": "posted",
-    "id": "MkeqbgAvJi8"
-   },
-   "tiktok": {
-    "status": "posted",
-    "metricool_id": 421209953,
-    "url": "https://www.tiktok.com/@wild.what.if/video/7705987049412693255"
-   },
-   "instagram": {
-    "status": "posted",
-    "media_id": "17990144022082114",
-    "permalink": "https://www.instagram.com/reel/DfhETBuApuC/",
-    "posted_at": "2026-11-09T07:00"
-   },
-   "style": "A_explainer",
-   "file_deleted": "2026-11-12 (housekeeping: all platforms posted >3 days)"
+  "timezone": "America/Buenos_Aires",
+  "schedule": {
+    "instagram": "07:00",
+    "youtube": "21:00",
+    "tiktok": "23:05"
   },
-  {
-   "slug": "sneeze",
-   "post_date": "2026-11-09",
-   "file": "videos/2026-11-sneeze.mp4",
-   "title": "What If Every Sneeze Was 10x Stronger? 🤧",
-   "caption": "Sneeze 3 breaks the sound barrier. Sneeze 7 launches you across the city. Granny still said bless you 👵 Which sneeze would you survive?",
-   "hashtags": "#whatif #sneeze #physics #science #3danimation #funny #funfacts",
-   "youtube": {
-    "status": "posted",
-    "id": "2f7V9mG-kag",
-    "url": "https://www.youtube.com/shorts/2f7V9mG-kag",
-    "posted_at": "2026-11-09T20:58"
-   },
-   "tiktok": {
-    "status": "posted_manually",
-    "due": "2026-11-09T23:05",
-    "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
-    "file": "videos/2026-11-sneeze-nomusic.mp4",
-    "keep_until": "2026-11-16",
-    "confirmed_by_owner": "2026-11-10",
-    "posted_at": "2026-11-09T23:05 (owner confirmed 23:37)"
-   },
-   "instagram": {
-    "status": "posted",
-    "due": "2026-11-10T07:00",
-    "media_id": "18644528320050018",
-    "permalink": "https://www.instagram.com/reel/DfjpG5wDrYG/",
-    "posted_at": "2026-11-10T07:01"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-sneeze-nomusic.mp4",
-   "version": "v3 (new visual standard, owner-approved Nov 9)"
+  "metricool": {
+    "blogId": "7970179",
+    "free_plan_posts_per_month": 20,
+    "posts_used": {
+      "2026-11": 6
+    }
   },
-  {
-   "slug": "heat",
-   "post_date": "2026-11-10",
-   "file": "videos/2026-11-heat.mp4",
-   "title": "What If Your Body Temperature Never Stopped Rising? 🔥",
-   "caption": "100°C: you boil your sweat. 1,538°C: steel melts. 5,500°C: you're as hot as the surface of the Sun… and mom still says bring a jacket 🧥",
-   "hashtags": "#whatif #science #temperature #sun #3danimation #funfacts #physics",
-   "youtube": {
-    "status": "posted",
-    "id": "dFJFxw1hvh4",
-    "url": "https://www.youtube.com/shorts/dFJFxw1hvh4",
-    "posted_at": "2026-11-10T20:59"
-   },
-   "tiktok": {
-    "status": "manual_requested",
-    "due": "2026-11-10T23:05",
-    "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
-    "file": "videos/2026-11-heat-nomusic.mp4",
-    "keep_until": "2026-11-17"
-   },
-   "instagram": {
-    "status": "posted",
-    "due": "2026-11-11T07:00",
-    "media_id": "17888706291622928",
-    "permalink": "https://www.instagram.com/reel/DfmN5SMgccN/",
-    "posted_at": "2026-11-11T07:01"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-heat-nomusic.mp4",
-   "version": "v3 (new visual standard; owner said he likes it, Nov 10)"
-  },
-  {
-   "slug": "shrink",
-   "post_date": "2026-11-11",
-   "file": "videos/2026-11-shrink.mp4",
-   "title": "What If You Never Stopped Shrinking? 🔬",
-   "caption": "18 cm: your cat is the size of an elephant. 180 microns: a dust mite stares you down. 0.2 nm: you're the size of a single atom 😳 How small would you go?",
-   "hashtags": "#whatif #science #microscopic #atoms #3danimation #funfacts #physics",
-   "youtube": {
-    "status": "posted",
-    "id": "rVrXKYDmtQQ",
-    "url": "https://www.youtube.com/shorts/rVrXKYDmtQQ",
-    "posted_at": "2026-11-11T21:01"
-   },
-   "tiktok": {
-    "status": "manual_requested",
-    "due": "2026-11-11T23:05",
-    "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
-    "file": "videos/2026-11-shrink-nomusic.mp4",
-    "keep_until": "2026-11-18"
-   },
-   "instagram": {
-    "status": "posted",
-    "due": "2026-11-12T07:00",
-    "media_id": "17938713798407355",
-    "permalink": "https://www.instagram.com/reel/DfoywDQEYwO/",
-    "posted_at": "2026-11-12T07:01"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-shrink-nomusic.mp4",
-   "version": "v3 visual standard + Nov 9 hook_rules (35.3 s, cold open on the atom moment, looping ending)",
-   "duration_s": 35.3,
-   "notes": "Part 2 of grow. Facts checked: house cat ~25 cm at shoulder (x10 = elephant), dust mite 0.25-0.3 mm, corneocyte (skin flake) ~30-40 um, E. coli ~2 um, visible light 380-700 nm, DNA helix ~2 nm wide, atoms ~0.1-0.5 nm. Hero 'Chris' voice clips not used: audio/voices/hero_chris/ is not in the repo (gitignored) and the single library mp3 in fetched/ is unlabeled, so lines could not be identified without listening; speech bubbles carry the hero's reactions instead."
-  },
-  {
-   "slug": "gravity2x",
-   "post_date": "2026-11-12",
-   "file": "videos/2026-11-12-gravity2x.mp4",
-   "title": "What If Gravity Doubled for 5 Seconds? 🌍",
-   "caption": "Your keys stop short. Everyone weighs double. Only the balloon wins 🎈 Stay for the last line. Comment your what-if — we make the best ones.",
-   "hashtags": "#whatif #science #gravity #physics #space #3danimation #funfacts",
-   "youtube": {
-    "status": "posted",
-    "id": "jv39b1NMDnA",
-    "url": "https://www.youtube.com/shorts/jv39b1NMDnA",
-    "posted_at": "2026-11-12T20:58"
-   },
-   "tiktok": {
-    "status": "scheduled",
-    "metricool_id": 430696390,
-    "due": "2026-11-17T13:05"
-   },
-   "instagram": {
-    "status": "posted",
-    "due": "2026-11-13T07:00",
-    "media_id": "18119272319276895",
-    "permalink": "https://www.instagram.com/reel/DfrUywxD4Gx/",
-    "posted_at": "2026-11-13T06:38"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-12-gravity2x-nomusic.mp4",
-   "version": "format_v5 rebuild (2026-11-12): calm lively street + countdown 0:07, 5 s in 6x slow motion, narrator af_heart reads the italic lines, aftermath, comments end card. Stake: you toss your keys to Dave on his balcony; gravity doubles mid-toss; second toss is caught. Answer last: the space station fell a football field.",
-   "duration_s": 49.2,
-   "notes": "Facts checked: at 2 g a toss reaches half the height (h = v^2/2g) and falls twice as far per second; weight doubles; helium balloon net lift (buoyancy - weight) scales with g, so it doubles and the balloon rises faster (terminal speed ~1.4x); a jet whose lift stays at 1 g sinks 1/2*9.8*5^2 = 122 m in 5 s; structures carry double dead load briefly (safety factors ~1.5-2); blood weight doubles; ISS (g = 8.7 m/s^2 at 400 km) drops 1/2*8.7*25 = 109 m, about a football field. QA: 49.2 s, max -1.5 dB, voice-over-bed margin 15.0 dB (no-music 16.3 dB), calm opening with title + countdown, end card present. Previous format_v4 version is in git history (commit 321926b)."
-  },
-  {
-   "slug": "sunoff",
-   "post_date": "2026-11-13",
-   "file": "videos/2026-11-13-sunoff.mp4",
-   "title": "What If the Sun Switched Off for 5 Seconds? ☀️",
-   "caption": "No sunset. No warning. Just stars at noon — and the strangest selfie in New York 📸 Stay for the last line. Comment your what-if — we make the best ones.",
-   "hashtags": "#whatif #science #sun #space #stars #3danimation #funfacts",
-   "youtube": {
-    "status": "posted",
-    "id": "_nzt_ppAkTA",
-    "url": "https://www.youtube.com/shorts/_nzt_ppAkTA",
-    "posted_at": "2026-11-13T20:58"
-   },
-   "tiktok": {
-    "status": "manual_requested",
-    "due": "2026-11-13T23:05",
-    "reason": "tiktok_manual_until 2026-12-31 (owner posts by hand)",
-    "file": "videos/2026-11-13-sunoff-nomusic.mp4",
-    "keep_until": "2026-11-20"
-   },
-   "instagram": {
-    "status": "posted",
-    "due": "2026-11-14T07:00",
-    "media_id": "18182410279440101",
-    "permalink": "https://www.instagram.com/reel/Dft5k3tiTJ-/",
-    "posted_at": "2026-11-14T06:38"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-13-sunoff-nomusic.mp4",
-   "version": "format_v5: the owner-approved Sun prototype (sun.js) finished with the Nov 11 rules — opening stake (selfie with Mittens at the hot-dog cart, paid off by the photo of stars at noon), lively street (dog walker, jogger, cyclist, kid with balloon, busker, delivery van, phone call, coffee), answer last (8-minute delay is the final line). Narrator af_heart 1.0.",
-   "duration_s": 49.5,
-   "notes": "Facts checked: sunlight takes ~8 min 20 s to reach Earth, so the Sun went dark ~8 min before anyone could see it; the daytime sky is scattered sunlight, so it goes black at once and stars show; moonlight lags ~1.3 s (Moon-Earth light time); Jupiter is ~43 light-min from the Sun and 33-50 light-min from Earth, so it stays lit for over an hour; only the day side (~half the planet) sees it; 5 s is far too short for the air to cool. QA: 49.5 s, max -1.4 dB, voice-over-bed margin 16.2 dB (no-music 17.5 dB), calm opening with title + countdown, end card present. Scene engine/scenes/sunoff.js."
-  },
-  {
-   "slug": "friction",
-   "post_date": "2026-11-14",
-   "file": "videos/2026-11-14-friction.mp4",
-   "title": "What If Friction Disappeared for 5 Seconds? 🧊",
-   "caption": "Your shoelace slides open, your coffee leaves the table, and the taxi just… keeps going 🚕 Stay for the last line. Comment your what-if — we make the best ones.",
-   "hashtags": "#whatif #science #physics #friction #3danimation #funfacts #slowmotion",
-   "youtube": {
-    "status": "posted",
-    "id": "3Fm0DXNT6QI",
-    "url": "https://www.youtube.com/shorts/3Fm0DXNT6QI",
-    "posted_at": "2026-11-14T20:58"
-   },
-   "tiktok": {
-    "status": "scheduled",
-    "metricool_id": 430696441,
-    "due": "2026-11-18T13:05"
-   },
-   "instagram": {
-    "status": "posted",
-    "due": "2026-11-15T07:00",
-    "media_id": "17887478499514157",
-    "permalink": "https://www.instagram.com/reel/DfweaRulfuB/",
-    "posted_at": "2026-11-15T06:38"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-14-friction-nomusic.mp4",
-   "place": "pavement cafe outside a bakery (late afternoon)",
-   "version": "format_v5: own place, stake and transformation built on the sun.js structure — stake: crouched tying a shoelace outside the bakery, paid off when the lace pulls tight on the first try in the aftermath; transformation: every surface turns mirror-slick and everything that was moving simply keeps going (taxi, coffee, crowd, Mittens on her chair, a sand pile flowing flat); answer last: your own joints are already almost frictionless. Narrator af_heart 1.0.",
-   "duration_s": 51.8,
-   "notes": "Facts checked: 50 km/h = 13.9 m/s, braking at mu≈0.8 needs ~12 m, and in 5 frictionless seconds the car covers ~70 m; dry tyre grip mu≈0.8, ice≈0.1; synovial-joint cartilage mu as low as 0.002 (Guilak 2005, Body Physics), far below ice-on-ice ≈0.03; dry sand piles at an angle of repose ≈34°, which friction sets; Manhattan blocks ≈80 m × 274 m. QA: 51.8 s, 1080x1920, 33 MB, max -1.4 dB, voice-over-bed margin 16.3 dB (no-music 17.9 dB), calm lively opening with title + countdown, end card present. Scene engine/scenes/friction.js, cue scripts/friction_cue.json."
-  },
-  {
-   "slug": "water",
-   "post_date": "2026-11-15",
-   "file": "videos/2026-11-15-water.mp4",
-   "title": "What If All the Water on Earth Vanished for 5 Seconds? 💧",
-   "caption": "The East River turns into a 12-metre mud canyon, the ferry drops, and Mittens finally likes the river 🐟 Stay for the last line. Comment your what-if — we make the best ones.",
-   "hashtags": "#whatif #science #water #ocean #3danimation #funfacts #newyork",
-   "youtube": {
-    "status": "posted",
-    "due": "2026-11-15T21:00",
-    "id": "-DGy7T8qaE0",
-    "url": "https://www.youtube.com/shorts/-DGy7T8qaE0",
-    "posted_at": "2026-11-15T20:59"
-   },
-   "tiktok": {
-    "status": "scheduled",
-    "metricool_id": 430696487,
-    "due": "2026-11-19T13:05"
-   },
-   "instagram": {
-    "status": "posted",
-    "due": "2026-11-16T07:00",
-    "media_id": "18120797719973773",
-    "permalink": "https://www.instagram.com/reel/DfzDPpnE_up/",
-    "posted_at": "2026-11-16T06:39"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-15-water-nomusic.mp4",
-   "place": "East River esplanade railing, Manhattan (late morning)",
-   "version": "format_v5: own place, stake and transformation built on the sun.js structure — stake: about to beat a stone-skipping record (best: four), the stone lands in a shopping cart on the dry riverbed, paid off when the next stone skips five times after the water returns; transformation: the blue drains out of the world — river becomes a 12 m mud canyon (ferry, sailboat, tug and fish drop), every cloud boils away, the harbour is a valley with Liberty on a hill, the planet from space is brown; Mittens peeks over the railing delighted, then gets soaked; answer last: ships at sea fell ~120 m. Narrator af_heart 1.0. 3 cuts (Mittens, space, back to hero).",
-   "duration_s": 53.6,
-   "notes": "Facts checked: East River ~12 m (40 ft) deep from the Battery to the Navy Yard (Wikipedia, 1939 survey); Brooklyn Bridge towers ~84 m above mean high water, deck 38.7 m (Wikipedia); Statue of Liberty 93 m ground to torch (NPS); Challenger Deep 10,935 m (NOAA/Britannica); free fall for 5 s = 0.5*9.81*25 ≈ 122 m (open-ocean depth averages ~3.7 km, so ships don't reach bottom); clouds are water droplets/ice. Premise scoped on screen: water inside living things stays. QA: 53.6 s, 1080x1920, 33.5 MB, max -1.5 dB, voice-over-bed margin 17.6 dB (no-music 19.1 dB), calm lively opening with title + countdown, end card present. Scene engine/scenes/water.js, cue scripts/water_cue.json, sfx engine/scripts/water_sfx.py."
-  },
-  {
-   "slug": "jump",
-   "post_date": "2026-11-16",
-   "file": "videos/2026-11-16-jump.mp4",
-   "title": "What If Everyone on Earth Jumped at the Same Time? 🦘",
-   "caption": "8.2 billion people leave the ground at once — your neighbour keeps reading his paper, the pigeon refuses, and Mittens finally gets the ice cream 🍦 Stay for the last line. Comment your what-if — we make the best ones.",
-   "hashtags": "#whatif #science #physics #3danimation #funfacts #newyork #cat",
-   "youtube": {
-    "status": "posted",
-    "due": "2026-11-16T21:00",
-    "id": "mjuwgKsl2Sw",
-    "url": "https://www.youtube.com/shorts/mjuwgKsl2Sw",
-    "posted_at": "2026-11-16T20:59"
-   },
-   "tiktok": {
-    "status": "scheduled",
-    "due": "2026-11-16T23:05",
-    "metricool_id": 430830655
-   },
-   "instagram": {
-    "status": "posted",
-    "due": "2026-11-17T07:00",
-    "media_id": "18111394874193420",
-    "permalink": "https://www.instagram.com/reel/Df1oCuxisM0/",
-    "posted_at": "2026-11-17T06:40"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-16-jump-nomusic.mp4",
-   "place": "bus stop outside an ice-cream parlour on a busy avenue (early afternoon)",
-   "cast": [
-    "THE UNBOTHERED PERSON (reads his newspaper, turns a page mid-air)",
-    "THE PIGEON (does not jump, slow judging turn)",
-    "THE SALESMAN ('I JUMPED' T-shirts, walks up to you seconds after landing)"
-   ],
-   "no_narrator_test": false,
-   "version": "format_v5 + Nov 15 rules (bright look, varied shop fronts, comedy tone, fluent motion, background cast). Stake: three-scoop cone, 'don't drop it' — paid off after landing when the top scoop slides onto the bench and Mittens eats it. Transformation: nobody on Earth touches the ground — street (contact shadows under every hovering person), rooftops and avenues seen from above, then the planet from space with a lifted glowing layer over every continent (labelled 'height not to scale'). Jump airtime 0.6 s shown at 50x slow motion (bullet time), counter 'EVERYONE LANDS IN 0:00.600'. Narrator af_heart 1.0 with 2 blame lines ('This was your idea, by the way.', 'You had one job.'). 3 cuts (Mittens/pigeon, space, back to you). Answer last: Earth moved less than a thousandth of an atom's width.",
-   "duration_s": 53.6,
-   "notes": "Facts checked: world population ~8.2 billion in July 2026 (US Census Bureau IDB); Earth ~6e24 kg and total human mass ~363 billion kg for 7 billion people (Live Science / Rhett Allain) -> ~0.4 trillion kg today; 0.6 s airtime = take-off 2.94 m/s, peak 0.44 m; Earth recoil <= (4e11/5.97e24) x 0.44 m ~ 3e-14 m, < 1/1000 of a hydrogen atom (~1e-10 m), and less in reality because people spread round the globe push in different directions; Empire State Building 443.2 m to tip (CTBUH Skyscraper Center); ISS ~400 km up; 1 pm New York (EST) = 3 am Tokyo. QA: 53.6 s, 1080x1920, 23.4 MB, max -1.0 dB, voice-over-bed margin 16.3 dB (no-music 17.6 dB), calm lively opening with title + countdown, passing taxis, dog walker, kid with balloon, end card present. Reader shot (9.6-12.8 s) re-rendered after QA because a passer-by blocked it. Scene engine/scenes/jump.js, cue scripts/jump_cue.json."
-  },
-  {
-   "slug": "asteroid",
-   "post_date": "shelved",
-   "file": "videos/2026-11-17-asteroid.mp4",
-   "title": "What If the Asteroid Had Missed the Dinosaurs? 🦖",
-   "caption": "History gets one tiny edit: the asteroid shows up seven minutes late. The city sinks into a prehistoric forest, the museum's T. rex wakes up mid-selfie, and the pigeon is completely fine 🐦 Stay for the last line. Comment your what-if — we make the best ones.",
-   "hashtags": "#whatif #dinosaurs #trex #science #3danimation #funfacts #asteroid",
-   "youtube": {
-    "status": "shelved",
-    "reason": "Nov 17: owner found the jump video confusing (lines/jokes); asteroid has the same disconnected writing and the old 5-second format, so it was pulled before posting. Files kept; rebuild only if the owner asks."
-   },
-   "tiktok": {
-    "status": "shelved",
-    "reason": "Nov 17: owner found the jump video confusing (lines/jokes); asteroid has the same disconnected writing and the old 5-second format, so it was pulled before posting. Files kept; rebuild only if the owner asks."
-   },
-   "instagram": {
-    "status": "shelved",
-    "reason": "Nov 17: owner found the jump video confusing (lines/jokes); asteroid has the same disconnected writing and the old 5-second format, so it was pulled before posting. Files kept; rebuild only if the owner asks."
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-17-asteroid-nomusic.mp4",
-   "place": "plaza of a natural-history museum on a busy avenue (late afternoon, golden light)",
-   "cast": [
-    "THE FILMER (keeps filming the T. rex; afterwards his video is gone and he blames the lighting)",
-    "BAD TIMING (proposes on one knee at the exact second the T. rex wakes; she says yes afterwards)",
-    "THE PIGEON (rides on the T. rex's head the whole time — pigeons are dinosaurs)"
-   ],
-   "no_narrator_test": false,
-   "version": "format_v5 + Nov 15 rules (golden light, European town-house street with shutters/balconies/cornices and 15+ different shop fronts on both sides, comedy tone, fluent motion, background cast). Stake: a selfie with the museum's fibreglass T. rex — paid off in the aftermath: the selfie happens and the statue is now looking at you. Transformation: the asteroid arrives 7 minutes late and misses (space shot, dashed path, Earth slides away); a wave of prehistoric forest spreads from the statue, cars and passers-by never happened, every building sinks into the ferns and conifers, the statue comes alive (colour, feather crest, roar), feathered speculative dinosaurs walk past, long-necks and pterosaurs from above, the Empire State Building sinks last ('never built'). 6.2x slow motion of the 5 s story, counter 'REALITY RETURNS IN 0:04.xxx'. Narrator af_heart 1.0 with 2 blame lines ('This was your idea, by the way.', 'You wanted a selfie with a T. rex.'). Mittens: sleepy/happy -> shock -> scared -> annoyed swat at the sniffing snout -> smug -> unimpressed. 3 cuts (space, back to the plaza, the selfie view). Answer last: almost anywhere else on Earth it might not have killed them (Kaiho & Oshima 2017).",
-   "duration_s": 53.4,
-   "notes": "Facts checked: impact 66 million years ago, impactor about 10 km wide, ~75% of species lost incl. all non-avian dinosaurs (Chicxulub literature, e.g. Wikipedia 'Chicxulub impactor', Sky at Night); Earth orbits at ~30 km/s and its diameter is 12,742 km -> it moves its own width in ~7.1 minutes; birds are living dinosaurs (pigeon line); largest Mesozoic mammals ~badger-sized (Repenomamus, Smithsonian 'When mammals ate dinosaurs'); Kaiho & Oshima 2017 (Scientific Reports): only ~13% of Earth's surface held enough hydrocarbons/sulfur for the soot that caused the mass extinction (National Geographic / Smithsonian Nov 2017); T. rex up to ~12 m long; Empire State Building 443 m to the tip. Speculative parts are flagged in the lines ('Nobody knows what they'd look like', 'people probably never happen'). Asteroid drawn bigger and labelled as such. QA: 53.4 s, 1080x1920, 32.3 MB (no-music 32.3 MB), max -0.9 dB (no-music -0.8 dB), voice-over-bed margin 14.1 dB (no-music 14.9 dB), calm lively opening with title + countdown (taxis crossing, passers-by, kid with balloon, busker, couple, filmer), 12-frame QA sheet checked, end card present. Scene engine/scenes/asteroid.js, cue scripts/asteroid_cue.json, sfx scripts/asteroid_sfx.py."
-  },
-  {
-   "slug": "paperfold",
-   "post_date": "2026-11-17",
-   "file": "videos/2026-11-18-paperfold.mp4",
-   "title": "WHAT IF you folded paper and never stopped? 📄",
-   "caption": "It's your electricity bill. You were supposed to pay it. Instead you fold it — through the ceiling, past the planes, past the Moon, past the Sun. Mittens is not impressed 🐱 Comment your what-if — we make the best ones.",
-   "hashtags": "#whatif #paperfolding #exponential #space",
-   "youtube": {
-    "status": "pending",
-    "due": "2026-11-17T21:00"
-   },
-   "tiktok": {
-    "status": "pending",
-    "due": "2026-11-17T23:05"
-   },
-   "instagram": {
-    "status": "pending",
-    "due": "2026-11-18T07:00"
-   },
-   "style": "A_explainer",
-   "file_tiktok": "videos/2026-11-18-paperfold-nomusic.mp4",
-   "place": "kitchen table on the first floor of a European town house, French windows open onto a cobbled shopping street (late afternoon, golden light)",
-   "cast": [
-    "THE UNBOTHERED PERSON (neighbour on the next balcony keeps watering her plants and never looks up)",
-    "THE SALESMAN ('I SAW THE BILL - FOLD 20' T-shirts on the opposite pavement, pitching straight to camera)"
-   ],
-   "no_narrator_test": false,
-   "version": "RUNAWAY FORMAT (format_v5.rules[0], first video of it). Thickness = 0.1 mm x 2^n; 12 steps of 4.4 s (folds 7,10,12,14,17,20,23,27,30,37,42,51), each with a counter roll-up (FOLD n / thickness / tier badge), one checked italic line read by af_heart 1.0, a visible change (the stack physically flips over at every fold) and one continuous pull-back camera: table -> kitchen -> out through the French window -> street -> city -> countryside -> edge of space (same scene, curved ground, sky turns dark) -> one cut -> Earth -> Moon -> Sun. Stake: the sheet is your electricity bill (punchline: 'And no. You still have to pay it.'). Blame lines: 'You were supposed to pay it', 'This is your fault', 'still have to pay it'. Mittens on the table + Mittens cam, mood changes every step (sleepy, unimpressed, annoyed, shock, unimpressed, scared, annoyed, smug, shock, sleepy, scared, smug, shock, then smug/happy). Paper drawn wider once tall, airliner and Moon drawn bigger - all labelled on screen. Golden late-afternoon light, European town houses with shutters/balconies/14 shop fronts, lively street (cars, dog walker, kid with balloon, busker, van). End card: 103 folds would be thicker than the observable universe.",
-   "duration_s": 64.6,
-   "notes": "Facts/formulas in engine/scripts/paperfold.json: 80 gsm office paper ~0.1 mm; 2^7 -> 1.28 cm, 2^10 -> 10.2 cm (mug ~9.5 cm), 2^12 -> 41 cm (Britney Gallivan's 12 folds in 2002 used ~1.2 km of toilet paper; later 13-fold attempts exist, so the end card says 'about 12-13'), 2^14 -> 1.64 m, 2^17 -> 13.1 m, 2^20 -> 104.9 m, 2^23 -> 838.9 m > Burj Khalifa 828 m, 2^27 -> 13.4 km > airliner cruise 10-12 km, 2^30 -> 107.4 km > Karman line 100 km, 2^37 -> 13,744 km > Earth diameter 12,742 km, 2^42 -> 439,805 km > Moon 384,400 km, 2^51 -> 225 million km > Sun 149.6 million km, 2^103 -> 1.01e27 m (~107 billion ly) > observable universe ~93 billion ly. QA: 64.6 s, 1080x1920, 32.3 MB (no-music 32.3 MB), max -0.6 dB (no-music -0.9 dB), voice-over-bed margin 16.3 dB (no-music 20.0 dB), title + counter from frame 0, 15-frame QA sheet checked, end card present. Encode: lanczos 1080x1920 + unsharp, CRF 21 with maxrate 4.6M (CRF 20/9M gave 57 MB, over the 40 MB repo limit). Render 2 x 969 frames at 720x1280 took ~80 min. Scene engine/scenes/paperfold.js, cue scripts/paperfold_cue.json, sfx scripts/paperfold_sfx.py."
-  }
- ],
- "premise_bank": [
-  "What if you stopped blinking for 24 hours?",
-  "What if gravity only got stronger on YOU?",
-  "What if your shadow came alive?"
- ],
- "made": [
-  "grow",
-  "sneeze",
-  "heat",
-  "shrink",
-  "gravity2x",
-  "sunoff",
-  "friction",
-  "water",
-  "jump",
-  "asteroid",
-  "paperfold"
- ],
- "plan_november": [
-  {
-   "post_date": "2026-11-11",
-   "slug": "shrink",
-   "premise": "What if you shrank 10x every 5 seconds?",
-   "notes": "Part 2 of grow. Counter: height (1.8 m → atom). Room → carpet jungle → dust mite → skin cell → DNA → atom. Look: switch to glowing x-ray/wireframe world as you get tiny. Payoff: you're now so small that... part 3 tease.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "made": "2026-11-10"
-  },
-  {
-   "post_date": "2026-11-12",
-   "slug": "gravity2x",
-   "premise": "What if gravity doubled for 5 seconds?",
-   "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "made": "2026-11-11"
-  },
-  {
-   "post_date": "2026-11-13",
-   "slug": "sunoff",
-   "premise": "What if the Sun switched off for 5 seconds?",
-   "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "made": "2026-11-12"
-  },
-  {
-   "post_date": "2026-11-14",
-   "slug": "friction",
-   "premise": "What if friction disappeared for 5 seconds?",
-   "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "made": "2026-11-13"
-  },
-  {
-   "post_date": "2026-11-15",
-   "slug": "water",
-   "premise": "What if all the water on Earth vanished for 5 seconds?",
-   "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "made": "2026-11-14"
-  },
-  {
-   "post_date": "2026-11-16",
-   "slug": "jump",
-   "premise": "What if everyone on Earth jumped at the same time?",
-   "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false,
-   "made": "2026-11-15"
-  },
-  {
-   "post_date": "shelved",
-   "slug": "asteroid",
-   "premise": "What if the asteroid had missed the dinosaurs?",
-   "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "made": true,
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-17",
-   "slug": "paperfold",
-   "premise": "What if you folded a piece of paper in half and never stopped?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Thickness doubles each fold: 0.1 mm x 2^n. 10 folds ~10 cm, 23 ~840 m (taller than Burj Khalifa), 30 ~107 km (edge of space), 42 ~440,000 km (past the Moon), 51 ~ the Sun. Place: kitchen table. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false,
-   "made": "2026-11-17"
-  },
-  {
-   "post_date": "2026-11-18",
-   "slug": "dighole",
-   "premise": "What if you dug a hole straight down and never stopped?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Depth counter: garden -> pipes/subway -> deepest mine (~4 km) -> Kola borehole (12.2 km) -> crust/mantle boundary -> outer core (2,900 km) -> centre (6,371 km) -> out the other side. Temperature as the second number. Place: back garden. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-19",
-   "slug": "mittensgrow",
-   "premise": "What if Mittens doubled in size every 5 seconds?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Mittens is the star (hero = the owner panicking). Height counter with real comparisons (dog, car, house, skyscraper, Everest, wider than Earth). Mittens cam shows the HERO's face instead. Place: living-room couch. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-20",
-   "slug": "snowball",
-   "premise": "What if a snowball rolled downhill and never stopped growing?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Diameter + weight counter; real comparisons (car, house, stadium, mountain, Moon). Place: ski slope / snowy park. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-21",
-   "slug": "humans-gone",
-   "premise": "What if all humans disappeared? (time-lapse)",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). One fixed city view; TIME counter escalating 5 seconds -> 1 day -> 1 year -> 100 years -> 10,000 -> 10 million years; one checked fact per step (lights out, subways flood, plants, bridges fall, ice age). No cast (nobody is left) - Mittens cam only. Do NOT copy the zenith.whatif video shot-for-shot: our own city, own order, own wording. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-22",
-   "slug": "rain",
-   "premise": "What if it started raining and never stopped?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Water-depth counter at a fixed real-world heavy-rain rate (state it); steps: puddles, kerb, cars, first floor, rooftops, skyscrapers, Everest; note honestly in the end card that Earth doesn't hold that much water. Place: bus stop. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-23",
-   "slug": "fallforever",
-   "premise": "What if you tripped and never stopped speeding up?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Speed counter: running -> car -> jet -> sound barrier -> orbital speed -> escape velocity -> a fraction of light speed (can't pass it). NO-NARRATOR TEST (owner): italic lines on screen only. Place: sidewalk outside a cafe. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": true
-  },
-  {
-   "post_date": "2026-11-24",
-   "slug": "ants",
-   "premise": "What if one ant doubled every minute?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Count + total weight counter: 2^n ants; when they outweigh a person, an elephant, all humans (~390 Mt), Earth. Place: picnic in the park. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-25",
-   "slug": "bubblegum",
-   "premise": "What if you blew a bubble-gum bubble that never popped?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Diameter counter; lifts the hero; comparisons: beach ball, hot-air balloon, stadium, the Moon. Place: school/office desk. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-26",
-   "slug": "spinfaster",
-   "premise": "What if Earth spun a little faster every second?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Day-length counter shrinking: 24 h -> 12 h -> 4 h -> 1 h 24 min (things at the equator become weightless). Place: beach. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-27",
-   "slug": "jumpdouble",
-   "premise": "What if every jump was twice as high as the last?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). 0.5 m x 2^n: jump 10 ~512 m, 20 ~524 km (space), 30 ~537,000 km (past the Moon). Place: trampoline in a back yard. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-28",
-   "slug": "searise",
-   "premise": "What if the sea rose one metre every second?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Sea-level counter; steps by real elevations of famous places (Venice, New York streets, Statue of Liberty torch 93 m, Eiffel Tower 330 m, Denver 1,600 m, Everest 8,849 m). Place: seaside restaurant on a date. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-29",
-   "slug": "zoomout",
-   "premise": "What if you zoomed out and never stopped?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Distance counter powers of ten: 1 m -> city -> Earth -> Moon orbit -> Solar System -> Milky Way -> observable universe. Place: slouching on the couch with the remote. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  },
-  {
-   "post_date": "2026-11-30",
-   "slug": "stairs",
-   "premise": "What if every step you climbed was twice as tall as the last?",
-   "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Step height 15 cm x 2^n: step 5 ~2.4 m, 10 ~77 m, 15 ~2.5 km, 20 ~79 km (edge of space), 25 ~2,500 km. Place: apartment stairwell with grocery bags. Check every number before scripting.",
-   "tiktok": true,
-   "style": "A_explainer",
-   "no_narrator_test": false
-  }
- ],
- "style_notes": [
-  "Counter variety: big pill (ours), elegant serif top-left with small sub-label (electrons/earth-spin/run-speed refs), progress bar for time-lapses (1000-years ref).",
-  "Add a tier badge under the counter that upgrades each beat (e.g. HUMAN → BUILDING → MOUNTAIN → PLANET), like the run-speed ref's rank tags.",
-  "Expressive character faces and reactions at each beat (Roblox school-story ref); one recurring side character per episode (neighbor, granny, mom, rival).",
-  "One-sentence caption per beat in italic serif OR word-by-word pop captions; never both at the same spot.",
-  "Endings loop or restart (run-speed ref restarts at 'Minute 0'), or tease the part 2 that is already in the plan.",
-  "Do not copy other creators' premises, characters or captions; take the format, not the content."
- ],
- "styles": {
-  "A_explainer": "Current style. Female narrator (Kokoro af_heart, speed 1.1), 2nd person 'you', big title + pill counter, word-by-word captions, 40–48 s.",
-  "B_silent_cinematic": "NO voiceover (like the electrons / Earth-stops-spinning / run-speed references). Music + sound design carry it. One short italic serif line per beat (e.g. 'You do not. Nothing does.'), elegant small serif counter top-left with a sub-label and an upgrading tier badge, slower camera, colour-graded cinematic look. 35–45 s.",
-  "C_first_person_story": "A character tells it as 'I…' (like the golden-drops / Roblox school-story references): opens mid-drama ('I looked in the mirror this morning, and…'), states the world's rule, personal stakes, a twist, cliffhanger. Fast and emotional (~3.5–4 words/s), expressive blocky character with big eyes/mouth reacting every beat, word-by-word captions. Male voice (Kokoro am_puck or am_michael). 61–75 s so TikTok counts it as > 1 min.",
-  "D_warm_explainer": "Calm, comforting 'you' narrator with a small joke in every beat (like the 'everyone slept 1,000 years' reference: 'At least the rent has finally gone down', 'Earth is slowly cleaning out its attic'). Timeline/progress-bar counter, cozy lighting, a cute side character (raccoon/parrot style). Male voice (Kokoro bm_george or am_michael), ~2.6 words/s, 61–75 s."
- },
- "style_test": {
-  "goal": "Find which style gets the best YouTube Shorts retention and growth; ~4 videos per style by Nov 27.",
-  "metrics": "averageViewPercentage, averageViewDuration, engagedViews, subscribersGained per 1k views (vidIQ vidiq_channel_analytics, dimensions=[video], 5 credits).",
-  "winner": null,
-  "weekly_results": [
-   {
-    "review_date": "2026-11-09",
-    "window": "2026-11-08..2026-11-09",
-    "posted_youtube": [
-     {
+  "zapier_youtube_connection_id": "024e8223-8129-8378-ae74-36264dc05b99",
+  "instagram_platformAccountId": "29226914170279337",
+  "queue": [
+    {
       "slug": "grow",
-      "id": "MkeqbgAvJi8",
-      "style": "A_explainer",
-      "post_date": "2026-11-08"
-     }
-    ],
-    "analytics_rows": 0,
-    "by_style": {
-     "A_explainer": {
-      "videos": 1,
-      "videos_older_48h": 0,
-      "data": "none yet (YouTube Analytics returned 0 rows; usual 24-72h reporting lag)"
-     },
-     "B_silent_cinematic": {
-      "videos": 0
-     },
-     "C_first_person_story": {
-      "videos": 0
-     },
-     "D_warm_explainer": {
-      "videos": 0
-     }
-    },
-    "verdict": "too early",
-    "note": "Style test not active (owner approval pending); only A_explainer posted. sneeze due 2026-11-09 21:00, heat 2026-11-10."
-   },
-   {
-    "review_date": "2026-11-16",
-    "window": "2026-11-08..2026-11-16",
-    "posted_youtube": [
-     {
-      "slug": "grow",
-      "id": "MkeqbgAvJi8",
-      "style": "A_explainer",
       "post_date": "2026-11-08",
-      "views": 1431,
-      "engagedViews": 790,
-      "averageViewPercentage": 68.32,
-      "averageViewDuration_s": 33,
-      "subscribersGained": 3,
-      "likes": 35,
-      "shares": 0,
-      "subs_per_1k_views": 2.1
-     },
-     {
-      "slug": "sneeze",
-      "id": "2f7V9mG-kag",
+      "file": "videos/2026-11-grow.mp4",
+      "title": "What If You Grew 10x Bigger Every 5 Seconds? 😳",
+      "caption": "At 18,000 km tall you'd be taller than Earth is wide… and a stubbed toe would take almost 2 days to hurt 💀 Part 2: you shrink. Follow so you don't miss it.",
+      "hashtags": "#whatif #whatifscenario #science #3danimation #giant #space #funfacts",
+      "youtube": {
+        "status": "posted",
+        "id": "MkeqbgAvJi8"
+      },
+      "tiktok": {
+        "status": "posted",
+        "metricool_id": 421209953,
+        "url": "https://www.tiktok.com/@wild.what.if/video/7705987049412693255"
+      },
+      "instagram": {
+        "status": "posted",
+        "media_id": "17990144022082114",
+        "permalink": "https://www.instagram.com/reel/DfhETBuApuC/",
+        "posted_at": "2026-11-09T07:00"
+      },
       "style": "A_explainer",
-      "post_date": "2026-11-09",
-      "views": 2075,
-      "engagedViews": 1319,
-      "averageViewPercentage": 84.78,
-      "averageViewDuration_s": 39,
-      "subscribersGained": 2,
-      "likes": 37,
-      "shares": 0,
-      "subs_per_1k_views": 0.96
-     },
-     {
-      "slug": "heat",
-      "id": "dFJFxw1hvh4",
-      "style": "A_explainer",
-      "post_date": "2026-11-10",
-      "views": 1630,
-      "engagedViews": 883,
-      "averageViewPercentage": 78.99,
-      "averageViewDuration_s": 34,
-      "subscribersGained": 0,
-      "likes": 24,
-      "shares": 0,
-      "subs_per_1k_views": 0.0
-     },
-     {
-      "slug": "shrink",
-      "id": "rVrXKYDmtQQ",
-      "style": "A_explainer",
-      "post_date": "2026-11-11",
-      "views": 1230,
-      "engagedViews": 541,
-      "averageViewPercentage": 82.5,
-      "averageViewDuration_s": 29,
-      "subscribersGained": 4,
-      "likes": 23,
-      "shares": 1,
-      "subs_per_1k_views": 3.25
-     },
-     {
-      "slug": "gravity2x",
-      "id": "jv39b1NMDnA",
-      "style": "A_explainer",
-      "post_date": "2026-11-12",
-      "views": 1317,
-      "engagedViews": 703,
-      "averageViewPercentage": 63.9,
-      "averageViewDuration_s": 31,
-      "subscribersGained": 3,
-      "likes": 33,
-      "shares": 0,
-      "subs_per_1k_views": 2.28
-     },
-     {
-      "slug": "sunoff",
-      "id": "_nzt_ppAkTA",
-      "style": "A_explainer",
-      "post_date": "2026-11-13",
-      "views": 1119,
-      "engagedViews": 639,
-      "averageViewPercentage": 91,
-      "averageViewDuration_s": 45,
-      "subscribersGained": 3,
-      "likes": 31,
-      "shares": 0,
-      "subs_per_1k_views": 2.68
-     },
-     {
-      "slug": "friction",
-      "id": "3Fm0DXNT6QI",
-      "style": "A_explainer",
-      "post_date": "2026-11-14",
-      "views": 1166,
-      "engagedViews": 608,
-      "averageViewPercentage": 78.97,
-      "averageViewDuration_s": 41,
-      "subscribersGained": 0,
-      "likes": 33,
-      "shares": 0,
-      "subs_per_1k_views": 0.0
-     },
-     {
-      "slug": "water",
-      "id": "-DGy7T8qaE0",
-      "style": "A_explainer",
-      "post_date": "2026-11-15",
-      "data": "no rows yet (posted <24h, reporting lag)"
-     }
-    ],
-    "analytics_rows": 7,
-    "by_style": {
-     "A_explainer": {
-      "videos": 8,
-      "videos_with_data": 7,
-      "videos_older_48h": 6,
-      "views": 9968,
-      "engagedViews": 5483,
-      "avg_engagedViews_per_video": 783,
-      "avg_averageViewPercentage": 78.35,
-      "avg_averageViewDuration_s": 36.0,
-      "subscribersGained": 15,
-      "subs_per_1k_views": 1.5,
-      "likes": 216
-     },
-     "B_silent_cinematic": {
-      "videos": 0
-     },
-     "C_first_person_story": {
-      "videos": 0
-     },
-     "D_warm_explainer": {
-      "videos": 0
-     }
+      "file_deleted": "2026-11-12 (housekeeping: all platforms posted >3 days)"
     },
-    "verdict": "too early",
-    "note": "Only A_explainer has posted, so there is nothing to compare against (test still inactive pending owner approval). Within A: best retention sunoff 91% / 45 s; weakest gravity2x 63.9% and grow 68.3%. Most subs/1k: shrink 3.25. water (-DGy7T8qaE0) had no rows yet."
-   }
+    {
+      "slug": "sneeze",
+      "post_date": "2026-11-09",
+      "file": "videos/2026-11-sneeze.mp4",
+      "title": "What If Every Sneeze Was 10x Stronger? 🤧",
+      "caption": "Sneeze 3 breaks the sound barrier. Sneeze 7 launches you across the city. Granny still said bless you 👵 Which sneeze would you survive?",
+      "hashtags": "#whatif #sneeze #physics #science #3danimation #funny #funfacts",
+      "youtube": {
+        "status": "posted",
+        "id": "2f7V9mG-kag",
+        "url": "https://www.youtube.com/shorts/2f7V9mG-kag",
+        "posted_at": "2026-11-09T20:58"
+      },
+      "tiktok": {
+        "status": "posted_manually",
+        "due": "2026-11-09T23:05",
+        "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
+        "file": "videos/2026-11-sneeze-nomusic.mp4",
+        "keep_until": "2026-11-16",
+        "confirmed_by_owner": "2026-11-10",
+        "posted_at": "2026-11-09T23:05 (owner confirmed 23:37)"
+      },
+      "instagram": {
+        "status": "posted",
+        "due": "2026-11-10T07:00",
+        "media_id": "18644528320050018",
+        "permalink": "https://www.instagram.com/reel/DfjpG5wDrYG/",
+        "posted_at": "2026-11-10T07:01"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-sneeze-nomusic.mp4",
+      "version": "v3 (new visual standard, owner-approved Nov 9)"
+    },
+    {
+      "slug": "heat",
+      "post_date": "2026-11-10",
+      "file": "videos/2026-11-heat.mp4",
+      "title": "What If Your Body Temperature Never Stopped Rising? 🔥",
+      "caption": "100°C: you boil your sweat. 1,538°C: steel melts. 5,500°C: you're as hot as the surface of the Sun… and mom still says bring a jacket 🧥",
+      "hashtags": "#whatif #science #temperature #sun #3danimation #funfacts #physics",
+      "youtube": {
+        "status": "posted",
+        "id": "dFJFxw1hvh4",
+        "url": "https://www.youtube.com/shorts/dFJFxw1hvh4",
+        "posted_at": "2026-11-10T20:59"
+      },
+      "tiktok": {
+        "status": "manual_requested",
+        "due": "2026-11-10T23:05",
+        "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
+        "file": "videos/2026-11-heat-nomusic.mp4",
+        "keep_until": "2026-11-17"
+      },
+      "instagram": {
+        "status": "posted",
+        "due": "2026-11-11T07:00",
+        "media_id": "17888706291622928",
+        "permalink": "https://www.instagram.com/reel/DfmN5SMgccN/",
+        "posted_at": "2026-11-11T07:01"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-heat-nomusic.mp4",
+      "version": "v3 (new visual standard; owner said he likes it, Nov 10)"
+    },
+    {
+      "slug": "shrink",
+      "post_date": "2026-11-11",
+      "file": "videos/2026-11-shrink.mp4",
+      "title": "What If You Never Stopped Shrinking? 🔬",
+      "caption": "18 cm: your cat is the size of an elephant. 180 microns: a dust mite stares you down. 0.2 nm: you're the size of a single atom 😳 How small would you go?",
+      "hashtags": "#whatif #science #microscopic #atoms #3danimation #funfacts #physics",
+      "youtube": {
+        "status": "posted",
+        "id": "rVrXKYDmtQQ",
+        "url": "https://www.youtube.com/shorts/rVrXKYDmtQQ",
+        "posted_at": "2026-11-11T21:01"
+      },
+      "tiktok": {
+        "status": "manual_requested",
+        "due": "2026-11-11T23:05",
+        "reason": "tiktok_manual_until 2026-11-15 (account warm-up)",
+        "file": "videos/2026-11-shrink-nomusic.mp4",
+        "keep_until": "2026-11-18"
+      },
+      "instagram": {
+        "status": "posted",
+        "due": "2026-11-12T07:00",
+        "media_id": "17938713798407355",
+        "permalink": "https://www.instagram.com/reel/DfoywDQEYwO/",
+        "posted_at": "2026-11-12T07:01"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-shrink-nomusic.mp4",
+      "version": "v3 visual standard + Nov 9 hook_rules (35.3 s, cold open on the atom moment, looping ending)",
+      "duration_s": 35.3,
+      "notes": "Part 2 of grow. Facts checked: house cat ~25 cm at shoulder (x10 = elephant), dust mite 0.25-0.3 mm, corneocyte (skin flake) ~30-40 um, E. coli ~2 um, visible light 380-700 nm, DNA helix ~2 nm wide, atoms ~0.1-0.5 nm. Hero 'Chris' voice clips not used: audio/voices/hero_chris/ is not in the repo (gitignored) and the single library mp3 in fetched/ is unlabeled, so lines could not be identified without listening; speech bubbles carry the hero's reactions instead."
+    },
+    {
+      "slug": "gravity2x",
+      "post_date": "2026-11-12",
+      "file": "videos/2026-11-12-gravity2x.mp4",
+      "title": "What If Gravity Doubled for 5 Seconds? 🌍",
+      "caption": "Your keys stop short. Everyone weighs double. Only the balloon wins 🎈 Stay for the last line. Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #science #gravity #physics #space #3danimation #funfacts",
+      "youtube": {
+        "status": "posted",
+        "id": "jv39b1NMDnA",
+        "url": "https://www.youtube.com/shorts/jv39b1NMDnA",
+        "posted_at": "2026-11-12T20:58"
+      },
+      "tiktok": {
+        "status": "scheduled",
+        "metricool_id": 430696390,
+        "due": "2026-11-17T13:05"
+      },
+      "instagram": {
+        "status": "posted",
+        "due": "2026-11-13T07:00",
+        "media_id": "18119272319276895",
+        "permalink": "https://www.instagram.com/reel/DfrUywxD4Gx/",
+        "posted_at": "2026-11-13T06:38"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-12-gravity2x-nomusic.mp4",
+      "version": "format_v5 rebuild (2026-11-12): calm lively street + countdown 0:07, 5 s in 6x slow motion, narrator af_heart reads the italic lines, aftermath, comments end card. Stake: you toss your keys to Dave on his balcony; gravity doubles mid-toss; second toss is caught. Answer last: the space station fell a football field.",
+      "duration_s": 49.2,
+      "notes": "Facts checked: at 2 g a toss reaches half the height (h = v^2/2g) and falls twice as far per second; weight doubles; helium balloon net lift (buoyancy - weight) scales with g, so it doubles and the balloon rises faster (terminal speed ~1.4x); a jet whose lift stays at 1 g sinks 1/2*9.8*5^2 = 122 m in 5 s; structures carry double dead load briefly (safety factors ~1.5-2); blood weight doubles; ISS (g = 8.7 m/s^2 at 400 km) drops 1/2*8.7*25 = 109 m, about a football field. QA: 49.2 s, max -1.5 dB, voice-over-bed margin 15.0 dB (no-music 16.3 dB), calm opening with title + countdown, end card present. Previous format_v4 version is in git history (commit 321926b)."
+    },
+    {
+      "slug": "sunoff",
+      "post_date": "2026-11-13",
+      "file": "videos/2026-11-13-sunoff.mp4",
+      "title": "What If the Sun Switched Off for 5 Seconds? ☀️",
+      "caption": "No sunset. No warning. Just stars at noon — and the strangest selfie in New York 📸 Stay for the last line. Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #science #sun #space #stars #3danimation #funfacts",
+      "youtube": {
+        "status": "posted",
+        "id": "_nzt_ppAkTA",
+        "url": "https://www.youtube.com/shorts/_nzt_ppAkTA",
+        "posted_at": "2026-11-13T20:58"
+      },
+      "tiktok": {
+        "status": "manual_requested",
+        "due": "2026-11-13T23:05",
+        "reason": "tiktok_manual_until 2026-12-31 (owner posts by hand)",
+        "file": "videos/2026-11-13-sunoff-nomusic.mp4",
+        "keep_until": "2026-11-20"
+      },
+      "instagram": {
+        "status": "posted",
+        "due": "2026-11-14T07:00",
+        "media_id": "18182410279440101",
+        "permalink": "https://www.instagram.com/reel/Dft5k3tiTJ-/",
+        "posted_at": "2026-11-14T06:38"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-13-sunoff-nomusic.mp4",
+      "version": "format_v5: the owner-approved Sun prototype (sun.js) finished with the Nov 11 rules — opening stake (selfie with Mittens at the hot-dog cart, paid off by the photo of stars at noon), lively street (dog walker, jogger, cyclist, kid with balloon, busker, delivery van, phone call, coffee), answer last (8-minute delay is the final line). Narrator af_heart 1.0.",
+      "duration_s": 49.5,
+      "notes": "Facts checked: sunlight takes ~8 min 20 s to reach Earth, so the Sun went dark ~8 min before anyone could see it; the daytime sky is scattered sunlight, so it goes black at once and stars show; moonlight lags ~1.3 s (Moon-Earth light time); Jupiter is ~43 light-min from the Sun and 33-50 light-min from Earth, so it stays lit for over an hour; only the day side (~half the planet) sees it; 5 s is far too short for the air to cool. QA: 49.5 s, max -1.4 dB, voice-over-bed margin 16.2 dB (no-music 17.5 dB), calm opening with title + countdown, end card present. Scene engine/scenes/sunoff.js."
+    },
+    {
+      "slug": "friction",
+      "post_date": "2026-11-14",
+      "file": "videos/2026-11-14-friction.mp4",
+      "title": "What If Friction Disappeared for 5 Seconds? 🧊",
+      "caption": "Your shoelace slides open, your coffee leaves the table, and the taxi just… keeps going 🚕 Stay for the last line. Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #science #physics #friction #3danimation #funfacts #slowmotion",
+      "youtube": {
+        "status": "posted",
+        "id": "3Fm0DXNT6QI",
+        "url": "https://www.youtube.com/shorts/3Fm0DXNT6QI",
+        "posted_at": "2026-11-14T20:58"
+      },
+      "tiktok": {
+        "status": "scheduled",
+        "metricool_id": 430696441,
+        "due": "2026-11-18T13:05"
+      },
+      "instagram": {
+        "status": "posted",
+        "due": "2026-11-15T07:00",
+        "media_id": "17887478499514157",
+        "permalink": "https://www.instagram.com/reel/DfweaRulfuB/",
+        "posted_at": "2026-11-15T06:38"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-14-friction-nomusic.mp4",
+      "place": "pavement cafe outside a bakery (late afternoon)",
+      "version": "format_v5: own place, stake and transformation built on the sun.js structure — stake: crouched tying a shoelace outside the bakery, paid off when the lace pulls tight on the first try in the aftermath; transformation: every surface turns mirror-slick and everything that was moving simply keeps going (taxi, coffee, crowd, Mittens on her chair, a sand pile flowing flat); answer last: your own joints are already almost frictionless. Narrator af_heart 1.0.",
+      "duration_s": 51.8,
+      "notes": "Facts checked: 50 km/h = 13.9 m/s, braking at mu≈0.8 needs ~12 m, and in 5 frictionless seconds the car covers ~70 m; dry tyre grip mu≈0.8, ice≈0.1; synovial-joint cartilage mu as low as 0.002 (Guilak 2005, Body Physics), far below ice-on-ice ≈0.03; dry sand piles at an angle of repose ≈34°, which friction sets; Manhattan blocks ≈80 m × 274 m. QA: 51.8 s, 1080x1920, 33 MB, max -1.4 dB, voice-over-bed margin 16.3 dB (no-music 17.9 dB), calm lively opening with title + countdown, end card present. Scene engine/scenes/friction.js, cue scripts/friction_cue.json."
+    },
+    {
+      "slug": "water",
+      "post_date": "2026-11-15",
+      "file": "videos/2026-11-15-water.mp4",
+      "title": "What If All the Water on Earth Vanished for 5 Seconds? 💧",
+      "caption": "The East River turns into a 12-metre mud canyon, the ferry drops, and Mittens finally likes the river 🐟 Stay for the last line. Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #science #water #ocean #3danimation #funfacts #newyork",
+      "youtube": {
+        "status": "posted",
+        "due": "2026-11-15T21:00",
+        "id": "-DGy7T8qaE0",
+        "url": "https://www.youtube.com/shorts/-DGy7T8qaE0",
+        "posted_at": "2026-11-15T20:59"
+      },
+      "tiktok": {
+        "status": "scheduled",
+        "metricool_id": 430696487,
+        "due": "2026-11-19T13:05"
+      },
+      "instagram": {
+        "status": "posted",
+        "due": "2026-11-16T07:00",
+        "media_id": "18120797719973773",
+        "permalink": "https://www.instagram.com/reel/DfzDPpnE_up/",
+        "posted_at": "2026-11-16T06:39"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-15-water-nomusic.mp4",
+      "place": "East River esplanade railing, Manhattan (late morning)",
+      "version": "format_v5: own place, stake and transformation built on the sun.js structure — stake: about to beat a stone-skipping record (best: four), the stone lands in a shopping cart on the dry riverbed, paid off when the next stone skips five times after the water returns; transformation: the blue drains out of the world — river becomes a 12 m mud canyon (ferry, sailboat, tug and fish drop), every cloud boils away, the harbour is a valley with Liberty on a hill, the planet from space is brown; Mittens peeks over the railing delighted, then gets soaked; answer last: ships at sea fell ~120 m. Narrator af_heart 1.0. 3 cuts (Mittens, space, back to hero).",
+      "duration_s": 53.6,
+      "notes": "Facts checked: East River ~12 m (40 ft) deep from the Battery to the Navy Yard (Wikipedia, 1939 survey); Brooklyn Bridge towers ~84 m above mean high water, deck 38.7 m (Wikipedia); Statue of Liberty 93 m ground to torch (NPS); Challenger Deep 10,935 m (NOAA/Britannica); free fall for 5 s = 0.5*9.81*25 ≈ 122 m (open-ocean depth averages ~3.7 km, so ships don't reach bottom); clouds are water droplets/ice. Premise scoped on screen: water inside living things stays. QA: 53.6 s, 1080x1920, 33.5 MB, max -1.5 dB, voice-over-bed margin 17.6 dB (no-music 19.1 dB), calm lively opening with title + countdown, end card present. Scene engine/scenes/water.js, cue scripts/water_cue.json, sfx engine/scripts/water_sfx.py."
+    },
+    {
+      "slug": "jump",
+      "post_date": "2026-11-16",
+      "file": "videos/2026-11-16-jump.mp4",
+      "title": "What If Everyone on Earth Jumped at the Same Time? 🦘",
+      "caption": "8.2 billion people leave the ground at once — your neighbour keeps reading his paper, the pigeon refuses, and Mittens finally gets the ice cream 🍦 Stay for the last line. Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #science #physics #3danimation #funfacts #newyork #cat",
+      "youtube": {
+        "status": "posted",
+        "due": "2026-11-16T21:00",
+        "id": "mjuwgKsl2Sw",
+        "url": "https://www.youtube.com/shorts/mjuwgKsl2Sw",
+        "posted_at": "2026-11-16T20:59"
+      },
+      "tiktok": {
+        "status": "scheduled",
+        "due": "2026-11-16T23:05",
+        "metricool_id": 430830655
+      },
+      "instagram": {
+        "status": "posted",
+        "due": "2026-11-17T07:00",
+        "media_id": "18111394874193420",
+        "permalink": "https://www.instagram.com/reel/Df1oCuxisM0/",
+        "posted_at": "2026-11-17T06:40"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-16-jump-nomusic.mp4",
+      "place": "bus stop outside an ice-cream parlour on a busy avenue (early afternoon)",
+      "cast": [
+        "THE UNBOTHERED PERSON (reads his newspaper, turns a page mid-air)",
+        "THE PIGEON (does not jump, slow judging turn)",
+        "THE SALESMAN ('I JUMPED' T-shirts, walks up to you seconds after landing)"
+      ],
+      "no_narrator_test": false,
+      "version": "format_v5 + Nov 15 rules (bright look, varied shop fronts, comedy tone, fluent motion, background cast). Stake: three-scoop cone, 'don't drop it' — paid off after landing when the top scoop slides onto the bench and Mittens eats it. Transformation: nobody on Earth touches the ground — street (contact shadows under every hovering person), rooftops and avenues seen from above, then the planet from space with a lifted glowing layer over every continent (labelled 'height not to scale'). Jump airtime 0.6 s shown at 50x slow motion (bullet time), counter 'EVERYONE LANDS IN 0:00.600'. Narrator af_heart 1.0 with 2 blame lines ('This was your idea, by the way.', 'You had one job.'). 3 cuts (Mittens/pigeon, space, back to you). Answer last: Earth moved less than a thousandth of an atom's width.",
+      "duration_s": 53.6,
+      "notes": "Facts checked: world population ~8.2 billion in July 2026 (US Census Bureau IDB); Earth ~6e24 kg and total human mass ~363 billion kg for 7 billion people (Live Science / Rhett Allain) -> ~0.4 trillion kg today; 0.6 s airtime = take-off 2.94 m/s, peak 0.44 m; Earth recoil <= (4e11/5.97e24) x 0.44 m ~ 3e-14 m, < 1/1000 of a hydrogen atom (~1e-10 m), and less in reality because people spread round the globe push in different directions; Empire State Building 443.2 m to tip (CTBUH Skyscraper Center); ISS ~400 km up; 1 pm New York (EST) = 3 am Tokyo. QA: 53.6 s, 1080x1920, 23.4 MB, max -1.0 dB, voice-over-bed margin 16.3 dB (no-music 17.6 dB), calm lively opening with title + countdown, passing taxis, dog walker, kid with balloon, end card present. Reader shot (9.6-12.8 s) re-rendered after QA because a passer-by blocked it. Scene engine/scenes/jump.js, cue scripts/jump_cue.json."
+    },
+    {
+      "slug": "asteroid",
+      "post_date": "shelved",
+      "file": "videos/2026-11-17-asteroid.mp4",
+      "title": "What If the Asteroid Had Missed the Dinosaurs? 🦖",
+      "caption": "History gets one tiny edit: the asteroid shows up seven minutes late. The city sinks into a prehistoric forest, the museum's T. rex wakes up mid-selfie, and the pigeon is completely fine 🐦 Stay for the last line. Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #dinosaurs #trex #science #3danimation #funfacts #asteroid",
+      "youtube": {
+        "status": "shelved",
+        "reason": "Nov 17: owner found the jump video confusing (lines/jokes); asteroid has the same disconnected writing and the old 5-second format, so it was pulled before posting. Files kept; rebuild only if the owner asks."
+      },
+      "tiktok": {
+        "status": "shelved",
+        "reason": "Nov 17: owner found the jump video confusing (lines/jokes); asteroid has the same disconnected writing and the old 5-second format, so it was pulled before posting. Files kept; rebuild only if the owner asks."
+      },
+      "instagram": {
+        "status": "shelved",
+        "reason": "Nov 17: owner found the jump video confusing (lines/jokes); asteroid has the same disconnected writing and the old 5-second format, so it was pulled before posting. Files kept; rebuild only if the owner asks."
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-17-asteroid-nomusic.mp4",
+      "place": "plaza of a natural-history museum on a busy avenue (late afternoon, golden light)",
+      "cast": [
+        "THE FILMER (keeps filming the T. rex; afterwards his video is gone and he blames the lighting)",
+        "BAD TIMING (proposes on one knee at the exact second the T. rex wakes; she says yes afterwards)",
+        "THE PIGEON (rides on the T. rex's head the whole time — pigeons are dinosaurs)"
+      ],
+      "no_narrator_test": false,
+      "version": "format_v5 + Nov 15 rules (golden light, European town-house street with shutters/balconies/cornices and 15+ different shop fronts on both sides, comedy tone, fluent motion, background cast). Stake: a selfie with the museum's fibreglass T. rex — paid off in the aftermath: the selfie happens and the statue is now looking at you. Transformation: the asteroid arrives 7 minutes late and misses (space shot, dashed path, Earth slides away); a wave of prehistoric forest spreads from the statue, cars and passers-by never happened, every building sinks into the ferns and conifers, the statue comes alive (colour, feather crest, roar), feathered speculative dinosaurs walk past, long-necks and pterosaurs from above, the Empire State Building sinks last ('never built'). 6.2x slow motion of the 5 s story, counter 'REALITY RETURNS IN 0:04.xxx'. Narrator af_heart 1.0 with 2 blame lines ('This was your idea, by the way.', 'You wanted a selfie with a T. rex.'). Mittens: sleepy/happy -> shock -> scared -> annoyed swat at the sniffing snout -> smug -> unimpressed. 3 cuts (space, back to the plaza, the selfie view). Answer last: almost anywhere else on Earth it might not have killed them (Kaiho & Oshima 2017).",
+      "duration_s": 53.4,
+      "notes": "Facts checked: impact 66 million years ago, impactor about 10 km wide, ~75% of species lost incl. all non-avian dinosaurs (Chicxulub literature, e.g. Wikipedia 'Chicxulub impactor', Sky at Night); Earth orbits at ~30 km/s and its diameter is 12,742 km -> it moves its own width in ~7.1 minutes; birds are living dinosaurs (pigeon line); largest Mesozoic mammals ~badger-sized (Repenomamus, Smithsonian 'When mammals ate dinosaurs'); Kaiho & Oshima 2017 (Scientific Reports): only ~13% of Earth's surface held enough hydrocarbons/sulfur for the soot that caused the mass extinction (National Geographic / Smithsonian Nov 2017); T. rex up to ~12 m long; Empire State Building 443 m to the tip. Speculative parts are flagged in the lines ('Nobody knows what they'd look like', 'people probably never happen'). Asteroid drawn bigger and labelled as such. QA: 53.4 s, 1080x1920, 32.3 MB (no-music 32.3 MB), max -0.9 dB (no-music -0.8 dB), voice-over-bed margin 14.1 dB (no-music 14.9 dB), calm lively opening with title + countdown (taxis crossing, passers-by, kid with balloon, busker, couple, filmer), 12-frame QA sheet checked, end card present. Scene engine/scenes/asteroid.js, cue scripts/asteroid_cue.json, sfx scripts/asteroid_sfx.py."
+    },
+    {
+      "slug": "paperfold",
+      "post_date": "2026-11-17",
+      "file": "videos/2026-11-18-paperfold.mp4",
+      "title": "WHAT IF you folded paper and never stopped? 📄",
+      "caption": "It's your electricity bill. You were supposed to pay it. Instead you fold it — through the ceiling, past the planes, past the Moon, past the Sun. Mittens is not impressed 🐱 Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #paperfolding #exponential #space",
+      "youtube": {
+        "status": "posted",
+        "due": "2026-11-17T21:00",
+        "id": "NknEx9ZWOBU",
+        "url": "https://www.youtube.com/shorts/NknEx9ZWOBU",
+        "posted_at": "2026-11-17T20:59"
+      },
+      "tiktok": {
+        "status": "scheduled",
+        "due": "2026-11-17T23:05",
+        "metricool_id": 432195167
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-18T07:00"
+      },
+      "style": "A_explainer",
+      "file_tiktok": "videos/2026-11-18-paperfold-nomusic.mp4",
+      "place": "kitchen table on the first floor of a European town house, French windows open onto a cobbled shopping street (late afternoon, golden light)",
+      "cast": [
+        "THE UNBOTHERED PERSON (neighbour on the next balcony keeps watering her plants and never looks up)",
+        "THE SALESMAN ('I SAW THE BILL - FOLD 20' T-shirts on the opposite pavement, pitching straight to camera)"
+      ],
+      "no_narrator_test": false,
+      "version": "RUNAWAY FORMAT (format_v5.rules[0], first video of it). Thickness = 0.1 mm x 2^n; 12 steps of 4.4 s (folds 7,10,12,14,17,20,23,27,30,37,42,51), each with a counter roll-up (FOLD n / thickness / tier badge), one checked italic line read by af_heart 1.0, a visible change (the stack physically flips over at every fold) and one continuous pull-back camera: table -> kitchen -> out through the French window -> street -> city -> countryside -> edge of space (same scene, curved ground, sky turns dark) -> one cut -> Earth -> Moon -> Sun. Stake: the sheet is your electricity bill (punchline: 'And no. You still have to pay it.'). Blame lines: 'You were supposed to pay it', 'This is your fault', 'still have to pay it'. Mittens on the table + Mittens cam, mood changes every step (sleepy, unimpressed, annoyed, shock, unimpressed, scared, annoyed, smug, shock, sleepy, scared, smug, shock, then smug/happy). Paper drawn wider once tall, airliner and Moon drawn bigger - all labelled on screen. Golden late-afternoon light, European town houses with shutters/balconies/14 shop fronts, lively street (cars, dog walker, kid with balloon, busker, van). End card: 103 folds would be thicker than the observable universe.",
+      "duration_s": 64.6,
+      "notes": "Facts/formulas in engine/scripts/paperfold.json: 80 gsm office paper ~0.1 mm; 2^7 -> 1.28 cm, 2^10 -> 10.2 cm (mug ~9.5 cm), 2^12 -> 41 cm (Britney Gallivan's 12 folds in 2002 used ~1.2 km of toilet paper; later 13-fold attempts exist, so the end card says 'about 12-13'), 2^14 -> 1.64 m, 2^17 -> 13.1 m, 2^20 -> 104.9 m, 2^23 -> 838.9 m > Burj Khalifa 828 m, 2^27 -> 13.4 km > airliner cruise 10-12 km, 2^30 -> 107.4 km > Karman line 100 km, 2^37 -> 13,744 km > Earth diameter 12,742 km, 2^42 -> 439,805 km > Moon 384,400 km, 2^51 -> 225 million km > Sun 149.6 million km, 2^103 -> 1.01e27 m (~107 billion ly) > observable universe ~93 billion ly. QA: 64.6 s, 1080x1920, 32.3 MB (no-music 32.3 MB), max -0.6 dB (no-music -0.9 dB), voice-over-bed margin 16.3 dB (no-music 20.0 dB), title + counter from frame 0, 15-frame QA sheet checked, end card present. Encode: lanczos 1080x1920 + unsharp, CRF 21 with maxrate 4.6M (CRF 20/9M gave 57 MB, over the 40 MB repo limit). Render 2 x 969 frames at 720x1280 took ~80 min. Scene engine/scenes/paperfold.js, cue scripts/paperfold_cue.json, sfx scripts/paperfold_sfx.py."
+    }
   ],
-  "active": false,
-  "note": "Owner wants the style test as an idea only for now (Nov 8). Keep every video in A_explainer until the owner approves the test. Weekly review still reports numbers."
- },
- "hook_rules": {
-  "approved": "2026-11-09 by owner",
-  "rules": [
-   "Length 30–38 s total (Instagram data: viewers left at ~20 s of 48 s, 42% watched, 35% skip).",
-   "Cold open: the first 0.0–1.0 s shows the MOST extreme moment of the video (the payoff image), with the counter already moving fast and the title on screen; then a whoosh cut to 'the start'.",
-   "Hook line ≤ 2 s and must start at 0.1 s. No slow intro, no static counter at 0.",
-   "A new visual change every 2–3 s; cut beats that don't escalate.",
-   "Looping ending: the last frame matches/flows into the first frame so the video replays seamlessly; no long outro, the 'follow for part 2' line ≤ 1.5 s.",
-   "End with a one-line question to drive comments (e.g. 'Which hiccup would you survive?') and repeat it in the caption."
-  ]
- },
- "tiktok_manual_until": "2026-11-15",
- "visual_rules": {
-  "approved": "2026-11-09 by owner (feedback: videos felt dry, characters dead, effects just a beam/light)",
-  "reference_test": "sneeze v3 (engine/scenes/sneeze3.js) is the template to copy patterns from",
-  "rules": [
-   "Characters must feel alive: use lib.js setFace() every frame (brows, eye size, mouth shape, pupil look direction) with a different expression for each beat, then life() for breathing, blinking, glances and idle sway. Characters react to every event (shock, cringe, look at the damage).",
-   "Add at least one other character who reacts: a neighbor, a pet, a family member. Use 3–6 short speech bubbles (drawBubble, 1–3 words, funny) anchored to heads, as in the reference videos ('Still good.', 'MY HAT!').",
-   "Big events are EXPANDING WAVES, never a beam or a single flash: makeShockwave() (dust wall ring, glowing shell, ground ring) plus a reaction in the world as the front passes (suburb.wave(): roofs rip off and tumble, trees flatten, cars slide). Each topic gets its own fitting spreading effect (a heat wave that browns lawns outward, a frost front, a crack network, a flood front, etc.).",
-   "Aerial/city shots use makeSuburb(): a block grid with streets both ways, gable roofs, lawns, driveways, trees, cars and pools. No plain boxes on a flat green plane.",
-   "Numbers sit on the left side as a small counter (drawSideCounter: small label, big number, italic comparison note like 'faster than sound'), placed under the title, as in the reference videos. Never a big box in the middle of the screen. Keep the right edge clear (platform buttons).",
-   "Sound: always a background song (music2.song: drums, bass, arp, lead that build with the intensity curve) plus environment beds (music2.amb: city/wind/space/fire) under the voice and SFX. Music must sit clearly under the voice (music_gain ≈ 0.38, amb gain ≈ 0.25–0.3).",
-   "Also export a no-music version for TikTok (music_gain 0), so the owner can add a trending sound in the app (copyrighted songs are never baked into the file).",
-   "Busy, living world (owner, Nov 9): pedestrians walking on the sidewalks, cars actually driving on the streets (not only parked), more bystanders who all react (stop, point, run, film with phones).",
-   "Anything flying through the sky shares it with planes/helicopters/birds that pass close by (the flying person passes a plane, a passenger at the window reacts).",
-   "Breakage must read instantly: when something punches through a wall/door, the hole is a crisp cartoon cut-out of its exact silhouette (star pose, arms and legs out), shown in a 0.5 s slow-motion beat from the far side with light shining through the hole and dust puffing out of the outline, then debris bursts outward. Never a random scatter of blocks.",
-   "Pacing (owner, Nov 9 — middle point between our 4 s and the reference's 1.4 s): a new shot or a big camera move every ~2–2.5 s.",
-   "Use a continuous follow-camera when it helps (e.g. follow the character while he flies instead of cutting away).",
-   "2–4 object close-ups/inserts per video (the cat mid-air, the hat, the mailbox, a glass shard, a bystander's phone screen filming it). Keep inventing small interactive touches like these — the owner wants more of them.",
-   "The counter changes meaning per chapter (e.g. SNEEZE SPEED → DISTANCE FLOWN → TIME TO LANDING) and always moves: ticking decimals, colour shifts to orange/red as danger rises.",
-   "Every milestone gets a real-world comparison SHOWN on screen, side by side, with a small label (a jet next to the sneeze wind, a bullet racing it, a rocket at escape velocity, a satellite) so viewers instantly get what the number means.",
-   "Name tags only for a character's first appearance (intro), optional.",
-   "Recurring cast links the episodes (shared universe): MITTENS the cat appears regularly (give her a proper intro the first time — people love animals), plus Dave the neighbour and the main character.",
-   "Special cartoon faces at peak moments: heart eyes, star eyes, tears, sweat drop, dizzy swirl.",
-   "Occasionally (not every video) a fake live-chat/phone-comment overlay or a background bystander shouting a funny line.",
-   "Floating particles (embers, dust motes, sparkles) present but subtle — not too much, not too little.",
-   "Ending: return to the opening scene but changed (loop + twist), then the question, then a 'Part 2' tease.",
-   "Title (owner loved the 'boyfriend' reference, Nov 9): flash cold open (0.5 s of the craziest moment + one punch word like 'SNIP.'), then the title types in word by word over a wide establishing shot, holds ~3 s and then animates OUT (by ~5 s). After that only the side counter stays at the top. Optional time-jump card ('⏮ 3 minutes earlier').",
-   "Counter sub-label shows place + time and updates with the story ('YOUR APARTMENT · 9:41 PM' → 'DOWNTOWN · 9:43 PM' → 'EARTH ORBIT').",
-   "Talking characters: short punchy speech bubbles in quick back-and-forth (white rounded bubble, 2–6 words), mouths moving while they talk, extreme close-up faces for big reactions (huge eyes, wide open mouth), countdown numbers (3, 2, 1) popping next to the bubbles when tension builds.",
-   "Crowds: when the story scales up, show LOTS of people (hundreds to thousands, instanced) filling streets, plus people in the background of normal shots.",
-   "Buildings with detail: lit windows, varied facades and heights, dusk/evening light when it fits — never plain boxes.",
-   "Switch perspective when it matters: first-person (hands on the steering wheel, hands holding the object) for the start or key moments, then third-person behind/side views, and back to first-person for the ending (owner approved Nov 9). Body/'what if YOU' premises: short POV start; calm world/history premises can stay mostly POV; comedy/action stays mostly third-person.",
-   "Shareable ending line when it fits the topic (e.g. 'Send this to your boyfriend.') instead of only 'follow'.",
-   "Character voices (owner, Nov 9): the main character uses the ElevenLabs 'Chris' voice clip library in engine/audio/voices/hero_chris/ (sneezes, hic, whoa, oh no, uh-oh, wait what, nope, ow, seriously, Mittens, help, excuse me, sorry, laugh, phew, wow, huh, aaah) — NOT Kokoro male voices (owner: robotic). Lines go ONLY in gaps between narrator lines, 3–4 per video. New lines: vidIQ vidiq_voiceover_generate (voiceId iP95p4xoKVk53GoZ742B, 28 credits per ≤1000 chars — batch many lines in ONE call, only when the library lacks a needed line; vidIQ has ~150 credits/month), then add 'name url' to fetch/<file>.txt and push: the fetch-media GitHub workflow downloads it into fetched/ (assets.vidiq.com is blocked from the sandbox). Side characters may keep Kokoro (granny bf_emma) until we record better ones."
-  ]
- },
- "tests": {
-  "color_grade_per_chapter": "TEST only on a few videos (each chapter gets its own colour tone); compare views; NOT part of the norm.",
-  "music_only": "1–2 videos this month with no narrator (music + small italic one-liners, like the dig / nothing-bad references). Voice stays the default."
- },
- "format_v4": {
-  "approved": "2026-11-10 by owner. SUPERSEDES hook_rules/visual_rules wherever they conflict.",
-  "why": "Own data: viewers give ~22 s (YouTube 23 s avg, Instagram 22 s) on 47 s videos. Reference account @man_ia_c (297K followers, 5M likes, 24 videos): its hits are all 'What if <basic thing> disappeared for 5 seconds?' (19M, 14.1M, 6M, 5.2M, 4.2M) with one fixed look.",
-  "rules": [
-   "PREMISE: happens to the WHOLE WORLD (not one person), with a short time limit: 'What if <something basic> <vanished/doubled/stopped> for 5 seconds?'. History premises ('what if the asteroid missed') are also fine.",
-   "COUNTER = COUNTDOWN: open on a calm, detailed everyday scene with '<THING> DISAPPEARS IN 0:05.000' ticking down in milliseconds on the left; at zero the event happens; then a second counter runs '0:01 … 0:05' through the consequences, one clear consequence per second, each bigger in scale (street → city → planet). Then 'it comes back' and the aftermath.",
-   "HOOK (owner): 2.5–3 s, shown clearly and slightly slowed — the most extreme consequence — with one teaser narrator line, then a '<< N SECONDS EARLIER' card, then the calm start. Never a 0.5 s flash.",
-   "LENGTH: 25–30 s for YouTube/Instagram/TikTok. (A 61–70 s TikTok cut only once the account nears 10K followers and the owner confirms the rewards programme is open to him.)",
-   "ONE LOCKED LOOK for at least 10 videos: same title style and position, same countdown style, same calm-opening structure, same music family, city = engine/scenes/nyc.js style (street grid, towers with windows, taxis, crowds, park, rivers). Do not restyle between videos.",
-   "LESS TEXT: title, countdown, word-by-word captions. At most 2 speech bubbles and 1 punch caption per video. No step-by-step 'stage 1…7' escalation.",
-   "KEEP from before: detailed city, crowds, expanding waves, background song + ambience, loop ending (last shot flows into the hook), Mittens as a small recurring background detail (never the focus), narrator af_heart, hero voice clips only in gaps.",
-   "SUBSCRIBE: no 'follow for part 2' line. (Owner is choosing between: viewers pick tomorrow's what-if in comments / crediting the winner / Mittens survival counter — do not add until he picks.)",
-   "SOUND (owner, Nov 11): the narrator must always be clearly heard. mix.py now ducks music AND effects/ambience under the voice and enforces a 14 dB voice-over-everything margin; it prints 'voice-over-bed margin dB'. Use music_gain ≤ 0.3 and sfx_gain ≤ 0.4, never raise them, and never bypass the margin check."
-  ]
- },
- "format_v5": {
-  "approved": "2026-11-11 by owner (he preferred the narrator prototype 'What if the Sun switched off for 5 seconds?'). THIS IS THE CURRENT STANDARD. It overrides format_v4, hook_rules and visual_rules wherever they conflict.",
-  "template": "engine/scenes/sun.js + engine/scripts/sun.json + engine/scripts/sun_cue.json. Copy the STRUCTURE, never the content: every video needs its own setting details, consequences, lines and one big visual transformation (YouTube 'inauthentic content' policy: no template with only the noun swapped).",
-  "rules": [
-   "*** STANDARD.md in the repo root is now the owner's OFFICIAL list (Nov 17) and overrides every rule in this list where they differ. Read it first. ***",
-   "*** RUNAWAY FORMAT (owner approved Nov 16 - THIS OVERRIDES the 'STRUCTURE', 'ONE big visual transformation' and 'OPENING STAKE' rules below wherever they conflict; applies to every video built from Nov 18 on) *** PREMISE: a process that never stops and keeps multiplying ('every fold doubles the paper', 'the hole just keeps going', 'Mittens never stops growing') - NOT 'X for 5 seconds', no slow motion, no countdown. STRUCTURE (50-65 s): 0-3 s title on screen + hero in today's everyday place, counter already visible at its small starting value; the process starts by second 3. Then 10-13 STEPS of 4-5 s each: at every step (a) the COUNTER jumps (animated roll-up, drawSideCounter) and its unit escalates wildly (mm -> m -> km -> 'past the Moon'; kg -> tonnes -> 'heavier than the Titanic'), (b) ONE short italic line with a REAL, checked comparison, read by the narrator, (c) the picture visibly changes, (d) the camera keeps pulling back in one continuous move: room -> street -> city -> country -> planet -> space. Early (human-scale) steps carry the comedy: cast reactions, narrator blaming the hero. Mittens cam reacts at every step. Last step = the biggest image + punchline, then the end card. Every number must be computed in the script JSON (store the formula) - never invented. Never copy another channel's exact premise or shots.",
-   "*** CLEAR WRITING (owner, Nov 17, about the jump video: 'confusing... it wasn't really clear... the things said and how jokes were made are strange'; everything else - quality, characters, city - he liked) *** (1) LISTEN TEST: the narration ALONE must tell a complete, simple story a 12-year-old follows on the first listen - what is happening, what happens next, and why. Never rely on the picture to explain a line. (2) ONE THREAD: line 1 sets up the hero's small everyday stake (the unpaid bill, the ice cream) and the story keeps returning to it; the last line pays it off. (3) EVERY JOKE NEEDS A SETUP the viewer already saw or heard. Banned unless set up earlier in the same video: 'This was your idea, by the way', 'You had one job', a random bystander line ('He picked this moment to propose'), facts that need a second to decode ('Pigeons are dinosaurs', 'Mittens is not a person'). (4) At most ONE joke per step, and it should come from the consequence on screen (what the counter or the world just did), not a random aside. (5) Short concrete sentences (12 words max), plain words, one idea per line. No abstract or time-travel framing ('history gets one tiny edit', 'it arrives seven minutes late'). (6) The closing 'strangest part' fact must be instantly understandable: one simple comparison (not 'less than a thousandth of the width of an atom'). (7) Before rendering, write all lines in a list and check each one against 1-6; rewrite any that fail. GOOD model: engine/scripts/paperfold.json (one thread - the bill - numbers that climb, jokes tied to each step, payoff 'you still have to pay it'). BAD model: engine/scripts/jump.json and asteroid.json (disconnected one-liners, unset-up callbacks).",
-   "STRUCTURE (45–55 s): (1) 0–7 s calm, lived-in everyday scene, title on screen (types in, leaves by ~6 s) and a real-time countdown '<EVENT> IN 0:07.000' on the left; (2) the event; the story's 5 seconds play in ~6x SLOW MOTION over ~30 s while the counter shows '<THING> RETURNS IN 0:04.779' ticking in milliseconds; (3) it returns, ~6 s real-time aftermath, counter relabelled ('SUNLIGHT: BACK'); (4) 6 s end card.",
-   "NO cold open, no 'N seconds earlier' card, no speech bubbles, no punch captions, no word-by-word ASS captions. Text on screen = title, countdown, and one short italic serif line every 3–4 s addressed to 'you' (the narrator reads exactly those lines).",
-   "NARRATOR: yes (Kokoro af_heart, speed 1.0), reading the italic lines. 1–2 videos this month go out with NO narrator (music + lines only, cue like sun_cue_novoice.json) as a test: mark them `no_narrator_test: true` in the queue. Suggested: Nov 16 and Nov 24. UPDATE Nov 15 (owner): the Nov 16 video DOES get the narrator (the comedy needs it); only Nov 24 remains as the no-narrator test.",
-   "CAMERA: one continuous moving camera with at most 2–3 cuts (street → look up → rise over the city → back to a face).",
-   "ONE big visual transformation that a 10-year-old understands instantly and that keeps growing (sky goes black and the city lights up; everything floats; water vanishes). Not a list of small unrelated effects. Check the science and keep the lines accurate.",
-   "A LIVELY STREET (owner): more cars driving and more people doing specific things in the calm opening and aftermath — someone walking a dog, a jogger, a cyclist, someone on the phone, kids with balloons, a street musician, a delivery van unloading, pedestrians passing close to the camera. Never an empty street.",
-   "END CARD + COMMENTS (owner approved): black card with the title, one small line of facts, then 'What should we try next?' / 'TELL US IN THE COMMENTS'. Add to every caption: 'Comment your what-if — we make the best ones.' When a queue item has `idea_from` (a viewer's public handle), show 'Idea from a viewer comment' for the first 3 s and credit the @handle in the caption. NEVER offer prizes, giveaways or 'like/subscribe to be picked' (YouTube spam policy), never ask for likes or subs in the video.",
-   "SOUND: narrator always clearly on top (mix.py enforces a 14 dB margin; music_gain ≤ 0.3, sfx_gain ≤ 0.4). Quiet, tense bed during the slow motion; ticks; a riser into the return.",
-   "KEEP: New-York-style detailed city (or another equally detailed real-feeling place when the idea needs it), Mittens as a small background detail, AI labels on TikTok/Instagram and 'Animated · AI voice' in the YouTube description, a no-music copy for the owner's TikTok post.",
-   "OPENING STAKE (owner, Nov 11): the first 5 seconds must not be a still scene plus a question. Give 'you' (or one visible person) a small, specific thing in progress that the event interrupts — about to take a photo, a kid's balloon slipping away, a coffee being handed over, a proposal on one knee, a dog pulling its leash — and say it in the first italic line. Show how that small story ends in the aftermath (the photo, the balloon, the coffee), so the video pays off twice.",
-   "ANSWER LAST: keep the biggest, most surprising consequence for the final seconds before the end card; never give it away in the opening lines or the title.",
-   "POLISH STANDARD (owner, Nov 12: 'make them much more polished'): the engine now does this for every video - soft shadows, soft image-based fill light, colour grade and tilt-shift background blur in engine/page.html; rounded smooth characters (makePerson), rounded cars with wheels (carGeos) and rounded crowd (pedGeos) in engine/scenes/lib.js; framed windows with depth in the city shader. In new scene code: NEVER flatShading, never bare BoxGeometry for anything near the camera (use RoundedBoxGeometry exported from lib.js, Capsule/Sphere with >=16 segments), give the hero's surroundings real detail (window frames, sills, awnings, lamps, plants). Blur: return focusY (0..1 screen height of the subject, default 0.56) and focusH from update() so the hero is always in the sharp band; dof: 0 only for full-screen space shots.",
-   "DIFFERENT PLACE EVERY VIDEO (owner, Nov 12): each video opens small and human with the hero somewhere new, doing an everyday thing - walking down the street, slouching on the couch, at the dining table, in a restaurant, on a date, at the office, on a bus, in a park, at the gym, in bed. Never reuse the previous two videos' opening place. The place supplies the OPENING STAKE. Title, countdown, slow-motion structure, captions and end card stay identical so the channel is still recognisable. Record the place in the queue item as `place`.",
-   "MITTENS = THE FRIEND (owner, Nov 12): Mittens is the hero's companion in every video - always near the hero in the opening, gets one clear reaction shot or gag during the event (2 s max) and one in the aftermath. Never just a far background detail.",
-   "LANDMARK LABELS: when the camera passes something big or far (a tower, a bridge, the Moon, a plane), show one small label with its real name and a real number (height, distance, speed) for ~2 s. 2-4 labels per video, checked facts only.",
-   "BRIGHT LOOK (owner, Nov 15: 'still a bit dark'; reference = glossy toy-style reel): every shot must read bright and colourful on a phone. Recipe: strong warm key light on the hero (DirectionalLight ~3.0, colour 0xfff0d8) + cool blue rim/back light (~1.2, 0x7fb0ff) + hemisphere fill >= 0.9; saturated candy colours for clothes, cars, shop fronts and props; sunny daytime with blue sky by default; exposure 1.1-1.25. Night or dark topics: keep the world dark blue (never grey/black) and light the hero and props with warm lamps, neon and glowing objects so faces stay bright. Check 3 stills before the full render: if the hero's face is not the brightest, most colourful thing in frame, fix the lights first.",
-   "VARIED CITY (owner, Nov 15: 'the city is bland, all the same'): no two neighbouring buildings alike - vary colour (brick red, cream, teal, mustard, pink, pale blue), height, roof type and ground floor (cafe with awning, bakery, bookshop, pharmacy with neon cross, laundromat, flower stand); add trees, benches, street lamps, signs with short invented names, parked bikes, a mural, bunting. At least 6 distinct shop fronts on the hero's street.",
-   "TONE = COMEDY (owner, Nov 15): narrator keeps exactly the same calm voice (af_heart) - NOT angry, NO swearing - but the lines are dry jokes instead of explanations. APPROVED GAGS: (1) NARRATOR AGAINST THE HERO (owner: 'I love this'): the narrator calmly blames the hero for everything ('You had one job. It was holding the keys.'), 2-3 such lines per video. (2) MITTENS STEALS THE SCENE: whatever disaster happens the cat is fine and mildly annoyed/unimpressed - use setCatFace(cat, mood) + catLife(cat, t) from lib.js (moods: neutral, unimpressed, annoyed, shock, happy, sleepy, smug, scared); give Mittens at least 3 mood changes and 2 close shots where the face is readable. (3) THE ONE UNBOTHERED PERSON: everyone panics while one bystander calmly carries on (eating a sandwich, reading the paper, watering plants, doing yoga, on a phone call) - a different activity each video. At least one visual joke every ~6 s. Aftermath ends on a punchline with the science fact folded in. Still accurate - never invent facts. NOT approved yet (owner decides later): meme-style edits (freeze-frames, zooms, record scratch) and random absurd cameos (the skeleton).",
-   "FLUENT MOTION (owner, Nov 15): no stiff or sliding characters - walk cycles with arm swing, bounce and head bob; every reaction has anticipation and follow-through (easeInOut, small overshoot); hero is never frozen (use life()). During the slow-motion section something new must happen at least every 4 s (average viewer leaves at ~22 s): a new object affected, a new gag, a camera move - never one idea held for 10 s.",
-   "BACKGROUND CAST (owner, Nov 15): a recurring cast of side characters; each video uses 2-3 of them (never all), different combination from the previous video, each with a fixed look so viewers recognise them. Record who appeared in the queue item as `cast`. FAVOURITES: THE FILMER (records everything on a phone instead of helping, complains about the lighting); THE SALESMAN (already selling T-shirts/souvenirs about the disaster seconds in); THE PIGEON (one pigeon watches and judges); BAD TIMING (someone proposing / carrying a wedding cake / taking a driving test at the exact wrong second); THE UNBOTHERED PERSON (keeps eating a sandwich etc.). USE RARELY: THE COMPLAINER ('my coffee's cold' after the world resets); THE OVER-REACTOR (screams before anything happens - owner finds it a bit cringe, max once every 5 videos, keep it short). Mittens is in every video and does not count toward the 2-3.",
-   "GOLDEN LIGHT (owner, Nov 15, three reference videos: 'I like the lighting in all of them, we should copy it'): default outdoor light = warm low sun (late afternoon): DirectionalLight colour ~0xffd9a8, intensity ~3, low angle (25-35 degrees) so shadows are long and soft; sky gradient pale blue to warm cream at the horizon; warm-tinted atmospheric haze (scene.fog, FogExp2 or equivalent) so distant buildings fade softly; some windows lit warm; cool blue fill in the shadows. Interiors: a visible warm lamp, pastel walls, wooden floor, coloured props. Space shots: bright saturated Earth with a thin blue atmosphere rim. This replaces flat midday light.",
-   "BUILDING STYLE (owner, Nov 15, reference = European street in the 'getting fat' video): street-level buildings are 4-6 storey town houses in warm colours (ochre, cream, terracotta, pale pink), each with window shutters, balconies with railings, cornices, pitched or mansard roofs with chimneys, a ground-floor shop with a painted sign (invented names), awnings, cobbled or paved street. Tall glass towers only in the distance. Build these as real geometry near the camera (not a flat shader wall).",
-   "MITTENS CAM (owner, Nov 16: 'Mittens still has little to no emotions'): every video shows a round picture-in-picture close-up of Mittens' face (lib.js makeCatCam; return `inset: { scene: mc.scene, camera: mc.camera, x: 0.8, y: 0.2, r: 0.15, show }` from update()). Call mc.update(t, mood) every frame and CHANGE THE MOOD AT EVERY STEP (unimpressed, annoyed, shock, smug, sleepy, happy, scared) so her reaction is the running joke; pop it in at the first step, hide it (show -> 0) during the title and end card. Mittens must ALSO appear in the scene itself near the hero in the opening.",
-   "HAIR (owner, Nov 16: the hair blobs/tufts 'don't look natural at all' - removed): makePerson hair is now ONE smooth shell hugging the head, nothing on top. hairStyle: 'short' (default) | 'long' (adds a flat back panel) | 'bald'. Vary hair COLOUR across the cast, not shape. NEVER add tufts, fringes, buns, blobs, headbands or caps on top of a head unless it is a deliberate prop (helmet, chef hat). The owner may send a reference hairstyle to replicate - until then keep it this simple. Hero: hairStyle 'short', hair 0x5a3a20.",
-   "IMAGE QUALITY (owner, Nov 16: 'the video itself could be of better quality'): the engine now renders with 4x anti-aliasing (page.html, default) and a lighter background blur. Final encode: upscale with `-vf scale=1080:1920:flags=lanczos,unsharp=5:5:0.55:5:5:0.0` and `-crf 20 -maxrate 9M -bufsize 18M`. Never let a blurred foreground object (car, lamp post) cover more than ~10% of the frame. Keep the subject large: the hero or the main object should fill at least a third of the frame height in close and medium shots.",
-   "YOUTUBE UPLOAD (from a Shorts tutorial the owner sent, Nov 16 - cheap to apply, unproven): title = premise with the first two words in capitals ('WHAT IF every fold doubled the paper? 📄'), one emoji, under 60 characters, leave curiosity open; hashtags: maximum 5 in total, always #shorts plus 3-4 specific to the topic (no generic piles); description: 1-2 punchy sentences, then one line of comma-separated topic keywords, then the same hashtags."
+  "premise_bank": [
+    "What if you stopped blinking for 24 hours?",
+    "What if gravity only got stronger on YOU?",
+    "What if your shadow came alive?"
   ],
-  "rebuild": null
- },
- "tiktok_note": "Nov 16: owner kept forgetting manual TikTok posts and asked to go back to AUTOMATIC. The 20:57 run schedules TikTok at 23:05 via Metricool (music version of the file, isAigc true). The earlier scheduled post got 12 views vs ~900 for manual ones, so watch the first 3 automatic posts: if all stay under ~200 views after 24 h, tell the owner and suggest going back to manual. Catch-up posts already scheduled by hand on Nov 16: gravity2x Nov 17 13:05, friction Nov 18 13:05, water Nov 19 13:05.",
- "comments": {
-  "how": "Owner sends chosen comments in chat. YouTube comments: vidiq_video_comments; TikTok: vidiq_tiktok_video_comments (both cost vidIQ credits — check at most once a week). Instagram comments can't be read.",
-  "picked": []
- },
- "places_used": [
-  {
-   "slug": "gravity2x",
-   "place": "apartment balcony above a busy street"
+  "made": [
+    "grow",
+    "sneeze",
+    "heat",
+    "shrink",
+    "gravity2x",
+    "sunoff",
+    "friction",
+    "water",
+    "jump",
+    "asteroid",
+    "paperfold"
+  ],
+  "plan_november": [
+    {
+      "post_date": "2026-11-11",
+      "slug": "shrink",
+      "premise": "What if you shrank 10x every 5 seconds?",
+      "notes": "Part 2 of grow. Counter: height (1.8 m → atom). Room → carpet jungle → dust mite → skin cell → DNA → atom. Look: switch to glowing x-ray/wireframe world as you get tiny. Payoff: you're now so small that... part 3 tease.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "made": "2026-11-10"
+    },
+    {
+      "post_date": "2026-11-12",
+      "slug": "gravity2x",
+      "premise": "What if gravity doubled for 5 seconds?",
+      "notes": "Follow format_v4 (countdown, world-scale, 25–30 s, 3 s hook, locked NYC-style look). Check the science before scripting; keep claims accurate.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "made": "2026-11-11"
+    },
+    {
+      "post_date": "2026-11-13",
+      "slug": "sunoff",
+      "premise": "What if the Sun switched off for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "made": "2026-11-12"
+    },
+    {
+      "post_date": "2026-11-14",
+      "slug": "friction",
+      "premise": "What if friction disappeared for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "made": "2026-11-13"
+    },
+    {
+      "post_date": "2026-11-15",
+      "slug": "water",
+      "premise": "What if all the water on Earth vanished for 5 seconds?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "made": "2026-11-14"
+    },
+    {
+      "post_date": "2026-11-16",
+      "slug": "jump",
+      "premise": "What if everyone on Earth jumped at the same time?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false,
+      "made": "2026-11-15"
+    },
+    {
+      "post_date": "shelved",
+      "slug": "asteroid",
+      "premise": "What if the asteroid had missed the dinosaurs?",
+      "notes": "Follow format_v5 (calm start + countdown, 5 s in slow motion, narrator reads the italic lines, end card asking for comments, 45–55 s). Check the science before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "made": true,
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-17",
+      "slug": "paperfold",
+      "premise": "What if you folded a piece of paper in half and never stopped?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Thickness doubles each fold: 0.1 mm x 2^n. 10 folds ~10 cm, 23 ~840 m (taller than Burj Khalifa), 30 ~107 km (edge of space), 42 ~440,000 km (past the Moon), 51 ~ the Sun. Place: kitchen table. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false,
+      "made": "2026-11-17"
+    },
+    {
+      "post_date": "2026-11-18",
+      "slug": "dighole",
+      "premise": "What if you dug a hole straight down and never stopped?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Depth counter: garden -> pipes/subway -> deepest mine (~4 km) -> Kola borehole (12.2 km) -> crust/mantle boundary -> outer core (2,900 km) -> centre (6,371 km) -> out the other side. Temperature as the second number. Place: back garden. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-19",
+      "slug": "mittensgrow",
+      "premise": "What if Mittens doubled in size every 5 seconds?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Mittens is the star (hero = the owner panicking). Height counter with real comparisons (dog, car, house, skyscraper, Everest, wider than Earth). Mittens cam shows the HERO's face instead. Place: living-room couch. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-20",
+      "slug": "snowball",
+      "premise": "What if a snowball rolled downhill and never stopped growing?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Diameter + weight counter; real comparisons (car, house, stadium, mountain, Moon). Place: ski slope / snowy park. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-21",
+      "slug": "humans-gone",
+      "premise": "What if all humans disappeared? (time-lapse)",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). One fixed city view; TIME counter escalating 5 seconds -> 1 day -> 1 year -> 100 years -> 10,000 -> 10 million years; one checked fact per step (lights out, subways flood, plants, bridges fall, ice age). No cast (nobody is left) - Mittens cam only. Do NOT copy the zenith.whatif video shot-for-shot: our own city, own order, own wording. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-22",
+      "slug": "rain",
+      "premise": "What if it started raining and never stopped?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Water-depth counter at a fixed real-world heavy-rain rate (state it); steps: puddles, kerb, cars, first floor, rooftops, skyscrapers, Everest; note honestly in the end card that Earth doesn't hold that much water. Place: bus stop. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-23",
+      "slug": "fallforever",
+      "premise": "What if you tripped and never stopped speeding up?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Speed counter: running -> car -> jet -> sound barrier -> orbital speed -> escape velocity -> a fraction of light speed (can't pass it). NO-NARRATOR TEST (owner): italic lines on screen only. Place: sidewalk outside a cafe. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": true
+    },
+    {
+      "post_date": "2026-11-24",
+      "slug": "ants",
+      "premise": "What if one ant doubled every minute?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Count + total weight counter: 2^n ants; when they outweigh a person, an elephant, all humans (~390 Mt), Earth. Place: picnic in the park. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-25",
+      "slug": "bubblegum",
+      "premise": "What if you blew a bubble-gum bubble that never popped?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Diameter counter; lifts the hero; comparisons: beach ball, hot-air balloon, stadium, the Moon. Place: school/office desk. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-26",
+      "slug": "spinfaster",
+      "premise": "What if Earth spun a little faster every second?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Day-length counter shrinking: 24 h -> 12 h -> 4 h -> 1 h 24 min (things at the equator become weightless). Place: beach. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-27",
+      "slug": "jumpdouble",
+      "premise": "What if every jump was twice as high as the last?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). 0.5 m x 2^n: jump 10 ~512 m, 20 ~524 km (space), 30 ~537,000 km (past the Moon). Place: trampoline in a back yard. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-28",
+      "slug": "searise",
+      "premise": "What if the sea rose one metre every second?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Sea-level counter; steps by real elevations of famous places (Venice, New York streets, Statue of Liberty torch 93 m, Eiffel Tower 330 m, Denver 1,600 m, Everest 8,849 m). Place: seaside restaurant on a date. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-29",
+      "slug": "zoomout",
+      "premise": "What if you zoomed out and never stopped?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Distance counter powers of ten: 1 m -> city -> Earth -> Moon orbit -> Solar System -> Milky Way -> observable universe. Place: slouching on the couch with the remote. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    },
+    {
+      "post_date": "2026-11-30",
+      "slug": "stairs",
+      "premise": "What if every step you climbed was twice as tall as the last?",
+      "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Step height 15 cm x 2^n: step 5 ~2.4 m, 10 ~77 m, 15 ~2.5 km, 20 ~79 km (edge of space), 25 ~2,500 km. Place: apartment stairwell with grocery bags. Check every number before scripting.",
+      "tiktok": true,
+      "style": "A_explainer",
+      "no_narrator_test": false
+    }
+  ],
+  "style_notes": [
+    "Counter variety: big pill (ours), elegant serif top-left with small sub-label (electrons/earth-spin/run-speed refs), progress bar for time-lapses (1000-years ref).",
+    "Add a tier badge under the counter that upgrades each beat (e.g. HUMAN → BUILDING → MOUNTAIN → PLANET), like the run-speed ref's rank tags.",
+    "Expressive character faces and reactions at each beat (Roblox school-story ref); one recurring side character per episode (neighbor, granny, mom, rival).",
+    "One-sentence caption per beat in italic serif OR word-by-word pop captions; never both at the same spot.",
+    "Endings loop or restart (run-speed ref restarts at 'Minute 0'), or tease the part 2 that is already in the plan.",
+    "Do not copy other creators' premises, characters or captions; take the format, not the content."
+  ],
+  "styles": {
+    "A_explainer": "Current style. Female narrator (Kokoro af_heart, speed 1.1), 2nd person 'you', big title + pill counter, word-by-word captions, 40–48 s.",
+    "B_silent_cinematic": "NO voiceover (like the electrons / Earth-stops-spinning / run-speed references). Music + sound design carry it. One short italic serif line per beat (e.g. 'You do not. Nothing does.'), elegant small serif counter top-left with a sub-label and an upgrading tier badge, slower camera, colour-graded cinematic look. 35–45 s.",
+    "C_first_person_story": "A character tells it as 'I…' (like the golden-drops / Roblox school-story references): opens mid-drama ('I looked in the mirror this morning, and…'), states the world's rule, personal stakes, a twist, cliffhanger. Fast and emotional (~3.5–4 words/s), expressive blocky character with big eyes/mouth reacting every beat, word-by-word captions. Male voice (Kokoro am_puck or am_michael). 61–75 s so TikTok counts it as > 1 min.",
+    "D_warm_explainer": "Calm, comforting 'you' narrator with a small joke in every beat (like the 'everyone slept 1,000 years' reference: 'At least the rent has finally gone down', 'Earth is slowly cleaning out its attic'). Timeline/progress-bar counter, cozy lighting, a cute side character (raccoon/parrot style). Male voice (Kokoro bm_george or am_michael), ~2.6 words/s, 61–75 s."
   },
-  {
-   "slug": "sun (prototype)",
-   "place": "Midtown sidewalk by a hot-dog cart"
+  "style_test": {
+    "goal": "Find which style gets the best YouTube Shorts retention and growth; ~4 videos per style by Nov 27.",
+    "metrics": "averageViewPercentage, averageViewDuration, engagedViews, subscribersGained per 1k views (vidIQ vidiq_channel_analytics, dimensions=[video], 5 credits).",
+    "winner": null,
+    "weekly_results": [
+      {
+        "review_date": "2026-11-09",
+        "window": "2026-11-08..2026-11-09",
+        "posted_youtube": [
+          {
+            "slug": "grow",
+            "id": "MkeqbgAvJi8",
+            "style": "A_explainer",
+            "post_date": "2026-11-08"
+          }
+        ],
+        "analytics_rows": 0,
+        "by_style": {
+          "A_explainer": {
+            "videos": 1,
+            "videos_older_48h": 0,
+            "data": "none yet (YouTube Analytics returned 0 rows; usual 24-72h reporting lag)"
+          },
+          "B_silent_cinematic": {
+            "videos": 0
+          },
+          "C_first_person_story": {
+            "videos": 0
+          },
+          "D_warm_explainer": {
+            "videos": 0
+          }
+        },
+        "verdict": "too early",
+        "note": "Style test not active (owner approval pending); only A_explainer posted. sneeze due 2026-11-09 21:00, heat 2026-11-10."
+      },
+      {
+        "review_date": "2026-11-16",
+        "window": "2026-11-08..2026-11-16",
+        "posted_youtube": [
+          {
+            "slug": "grow",
+            "id": "MkeqbgAvJi8",
+            "style": "A_explainer",
+            "post_date": "2026-11-08",
+            "views": 1431,
+            "engagedViews": 790,
+            "averageViewPercentage": 68.32,
+            "averageViewDuration_s": 33,
+            "subscribersGained": 3,
+            "likes": 35,
+            "shares": 0,
+            "subs_per_1k_views": 2.1
+          },
+          {
+            "slug": "sneeze",
+            "id": "2f7V9mG-kag",
+            "style": "A_explainer",
+            "post_date": "2026-11-09",
+            "views": 2075,
+            "engagedViews": 1319,
+            "averageViewPercentage": 84.78,
+            "averageViewDuration_s": 39,
+            "subscribersGained": 2,
+            "likes": 37,
+            "shares": 0,
+            "subs_per_1k_views": 0.96
+          },
+          {
+            "slug": "heat",
+            "id": "dFJFxw1hvh4",
+            "style": "A_explainer",
+            "post_date": "2026-11-10",
+            "views": 1630,
+            "engagedViews": 883,
+            "averageViewPercentage": 78.99,
+            "averageViewDuration_s": 34,
+            "subscribersGained": 0,
+            "likes": 24,
+            "shares": 0,
+            "subs_per_1k_views": 0.0
+          },
+          {
+            "slug": "shrink",
+            "id": "rVrXKYDmtQQ",
+            "style": "A_explainer",
+            "post_date": "2026-11-11",
+            "views": 1230,
+            "engagedViews": 541,
+            "averageViewPercentage": 82.5,
+            "averageViewDuration_s": 29,
+            "subscribersGained": 4,
+            "likes": 23,
+            "shares": 1,
+            "subs_per_1k_views": 3.25
+          },
+          {
+            "slug": "gravity2x",
+            "id": "jv39b1NMDnA",
+            "style": "A_explainer",
+            "post_date": "2026-11-12",
+            "views": 1317,
+            "engagedViews": 703,
+            "averageViewPercentage": 63.9,
+            "averageViewDuration_s": 31,
+            "subscribersGained": 3,
+            "likes": 33,
+            "shares": 0,
+            "subs_per_1k_views": 2.28
+          },
+          {
+            "slug": "sunoff",
+            "id": "_nzt_ppAkTA",
+            "style": "A_explainer",
+            "post_date": "2026-11-13",
+            "views": 1119,
+            "engagedViews": 639,
+            "averageViewPercentage": 91,
+            "averageViewDuration_s": 45,
+            "subscribersGained": 3,
+            "likes": 31,
+            "shares": 0,
+            "subs_per_1k_views": 2.68
+          },
+          {
+            "slug": "friction",
+            "id": "3Fm0DXNT6QI",
+            "style": "A_explainer",
+            "post_date": "2026-11-14",
+            "views": 1166,
+            "engagedViews": 608,
+            "averageViewPercentage": 78.97,
+            "averageViewDuration_s": 41,
+            "subscribersGained": 0,
+            "likes": 33,
+            "shares": 0,
+            "subs_per_1k_views": 0.0
+          },
+          {
+            "slug": "water",
+            "id": "-DGy7T8qaE0",
+            "style": "A_explainer",
+            "post_date": "2026-11-15",
+            "data": "no rows yet (posted <24h, reporting lag)"
+          }
+        ],
+        "analytics_rows": 7,
+        "by_style": {
+          "A_explainer": {
+            "videos": 8,
+            "videos_with_data": 7,
+            "videos_older_48h": 6,
+            "views": 9968,
+            "engagedViews": 5483,
+            "avg_engagedViews_per_video": 783,
+            "avg_averageViewPercentage": 78.35,
+            "avg_averageViewDuration_s": 36.0,
+            "subscribersGained": 15,
+            "subs_per_1k_views": 1.5,
+            "likes": 216
+          },
+          "B_silent_cinematic": {
+            "videos": 0
+          },
+          "C_first_person_story": {
+            "videos": 0
+          },
+          "D_warm_explainer": {
+            "videos": 0
+          }
+        },
+        "verdict": "too early",
+        "note": "Only A_explainer has posted, so there is nothing to compare against (test still inactive pending owner approval). Within A: best retention sunoff 91% / 45 s; weakest gravity2x 63.9% and grow 68.3%. Most subs/1k: shrink 3.25. water (-DGy7T8qaE0) had no rows yet."
+      }
+    ],
+    "active": false,
+    "note": "Owner wants the style test as an idea only for now (Nov 8). Keep every video in A_explainer until the owner approves the test. Weekly review still reports numbers."
   },
-  {
-   "slug": "friction",
-   "place": "pavement cafe outside a bakery (late afternoon)"
+  "hook_rules": {
+    "approved": "2026-11-09 by owner",
+    "rules": [
+      "Length 30–38 s total (Instagram data: viewers left at ~20 s of 48 s, 42% watched, 35% skip).",
+      "Cold open: the first 0.0–1.0 s shows the MOST extreme moment of the video (the payoff image), with the counter already moving fast and the title on screen; then a whoosh cut to 'the start'.",
+      "Hook line ≤ 2 s and must start at 0.1 s. No slow intro, no static counter at 0.",
+      "A new visual change every 2–3 s; cut beats that don't escalate.",
+      "Looping ending: the last frame matches/flows into the first frame so the video replays seamlessly; no long outro, the 'follow for part 2' line ≤ 1.5 s.",
+      "End with a one-line question to drive comments (e.g. 'Which hiccup would you survive?') and repeat it in the caption."
+    ]
   },
-  {
-   "slug": "water",
-   "place": "East River esplanade railing, Manhattan (late morning)"
+  "tiktok_manual_until": "2026-11-15",
+  "visual_rules": {
+    "approved": "2026-11-09 by owner (feedback: videos felt dry, characters dead, effects just a beam/light)",
+    "reference_test": "sneeze v3 (engine/scenes/sneeze3.js) is the template to copy patterns from",
+    "rules": [
+      "Characters must feel alive: use lib.js setFace() every frame (brows, eye size, mouth shape, pupil look direction) with a different expression for each beat, then life() for breathing, blinking, glances and idle sway. Characters react to every event (shock, cringe, look at the damage).",
+      "Add at least one other character who reacts: a neighbor, a pet, a family member. Use 3–6 short speech bubbles (drawBubble, 1–3 words, funny) anchored to heads, as in the reference videos ('Still good.', 'MY HAT!').",
+      "Big events are EXPANDING WAVES, never a beam or a single flash: makeShockwave() (dust wall ring, glowing shell, ground ring) plus a reaction in the world as the front passes (suburb.wave(): roofs rip off and tumble, trees flatten, cars slide). Each topic gets its own fitting spreading effect (a heat wave that browns lawns outward, a frost front, a crack network, a flood front, etc.).",
+      "Aerial/city shots use makeSuburb(): a block grid with streets both ways, gable roofs, lawns, driveways, trees, cars and pools. No plain boxes on a flat green plane.",
+      "Numbers sit on the left side as a small counter (drawSideCounter: small label, big number, italic comparison note like 'faster than sound'), placed under the title, as in the reference videos. Never a big box in the middle of the screen. Keep the right edge clear (platform buttons).",
+      "Sound: always a background song (music2.song: drums, bass, arp, lead that build with the intensity curve) plus environment beds (music2.amb: city/wind/space/fire) under the voice and SFX. Music must sit clearly under the voice (music_gain ≈ 0.38, amb gain ≈ 0.25–0.3).",
+      "Also export a no-music version for TikTok (music_gain 0), so the owner can add a trending sound in the app (copyrighted songs are never baked into the file).",
+      "Busy, living world (owner, Nov 9): pedestrians walking on the sidewalks, cars actually driving on the streets (not only parked), more bystanders who all react (stop, point, run, film with phones).",
+      "Anything flying through the sky shares it with planes/helicopters/birds that pass close by (the flying person passes a plane, a passenger at the window reacts).",
+      "Breakage must read instantly: when something punches through a wall/door, the hole is a crisp cartoon cut-out of its exact silhouette (star pose, arms and legs out), shown in a 0.5 s slow-motion beat from the far side with light shining through the hole and dust puffing out of the outline, then debris bursts outward. Never a random scatter of blocks.",
+      "Pacing (owner, Nov 9 — middle point between our 4 s and the reference's 1.4 s): a new shot or a big camera move every ~2–2.5 s.",
+      "Use a continuous follow-camera when it helps (e.g. follow the character while he flies instead of cutting away).",
+      "2–4 object close-ups/inserts per video (the cat mid-air, the hat, the mailbox, a glass shard, a bystander's phone screen filming it). Keep inventing small interactive touches like these — the owner wants more of them.",
+      "The counter changes meaning per chapter (e.g. SNEEZE SPEED → DISTANCE FLOWN → TIME TO LANDING) and always moves: ticking decimals, colour shifts to orange/red as danger rises.",
+      "Every milestone gets a real-world comparison SHOWN on screen, side by side, with a small label (a jet next to the sneeze wind, a bullet racing it, a rocket at escape velocity, a satellite) so viewers instantly get what the number means.",
+      "Name tags only for a character's first appearance (intro), optional.",
+      "Recurring cast links the episodes (shared universe): MITTENS the cat appears regularly (give her a proper intro the first time — people love animals), plus Dave the neighbour and the main character.",
+      "Special cartoon faces at peak moments: heart eyes, star eyes, tears, sweat drop, dizzy swirl.",
+      "Occasionally (not every video) a fake live-chat/phone-comment overlay or a background bystander shouting a funny line.",
+      "Floating particles (embers, dust motes, sparkles) present but subtle — not too much, not too little.",
+      "Ending: return to the opening scene but changed (loop + twist), then the question, then a 'Part 2' tease.",
+      "Title (owner loved the 'boyfriend' reference, Nov 9): flash cold open (0.5 s of the craziest moment + one punch word like 'SNIP.'), then the title types in word by word over a wide establishing shot, holds ~3 s and then animates OUT (by ~5 s). After that only the side counter stays at the top. Optional time-jump card ('⏮ 3 minutes earlier').",
+      "Counter sub-label shows place + time and updates with the story ('YOUR APARTMENT · 9:41 PM' → 'DOWNTOWN · 9:43 PM' → 'EARTH ORBIT').",
+      "Talking characters: short punchy speech bubbles in quick back-and-forth (white rounded bubble, 2–6 words), mouths moving while they talk, extreme close-up faces for big reactions (huge eyes, wide open mouth), countdown numbers (3, 2, 1) popping next to the bubbles when tension builds.",
+      "Crowds: when the story scales up, show LOTS of people (hundreds to thousands, instanced) filling streets, plus people in the background of normal shots.",
+      "Buildings with detail: lit windows, varied facades and heights, dusk/evening light when it fits — never plain boxes.",
+      "Switch perspective when it matters: first-person (hands on the steering wheel, hands holding the object) for the start or key moments, then third-person behind/side views, and back to first-person for the ending (owner approved Nov 9). Body/'what if YOU' premises: short POV start; calm world/history premises can stay mostly POV; comedy/action stays mostly third-person.",
+      "Shareable ending line when it fits the topic (e.g. 'Send this to your boyfriend.') instead of only 'follow'.",
+      "Character voices (owner, Nov 9): the main character uses the ElevenLabs 'Chris' voice clip library in engine/audio/voices/hero_chris/ (sneezes, hic, whoa, oh no, uh-oh, wait what, nope, ow, seriously, Mittens, help, excuse me, sorry, laugh, phew, wow, huh, aaah) — NOT Kokoro male voices (owner: robotic). Lines go ONLY in gaps between narrator lines, 3–4 per video. New lines: vidIQ vidiq_voiceover_generate (voiceId iP95p4xoKVk53GoZ742B, 28 credits per ≤1000 chars — batch many lines in ONE call, only when the library lacks a needed line; vidIQ has ~150 credits/month), then add 'name url' to fetch/<file>.txt and push: the fetch-media GitHub workflow downloads it into fetched/ (assets.vidiq.com is blocked from the sandbox). Side characters may keep Kokoro (granny bf_emma) until we record better ones."
+    ]
   },
-  {
-   "slug": "jump",
-   "place": "bus stop outside an ice-cream parlour on a busy avenue (early afternoon)"
+  "tests": {
+    "color_grade_per_chapter": "TEST only on a few videos (each chapter gets its own colour tone); compare views; NOT part of the norm.",
+    "music_only": "1–2 videos this month with no narrator (music + small italic one-liners, like the dig / nothing-bad references). Voice stays the default."
   },
-  {
-   "slug": "asteroid",
-   "place": "plaza of a natural-history museum on a busy avenue (late afternoon, golden light)"
+  "format_v4": {
+    "approved": "2026-11-10 by owner. SUPERSEDES hook_rules/visual_rules wherever they conflict.",
+    "why": "Own data: viewers give ~22 s (YouTube 23 s avg, Instagram 22 s) on 47 s videos. Reference account @man_ia_c (297K followers, 5M likes, 24 videos): its hits are all 'What if <basic thing> disappeared for 5 seconds?' (19M, 14.1M, 6M, 5.2M, 4.2M) with one fixed look.",
+    "rules": [
+      "PREMISE: happens to the WHOLE WORLD (not one person), with a short time limit: 'What if <something basic> <vanished/doubled/stopped> for 5 seconds?'. History premises ('what if the asteroid missed') are also fine.",
+      "COUNTER = COUNTDOWN: open on a calm, detailed everyday scene with '<THING> DISAPPEARS IN 0:05.000' ticking down in milliseconds on the left; at zero the event happens; then a second counter runs '0:01 … 0:05' through the consequences, one clear consequence per second, each bigger in scale (street → city → planet). Then 'it comes back' and the aftermath.",
+      "HOOK (owner): 2.5–3 s, shown clearly and slightly slowed — the most extreme consequence — with one teaser narrator line, then a '<< N SECONDS EARLIER' card, then the calm start. Never a 0.5 s flash.",
+      "LENGTH: 25–30 s for YouTube/Instagram/TikTok. (A 61–70 s TikTok cut only once the account nears 10K followers and the owner confirms the rewards programme is open to him.)",
+      "ONE LOCKED LOOK for at least 10 videos: same title style and position, same countdown style, same calm-opening structure, same music family, city = engine/scenes/nyc.js style (street grid, towers with windows, taxis, crowds, park, rivers). Do not restyle between videos.",
+      "LESS TEXT: title, countdown, word-by-word captions. At most 2 speech bubbles and 1 punch caption per video. No step-by-step 'stage 1…7' escalation.",
+      "KEEP from before: detailed city, crowds, expanding waves, background song + ambience, loop ending (last shot flows into the hook), Mittens as a small recurring background detail (never the focus), narrator af_heart, hero voice clips only in gaps.",
+      "SUBSCRIBE: no 'follow for part 2' line. (Owner is choosing between: viewers pick tomorrow's what-if in comments / crediting the winner / Mittens survival counter — do not add until he picks.)",
+      "SOUND (owner, Nov 11): the narrator must always be clearly heard. mix.py now ducks music AND effects/ambience under the voice and enforces a 14 dB voice-over-everything margin; it prints 'voice-over-bed margin dB'. Use music_gain ≤ 0.3 and sfx_gain ≤ 0.4, never raise them, and never bypass the margin check."
+    ]
   },
-  {
-   "slug": "paperfold",
-   "place": "kitchen table on the first floor of a European town house, French windows open onto a cobbled shopping street (late afternoon, golden light)"
-  }
- ],
- "cast_log": [
-  {
-   "slug": "jump",
-   "cast": [
-    "unbothered (newspaper)",
-    "pigeon",
-    "salesman"
-   ]
+  "format_v5": {
+    "approved": "2026-11-11 by owner (he preferred the narrator prototype 'What if the Sun switched off for 5 seconds?'). THIS IS THE CURRENT STANDARD. It overrides format_v4, hook_rules and visual_rules wherever they conflict.",
+    "template": "engine/scenes/sun.js + engine/scripts/sun.json + engine/scripts/sun_cue.json. Copy the STRUCTURE, never the content: every video needs its own setting details, consequences, lines and one big visual transformation (YouTube 'inauthentic content' policy: no template with only the noun swapped).",
+    "rules": [
+      "*** STANDARD.md in the repo root is now the owner's OFFICIAL list (Nov 17) and overrides every rule in this list where they differ. Read it first. ***",
+      "*** RUNAWAY FORMAT (owner approved Nov 16 - THIS OVERRIDES the 'STRUCTURE', 'ONE big visual transformation' and 'OPENING STAKE' rules below wherever they conflict; applies to every video built from Nov 18 on) *** PREMISE: a process that never stops and keeps multiplying ('every fold doubles the paper', 'the hole just keeps going', 'Mittens never stops growing') - NOT 'X for 5 seconds', no slow motion, no countdown. STRUCTURE (50-65 s): 0-3 s title on screen + hero in today's everyday place, counter already visible at its small starting value; the process starts by second 3. Then 10-13 STEPS of 4-5 s each: at every step (a) the COUNTER jumps (animated roll-up, drawSideCounter) and its unit escalates wildly (mm -> m -> km -> 'past the Moon'; kg -> tonnes -> 'heavier than the Titanic'), (b) ONE short italic line with a REAL, checked comparison, read by the narrator, (c) the picture visibly changes, (d) the camera keeps pulling back in one continuous move: room -> street -> city -> country -> planet -> space. Early (human-scale) steps carry the comedy: cast reactions, narrator blaming the hero. Mittens cam reacts at every step. Last step = the biggest image + punchline, then the end card. Every number must be computed in the script JSON (store the formula) - never invented. Never copy another channel's exact premise or shots.",
+      "*** CLEAR WRITING (owner, Nov 17, about the jump video: 'confusing... it wasn't really clear... the things said and how jokes were made are strange'; everything else - quality, characters, city - he liked) *** (1) LISTEN TEST: the narration ALONE must tell a complete, simple story a 12-year-old follows on the first listen - what is happening, what happens next, and why. Never rely on the picture to explain a line. (2) ONE THREAD: line 1 sets up the hero's small everyday stake (the unpaid bill, the ice cream) and the story keeps returning to it; the last line pays it off. (3) EVERY JOKE NEEDS A SETUP the viewer already saw or heard. Banned unless set up earlier in the same video: 'This was your idea, by the way', 'You had one job', a random bystander line ('He picked this moment to propose'), facts that need a second to decode ('Pigeons are dinosaurs', 'Mittens is not a person'). (4) At most ONE joke per step, and it should come from the consequence on screen (what the counter or the world just did), not a random aside. (5) Short concrete sentences (12 words max), plain words, one idea per line. No abstract or time-travel framing ('history gets one tiny edit', 'it arrives seven minutes late'). (6) The closing 'strangest part' fact must be instantly understandable: one simple comparison (not 'less than a thousandth of the width of an atom'). (7) Before rendering, write all lines in a list and check each one against 1-6; rewrite any that fail. GOOD model: engine/scripts/paperfold.json (one thread - the bill - numbers that climb, jokes tied to each step, payoff 'you still have to pay it'). BAD model: engine/scripts/jump.json and asteroid.json (disconnected one-liners, unset-up callbacks).",
+      "STRUCTURE (45–55 s): (1) 0–7 s calm, lived-in everyday scene, title on screen (types in, leaves by ~6 s) and a real-time countdown '<EVENT> IN 0:07.000' on the left; (2) the event; the story's 5 seconds play in ~6x SLOW MOTION over ~30 s while the counter shows '<THING> RETURNS IN 0:04.779' ticking in milliseconds; (3) it returns, ~6 s real-time aftermath, counter relabelled ('SUNLIGHT: BACK'); (4) 6 s end card.",
+      "NO cold open, no 'N seconds earlier' card, no speech bubbles, no punch captions, no word-by-word ASS captions. Text on screen = title, countdown, and one short italic serif line every 3–4 s addressed to 'you' (the narrator reads exactly those lines).",
+      "NARRATOR: yes (Kokoro af_heart, speed 1.0), reading the italic lines. 1–2 videos this month go out with NO narrator (music + lines only, cue like sun_cue_novoice.json) as a test: mark them `no_narrator_test: true` in the queue. Suggested: Nov 16 and Nov 24. UPDATE Nov 15 (owner): the Nov 16 video DOES get the narrator (the comedy needs it); only Nov 24 remains as the no-narrator test.",
+      "CAMERA: one continuous moving camera with at most 2–3 cuts (street → look up → rise over the city → back to a face).",
+      "ONE big visual transformation that a 10-year-old understands instantly and that keeps growing (sky goes black and the city lights up; everything floats; water vanishes). Not a list of small unrelated effects. Check the science and keep the lines accurate.",
+      "A LIVELY STREET (owner): more cars driving and more people doing specific things in the calm opening and aftermath — someone walking a dog, a jogger, a cyclist, someone on the phone, kids with balloons, a street musician, a delivery van unloading, pedestrians passing close to the camera. Never an empty street.",
+      "END CARD + COMMENTS (owner approved): black card with the title, one small line of facts, then 'What should we try next?' / 'TELL US IN THE COMMENTS'. Add to every caption: 'Comment your what-if — we make the best ones.' When a queue item has `idea_from` (a viewer's public handle), show 'Idea from a viewer comment' for the first 3 s and credit the @handle in the caption. NEVER offer prizes, giveaways or 'like/subscribe to be picked' (YouTube spam policy), never ask for likes or subs in the video.",
+      "SOUND: narrator always clearly on top (mix.py enforces a 14 dB margin; music_gain ≤ 0.3, sfx_gain ≤ 0.4). Quiet, tense bed during the slow motion; ticks; a riser into the return.",
+      "KEEP: New-York-style detailed city (or another equally detailed real-feeling place when the idea needs it), Mittens as a small background detail, AI labels on TikTok/Instagram and 'Animated · AI voice' in the YouTube description, a no-music copy for the owner's TikTok post.",
+      "OPENING STAKE (owner, Nov 11): the first 5 seconds must not be a still scene plus a question. Give 'you' (or one visible person) a small, specific thing in progress that the event interrupts — about to take a photo, a kid's balloon slipping away, a coffee being handed over, a proposal on one knee, a dog pulling its leash — and say it in the first italic line. Show how that small story ends in the aftermath (the photo, the balloon, the coffee), so the video pays off twice.",
+      "ANSWER LAST: keep the biggest, most surprising consequence for the final seconds before the end card; never give it away in the opening lines or the title.",
+      "POLISH STANDARD (owner, Nov 12: 'make them much more polished'): the engine now does this for every video - soft shadows, soft image-based fill light, colour grade and tilt-shift background blur in engine/page.html; rounded smooth characters (makePerson), rounded cars with wheels (carGeos) and rounded crowd (pedGeos) in engine/scenes/lib.js; framed windows with depth in the city shader. In new scene code: NEVER flatShading, never bare BoxGeometry for anything near the camera (use RoundedBoxGeometry exported from lib.js, Capsule/Sphere with >=16 segments), give the hero's surroundings real detail (window frames, sills, awnings, lamps, plants). Blur: return focusY (0..1 screen height of the subject, default 0.56) and focusH from update() so the hero is always in the sharp band; dof: 0 only for full-screen space shots.",
+      "DIFFERENT PLACE EVERY VIDEO (owner, Nov 12): each video opens small and human with the hero somewhere new, doing an everyday thing - walking down the street, slouching on the couch, at the dining table, in a restaurant, on a date, at the office, on a bus, in a park, at the gym, in bed. Never reuse the previous two videos' opening place. The place supplies the OPENING STAKE. Title, countdown, slow-motion structure, captions and end card stay identical so the channel is still recognisable. Record the place in the queue item as `place`.",
+      "MITTENS = THE FRIEND (owner, Nov 12): Mittens is the hero's companion in every video - always near the hero in the opening, gets one clear reaction shot or gag during the event (2 s max) and one in the aftermath. Never just a far background detail.",
+      "LANDMARK LABELS: when the camera passes something big or far (a tower, a bridge, the Moon, a plane), show one small label with its real name and a real number (height, distance, speed) for ~2 s. 2-4 labels per video, checked facts only.",
+      "BRIGHT LOOK (owner, Nov 15: 'still a bit dark'; reference = glossy toy-style reel): every shot must read bright and colourful on a phone. Recipe: strong warm key light on the hero (DirectionalLight ~3.0, colour 0xfff0d8) + cool blue rim/back light (~1.2, 0x7fb0ff) + hemisphere fill >= 0.9; saturated candy colours for clothes, cars, shop fronts and props; sunny daytime with blue sky by default; exposure 1.1-1.25. Night or dark topics: keep the world dark blue (never grey/black) and light the hero and props with warm lamps, neon and glowing objects so faces stay bright. Check 3 stills before the full render: if the hero's face is not the brightest, most colourful thing in frame, fix the lights first.",
+      "VARIED CITY (owner, Nov 15: 'the city is bland, all the same'): no two neighbouring buildings alike - vary colour (brick red, cream, teal, mustard, pink, pale blue), height, roof type and ground floor (cafe with awning, bakery, bookshop, pharmacy with neon cross, laundromat, flower stand); add trees, benches, street lamps, signs with short invented names, parked bikes, a mural, bunting. At least 6 distinct shop fronts on the hero's street.",
+      "TONE = COMEDY (owner, Nov 15): narrator keeps exactly the same calm voice (af_heart) - NOT angry, NO swearing - but the lines are dry jokes instead of explanations. APPROVED GAGS: (1) NARRATOR AGAINST THE HERO (owner: 'I love this'): the narrator calmly blames the hero for everything ('You had one job. It was holding the keys.'), 2-3 such lines per video. (2) MITTENS STEALS THE SCENE: whatever disaster happens the cat is fine and mildly annoyed/unimpressed - use setCatFace(cat, mood) + catLife(cat, t) from lib.js (moods: neutral, unimpressed, annoyed, shock, happy, sleepy, smug, scared); give Mittens at least 3 mood changes and 2 close shots where the face is readable. (3) THE ONE UNBOTHERED PERSON: everyone panics while one bystander calmly carries on (eating a sandwich, reading the paper, watering plants, doing yoga, on a phone call) - a different activity each video. At least one visual joke every ~6 s. Aftermath ends on a punchline with the science fact folded in. Still accurate - never invent facts. NOT approved yet (owner decides later): meme-style edits (freeze-frames, zooms, record scratch) and random absurd cameos (the skeleton).",
+      "FLUENT MOTION (owner, Nov 15): no stiff or sliding characters - walk cycles with arm swing, bounce and head bob; every reaction has anticipation and follow-through (easeInOut, small overshoot); hero is never frozen (use life()). During the slow-motion section something new must happen at least every 4 s (average viewer leaves at ~22 s): a new object affected, a new gag, a camera move - never one idea held for 10 s.",
+      "BACKGROUND CAST (owner, Nov 15): a recurring cast of side characters; each video uses 2-3 of them (never all), different combination from the previous video, each with a fixed look so viewers recognise them. Record who appeared in the queue item as `cast`. FAVOURITES: THE FILMER (records everything on a phone instead of helping, complains about the lighting); THE SALESMAN (already selling T-shirts/souvenirs about the disaster seconds in); THE PIGEON (one pigeon watches and judges); BAD TIMING (someone proposing / carrying a wedding cake / taking a driving test at the exact wrong second); THE UNBOTHERED PERSON (keeps eating a sandwich etc.). USE RARELY: THE COMPLAINER ('my coffee's cold' after the world resets); THE OVER-REACTOR (screams before anything happens - owner finds it a bit cringe, max once every 5 videos, keep it short). Mittens is in every video and does not count toward the 2-3.",
+      "GOLDEN LIGHT (owner, Nov 15, three reference videos: 'I like the lighting in all of them, we should copy it'): default outdoor light = warm low sun (late afternoon): DirectionalLight colour ~0xffd9a8, intensity ~3, low angle (25-35 degrees) so shadows are long and soft; sky gradient pale blue to warm cream at the horizon; warm-tinted atmospheric haze (scene.fog, FogExp2 or equivalent) so distant buildings fade softly; some windows lit warm; cool blue fill in the shadows. Interiors: a visible warm lamp, pastel walls, wooden floor, coloured props. Space shots: bright saturated Earth with a thin blue atmosphere rim. This replaces flat midday light.",
+      "BUILDING STYLE (owner, Nov 15, reference = European street in the 'getting fat' video): street-level buildings are 4-6 storey town houses in warm colours (ochre, cream, terracotta, pale pink), each with window shutters, balconies with railings, cornices, pitched or mansard roofs with chimneys, a ground-floor shop with a painted sign (invented names), awnings, cobbled or paved street. Tall glass towers only in the distance. Build these as real geometry near the camera (not a flat shader wall).",
+      "MITTENS CAM (owner, Nov 16: 'Mittens still has little to no emotions'): every video shows a round picture-in-picture close-up of Mittens' face (lib.js makeCatCam; return `inset: { scene: mc.scene, camera: mc.camera, x: 0.8, y: 0.2, r: 0.15, show }` from update()). Call mc.update(t, mood) every frame and CHANGE THE MOOD AT EVERY STEP (unimpressed, annoyed, shock, smug, sleepy, happy, scared) so her reaction is the running joke; pop it in at the first step, hide it (show -> 0) during the title and end card. Mittens must ALSO appear in the scene itself near the hero in the opening.",
+      "HAIR (owner, Nov 16: the hair blobs/tufts 'don't look natural at all' - removed): makePerson hair is now ONE smooth shell hugging the head, nothing on top. hairStyle: 'short' (default) | 'long' (adds a flat back panel) | 'bald'. Vary hair COLOUR across the cast, not shape. NEVER add tufts, fringes, buns, blobs, headbands or caps on top of a head unless it is a deliberate prop (helmet, chef hat). The owner may send a reference hairstyle to replicate - until then keep it this simple. Hero: hairStyle 'short', hair 0x5a3a20.",
+      "IMAGE QUALITY (owner, Nov 16: 'the video itself could be of better quality'): the engine now renders with 4x anti-aliasing (page.html, default) and a lighter background blur. Final encode: upscale with `-vf scale=1080:1920:flags=lanczos,unsharp=5:5:0.55:5:5:0.0` and `-crf 20 -maxrate 9M -bufsize 18M`. Never let a blurred foreground object (car, lamp post) cover more than ~10% of the frame. Keep the subject large: the hero or the main object should fill at least a third of the frame height in close and medium shots.",
+      "YOUTUBE UPLOAD (from a Shorts tutorial the owner sent, Nov 16 - cheap to apply, unproven): title = premise with the first two words in capitals ('WHAT IF every fold doubled the paper? 📄'), one emoji, under 60 characters, leave curiosity open; hashtags: maximum 5 in total, always #shorts plus 3-4 specific to the topic (no generic piles); description: 1-2 punchy sentences, then one line of comma-separated topic keywords, then the same hashtags."
+    ],
+    "rebuild": null
   },
-  {
-   "slug": "asteroid",
-   "cast": [
-    "filmer",
-    "bad timing (proposal)",
-    "pigeon"
-   ]
+  "tiktok_note": "Nov 16: owner kept forgetting manual TikTok posts and asked to go back to AUTOMATIC. The 20:57 run schedules TikTok at 23:05 via Metricool (music version of the file, isAigc true). The earlier scheduled post got 12 views vs ~900 for manual ones, so watch the first 3 automatic posts: if all stay under ~200 views after 24 h, tell the owner and suggest going back to manual. Catch-up posts already scheduled by hand on Nov 16: gravity2x Nov 17 13:05, friction Nov 18 13:05, water Nov 19 13:05.",
+  "comments": {
+    "how": "Owner sends chosen comments in chat. YouTube comments: vidiq_video_comments; TikTok: vidiq_tiktok_video_comments (both cost vidIQ credits — check at most once a week). Instagram comments can't be read.",
+    "picked": []
   },
-  {
-   "slug": "paperfold",
-   "cast": [
-    "unbothered (watering balcony plants)",
-    "salesman"
-   ]
-  }
- ]
+  "places_used": [
+    {
+      "slug": "gravity2x",
+      "place": "apartment balcony above a busy street"
+    },
+    {
+      "slug": "sun (prototype)",
+      "place": "Midtown sidewalk by a hot-dog cart"
+    },
+    {
+      "slug": "friction",
+      "place": "pavement cafe outside a bakery (late afternoon)"
+    },
+    {
+      "slug": "water",
+      "place": "East River esplanade railing, Manhattan (late morning)"
+    },
+    {
+      "slug": "jump",
+      "place": "bus stop outside an ice-cream parlour on a busy avenue (early afternoon)"
+    },
+    {
+      "slug": "asteroid",
+      "place": "plaza of a natural-history museum on a busy avenue (late afternoon, golden light)"
+    },
+    {
+      "slug": "paperfold",
+      "place": "kitchen table on the first floor of a European town house, French windows open onto a cobbled shopping street (late afternoon, golden light)"
+    }
+  ],
+  "cast_log": [
+    {
+      "slug": "jump",
+      "cast": [
+        "unbothered (newspaper)",
+        "pigeon",
+        "salesman"
+      ]
+    },
+    {
+      "slug": "asteroid",
+      "cast": [
+        "filmer",
+        "bad timing (proposal)",
+        "pigeon"
+      ]
+    },
+    {
+      "slug": "paperfold",
+      "cast": [
+        "unbothered (watering balcony plants)",
+        "salesman"
+      ]
+    }
+  ]
 }
