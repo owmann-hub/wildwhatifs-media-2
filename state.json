@@ -357,8 +357,11 @@
         "metricool_id": 432195167
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-18T07:00"
+        "status": "posted",
+        "due": "2026-11-18T07:00",
+        "media_id": "18438743743146368",
+        "permalink": "https://www.instagram.com/reel/Df4M1xxguPO/",
+        "posted_at": "2026-11-18T06:40"
       },
       "style": "A_explainer",
       "file_tiktok": "videos/2026-11-18-paperfold-nomusic.mp4",
