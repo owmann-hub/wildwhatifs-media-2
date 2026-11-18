@@ -38,8 +38,10 @@ Before rendering, go through the checklist at the bottom.
 1. **Hero:** same look in every video (hair `short`, colour `0x5a3a20`). Lively animation: blinking, expressions, looking around; never frozen.
 2. **Fluent motion:** walk cycles with arm swing and bounce; reactions with anticipation and follow-through.
 3. **Mittens = the friend, in every shot with a visible expression** (owner, Nov 18):
-   - Mittens is in the scene itself in every shot, near the hero, framed big enough that her face reads (her head at least about 5% of the frame height);
-   - she changes expression at every step (`setCatFace(cat, mood)` + `catLife(cat, t)` on the in-scene cat: unimpressed, annoyed, shock, smug, sleepy, happy, scared), and reacts to what just happened, with ears, tail and eyes moving;
+   - Mittens is in the scene itself in every shot, near the hero. **Even when she's small in the background, she must be visibly expressive**, never a still prop:
+     - exaggerate so it reads at a distance: big eye and eyelid changes, ears flat or up, tail puffing, a jump back, a slow unimpressed head turn, a yawn;
+     - she reacts within about half a second of every event;
+   - she changes expression at every step (`setCatFace(cat, mood)` + `catLife(cat, t)` on the in-scene cat: unimpressed, annoyed, shock, smug, sleepy, happy, scared), with ears, tail and eyes always moving a little;
    - she is fine and mildly annoyed whatever happens;
    - the **Mittens cam** (round close-up) is optional, not required. Use it only for shots where she can't physically be in the picture (space, a planet seen from far away).
 4. **Background cast:** 2–3 per video, a different mix each time, each with a fixed look.
