@@ -26,7 +26,19 @@ await page.waitForFunction('window.ready === true', null, { timeout: 120000 });
 
 const toBuf = (d) => Buffer.from(d.split(',')[1], 'base64');
 const t0 = Date.now();
-if (mode === 'stills') {
+if (mode === 'qa') {
+  // node render.mjs <scene> qa <out_dir> [step]  -> out_dir/qa.json + a still of every flagged moment
+  fs.mkdirSync(outArg, { recursive: true });
+  const step = +(a || 0.5); const { TOTAL } = await page.evaluate(() => window.qaInfo());
+  const rep = []; let bad = 0;
+  for (let t = 0; t <= TOTAL + 1e-6; t += step) { const r = await page.evaluate(([t]) => window.qaProbe(t), [t]); if (r.issues.length) { rep.push(r); bad++; } }
+  // group consecutive flags into ranges and grab one still per range
+  const ranges = []; for (const r of rep) { const k = r.issues.map(i => i.type).sort().join('+'); const L = ranges[ranges.length - 1];
+    if (L && L.key === k && r.t - L.to <= step * 1.5) L.to = r.t; else ranges.push({ key: k, from: r.t, to: r.t, sample: r }); }
+  for (const R of ranges) { const tm = (R.from + R.to) / 2; const d = await page.evaluate(([t]) => window.renderFrame(t, 0.85), [tm]); R.still = `qa_${tm.toFixed(2)}.jpg`; fs.writeFileSync(path.join(outArg, R.still), toBuf(d)); }
+  fs.writeFileSync(path.join(outArg, 'qa.json'), JSON.stringify({ scene, TOTAL, step, flagged_samples: bad, ranges }, null, 1));
+  console.log(`QA ${scene}: ${ranges.length} problem range(s)`); for (const R of ranges) console.log(`  ${R.from.toFixed(1)}-${R.to.toFixed(1)}s  ${R.key}  ${JSON.stringify(R.sample.issues[0])}  -> ${R.still}`);
+} else if (mode === 'stills') {
   fs.mkdirSync(outArg, { recursive: true });
   for (const ts of a.split(',')) {
     const t = +ts;

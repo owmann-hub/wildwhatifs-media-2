@@ -50,6 +50,52 @@ const grain = document.createElement('canvas'); grain.width = 256; grain.height 
   for (let i = 0; i < d.data.length; i += 4) { const v = Math.random() * 255; d.data[i] = d.data[i+1] = d.data[i+2] = v; d.data[i+3] = 255; }
   g.putImageData(d, 0, 0); }
 
+
+// ---- QA probe (Nov 17, owner: 'create a check system ... roof and floor'): geometric checks at time t, no rendering ----
+window.qaInfo = () => ({ TOTAL: (S.info && S.info.TOTAL) || 0 });
+window.qaProbe = (t) => {
+  const st = S.update(t) || {}; const scn = st.scene || S.scene, cam = st.camera || S.camera;
+  scn.updateMatrixWorld(true); cam.updateMatrixWorld(true);
+  const o = cam.getWorldPosition(new THREE.Vector3()), fwd = cam.getWorldDirection(new THREE.Vector3());
+  const rc = new THREE.Raycaster(); rc.far = 1e7; rc.camera = cam; const issues = [];
+  const meshes = []; scn.traverseVisible(m => { if (m.isMesh && !m.isSprite && m.geometry) meshes.push(m); });
+  const solid = (x) => { const m = x.object.material; const mm = Array.isArray(m) ? m[0] : m; if (!x.object.visible || !x.object.isMesh || !mm) return false;
+    if (mm.side === THREE.BackSide) return false; if (mm.transparent && (mm.opacity ?? 1) < 0.6) return false; if (mm.visible === false) return false;
+    let p = x.object; while (p) { if (!p.visible) return false; p = p.parent; } return true; };
+  const cast = (dir) => { rc.set(o, dir.clone().normalize()); let hs = []; try { hs = rc.intersectObjects(meshes, false).filter(solid); } catch (e) { hs = []; for (const m of meshes) { try { hs.push(...rc.intersectObject(m, false)); } catch (_) {} } hs = hs.filter(solid).sort((a, b) => a.distance - b.distance); } return hs[0]; };
+  const back = (h, dir) => { if (!h || !h.face) return false; const M = h.object.matrixWorld.clone();
+    if (h.object.isInstancedMesh && h.instanceId !== undefined) { const im = new THREE.Matrix4(); h.object.getMatrixAt(h.instanceId, im); M.multiply(im); }
+    const n = h.face.normal.clone().transformDirection(M); const mm = Array.isArray(h.object.material) ? h.object.material[0] : h.object.material;
+    return n.dot(dir) > 0.05 && mm.side !== THREE.DoubleSide ? 'back' : (n.dot(dir) > 0.05 ? 'backDouble' : false); };
+  const name = (h) => (h.object.name || h.object.parent?.name || h.object.geometry?.type || 'mesh');
+  const space = st.space || o.length() > 2e5 || o.y > 5000;
+  // 1. camera inside / behind a surface (e.g. under the floor, inside a roof or wall)
+  for (const [lab, d] of [['down', new THREE.Vector3(0, -1, 0)], ['up', new THREE.Vector3(0, 1, 0)], ['forward', fwd]]) {
+    const h = cast(d); const b = back(h, d);
+    if (b && h.distance < 500) issues.push({ type: 'camera_inside_or_behind_surface', ray: lab, dist: +h.distance.toFixed(2), obj: name(h), note: lab === 'down' ? 'camera is UNDER a floor/ground or inside a roof' : lab === 'up' ? 'camera is above a ceiling/roof seen from inside' : 'camera looks at the back of a wall (inside it)' });
+  }
+  // 2. something right in front of the lens
+  { const h = cast(fwd); if (h && h.distance < Math.max(0.2, cam.near * 3)) issues.push({ type: 'object_touching_lens', dist: +h.distance.toFixed(3), obj: name(h) }); }
+  // 3. missing floor: the bottom of the frame should show ground unless we're in space / looking up
+  if (!space) { const v = new THREE.Vector3(0, -0.85, 0.5).unproject(cam).sub(o).normalize(); const h = cast(v);
+    if (!h && v.y < -0.05) issues.push({ type: 'no_floor_at_bottom_of_frame', note: 'ray through the bottom of the frame hits nothing - missing ground/floor or a hole in the world' }); }
+  // 4. camera below the ground surface (big ground planes / terrain)
+  if (!space) { const up = cast(new THREE.Vector3(0, 1, 0)), down = cast(new THREE.Vector3(0, -1, 0));
+    if (up && !down && up.distance < 2000 && back(up, new THREE.Vector3(0, 1, 0)) === false) issues.push({ type: 'camera_below_ground', dist: +up.distance.toFixed(2), obj: name(up) }); }
+  // 5. indoor shots (scene returns interior: true): a room needs a ceiling above and a floor below
+  if (st.interior) { const u = cast(new THREE.Vector3(0, 1, 0)), d = cast(new THREE.Vector3(0, -1, 0));
+    if (!u || u.distance > 40) issues.push({ type: 'missing_ceiling', note: 'indoor shot but nothing above the camera - the room has no ceiling/roof' });
+    if (!d || d.distance > 40) issues.push({ type: 'missing_floor', note: 'indoor shot but nothing below the camera' }); }
+  // 6. the main object of the story (scene returns focus: Object3D) must be on screen and not hidden behind something
+  if (st.focus) { const box = new THREE.Box3().setFromObject(st.focus);
+    if (!box.isEmpty()) { const fr = new THREE.Frustum().setFromProjectionMatrix(new THREE.Matrix4().multiplyMatrices(cam.projectionMatrix, cam.matrixWorldInverse));
+      if (!fr.intersectsBox(box)) issues.push({ type: 'focus_offscreen', note: 'the main object (st.focus) is not in the frame' });
+      else { const c = box.clampPoint(o.clone().add(fwd.clone().multiplyScalar(o.distanceTo(box.getCenter(new THREE.Vector3())))), new THREE.Vector3()); const dir = c.clone().sub(o); const dist = dir.length();
+        const h = cast(dir); let p = h && h.object, mine = false; while (p) { if (p === st.focus) { mine = true; break; } p = p.parent; }
+        if (h && !mine && h.distance < dist * 0.9) issues.push({ type: 'focus_hidden', obj: name(h), note: 'the main object is behind another object (e.g. inside a roof/wall that should show it breaking through)' }); } } }
+  return { t, cam: o.toArray().map(v => +v.toFixed(2)), issues };
+};
+
 window.renderFrame = (t, quality = 0.9) => {
   const st = S.update(t) || {};
   if (st.scene) { rp.scene = st.scene; rp.camera = st.camera; }

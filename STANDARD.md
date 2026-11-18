@@ -1,6 +1,6 @@
 # Wild What Ifs — Official Video Standard
 
-The owner's corrections, collected in one place (last updated Nov 17, 2026).
+The owner's corrections, collected in one place (last updated Nov 18, 2026).
 **Every new video must follow this list.** It overrides older rules in PIPELINE.md and state.json
 (`format_v4`, `hook_rules`, `visual_rules`, and the older entries of `format_v5.rules`) wherever they disagree.
 Before rendering, go through the checklist at the bottom.
@@ -12,11 +12,12 @@ Before rendering, go through the checklist at the bottom.
 1. **Runaway format.** The premise is a process that never stops and keeps multiplying ("you fold paper and never stop", "every jump is twice as high"), not "X for 5 seconds".
 2. **Length 50–65 s.**
 3. **Say the "what if" the same way every time.** The title is on screen from the first frame, and the narrator's very first line is that same question, word for word ("What if you folded a piece of paper and never stopped?"). Every video, no exceptions.
-4. **Start small and human:** the hero in an everyday place doing an everyday thing, with a small stake (an unpaid bill, an ice cream). The process starts by second 3.
-5. **10–13 steps of 4–5 s each.** At every step: the counter jumps, one short line with a real comparison, the picture visibly changes, and the camera keeps pulling back. Something new happens at least every 4 s.
-6. **Escalating counter:** always on screen, rolls up at each step, and its unit escalates wildly (mm → m → km → "past the Moon").
-7. **Scale change:** room → street → city → country → planet → space, in one continuous camera move.
-8. **Ending:** no black end card. The last shot stays on screen while the narrator asks for ideas ("What should we try next? Tell us in the comments"), with the same line as small text over that shot. Total ending 2 s or less after the payoff. Shorts just end; no outro.
+4. **Explain before it happens** (owner, Nov 18: the jump and friction videos were unclear until the thing happened). Right after the title question, 1–2 plain lines say what is about to happen and the physics behind it, e.g. "Friction is the grip that stops things from sliding. Shoes, tyres, even knots need it." At every step, say *why* it happens, not just what ("No friction, so the knot can't hold. It just slides open.").
+5. **Start small and human:** the hero in an everyday place doing an everyday thing, with a small stake (an unpaid bill, an ice cream). The process starts by second 3.
+6. **10–13 steps of 4–5 s each.** At every step: the counter jumps, one short line with a real comparison, the picture visibly changes, and the camera keeps pulling back. Something new happens at least every 4 s.
+7. **Escalating counter:** always on screen, rolls up at each step, and its unit escalates wildly (mm → m → km → "past the Moon").
+8. **Scale change:** room → street → city → country → planet → space, in one continuous camera move.
+9. **Ending:** no black end card. The last shot stays on screen while the narrator asks for ideas ("What should we try next? Tell us in the comments"), with the same line as small text over that shot. Total ending 2 s or less after the payoff. Shorts just end; no outro.
 
 ## 2. Writing and narrator
 
@@ -30,6 +31,7 @@ Before rendering, go through the checklist at the bottom.
 8. **Final fact:** instantly understandable, one simple comparison.
 9. **Facts:** every number is computed and checked, with the formula stored in the script JSON. Never invent facts.
 10. **Never** reuse a previous script with only the noun swapped, and never copy another channel's video (YouTube's inauthentic-content policy).
+11. **Reality first, then the "what if"** (owner, Nov 18: "more real… stuff should look and make sense"). Say the real-world limit plainly before going past it, e.g. "Normal paper stops at about 7 folds. The record is 12, on a 1.2 km strip of toilet paper. But what if you could keep going?" From that line on, the impossible part is clearly the "what if". Every picture must also make physical sense: a paper stack that passes a ceiling breaks through a real ceiling, a hole has walls, things fall the right way.
 
 ## 3. Characters
 
@@ -37,7 +39,7 @@ Before rendering, go through the checklist at the bottom.
 2. **Fluent motion:** walk cycles with arm swing and bounce; reactions with anticipation and follow-through.
 3. **Mittens = the friend,** in every video:
    - next to the hero in the opening;
-   - the **Mittens cam** (round close-up of her face) reacting at every step, with a new mood each time;
+   - the **Mittens cam** (round close-up of her face) in **every video** (owner loved it in the paper video), reacting at every step with a new mood each time;
    - fine and mildly annoyed whatever happens.
 4. **Background cast:** 2–3 per video, a different mix each time, each with a fixed look.
    - Regulars: the Filmer (films instead of helping, complains about the lighting), the Salesman (already selling T-shirts), the Pigeon (watches and judges), Bad Timing (someone proposing or carrying a cake), the Unbothered Person (keeps eating a sandwich).
@@ -87,7 +89,27 @@ Before rendering, go through the checklist at the bottom.
    - TikTok automatic via Metricool at 23:05;
    - Instagram at 06:35.
 
-## 8. Not approved, or on hold
+## 8. Quality check (mandatory, owner Nov 18)
+
+1. **Before the full render:** `node render.mjs <scene> qa out/qa_<slug> 0.5`. It checks every half second for:
+   - the camera under a floor, inside a roof or wall, or touching an object;
+   - a missing floor at the bottom of the frame;
+   - a missing ceiling or floor in indoor shots (the scene returns `interior: true`);
+   - the main object (`focus: <Object3D>` returned from `update()`) off screen or hidden behind something.
+   Look at every still it saves and fix every real problem; ignore false alarms only after looking.
+2. **After the render:** `python3 qa.py videos/<file>.mp4 engine/scripts/<slug>.json "<title>"`. It checks the length, black or frozen screens, loudness, that the first line is the title, and that the last line asks for comments. It also makes contact sheets at one frame per second.
+3. **Look at every sheet** and check each point:
+   - floors, ceilings, roofs and walls are where they should be, with no gaps and no floating objects;
+   - anything that "goes through" something visibly breaks through it;
+   - no character or object clips through another;
+   - every narrated claim is visible on screen at that moment ("through the ceiling" shows the ceiling breaking);
+   - labels and captions don't cover faces and are spelled right (no cut-off words like "FOLD 5" for "FOLD 51");
+   - the counter matches the narration;
+   - Mittens cam present;
+   - the hero's face is bright.
+4. **Fix and re-render the affected part.** Never queue a video that fails, and write the QA result into the queue item as `qa`.
+
+## 9. Not approved, or on hold
 
 - Meme-style edits (freeze-frames, sudden zooms, record scratch): on hold, to decide later.
 - Random absurd cameos (the skeleton): on hold.
@@ -99,6 +121,9 @@ Before rendering, go through the checklist at the bottom.
 ## Checklist before rendering
 
 - [ ] Narrator's first line = the on-screen title question, word for word
+- [ ] Next 1–2 lines explain what will happen and the physics; each step says why
+- [ ] Real-world limit said plainly before the "what if" part
+- [ ] `render.mjs qa` clean (or every flag checked by eye); `qa.py` clean; every sheet viewed
 - [ ] Listen test passed: every line clear without the picture; every joke has a setup; one thread from start to end
 - [ ] Counter escalates at every step; something new every 4 s or less
 - [ ] Mittens next to the hero in the opening; Mittens cam with a new mood at each step
