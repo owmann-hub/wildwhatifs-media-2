@@ -37,10 +37,11 @@ Before rendering, go through the checklist at the bottom.
 
 1. **Hero:** same look in every video (hair `short`, colour `0x5a3a20`). Lively animation: blinking, expressions, looking around; never frozen.
 2. **Fluent motion:** walk cycles with arm swing and bounce; reactions with anticipation and follow-through.
-3. **Mittens = the friend,** in every video:
-   - next to the hero in the opening;
-   - the **Mittens cam** (round close-up of her face) in **every video** (owner loved it in the paper video), reacting at every step with a new mood each time;
-   - fine and mildly annoyed whatever happens.
+3. **Mittens = the friend, in every shot with a visible expression** (owner, Nov 18):
+   - Mittens is in the scene itself in every shot, near the hero, framed big enough that her face reads (her head at least about 5% of the frame height);
+   - she changes expression at every step (`setCatFace(cat, mood)` + `catLife(cat, t)` on the in-scene cat: unimpressed, annoyed, shock, smug, sleepy, happy, scared), and reacts to what just happened, with ears, tail and eyes moving;
+   - she is fine and mildly annoyed whatever happens;
+   - the **Mittens cam** (round close-up) is optional, not required. Use it only for shots where she can't physically be in the picture (space, a planet seen from far away).
 4. **Background cast:** 2–3 per video, a different mix each time, each with a fixed look.
    - Regulars: the Filmer (films instead of helping, complains about the lighting), the Salesman (already selling T-shirts), the Pigeon (watches and judges), Bad Timing (someone proposing or carrying a cake), the Unbothered Person (keeps eating a sandwich).
    - Rarely: the Complainer; the Over-reactor (at most once every 5 videos).
@@ -105,7 +106,7 @@ Before rendering, go through the checklist at the bottom.
    - every narrated claim is visible on screen at that moment ("through the ceiling" shows the ceiling breaking);
    - labels and captions don't cover faces and are spelled right (no cut-off words like "FOLD 5" for "FOLD 51");
    - the counter matches the narration;
-   - Mittens cam present;
+   - Mittens visible with a readable expression in every shot;
    - the hero's face is bright.
 4. **Fix and re-render the affected part.** Never queue a video that fails, and write the QA result into the queue item as `qa`.
 
@@ -126,7 +127,7 @@ Before rendering, go through the checklist at the bottom.
 - [ ] `render.mjs qa` clean (or every flag checked by eye); `qa.py` clean; every sheet viewed
 - [ ] Listen test passed: every line clear without the picture; every joke has a setup; one thread from start to end
 - [ ] Counter escalates at every step; something new every 4 s or less
-- [ ] Mittens next to the hero in the opening; Mittens cam with a new mood at each step
+- [ ] Mittens in every shot with a readable, changing expression (Mittens cam only where she can't be in the picture)
 - [ ] 2–3 cast members, different from the last video
 - [ ] Opening place different from the last two videos
 - [ ] Bright, golden light; varied buildings; lively street
