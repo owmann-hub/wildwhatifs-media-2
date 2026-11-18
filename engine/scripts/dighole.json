@@ -1,0 +1,17 @@
+[
+ {"id": "n0", "text": "What if you dug a hole straight down and never stopped?", "depth_m": 0, "formula": "title question, spoken word for word (STANDARD 1.3)"},
+ {"id": "n1", "text": "This tiny lemon tree needs a hole. Thirty centimetres deep.", "depth_m": 0.3, "formula": "stake: a small potted tree needs a ~30 cm planting hole (the thread of the video)"},
+ {"id": "n2", "text": "Two metres. You hit the water pipe. That's on you.", "depth_m": 2, "formula": "household water pipes are usually buried ~0.5-1.5 m deep, so a 2 m hole has passed one; temperature ~15 C (near-surface ground stays near the yearly average air temperature)"},
+ {"id": "n3", "text": "Sixty metres. Twenty storeys deep. Your neighbour films instead of helping.", "depth_m": 60, "formula": "one storey ~3 m -> 60 m / 3 m = 20 storeys"},
+ {"id": "n4", "text": "Three hundred and fifty metres. The Eiffel Tower would fit inside.", "depth_m": 350, "formula": "Eiffel Tower height 330 m (with antennas) < 350 m"},
+ {"id": "n5", "text": "Over two kilometres. Deeper than the deepest cave ever explored.", "depth_m": 2300, "formula": "Veryovkina Cave (Abkhazia, Georgia), deepest known cave: 2,209 m (Wikipedia; record 2,212 m reported 2018) < 2,300 m"},
+ {"id": "n6", "text": "Four kilometres. The world's deepest mine. The rock is over sixty degrees.", "depth_m": 4000, "formula": "Mponeng gold mine, South Africa: deepest mine from ground level, over 4 km; rock face up to ~66 C (Wikipedia / Wired 2011)"},
+ {"id": "n7", "text": "Twelve kilometres. Scientists took nineteen years to drill this deep.", "depth_m": 12262, "formula": "Kola Superdeep Borehole: drilling began 1970, reached 12,262 m in 1989 -> 1989 - 1970 = 19 years; ~180 C at depth (Wikipedia)"},
+ {"id": "n8", "text": "Thirty-five kilometres. You're through the crust. The tree needed thirty centimetres.", "depth_m": 35000, "formula": "Moho (crust-mantle boundary) under continents: 20-90 km, average 35 km (Wikipedia); ~500 C at the top of the mantle (EBSCO); 35,000 m / 0.3 m = 116,667x deeper than needed"},
+ {"id": "n9", "text": "A hundred kilometres. The rock glows. Your neighbour loves the lighting.", "depth_m": 100000, "formula": "base of the lithosphere ~100 km, ~1,300-1,400 C (LibreTexts Physical Geology table 9.2: 0-100 km -> 0-1400 C); rock visibly glows above ~525 C (Draper point)"},
+ {"id": "n10", "text": "Almost three thousand kilometres. The core. Liquid metal. About four thousand degrees.", "depth_m": 2890000, "formula": "core-mantle boundary 2,890 km (EBSCO; Live Science ~2,900 km); temperature ~3,500-4,000 C (LibreTexts 3,800 C; EBSCO 4,000 C); outer core = liquid iron-nickel"},
+ {"id": "n11", "text": "The centre of the Earth. About as hot as the Sun's surface.", "depth_m": 6371000, "formula": "mean Earth radius 6,371 km; core ~5,000-5,500 C 'about as hot as the surface of the sun' (Live Science); Sun's surface ~5,500 C (5,772 K)"},
+ {"id": "n12", "text": "Keep going, and you pop out in New Zealand.", "depth_m": 12742000, "formula": "Earth's diameter = 2 x 6,371 = 12,742 km; the antipode of Madrid (40.42 N, 3.70 W) is 40.42 S, 176.30 E = near Weber, New Zealand (findlatitudeandlongitude.com antipode map)"},
+ {"id": "n13", "text": "And the tree? Still in its pot.", "depth_m": 12742000, "formula": "punchline: pays off the stake from line n1"},
+ {"id": "n14", "text": "What should we try next? Tell us in the comments.", "depth_m": 12742000, "formula": "ending ask over the last shot (STANDARD 1.8)"}
+]
