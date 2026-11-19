@@ -9,7 +9,7 @@
     "blogId": "7970179",
     "free_plan_posts_per_month": 20,
     "posts_used": {
-      "2026-11": 7
+      "2026-11": 8
     }
   },
   "zapier_youtube_connection_id": "024e8223-8129-8378-ae74-36264dc05b99",
@@ -422,12 +422,16 @@
       "caption": "Mittens only wanted her dinner. You stayed on the couch. Now she's taller than Everest, heavier than the whole Earth, and her head is past the Moon 🐱 Comment your what-if — we make the best ones.",
       "hashtags": "#whatif #cat #science #space",
       "youtube": {
-        "status": "pending",
-        "due": "2026-11-19T20:57"
+        "status": "posted",
+        "due": "2026-11-19T20:57",
+        "id": "dWPh30qlW8Q",
+        "url": "https://www.youtube.com/shorts/dWPh30qlW8Q",
+        "posted_at": "2026-11-19T20:58-03:00"
       },
       "tiktok": {
-        "status": "pending",
-        "due": "2026-11-19T23:05"
+        "status": "scheduled",
+        "due": "2026-11-19T23:05-03:00",
+        "metricool_id": 434937635
       },
       "instagram": {
         "status": "pending",
