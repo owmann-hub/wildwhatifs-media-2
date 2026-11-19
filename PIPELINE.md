@@ -19,8 +19,8 @@ without asking them. Never publish a video that failed the quality check; skip t
   caption = caption + "\n\n" + hashtags, `isAiGenerated: true`. Poll/continue as the tool describes until PUBLISHED.
 - vidIQ credit budget: ≤ 10 credits per production run (150/month plan).
 
-## Production run (one new video per day, keep the queue 2 days ahead)
-1. Clone this repo. If fewer than 2 queue items have youtube.status == "pending", make a new video dated the day after the last post_date.
+## Production run (owner, Nov 19: make each video the SAME DAY it posts, a few hours before, so he can review it and ask for corrections)
+1. Clone this repo. If no queue item has post_date == today (Buenos Aires) and youtube.status == "pending", make TODAY's video (post_date = today) from the plan entry for today. Never make videos for future days in advance.
 2. Use the `plan_november` entry whose post_date is the next unfilled date (follow its premise and notes; mark it made). If there is no plan entry, pick from `premise_bank`. Read `style_notes` and apply them. Never repeat a made premise.
    Build the video in the style named by the plan entry's `style` (definitions in state.json `styles`); "WINNER" means use `style_test.winner` (fall back to A_explainer if none). Save the style on the queue item.
    If `plan_november[*].tiktok` is false for that date, set the item's tiktok status to "skipped_quota" when queueing it.
