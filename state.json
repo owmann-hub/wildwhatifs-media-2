@@ -395,8 +395,11 @@
         "metricool_id": 433582607
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-19T06:35"
+        "status": "posted",
+        "due": "2026-11-19T06:35",
+        "media_id": "18149683489605200",
+        "permalink": "https://www.instagram.com/reel/Df6xi_FDO0x/",
+        "posted_at": "2026-11-19T06:39"
       },
       "style": "A_explainer",
       "file_tiktok": "videos/2026-11-18-dighole-nomusic.mp4",
