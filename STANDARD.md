@@ -65,8 +65,8 @@ Before rendering, go through the checklist at the bottom.
 
 ## 5. Sound
 
-1. **The narrator is always clearly heard:** mix.py ducking with at least a 14 dB voice-over-bed margin. Effects and music never compete with the voice.
-2. **Music:** soft background track. Never bake copyrighted songs into the files; make a no-music copy for TikTok.
+1. **The narrator is always clearly heard, and the music is always heard too** (owner, Nov 18: "the videos are missing the music"). mix.py holds the music at a fixed 9 dB below the voice while he speaks, ducks it only gently, and lets it come up in the gaps. Effects and ambience stay at least 14 dB below the voice. The mix log must print `voice-over-music dB: 9` (allowed 8–10).
+2. **Music:** an upbeat background track with a clear beat and melody, audible on phone speakers (not just a soft pad). Never bake copyrighted songs into the files; make a no-music copy for TikTok.
 3. **No-narrator test:** only on the plan entry marked `no_narrator_test` (Nov 23). Otherwise the narrator is always on.
 
 ## 6. On-screen text
@@ -135,4 +135,4 @@ Before rendering, go through the checklist at the bottom.
 - [ ] Bright, golden light; varied buildings; lively street
 - [ ] All numbers computed and stored with their formulas
 - [ ] Ending: narrator asks for ideas over the last shot, 2 s or less, no black card
-- [ ] Voice margin ≥ 14 dB; no-music copy made
+- [ ] Mix log: voice-over-music 8–10 dB, voice-over-effects ≥ 14 dB; no-music copy made

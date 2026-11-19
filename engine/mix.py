@@ -136,20 +136,28 @@ for ev in cue["events"]:
         mus *= m[:, None]
 
 # duck music AND effects/ambience under the narrator (owner, Nov 11: secondary sounds were drowning the voice)
+# Nov 18 (owner: "the videos are missing the music"): the music was ducked so hard it vanished. Now the music is
+# ducked gently and held at a FIXED level below the voice (clearly audible), while effects stay well under the voice.
 ve = np.abs(vo); ve = lp(ve, 5); ve = ve / (ve.max() + 1e-9)
 act = np.clip(ve * 5, 0, 1)
-mus *= (1 - 0.78 * act)[:, None]
+mus *= (1 - 0.35 * act)[:, None]
 sfx *= (1 - 0.62 * act)[:, None]
 vo_st = np.stack([vo, vo], 1)
 # light voice EQ: presence lift
 vo_st = vo_st + 0.25 * np.stack([hp(vo, 3000), hp(vo, 3000)], 1)
-bed = mus * cue.get("music_gain", 0.3) + sfx * cue.get("sfx_gain", 0.4)
-# clarity check: narrator must sit at least 14 dB above everything else while speaking
+bm = mus * cue.get("music_gain", 0.3); bs = sfx * cue.get("sfx_gain", 0.4)
 m_ = act > 0.5
+rms = lambda x: np.sqrt((x ** 2).mean()) + 1e-9
 if m_.any():
-    rv = np.sqrt((vo_st[m_] ** 2).mean()); rb = np.sqrt((bed[m_] ** 2).mean()) + 1e-9; margin = 20 * np.log10(rv / rb)
-    if margin < 14: bed *= 10 ** ((margin - 14) / 20); margin = 14.0
-    print("voice-over-bed margin dB:", round(float(margin), 1))
+    rv = rms(vo_st[m_])
+    # music: exactly MUSIC_DB below the voice while he speaks (default 9 dB -> clearly heard, never covering words)
+    tgt = cue.get("music_db_below_voice", 9.0)
+    if rms(bm[m_]) > 1e-6: bm *= (rv / rms(bm[m_])) * 10 ** (-tgt / 20)
+    # effects + ambience: at least 14 dB below the voice while he speaks
+    ms = 20 * np.log10(rv / rms(bs[m_]))
+    if ms < 14: bs *= 10 ** ((ms - 14) / 20); ms = 14.0
+    print("voice-over-music dB:", round(float(20 * np.log10(rv / rms(bm[m_]))), 1), "| voice-over-effects dB:", round(float(ms), 1))
+bed = bm + bs
 mix = vo_st * 1.0 + bed
 mix = np.tanh(mix * 0.9) / 0.9
 mix /= np.abs(mix).max() + 1e-9; mix *= 0.89
