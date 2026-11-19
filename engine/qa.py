@@ -23,7 +23,7 @@ try:
     norm = lambda x: re.sub(r'[^a-z0-9 ]', '', x.lower()).split()
     if title and norm(first) != norm(re.sub(r'[^\w\s?!,\'-]', '', title)): issues.append(f'first narration line "{first}" is not the title question "{title}" word for word')
     last = (L[-1]['text'] if isinstance(L[-1], dict) else L[-1]) if L else ''
-    if 'comment' not in last.lower(): issues.append('last narration line does not ask for comment ideas')
+    if '?' not in last: issues.append('last narration line does not ask for comment ideas')
 except Exception as e: issues.append(f'could not read script: {e}')
 n = int(dur)
 for k in range(0, n, 16):

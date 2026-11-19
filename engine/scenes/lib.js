@@ -602,3 +602,23 @@ export function makeTraffic(THREE, n, o = {}) {
       let x = c.x0 + c.dir * c.v * tt; x = ((x + span / 2) % span + span) % span - span / 2; c.g.position.set(x, 0, c.lane); c.g.rotation.y = c.dir > 0 ? 0 : Math.PI; } };
   return G;
 }
+
+// PAYOFF-FIRST OPENING (owner, Nov 19): show the video's most impressive moment for ~1.2 s first, then go back to the start.
+// In update(t): const T = teaserTime(t, { teaser: 1.2, payoffT: <scene time of the big moment> }); then build the frame for T.st
+// (T.inTeaser tells the HUD to draw the meme overlay; T.k is 0..1 progress through the teaser). TOTAL must grow by `teaser`.
+export function teaserTime(t, { teaser = 1.2, payoffT = 0 } = {}) {
+  if (t < teaser) return { st: payoffT + t * 0.6, inTeaser: true, k: t / teaser };
+  return { st: t - teaser, inTeaser: false, k: 1 };
+}
+// meme overlays for the teaser, made by us (no real meme images or sounds). style: 'freeze' | 'rewind' | 'zoom' | 'pov'
+export function drawTeaser(ctx, W, H, style, k, text = '') {
+  const R = (typeof window !== 'undefined' && window.RES) || 1;
+  ctx.save();
+  if (style === 'freeze' && k > 0.45) { ctx.fillStyle = 'rgba(255,240,200,0.18)'; ctx.fillRect(0, 0, W, H); ctx.font = `900 ${54 * R}px Georgia`; ctx.textAlign = 'center'; ctx.lineWidth = 8 * R; ctx.strokeStyle = '#000'; ctx.fillStyle = '#fff';
+    const lines = (text || 'Yep. That\'s you.').split('\n'); lines.forEach((l, i) => { ctx.strokeText(l, W / 2, H * 0.72 + i * 62 * R); ctx.fillText(l, W / 2, H * 0.72 + i * 62 * R); }); }
+  if (style === 'rewind') { const a = Math.min(1, k * 3); ctx.globalAlpha = a; for (let y = 0; y < H; y += 6 * R) { ctx.fillStyle = `rgba(255,255,255,${0.04 + 0.05 * Math.random()})`; ctx.fillRect(0, y, W, 2 * R); }
+    ctx.globalAlpha = 1; ctx.font = `800 ${44 * R}px monospace`; ctx.fillStyle = '#fff'; ctx.textAlign = 'left'; ctx.fillText('◀◀ REWIND', 40 * R, 120 * R); }
+  if (style === 'pov') { ctx.font = `800 ${40 * R}px sans-serif`; ctx.textAlign = 'center'; const w = Math.min(W - 60 * R, ctx.measureText(text).width + 50 * R); ctx.fillStyle = 'rgba(255,255,255,0.95)'; ctx.fillRect((W - w) / 2, H * 0.16, w, 64 * R); ctx.fillStyle = '#111'; ctx.fillText(text, W / 2, H * 0.16 + 45 * R); }
+  if (style === 'zoom') { const v = ctx.createRadialGradient(W / 2, H / 2, W * 0.2, W / 2, H / 2, W * 0.8); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, `rgba(0,0,0,${0.55 * k})`); ctx.fillStyle = v; ctx.fillRect(0, 0, W, H); }
+  ctx.restore();
+}

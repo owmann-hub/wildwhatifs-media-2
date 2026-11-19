@@ -1,6 +1,6 @@
 # Wild What Ifs — Official Video Standard
 
-The owner's corrections, collected in one place (last updated Nov 18, 2026).
+The owner's corrections, collected in one place (last updated Nov 19, 2026).
 **Every new video must follow this list.** It overrides older rules in PIPELINE.md and state.json
 (`format_v4`, `hook_rules`, `visual_rules`, and the older entries of `format_v5.rules`) wherever they disagree.
 Before rendering, go through the checklist at the bottom.
@@ -11,13 +11,19 @@ Before rendering, go through the checklist at the bottom.
 
 1. **Runaway format.** The premise is a process that never stops and keeps multiplying ("you fold paper and never stop", "every jump is twice as high"), not "X for 5 seconds".
 2. **Length 50–65 s.**
-3. **Say the "what if" the same way every time.** The title is on screen from the first frame, and the narrator's very first line is that same question, word for word ("What if you folded a piece of paper and never stopped?"). Every video, no exceptions.
+2b. **Payoff-first meme opening** (owner, Nov 19; about half of viewers were swiping away in the first second). The video opens with its most impressive moment for about 1.2 s, with a meme-style twist we make ourselves, then cuts back to the start. Use `teaserTime()` and `drawTeaser()` from lib.js and the matching sound in mix.py. Rotate the styles and never use the same one two videos in a row:
+   - **freeze:** the big moment freezes, `scratch` sound, caption "Yep. That's you." (the narrator may add "You're probably wondering how you got here.");
+   - **rewind:** the big moment plays, then a tape-rewind effect, `rewind` sound, back to the calm start;
+   - **zoom:** a sudden zoom on Mittens' (or the hero's) shocked face at the big moment, `snapzoom` boom;
+   - **pov:** a "POV: …" caption over the big moment ("POV: you folded the paper 51 times").
+   Never use real meme images, clips or sounds (copyright). Record the style used in the queue item as `opening`.
+3. **Say the "what if" the same way every time.** The title is on screen from the moment the video goes back to the start, and the narrator's first line is that same question, word for word ("What if you folded a piece of paper and never stopped?"). Every video, no exceptions.
 4. **Explain before it happens** (owner, Nov 18: the jump and friction videos were unclear until the thing happened). Right after the title question, 1–2 plain lines say what is about to happen and the physics behind it, e.g. "Friction is the grip that stops things from sliding. Shoes, tyres, even knots need it." At every step, say *why* it happens, not just what ("No friction, so the knot can't hold. It just slides open.").
 5. **Start small and human:** the hero in an everyday place doing an everyday thing, with a small stake (an unpaid bill, an ice cream). The process starts by second 3.
 6. **10–13 steps of 4–5 s each.** At every step: the counter jumps, one short line with a real comparison, the picture visibly changes, and the camera keeps pulling back. Something new happens at least every 4 s.
 7. **Escalating counter:** always on screen, rolls up at each step, and its unit escalates wildly (mm → m → km → "past the Moon").
 8. **Scale change:** room → street → city → country → planet → space, in one continuous camera move.
-9. **Ending:** no black end card. The last shot stays on screen while the narrator asks for ideas ("What should we try next? Tell us in the comments"), with the same line as small text over that shot. Total ending 2 s or less after the payoff. Shorts just end; no outro.
+9. **Ending:** no black end card. The last shot stays on screen while the narrator asks **one specific question about this video that viewers can answer with their own guess or opinion** (owner, Nov 19), e.g. "How many folds do you think you could do?", "How deep would you dig before turning back?". The same question appears as small text over that shot. Never use the generic "What should we try next?". Total ending 2 s or less after the payoff. Shorts just end; no outro.
 
 ## 2. Writing and narrator
 
@@ -86,7 +92,7 @@ Before rendering, go through the checklist at the bottom.
    - it must match the spoken first line;
    - leave curiosity open.
 2. **Hashtags:** 5 at most, including #shorts. **Description:** 1–2 punchy sentences, a keyword line, the same hashtags.
-3. **Caption** ends with "Comment your what-if — we make the best ones." Comments may credit viewers' ideas. No prizes, no like or subscribe requests.
+3. **Caption** ends with the same specific question as the narrator's last line (e.g. "How many folds could you do? 👇"). Comments may credit viewers' ideas. No prizes, no like or subscribe requests.
 4. **Schedule** (Buenos Aires time), one video per day:
    - YouTube at 20:57;
    - TikTok automatic via Metricool at 23:05;
@@ -114,7 +120,7 @@ Before rendering, go through the checklist at the bottom.
 
 ## 9. Not approved, or on hold
 
-- Meme-style edits (freeze-frames, sudden zooms, record scratch): on hold, to decide later.
+- Meme-style edits in the middle of the video: still on hold (only the opening uses them, see 1.2b).
 - Random absurd cameos (the skeleton): on hold.
 - Angry or swearing narrator: rejected.
 - Thicker sculpted hair: proposed Nov 17, not approved; keep the current hair.
@@ -134,5 +140,6 @@ Before rendering, go through the checklist at the bottom.
 - [ ] Opening place different from the last two videos
 - [ ] Bright, golden light; varied buildings; lively street
 - [ ] All numbers computed and stored with their formulas
-- [ ] Ending: narrator asks for ideas over the last shot, 2 s or less, no black card
+- [ ] Payoff-first meme opening (style different from the last video)
+- [ ] Ending: narrator asks one specific answerable question over the last shot, 2 s or less, no black card
 - [ ] Mix log: voice-over-music 8–10 dB, voice-over-effects ≥ 14 dB; no-music copy made

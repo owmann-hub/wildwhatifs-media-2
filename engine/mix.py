@@ -9,6 +9,7 @@ rng = np.random.default_rng(3)
 import music2
 mus = np.zeros((N, 2)); sfx = np.zeros((N, 2)); vo = np.zeros(N)
 
+rng_ = np.random.default_rng(7)
 def place(buf, x, t, gain=1.0, pan=0.0):
     i = int(t * SR)
     if i >= len(buf): return
@@ -67,6 +68,18 @@ def glass(dur=1.2):
         st = int(rng.random() * 0.6 * SR); f = 2500 + rng.random() * 5000; m = n - st; tt = np.arange(m) / SR
         x[st:] += np.sin(2 * np.pi * f * tt) * np.exp(-tt * (30 + rng.random() * 40)) * 0.25
     return x + hp(rng.standard_normal(n), 4000) * np.exp(-t * 6) * 0.5
+def scratch(dur=0.55):
+    # our own record-scratch (meme opening): back-and-forth pitched noise bursts
+    n = int(dur * SR); t = np.arange(n) / SR; ph = np.cumsum(900 + 1500 * np.sin(2 * np.pi * 7.5 * t)) / SR
+    x = bp(rng_.standard_normal(n), 600, 5000) * (0.5 + 0.5 * np.sin(2 * np.pi * ph * 0.012)) + 0.4 * np.sin(2 * np.pi * ph)
+    return x * env(n, 0.005, 0.15) * 0.8
+def rewind(dur=1.2):
+    # our own tape-rewind sound: rising chirps + hiss
+    n = int(dur * SR); t = np.arange(n) / SR; f = 300 * (1 + 5 * t / dur); x = np.sin(2 * np.pi * np.cumsum(f) / SR * (1 + 0.3 * np.sin(2 * np.pi * 18 * t)))
+    return (0.5 * x + 0.3 * hp(rng_.standard_normal(n), 3000)) * env(n, 0.02, 0.1) * 0.7
+def snapzoom(dur=0.9):
+    # deep 'boom' hit for the sudden zoom on a shocked face
+    return boom(dur, 90, 35) * 1.2
 def rumble(dur):
     n = int(dur * SR); return lp(rng.standard_normal(n), 120, 4) * 3.0 * env(n, 0.5, 0.8)
 
@@ -126,6 +139,9 @@ for ev in cue["events"]:
     elif k == "sizzle": place(sfx, sizzle(ev.get("dur", 2.0)), t, g, p)
     elif k == "glass": place(sfx, glass(), t, g, p)
     elif k == "rumble": place(sfx, rumble(ev["dur"]), t, g, p)
+    elif k == "scratch": place(sfx, scratch(ev.get("dur", 0.55)), t, g, p)
+    elif k == "rewind": place(sfx, rewind(ev.get("dur", 1.2)), t, g, p)
+    elif k == "snapzoom": place(sfx, snapzoom(), t, g, p)
     elif k == "file":
         x, sr = sf.read(ev["file"]); x = x if x.ndim == 1 else x.mean(1)
         if sr != SR: x = signal.resample_poly(x, SR, sr)
