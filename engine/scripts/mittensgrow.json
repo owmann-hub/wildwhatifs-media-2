@@ -1,0 +1,92 @@
+[
+ {
+  "id": "n0",
+  "text": "What if your cat doubled in size and never stopped?",
+  "n": 0,
+  "formula": "title question, spoken word for word (STANDARD 1.3)"
+ },
+ {
+  "id": "n1",
+  "text": "It's dinner time. Mittens is hungry. You stay on the couch.",
+  "n": 1,
+  "formula": "stake/thread: Mittens wants dinner, the hero stays on the couch. Start height h0 = 0.30 m (house cat standing, top of head); start weight w0 = 4 kg (typical adult house cat ~4-5 kg). h(1) = 0.6 m, w(1) = 32 kg"
+ },
+ {
+  "id": "n2",
+  "text": "Real cats stop growing after about a year. Mittens just doubled.",
+  "n": 2,
+  "formula": "reality first: most cats reach adult size at about 12 months (PetMD, Catster; big breeds later). h(2) = 0.30 m x 2^2 = 1.2 m; w(2) = 4 kg x 8^2 = 256 kg. Label: longest domestic cat ever, Stewie (Maine Coon), 123 cm nose to tail (Guinness 2010, Wikipedia)"
+ },
+ {
+  "id": "n3",
+  "text": "Twice as tall, wide and long means eight times heavier. Bye, couch.",
+  "n": 3,
+  "formula": "square-cube law: weight scales with length^3 -> 2 x 2 x 2 = 8x per doubling. h(n) = 0.30 m x 2^n, w(n) = 4 kg x 8^n. n=3: 2.4 m, 4 x 512 = 2,048 kg ~ 2 t (heavier than a typical car, ~1.5 t) -> the couch she sits on is flattened. Joke set up in n1 (the couch)"
+ },
+ {
+  "id": "n4",
+  "text": "Almost five metres. She doesn't fit, so the roof comes off.",
+  "n": 4,
+  "formula": "h(4) = 0.3 x 16 = 4.8 m > a one-storey cottage (ceiling 2.6 m, ridge ~4.6 m); w(4) = 4 x 4,096 = 16,384 kg ~ 16 t"
+ },
+ {
+  "id": "n5",
+  "text": "Nearly ten metres. Your neighbour walks past with a birthday cake.",
+  "n": 5,
+  "formula": "h(5) = 0.3 x 32 = 9.6 m; w(5) = 4 x 32,768 = 131,072 kg ~ 131 t (a blue whale: up to ~150 t, NOAA/Britannica)"
+ },
+ {
+  "id": "n6",
+  "text": "Thirty-eight metres. Mittens found her dinner. It was the cake.",
+  "n": 7,
+  "formula": "h(7) = 0.3 x 128 = 38.4 m; w(7) = 4 x 2,097,152 = 8,388,608 kg ~ 8,400 t. Joke set up in n1 (dinner) and n6 (cake)"
+ },
+ {
+  "id": "n7",
+  "text": "A hundred and fifty metres. All because you stayed on the couch.",
+  "n": 9,
+  "formula": "h(9) = 0.3 x 512 = 153.6 m (taller than the Great Pyramid, 146.6 m originally); w(9) = 4 x 8^9 = 536,870,912 kg ~ 537,000 t. Blame set up in n1"
+ },
+ {
+  "id": "n8",
+  "text": "Over a kilometre. Taller than any building. Her ears are in the clouds.",
+  "n": 12,
+  "formula": "h(12) = 0.3 x 4,096 = 1,228.8 m > Burj Khalifa 828 m (tallest building); low cloud bases ~0.5-2 km; w(12) = 4 x 8^12 = 2.75e11 kg = 275 million t"
+ },
+ {
+  "id": "n9",
+  "text": "Almost ten kilometres. Taller than Everest. Planes fly around her.",
+  "n": 15,
+  "formula": "h(15) = 0.3 x 32,768 = 9,830 m > Mount Everest 8,849 m; airliners cruise at ~10-12 km; w(15) = 4 x 8^15 = 1.41e14 kg"
+ },
+ {
+  "id": "n10",
+  "text": "A hundred and fifty kilometres. No air up there. Nobody hears her meow.",
+  "n": 19,
+  "formula": "h(19) = 0.3 x 524,288 = 157,286 m ~ 157 km > Karman line (100 km, where space begins); sound needs air to travel, and there is almost none above 100 km"
+ },
+ {
+  "id": "n11",
+  "text": "Forty thousand kilometres. Now she's heavier than the whole Earth.",
+  "n": 27,
+  "formula": "h(27) = 0.3 x 2^27 = 40,265 km (more than Earth's circumference, 40,075 km; ~3.2 Earth diameters of 12,742 km); w(27) = 4 x 8^27 = 4 x 2^81 = 9.67e24 kg > Earth's mass 5.97e24 kg"
+ },
+ {
+  "id": "n12",
+  "text": "Thirty-one doublings. Her head is past the Moon.",
+  "n": 31,
+  "formula": "h(31) = 0.3 x 2^31 = 644,245 km > Earth-Moon distance 384,400 km"
+ },
+ {
+  "id": "n13",
+  "text": "And she still wants her dinner.",
+  "n": 31,
+  "formula": "punchline: pays off the stake from n1 (dinner)"
+ },
+ {
+  "id": "n14",
+  "text": "What should we try next? Tell us in the comments.",
+  "n": 31,
+  "formula": "ending ask over the last shot (STANDARD 1.9)"
+ }
+]

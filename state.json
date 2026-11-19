@@ -412,6 +412,38 @@
       "version": "RUNAWAY FORMAT under STANDARD.md (first video built fully to it): narrator's first line = title question; 12 steps (lengths from real line durations, 4.0-6.0 s) with a DEPTH counter (+ temperature note) rolling 30 cm -> 2 m -> 60 m -> 350 m -> 2.3 km -> 4 km -> 12.3 km -> 35 km -> 100 km -> 2,890 km -> 6,371 km -> 12,742 km. Scene A: cut-away garden ('ant-farm' cross-section) with one continuous pull-back as the hole deepens (hole and hero drawn wider, labelled NOT TO SCALE), white scale outlines on the cut face (20-storey building, Eiffel Tower, Veryovkina cave, Mponeng mine, Kola borehole), mantle glows orange; cut to a cut-away Earth (layers, hole line, hero marker, Madrid/New Zealand labels); cut to a sheep field at Weber, NZ (hero pops out); back to the garden for the payoff (tree still in its pot, pigeon on it) and the narrator's ask over that last shot - no black end card. Stake/thread: the 30 cm hole for the lemon tree (n1 -> n8 'The tree needed thirty centimetres' -> n13 'Still in its pot'). Blame lines: 'That's on you', 'The tree needed thirty centimetres', payoff. Mittens next to the hero in the opening + Mittens cam with a new mood every step.",
       "duration_s": 62.4,
       "notes": "Facts/formulas in engine/scripts/dighole.json (Veryovkina 2,209 m; Mponeng >4 km, rock ~66 C; Kola 12,262 m 1970-1989 = 19 years, ~180 C; Moho avg 35 km; ~1,400 C at 100 km; core-mantle boundary 2,890 km ~3,500-4,000 C; centre 6,371 km about as hot as the Sun's surface; Earth diameter 12,742 km; Madrid antipode = near Weber, NZ). QA: 62.4 s, 1080x1920, 37.9 MB (no-music 37.9 MB), max -1.0 dB (no-music -0.9 dB), voice-over-bed margin 15.6 dB (no-music 18.9 dB), title + counter from frame 0, 3 contact sheets + 12-frame final sheet checked. Ending: payoff line 1.8 s + ask line 2.6 s over the last shot (slightly over the 2 s target). Encode: lanczos 1080x1920 + unsharp, CRF 21 maxrate 4.6M (40 MB repo limit). Render note: first full render had a see-through gap at the shaft edges (shaft half-cylinder centred behind the cut plane + float precision of a 1,200 km face quad); fixed (shaft centred on the cut plane, log-spaced face grid) and 0-34 s re-rendered; 34-62.4 s kept from the first render (no visible difference at that scale). Scene engine/scenes/dighole.js, cue scripts/dighole_cue.json, sfx scripts/dighole_sfx.py."
+    },
+    {
+      "slug": "mittensgrow",
+      "post_date": "2026-11-19",
+      "file": "videos/2026-11-19-mittensgrow.mp4",
+      "file_tiktok": "videos/2026-11-19-mittensgrow-nomusic.mp4",
+      "title": "WHAT IF your cat doubled in size and never stopped? 🐱",
+      "caption": "Mittens only wanted her dinner. You stayed on the couch. Now she's taller than Everest, heavier than the whole Earth, and her head is past the Moon 🐱 Comment your what-if — we make the best ones.",
+      "hashtags": "#whatif #cat #science #space",
+      "youtube": {
+        "status": "pending",
+        "due": "2026-11-19T20:57"
+      },
+      "tiktok": {
+        "status": "pending",
+        "due": "2026-11-19T23:05"
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-20T06:35"
+      },
+      "style": "A_explainer",
+      "place": "living-room couch in a little ochre cottage squeezed between stepped-gable (Flemish-style) town houses on a cobbled street; late-afternoon golden light. The roof comes off and the four walls fall open when she outgrows it",
+      "cast": [
+        "BAD TIMING (neighbour carrying a birthday cake along the pavement; it becomes Mittens' dinner, she is left holding the empty plate; frosting stays on Mittens' mouth)",
+        "THE UNBOTHERED PERSON (bald man on a bench keeps eating his sandwich while a giant paw lands next to him)"
+      ],
+      "no_narrator_test": false,
+      "version": "RUNAWAY FORMAT under STANDARD.md: narrator's first line = title question; physics line (twice as tall, wide and long = 8x heavier, square-cube law) and reality line (real cats stop growing after about a year; record Stewie 1.23 m) before the what-if; 12 steps (4.0-4.55 s from real line durations) with a HEIGHT counter (weight as the note) 30 cm -> 60 cm -> 1.2 m -> 2.4 m -> 4.8 m -> 9.6 m -> 38 m -> 154 m -> 1.2 km -> 9.8 km -> 157 km -> 40,265 km -> 644,245 km. One continuous pull-back (room -> house breaks open -> street -> town -> clouds -> airliners -> edge of space), one cut to space (Earth held like a ball under her chin, the Moon beside her face). Thread: dinner (n1 -> n6 'found her dinner. It was the cake' -> payoff 'And she still wants her dinner'). Blame lines: 'You stay on the couch', 'Bye, couch', 'All because you stayed on the couch'. Mittens is the star and in every shot with a new mood every step; round inset = HERO cam (your face; holds up the empty MITTENS bowl at the payoff). Ending: ask line over the last shot, no black card.",
+      "duration_s": 57.23,
+      "notes": "Facts/formulas in engine/scripts/mittensgrow.json (h = 0.30 m x 2^n, w = 4 kg x 8^n; Stewie 123 cm Guinness; cats full-size ~12 months; blue whale up to ~150 t; Burj Khalifa 828 m; Everest 8,849 m; airliners 10-12 km; Karman line 100 km; Earth circumference 40,075 km; Earth mass 5.97e24 kg < 9.67e24 kg at n=27; Moon 384,400 km < 644,245 km at n=31). Scene engine/scenes/mittensgrow.js, cue scripts/mittensgrow_cue.json (+ _nomusic), sfx scripts/mittensgrow_sfx.py.",
+      "qa": "PASS: render.mjs qa 0.5 s -> 2 focus_hidden flags at 22.5/24.0 s checked by eye (ray hit a tree, cat fully visible: false alarm); qa.py clean (57.2 s, no black/frozen stretches, loudness ok, first line = title, last line asks for comments); 4 sheets (1 fps) viewed: walls/roof break open visibly, no clipping, counter matches narration, Mittens in every shot with changing mood, hero face bright, labels clear of faces. Mix: voice-over-music 9.0 dB, voice-over-effects 15.7 dB; max -0.9 dB; 1080x1920, 35.9 MB (no-music 35.8 MB). Encode CRF 21 maxrate 5M (40 MB repo limit). Ending: payoff 1.43 s + ask 2.43 s over the last shot (ask ~2.9 s after payoff, slightly over the 2 s target, same as dighole)."
     }
   ],
   "premise_bank": [
@@ -431,7 +463,8 @@
     "jump",
     "asteroid",
     "paperfold",
-    "dighole"
+    "dighole",
+    "mittensgrow"
   ],
   "plan_november": [
     {
@@ -526,7 +559,9 @@
       "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Mittens is the star (hero = the owner panicking). Height counter with real comparisons (dog, car, house, skyscraper, Everest, wider than Earth). Mittens cam shows the HERO's face instead. Place: living-room couch. Check every number before scripting.",
       "tiktok": true,
       "style": "A_explainer",
-      "no_narrator_test": false
+      "no_narrator_test": false,
+      "made": "2026-11-19",
+      "note_made": "title changed to the house runaway form \"...and never stopped?\" (STANDARD 1.1/1.3); hero cam instead of Mittens cam as the plan asked"
     },
     {
       "post_date": "2026-11-20",
@@ -959,6 +994,10 @@
     {
       "slug": "dighole",
       "place": "back garden behind a town house in Madrid (cut-away cross-section), late afternoon golden light"
+    },
+    {
+      "slug": "mittensgrow",
+      "place": "living-room couch in a cottage between stepped-gable town houses (house breaks open)"
     }
   ],
   "cast_log": [
@@ -990,6 +1029,13 @@
       "cast": [
         "filmer (neighbour over the fence)",
         "pigeon"
+      ]
+    },
+    {
+      "slug": "mittensgrow",
+      "cast": [
+        "bad timing (neighbour with birthday cake)",
+        "unbothered (bench, sandwich)"
       ]
     }
   ]
