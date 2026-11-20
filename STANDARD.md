@@ -1,16 +1,45 @@
 # Wild What Ifs — Official Video Standard
 
-The owner's corrections, collected in one place (last updated Nov 19, 2026).
+The owner's corrections, collected in one place (last updated Nov 20, 2026).
 **Every new video must follow this list.** It overrides older rules in PIPELINE.md and state.json
 (`format_v4`, `hook_rules`, `visual_rules`, and the older entries of `format_v5.rules`) wherever they disagree.
 Before rendering, go through the checklist at the bottom.
 
 ---
 
+## 0. REALLY, REALLY CLEAR (owner, Nov 20; this comes before everything else)
+
+Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K shares). It won by being impossible to misunderstand. Every video must pass these tests:
+
+1. **The pause test.** Pause on ANY frame. A stranger with the sound off must be able to say, in under one second:
+   - what the thing is;
+   - how big, far, deep, hot or old it is right now;
+   - what it just passed.
+   If any frame fails, fix that frame.
+2. **The listen test.** With eyes closed, the narration alone tells the whole story (section 2).
+3. **One focus object, always visible.** The object of the "what if" (the paper stack, the hole, Mittens, the snowball) stays near the centre of the frame and is never hidden, cropped or lost. The camera follows it smoothly; no cuts during the climb.
+4. **A measuring gauge that fits the video.** Choose the gauge for the topic, not a generic ruler:
+   - height: a vertical ruler beside the object;
+   - depth: a depth gauge going down the side of the hole;
+   - temperature: a thermometer;
+   - time: a timeline bar;
+   - speed: a speedometer;
+   - count: a tally.
+   It stays in the same place on screen the whole video and fills as the number grows, with the big counter (value + step number) next to it. Units change as it grows (cm → m → km → AU → light-years).
+5. **Size is shown, not told.** Each milestone is a real object that appears right NEXT to our object as it passes, at the right scale, with a 2–3 word label and the step number ("42 = MOON", "FOLD 51 = SUN"). The viewer sees the comparison; the narrator doesn't have to describe it.
+6. **Two halves.**
+   - **Human part** (first ~12 s): the place, the hero, Mittens, the cast and the jokes.
+   - **Big part** (the rest): the screen goes CLEAN. Only the focus object, the gauge and counter, the milestone passing, and a plain, high-contrast background (dark sky or space). No cast, no city clutter, no extra text. Mittens may appear only in a small reaction if it doesn't block the object.
+7. **Fast.** In the big part, a new milestone every 1.5–2 s. The narrator keeps up with one very short line (8 words max) on the most important milestones only, not on every one.
+8. **Three text items on screen, at most.** Big, short, high contrast, always in the same positions: title or caption at the top, gauge on the left, milestone label next to the object.
+9. **Real numbers only,** computed and checked (section 2.9).
+
+---
+
 ## 1. Structure
 
 1. **Runaway format.** The premise is a process that never stops and keeps multiplying ("you fold paper and never stop", "every jump is twice as high"), not "X for 5 seconds".
-2. **Length 50–65 s.**
+2. **Length 35–45 s** (owner, Nov 20: faster, like the viral reel).
 2b. **Payoff-first meme opening** (owner, Nov 19; about half of viewers were swiping away in the first second). The video opens with its most impressive moment for about 1.2 s, with a meme-style twist we make ourselves, then cuts back to the start. Use `teaserTime()` and `drawTeaser()` from lib.js and the matching sound in mix.py. Rotate the styles and never use the same one two videos in a row:
    - **freeze:** the big moment freezes, `scratch` sound, caption "Yep. That's you." (the narrator may add "You're probably wondering how you got here.");
    - **rewind:** the big moment plays, then a tape-rewind effect, `rewind` sound, back to the calm start;
@@ -20,10 +49,11 @@ Before rendering, go through the checklist at the bottom.
 3. **Say the "what if" the same way every time.** The title is on screen from the moment the video goes back to the start, and the narrator's first line is that same question, word for word ("What if you folded a piece of paper and never stopped?"). Every video, no exceptions.
 4. **Explain before it happens** (owner, Nov 18: the jump and friction videos were unclear until the thing happened). Right after the title question, 1–2 plain lines say what is about to happen and the physics behind it, e.g. "Friction is the grip that stops things from sliding. Shoes, tyres, even knots need it." At every step, say *why* it happens, not just what ("No friction, so the knot can't hold. It just slides open.").
 5. **Start small and human:** the hero in an everyday place doing an everyday thing, with a small stake (an unpaid bill, an ice cream). The process starts by second 3.
-6. **10–13 steps of 4–5 s each.** At every step: the counter jumps, one short line with a real comparison, the picture visibly changes, and the camera keeps pulling back. Something new happens at least every 4 s.
-7. **Escalating counter:** always on screen, rolls up at each step, and its unit escalates wildly (mm → m → km → "past the Moon").
+6. **Steps:** 3–5 steps in the human part (about 3 s each), then a new milestone every 1.5–2 s in the big part (see 0.6–0.7). Something new on screen at least every 2 s.
+7. **Escalating counter + gauge:** always on screen (see 0.4), rolls up at each step, and its unit escalates wildly (mm → m → km → "past the Moon").
 8. **Scale change:** room → street → city → country → planet → space, in one continuous camera move.
 9. **Ending:** no black end card. The last shot stays on screen while the narrator asks **one specific question about this video that viewers can answer with their own guess or opinion** (owner, Nov 19), e.g. "How many folds do you think you could do?", "How deep would you dig before turning back?". The same question appears as small text over that shot. Never use the generic "What should we try next?". Total ending 2 s or less after the payoff. Shorts just end; no outro.
+10. **Loop ending** (owner, Nov 20): the very last frame matches the very first frame of the video (the same shot as the opening), so when the Short replays it flows straight into the start and people rewatch without noticing.
 
 ## 2. Writing and narrator
 
@@ -79,7 +109,7 @@ Before rendering, go through the checklist at the bottom.
 
 1. **Minimal text:**
    - title (first seconds only), with the same wording as the spoken question;
-   - the side counter;
+   - the gauge and counter (see 0.4);
    - the italic caption line the narrator is reading;
    - landmark labels;
    - name tags only in the intro.
@@ -134,7 +164,10 @@ Before rendering, go through the checklist at the bottom.
 - [ ] Real-world limit said plainly before the "what if" part
 - [ ] `render.mjs qa` clean (or every flag checked by eye); `qa.py` clean; every sheet viewed
 - [ ] Listen test passed: every line clear without the picture; every joke has a setup; one thread from start to end
-- [ ] Counter escalates at every step; something new every 4 s or less
+- [ ] Pause test passed on the sheets: every frame shows what it is, how big it is now, and what it just passed
+- [ ] Gauge fits the topic; landmarks appear next to the object with 2–3 word labels
+- [ ] Big part is clean (object + gauge + landmark only); milestone every 1.5–2 s
+- [ ] Length 35–45 s; last frame matches the first frame (loop)
 - [ ] Mittens in every shot with a readable, changing expression (Mittens cam only where she can't be in the picture)
 - [ ] 2–3 cast members, different from the last video
 - [ ] Opening place different from the last two videos

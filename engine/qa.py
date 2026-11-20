@@ -9,11 +9,11 @@ name = os.path.splitext(os.path.basename(vid))[0]; out = f'out/qa_final_{name}';
 run = lambda c: subprocess.run(c, shell=True, capture_output=True, text=True)
 dur = float(run(f'ffprobe -v error -show_entries format=duration -of csv=p=0 "{vid}"').stdout)
 issues = []
-if not 50 <= dur <= 65.5: issues.append(f'duration {dur:.1f}s is outside 50-65 s')
+if not 35 <= dur <= 46: issues.append(f'duration {dur:.1f}s is outside 35-45 s')
 bl = run(f'ffmpeg -i "{vid}" -vf blackdetect=d=0.4:pix_th=0.06 -an -f null - 2>&1').stdout + run(f'ffmpeg -i "{vid}" -vf blackdetect=d=0.4:pix_th=0.06 -an -f null - 2>&1').stderr
 for m in re.finditer(r'black_start:([\d.]+) black_end:([\d.]+)', bl): issues.append(f'black/dark screen {float(m[1]):.1f}-{float(m[2]):.1f}s (no black end cards; nothing dark for >0.4 s)')
-fz = run(f'ffmpeg -i "{vid}" -vf freezedetect=n=0.002:d=2.5 -an -f null - 2>&1'); fz = fz.stdout + fz.stderr
-for m in re.finditer(r'freeze_start: ([\d.]+)', fz): issues.append(f'picture frozen for 2.5 s+ from {float(m[1]):.1f}s (something new must happen every 4 s)')
+fz = run(f'ffmpeg -i "{vid}" -vf freezedetect=n=0.002:d=2.0 -an -f null - 2>&1'); fz = fz.stdout + fz.stderr
+for m in re.finditer(r'freeze_start: ([\d.]+)', fz): issues.append(f'picture frozen for 2 s+ from {float(m[1]):.1f}s (something new must happen every 2 s)')
 ln = run(f'ffmpeg -i "{vid}" -af ebur128 -f null - 2>&1'); ln = ln.stdout + ln.stderr
 I = re.findall(r'I:\s+(-?[\d.]+) LUFS', ln)
 if I and not -17 <= float(I[-1]) <= -11: issues.append(f'loudness {I[-1]} LUFS (target about -14)')
@@ -25,6 +25,13 @@ try:
     last = (L[-1]['text'] if isinstance(L[-1], dict) else L[-1]) if L else ''
     if '?' not in last: issues.append('last narration line does not ask for comment ideas')
 except Exception as e: issues.append(f'could not read script: {e}')
+# loop check: last frame should match the first frame of the video
+run(f'ffmpeg -y -loglevel error -ss 0.05 -i "{vid}" -frames:v 1 -vf scale=90:160 "{out}/_first.png"'); run(f'ffmpeg -y -loglevel error -sseof -0.08 -i "{vid}" -frames:v 1 -vf scale=90:160 "{out}/_last.png"')
+try:
+    from PIL import Image; import numpy as np
+    a = np.asarray(Image.open(f'{out}/_first.png').convert('RGB'), float); b = np.asarray(Image.open(f'{out}/_last.png').convert('RGB'), float)
+    if np.abs(a - b).mean() > 40: issues.append(f'last frame does not match the first frame (loop) - mean difference {np.abs(a - b).mean():.0f}')
+except Exception as e: issues.append(f'loop check failed: {e}')
 n = int(dur)
 for k in range(0, n, 16):
     run(f'ffmpeg -y -loglevel error -ss {k} -t 16 -i "{vid}" -vf "fps=1,scale=300:-1,drawtext=text=\'%{{pts\\:hms\\:{k}}}\':x=5:y=5:fontsize=18:fontcolor=yellow:box=1:boxcolor=black,tile=8x2" "{out}/sheet_{k:03d}.jpg"')
