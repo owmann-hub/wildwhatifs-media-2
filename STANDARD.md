@@ -51,7 +51,12 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
    - **zoom:** a sudden zoom on Mittens' (or the hero's) shocked face at the big moment, `snapzoom` boom;
    - **pov:** a "POV: …" caption over the big moment ("POV: you folded the paper 51 times").
    Never use real meme images, clips or sounds (copyright). Record the style used in the queue item as `opening`.
-3. **Say the "what if" the same way every time.** The title is on screen from the moment the video goes back to the start, and the narrator's first line is that same question, word for word ("What if you folded a piece of paper and never stopped?"). Every video, no exceptions.
+3. **Say the "what if" the same way every time, from the very first frame.** The title is on screen from frame 0 (over the payoff opening too), and the narrator starts saying it at second 0, word for word ("What if you folded a piece of paper and never stopped?"). Context must never wait until after the opening: delaying it raises the skip rate (owner's hook-method reference, Nov 20). Every video, no exceptions.
+3b. **Triple hook in the first ~6 seconds** (from Kallaway's "Triple Hook Method", owner Nov 20):
+   - **Context (0–2 s):** the viewer knows the topic instantly, through all three channels at once: audio (the narrator says the question), visuals (the object and the hero are clearly visible) and text (the title).
+   - **Lean (2–4 s):** something that makes them curious in one direction: a surprising real number, a proof, or something shocking ("Normal paper stops at about 7 folds.").
+   - **Snapback (4–6 s):** a contrarian twist that pulls them the other way ("But keep going, and by fold 42 you reach the Moon."). The video then delivers on that twist.
+   QA asks three questions about the first 6 seconds: is the context clear in the first second? Is there a curiosity pull? Is there a snapback?
 4. **Explain before it happens** (owner, Nov 18: the jump and friction videos were unclear until the thing happened). Right after the title question, 1–2 plain lines say what is about to happen and the physics behind it, e.g. "Friction is the grip that stops things from sliding. Shoes, tyres, even knots need it." At every step, say *why* it happens, not just what ("No friction, so the knot can't hold. It just slides open.").
 5. **Start small and human:** the hero in an everyday place doing an everyday thing, with a small stake (an unpaid bill, an ice cream). The process starts by second 3.
 6. **Steps:** 3–5 steps in the human part (about 3 s each), then a new milestone every 1.5–2 s in the big part (see 0.6–0.7). Something new on screen at least every 2 s.
@@ -164,7 +169,8 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
 
 ## Checklist before rendering
 
-- [ ] Narrator's first line = the on-screen title question, word for word
+- [ ] Narrator's first line = the on-screen title question, word for word, starting at 0 s with the title on screen from frame 0
+- [ ] Triple hook: context by 2 s, lean by 4 s, snapback by 6 s
 - [ ] Next 1–2 lines explain what will happen and the physics; each step says why
 - [ ] Real-world limit said plainly before the "what if" part
 - [ ] `render.mjs qa` clean (or every flag checked by eye); `qa.py` clean; every sheet viewed
