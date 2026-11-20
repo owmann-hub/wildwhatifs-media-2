@@ -33,6 +33,11 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
 7. **Fast.** In the big part, a new milestone every 1.5–2 s. The narrator keeps up with one very short line (8 words max) on the most important milestones only, not on every one.
 8. **Three text items on screen, at most.** Big, short, high contrast, always in the same positions: title or caption at the top, gauge on the left, milestone label next to the object.
 9. **Real numbers only,** computed and checked (section 2.9).
+10. **Physics chain with real thresholds** (owner, Nov 20; model: the "body temperature doubled every 3 seconds" reel). Every milestone is a real number paired with what really happens at that number, shown right where the viewer is looking: 100 °C coffee boils, 233 °C paper catches fire, steel melts, hotter than the Sun's surface. The viewer learns the physics just by watching. Facts must be correct, and the caption says it in 3–5 words ("Hot coffee… then boiling").
+11. **"Next" line under the counter.** Under the big number, a small line names the next real threshold coming up ("NEXT: 233 °C PAPER IGNITES"), so the viewer waits for it. It turns into the passed threshold when it happens.
+12. **Consequences start next to the hero, then spread.** First the things in his hands and on him (the cup, his clothes, the snow at his feet), then the street, then the city, then the planet. Never jump to something far away that the viewer hasn't seen connected to him.
+13. **The rule in the title.** When there is a rate, the title says it ("…doubled every 3 seconds?"), so the viewer can predict what's next.
+14. **Opening wish + callback ending.** The first line after the title gives a small wish or problem ("−10 °C. You just want to be warm."), and the last line before the comment question pays it off ("Well. You're not cold anymore.").
 
 ---
 
@@ -166,6 +171,8 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
 - [ ] Listen test passed: every line clear without the picture; every joke has a setup; one thread from start to end
 - [ ] Pause test passed on the sheets: every frame shows what it is, how big it is now, and what it just passed
 - [ ] Gauge fits the topic; landmarks appear next to the object with 2–3 word labels
+- [ ] Every milestone = a real threshold + what really happens there; "NEXT:" line under the counter
+- [ ] Rate stated in the title when there is one; opening wish paid off at the end
 - [ ] Big part is clean (object + gauge + landmark only); milestone every 1.5–2 s
 - [ ] Length 35–45 s; last frame matches the first frame (loop)
 - [ ] Mittens in every shot with a readable, changing expression (Mittens cam only where she can't be in the picture)
