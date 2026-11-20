@@ -1,0 +1,74 @@
+[
+ {
+  "id": "n0",
+  "text": "What if your snowball rolled downhill and never stopped?",
+  "d": 0.08,
+  "formula": "title question word for word (STANDARD 1.3). Start: hand snowball d0 = 8 cm. Mass m(d) = rho x (pi/6) x d^3 with rho = 400 kg/m3 (packed wet snow ~300-500 kg/m3). m(0.08) = 0.107 kg"
+ },
+ {
+  "id": "n1",
+  "text": "The biggest snowball ever made was three metres.",
+  "d": 0.3,
+  "formula": "LEAN (STANDARD 1.3b) + reality first: Guinness record snowball, Michigan Tech students, spring 2013: circumference 10.04 m (32.94 ft) -> diameter 10.04 / pi = 3.20 m (mtu.edu, Sept 19 2013)"
+ },
+ {
+  "id": "n2",
+  "text": "But yours never stops. Not even at the Moon.",
+  "d": 0.3,
+  "formula": "SNAPBACK (STANDARD 1.3b): the what-if; the video then delivers it (3,475 km = the Moon at the end)"
+ },
+ {
+  "id": "n3",
+  "text": "Your snowman needs a head. So you roll a snowball.",
+  "d": 0.3,
+  "formula": "opening wish (STANDARD 0.14): the snowman has no head. m(0.3) = 400 x 0.5236 x 0.027 = 5.65 kg"
+ },
+ {
+  "id": "n4",
+  "text": "Rolling snow sticks. Every turn adds a new layer.",
+  "d": 0.6,
+  "formula": "physics: near 0 C snow crystals melt slightly and clump (Scientific American), so each turn picks up a layer; a bigger ball has a longer circumference and wider contact, so it gains more per turn. m(0.6) = 45.2 kg"
+ },
+ {
+  "id": "n5",
+  "text": "Then it slips. You let go. Mittens jumps on.",
+  "d": 3.2,
+  "formula": "blame (set up on screen: it slips out of your hands); during this step it passes the record size 3.2 m (label next to the ball). m(3.2) = 400 x 0.5236 x 32.77 = 6,863 kg"
+ },
+ {
+  "id": "n6",
+  "text": "Taller than the Eiffel Tower.",
+  "d": 330,
+  "formula": "milestones on screen: Big Ben (Elizabeth Tower) 96 m; Eiffel Tower 330 m (with antennas since 2022). m(330) = 400 x 0.5236 x 3.594e7 = 7.5e9 kg (~740x the Eiffel Tower's 10,100 t)"
+ },
+ {
+  "id": "n7",
+  "text": "Taller than Mount Everest.",
+  "d": 8849,
+  "formula": "Burj Khalifa 828 m; Mount Everest 8,849 m (2020 China-Nepal survey). m(8849) = 400 x 0.5236 x 6.93e11 = 1.45e14 kg"
+ },
+ {
+  "id": "n8",
+  "text": "Now the top is in space.",
+  "d": 100000,
+  "formula": "airliners cruise ~10-12 km (milestone 11 km); Karman line 100 km = conventional edge of space. m(1e5) = 2.09e17 kg"
+ },
+ {
+  "id": "n9",
+  "text": "As big as the Moon.",
+  "d": 3474800,
+  "formula": "ISS orbit ~408 km (milestone); Moon diameter 3,474.8 km (NASA). m = 400 x 0.5236 x 4.1956e19 = 8.79e21 kg = 6.3x all the water on Earth (1.386 billion km3 x 1000 kg/m3 = 1.39e21 kg, USGS)"
+ },
+ {
+  "id": "n10",
+  "text": "Well. Earth got the head instead.",
+  "d": 3474800,
+  "formula": "callback ending (STANDARD 0.14): pays off the wish in n1 - the Moon-sized ball sits on top of Earth like a snowman's head"
+ },
+ {
+  "id": "n11",
+  "text": "How big was the biggest snowball you ever made?",
+  "d": 3474800,
+  "formula": "closing question: specific to this video, viewers answer with their own experience (STANDARD 1.9)"
+ }
+]
