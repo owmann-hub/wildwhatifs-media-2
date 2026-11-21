@@ -491,6 +491,39 @@
    "duration_s": 37.8,
    "notes": "Facts/formulas in engine/scripts/snowball.json (m = 400 kg/m3 x pi/6 x d^3; record snowball Michigan Tech 2013, 10.04 m circumference -> 3.2 m; Big Ben 96 m; Eiffel Tower 330 m; Burj Khalifa 828 m; Everest 8,849 m; airliners ~11 km; Karman line 100 km; ISS ~408 km; Moon 3,474.8 km; all Earth's water 1.386 billion km3 (USGS)). Scene engine/scenes/snowball.js, cue engine/scripts/snowball_cue.json, sfx engine/scripts/snowball_sfx.py. A first 62 s version (Nov 19 standard) was replaced the same day after the owner's Nov 20 STANDARD updates (section 0, 35-45 s, loop, title + question from frame 0, triple hook).",
    "qa": "PASS: render.mjs qa 0.5 s -> 1 flag (11.5-14 s focus_hidden: the snowball is in front of your legs while you push it; you are clearly visible - false alarm, checked by eye). qa.py clean (37.8 s, no black/frozen stretches, loudness ok, first line = title, last line is a question, loop: last frame matches first). 3 sheets (1 fps) viewed: title from frame 0, lean by 2.8 s and snapback by 5.1 s; ball always on the ground with a bare track behind it, trees in its path vanish, no clipping; each milestone object appears next to the ball at real size with its label; counter/NEXT line match the narration; caption top, gauge left, label next to object; hero face bright; Mittens in-scene to ~16 s, then the small Mittens cam (bottom right). Minor: the 11 km airliner label briefly overlaps the Everest label (25 s); the plane is small even drawn 120x bigger; the snowy big part is pale; no fixed rate, so none in the title. Mix: voice-over-music 9.0 dB, voice-over-effects 16.2 dB; max -0.9 dB; 1080x1920, 34.6 MB (no-music 34.6 MB)."
+  },
+  {
+   "slug": "humansgone",
+   "post_date": "2026-11-21",
+   "file": "videos/2026-11-21-humansgone.mp4",
+   "file_tiktok": "videos/2026-11-21-humansgone-nomusic.mp4",
+   "title": "WHAT IF all humans vanished and time sped up? ⏳",
+   "caption": "Every human gone in one second. The lights go out, the subway floods, trees take the square, the ice comes back and the Sun swallows Earth. Mittens is still waiting for the Pigeon's move. Which building in your city would last the longest? 👇",
+   "hashtags": "#whatif #timelapse #science #animation #shorts",
+   "youtube": {
+    "status": "pending",
+    "due": "2026-11-21T20:57"
+   },
+   "tiktok": {
+    "status": "pending",
+    "due": "2026-11-21T23:05-03:00"
+   },
+   "instagram": {
+    "status": "pending",
+    "due": "2026-11-22T06:35"
+   },
+   "style": "A_explainer",
+   "opening": "rewind",
+   "place": "café terrace on a cobbled Italian-style piazza with a stone clock tower, metro entrance and town houses, glass towers in the distance; late-afternoon golden light. Big part: the same fixed view decays (lights out, flood, weeds, forest, roofs fall, only the stone tower, ice), then space (supercontinent, oceans gone, red giant swallows Earth)",
+   "cast": [
+    "THE PIGEON (Mittens' chess opponent; it is the Pigeon's move for 7.6 billion years)",
+    "BAD TIMING (a man proposing at the next table vanishes mid-proposal; the ring box drops on the cobbles)"
+   ],
+   "no_narrator_test": false,
+   "duration_s": 36.0,
+   "version": "Nov 20 STANDARD. Title on screen and spoken from frame 0 over the REWIND payoff opening (red giant reaching Earth, Mittens cam with sunglasses). Triple hook: context 0-2.4 s (question + title + Mittens vs the Pigeon at a café chess board, you as referee with the chess clock), lean 2.75 s ('Eight billion people. Gone in one second.' - everyone puffs away at 4.1 s), snapback 5.1 s ('But the chess game isn't over. It's the Pigeon's move.'). Blame: 'You were the referee. You vanished mid-game.' Physics/why: 'Now nobody fixes anything. No power. No pumps.' Big part: one fixed piazza view with a slow pull-back, a milestone every 1.6-2.4 s, each shown where it happens with a 'TIME = THING' label: 1 DAY LIGHTS OUT (windows + lamps go dark, clock stops), 2 DAYS SUBWAYS FLOOD (metro well fills, water spills), 1 YEAR WEEDS, 40 YEARS TREES (like Pripyat), 100 YEARS ROOFS COLLAPSE, 1,000 YEARS ONLY STONE STANDS (clock tower), 100,000 YEARS ICE AGE; cut to space: 250 MILLION YEARS ONE SUPERCONTINENT, 1 BILLION YEARS OCEANS BOIL AWAY, 5 BILLION YEARS THE SUN SWELLS, 7.6 BILLION YEARS SUN SWALLOWS EARTH (biggest, last). Gauge = log timeline bar on the left (TIME WITHOUT HUMANS + NEXT/PASSED line). Callback ending 'Well. It's still the Pigeon's move.' while the red giant swallows Earth and the counter keeps climbing to 7.73 billion; last frame = first frame (loop).",
+   "notes": "Facts/formulas in engine/scripts/humansgone.json (UN population ~8.2 bn; Weisman 'The World Without Us' 2007 + NPR/Living on Earth interviews: NYC subway floods within ~36 h / 2 days, roofs go within 50-100 years, after 1,000 years only stone buildings; Pripyat evacuated 1986; Ganopolski et al. Nature 2016: next glacial inception ~50-100 kyr; Scotese: Pangaea Proxima ~250 Myr; Sun ~10%/Gyr brighter, oceans lost in ~1 Gyr; Schroder & Smith 2008: red giant engulfs Earth at ~7.59 Gyr). Scene engine/scenes/humansgone.js, cue engine/scripts/humansgone_cue.json (+ _nomusic), sfx engine/scripts/humansgone_sfx.py. Owner request (Nov 20) done: Mittens plays chess against the Pigeon, smug when he takes a piece, annoyed waiting; final callback = still the Pigeon's move.",
+   "qa": "PASS: render.mjs qa 0.5 s -> 2 flags, both checked by eye and accepted: 0-1 s and 33-37 s focus_hidden = Earth partly inside the red giant (the 'Sun swallows Earth' shot, intended). qa.py clean (36.0 s, no black/frozen stretches, loudness ok, max -1.0 dB, first line = title, last line is a question, loop: last frame matches first, ending motion ok after adding the final push-in + embers). 3 sheets (1 fps) viewed: title from frame 0 over the REWIND teaser; lean at 2.75 s, everyone vanishes in puffs at 4.1 s, snapback 5.1 s; counter climbs every second from 1 second to 7.74 billion years with NEXT/PASSED line matching the narration; each milestone label sits on the thing (windows/lamps dark, metro + water, weeds, trees, houses, clock tower, ice, Earth, Sun); caption top, gauge left, label next to object; Mittens in the scene to 24 s with changing faces, then the Mittens cam (sunglasses from 5 billion years). Minor: the chess clock is hard to see once it drops; the flooded subway is shown mostly as water spreading from the metro entrance; hero partly behind Mittens in the opening; 2 cuts (to space, and the teaser). Mix: voice-over-music 9.0 dB, voice-over-effects 17.8 dB; 1080x1920, 38.6 MB (no-music 38.6 MB)."
   }
  ],
  "premise_bank": [
@@ -512,7 +545,8 @@
   "paperfold",
   "dighole",
   "mittensgrow",
-  "snowball"
+  "snowball",
+  "humansgone"
  ],
  "plan_november": [
   {
@@ -629,7 +663,9 @@
    "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). One fixed city view; TIME counter escalating 5 seconds -> 1 day -> 1 year -> 100 years -> 10,000 -> 10 million years; one checked fact per step (lights out, subways flood, plants, bridges fall, ice age). Humans vanish but animals stay, so MITTENS STAYS (owner, Nov 20):  Do NOT copy the zenith.whatif video shot-for-shot: our own city, own order, own wording. Check every number before scripting. OWNER REQUEST Nov 20 (one-time, for this next video with Mittens): Mittens (he) plays a CHESS MATCH in the background - e.g. on a park bench or café table against the Pigeon, a real board and pieces, moving pieces with his paw, thinking, smug when he takes a piece, annoyed when the Pigeon does. Visible in the opening and as a running background gag in the human-scale part (keep it in frame but behind the main action); a final callback is welcome (e.g. after 10,000 years the board is covered in moss and he is still waiting for the Pigeon's move). Follow STANDARD 0.6: the big part stays clean.",
    "tiktok": true,
    "style": "A_explainer",
-   "no_narrator_test": false
+   "no_narrator_test": false,
+   "made": "2026-11-21",
+   "note_made": "title in the runaway form 'WHAT IF all humans vanished and time sped up?'; Mittens vs the Pigeon chess gag (owner, Nov 20) as the thread; time counter 1 second -> 7.6 billion years"
   },
   {
    "post_date": "2026-11-22",
@@ -1052,6 +1088,10 @@
   {
    "slug": "snowball",
    "place": "snowy hilltop park above an Alpine town (chalets, church, hot-chocolate stall), late-afternoon golden light"
+  },
+  {
+   "slug": "humansgone",
+   "place": "café terrace on a cobbled piazza with a stone clock tower (late afternoon, golden light)"
   }
  ],
  "cast_log": [
@@ -1097,6 +1137,13 @@
    "cast": [
     "salesman (hot chocolate stall -> tickets)",
     "filmer (skier filming on the slope)"
+   ]
+  },
+  {
+   "slug": "humansgone",
+   "cast": [
+    "pigeon (chess opponent)",
+    "bad timing (proposal)"
    ]
   }
  ]
