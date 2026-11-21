@@ -38,6 +38,7 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
 12. **Consequences start next to the hero, then spread.** First the things in his hands and on him (the cup, his clothes, the snow at his feet), then the street, then the city, then the planet. Never jump to something far away that the viewer hasn't seen connected to him.
 13. **The rule in the title.** When there is a rate, the title says it ("…doubled every 3 seconds?"), so the viewer can predict what's next.
 14. **Opening wish + callback ending.** The first line after the title gives a small wish or problem ("−10 °C. You just want to be warm."), and the last line before the comment question pays it off ("Well. You're not cold anymore.").
+15. **It never stops, and the end is the biggest part** (owner, Nov 20: the snowball video "died really really fast, it should have kept going"; it stopped growing at Moon size and the last 6 s were a frozen picture with the counter stuck). The premise says "never stops", so the counter climbs until the very last frame, and the last milestone is the biggest and most surprising of the video. Go as far as the idea allows: past the Moon, Earth, Jupiter, the Sun, the Solar System, the galaxy. The payoff line and the comment question are said WHILE it is still growing and the camera still pulling back, never over a still picture. The last 5 s must change at least as fast as the middle. The final image is the most absurd one (e.g. "Bigger than the Sun. Mittens is still on top."), then it loops.
 
 ---
 
@@ -181,6 +182,7 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
 - [ ] Rate stated in the title when there is one; opening wish paid off at the end
 - [ ] Big part is clean (object + gauge + landmark only); milestone every 1.5–2 s
 - [ ] Length 35–45 s; last frame matches the first frame (loop)
+- [ ] Counter still climbing in the last frame; the last milestone is the biggest; nothing static in the last 5 s
 - [ ] Mittens in every shot with a readable, changing expression (Mittens cam only where she can't be in the picture)
 - [ ] 2–3 cast members, different from the last video
 - [ ] Opening place different from the last two videos
