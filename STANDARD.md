@@ -28,7 +28,7 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
    It stays in the same place on screen the whole video and fills as the number grows, with the big counter (value + step number) next to it. Units change as it grows (cm → m → km → AU → light-years).
 5. **Size is shown, not told.** Each milestone is a real object that appears right NEXT to our object as it passes, at the right scale, with a 2–3 word label and the step number ("42 = MOON", "FOLD 51 = SUN"). The viewer sees the comparison; the narrator doesn't have to describe it.
 6. **Two halves.**
-   - **Human part** (first ~12 s): the place, the hero, Mittens, the cast and the jokes.
+   - **Human part** (first ~8 s at most; owner Nov 20: the Mittens-growing video felt slow and made him want to scroll): the place, the hero, Mittens, the cast and the jokes.
    - **Big part** (the rest): the screen goes CLEAN. Only the focus object, the gauge and counter, the milestone passing, and a plain, high-contrast background (dark sky or space). No cast, no city clutter, no extra text. Mittens may appear only in a small reaction if it doesn't block the object.
 7. **Fast.** In the big part, a new milestone every 1.5–2 s. The narrator keeps up with one very short line (8 words max) on the most important milestones only, not on every one.
 8. **Three text items on screen, at most.** Big, short, high contrast, always in the same positions: title or caption at the top, gauge on the left, milestone label next to the object.
@@ -59,7 +59,7 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
    QA asks three questions about the first 6 seconds: is the context clear in the first second? Is there a curiosity pull? Is there a snapback?
 4. **Explain before it happens** (owner, Nov 18: the jump and friction videos were unclear until the thing happened). Right after the title question, 1–2 plain lines say what is about to happen and the physics behind it, e.g. "Friction is the grip that stops things from sliding. Shoes, tyres, even knots need it." At every step, say *why* it happens, not just what ("No friction, so the knot can't hold. It just slides open.").
 5. **Start small and human:** the hero in an everyday place doing an everyday thing, with a small stake (an unpaid bill, an ice cream). The process starts by second 3.
-6. **Steps:** 3–5 steps in the human part (about 3 s each), then a new milestone every 1.5–2 s in the big part (see 0.6–0.7). Something new on screen at least every 2 s.
+6. **Steps:** 3–5 steps in the human part (about 3 s each), then a new milestone every 1.5–2 s in the big part (see 0.6–0.7). Something new on screen at least every 1.5–2 s, from the first second to the last: no shot holds still, no line is said over an unchanging picture, and no pause longer than 0.5 s between narrator lines.
 7. **Escalating counter + gauge:** always on screen (see 0.4), rolls up at each step, and its unit escalates wildly (mm → m → km → "past the Moon").
 8. **Scale change:** room → street → city → country → planet → space, in one continuous camera move.
 9. **Ending:** no black end card. The last shot stays on screen while the narrator asks **one specific question about this video that viewers can answer with their own guess or opinion** (owner, Nov 19), e.g. "How many folds do you think you could do?", "How deep would you dig before turning back?". The same question appears as small text over that shot. Never use the generic "What should we try next?". Total ending 2 s or less after the payoff. Shorts just end; no outro.
@@ -83,7 +83,7 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
 
 1. **Hero:** same look in every video (hair `short`, colour `0x5a3a20`). Lively animation: blinking, expressions, looking around; never frozen.
 2. **Fluent motion:** walk cycles with arm swing and bounce; reactions with anticipation and follow-through.
-3. **Mittens = the friend, in every shot with a visible expression** (owner, Nov 18):
+3. **Mittens = the friend (Mittens is a he), in every shot with a visible expression** (owner, Nov 18):
    - Mittens is in the scene itself in every shot, near the hero. **Even when she's small in the background, she must be visibly expressive**, never a still prop:
      - exaggerate so it reads at a distance: big eye and eyelid changes, ears flat or up, tail puffing, a jump back, a slow unimpressed head turn, a yawn;
      - she reacts within about half a second of every event;
