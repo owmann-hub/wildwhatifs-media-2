@@ -1,0 +1,78 @@
+[
+ {
+  "id": "n0",
+  "text": "What if it rained 10 cm an hour and never stopped?",
+  "formula": "Title question word for word (STANDARD 1.3). Rate in the title (STANDARD 0.13): 10 cm/h = 100 mm/h, the India Meteorological Department's threshold for a cloudburst (>=100 mm in an hour over ~20-30 km2). Counter = water depth = 0.1 m/h x hours, assuming no water drains or evaporates (the 'what if').",
+  "say": "What if it rained ten centimetres an hour, and never stopped?"
+ },
+ {
+  "id": "n1",
+  "text": "That's a cloudburst. Real ones stop within an hour.",
+  "formula": "LEAN + reality first (STANDARD 2.11): IMD defines a cloudburst as >=100 mm/h; cloudbursts are short, intense, localised events lasting minutes to about an hour (IMD via Drishti IAS / Deccan Herald explainers)."
+ },
+ {
+  "id": "n2",
+  "text": "This one won't. In ten years, it covers Everest.",
+  "formula": "SNAPBACK: Everest 8,848.86 m (China-Nepal survey 2020) / 0.1 m/h = 88,489 h = 3,687 days = 10.1 years."
+ },
+ {
+  "id": "n3",
+  "text": "You said no to an umbrella. You said it would stop.",
+  "formula": "blame + thread, set up on screen: the Salesman's sign 'UMBRELLAS EUR10', his bubble 'UMBRELLA?' and your bubble 'NO THANKS, IT'LL STOP!' at the start. Paid off by n10."
+ },
+ {
+  "id": "n4",
+  "text": "Nothing drains away. So it just piles up.",
+  "formula": "physics/why. Milestones so far: 15 cm KERB = 0.15/0.1 = 1.5 h; 30 cm CARS FLOAT = 3 h (NWS 'Turn Around Don't Drown': 12 inches / 30 cm of water can float many cars); 2.5 m BUS STOP UNDER (shelter roof ~2.5 m) = 25 h = 1 day; 13 m ROOFTOPS (4-storey town houses 3.6 + 3x3 m + roof) = 130 h = 5.4 days."
+ },
+ {
+  "id": "n5",
+  "text": "Under a year. Over the tallest building.",
+  "formula": "93 m STATUE OF LIBERTY (ground to torch, NPS) = 930 h = 39 days; 330 m EIFFEL TOWER (since 2022 antenna) = 3,300 h = 137.5 days = 4.5 months; 828 m BURJ KHALIFA (tallest building) = 8,280 h = 345 days < 1 year."
+ },
+ {
+  "id": "n6",
+  "text": "Earth doesn't even have this much water.",
+  "formula": "Honest limit: USGS: all of Earth's water ~1,386 million km3; Earth's surface 510 million km2 -> 1.386e18 m3 / 5.1e14 m2 = 2,718 m average depth = 27,176 h = 3.1 years. Milestone 2.7 KM = ALL EARTH'S WATER. From here the rain is new water - the 'what if'."
+ },
+ {
+  "id": "n7",
+  "text": "Ten years. Everest is gone.",
+  "formula": "8,848.86 m / 0.1 m/h = 88,489 h = 10.1 years. Milestone 8,849 M = EVEREST (no land left)."
+ },
+ {
+  "id": "n7b",
+  "text": "No land is left anywhere.",
+  "formula": "Everest is the highest point on Earth (8,848.86 m), so once the water is above it no land is above water anywhere."
+ },
+ {
+  "id": "n8",
+  "text": "The weight squeezes the bottom into ice.",
+  "formula": "Pressure at depth h = rho g h = 1000 x 9.81 x 100,000 m = 0.98 GPa; at room temperature liquid water freezes into high-pressure ice VI above ~0.9-1 GPa (ice VI is stable ~0.6-2.2 GPa; LSBU water phase data). 100 km / 0.1 m/h = 1,000,000 h = 114 years. Milestone 100 KM = BOTTOM TURNS TO ICE. Next: 408 KM = AS HIGH AS THE ISS (ISS orbits ~400-420 km) = 4.08e6 h = 465 years."
+ },
+ {
+  "id": "n8b",
+  "text": "It's now higher than the space station.",
+  "formula": "ISS orbits at ~400-420 km (NASA); 408 km / 0.1 m/h = 4.08e6 h = 465 years. Milestone 408 KM = HIGHER THAN THE ISS (comparison of depth vs the station's altitude)."
+ },
+ {
+  "id": "n9",
+  "text": "It's now deeper than the Moon is wide.",
+  "formula": "Moon diameter 3,474.8 km (NASA). 3,474,800 m / 0.1 m/h = 34,748,000 h = 3,964 years."
+ },
+ {
+  "id": "n9b",
+  "text": "The rain now weighs more than Earth.",
+  "formula": "Earth mass 5.972e24 kg. Rain mass in a shell of liquid depth d on R = 6,371 km: 1000 x 4/3 pi ((R+d)^3 - R^3) = 5.972e24 -> d = 5,527 km = 55.27e6 h = 6,305 years. Milestone 5,527 KM = RAIN OUTWEIGHS EARTH."
+ },
+ {
+  "id": "n10",
+  "text": "Well. At least you bought the umbrella.",
+  "formula": "callback ending (pays off n3: you said no to the umbrella; on screen you buy it from the Salesman for EUR900 while the water rises), said while the water keeps rising."
+ },
+ {
+  "id": "n11",
+  "text": "How high would it get before you'd leave home?",
+  "formula": "closing question, specific and answerable (STANDARD 1.9)."
+ }
+]
