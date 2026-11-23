@@ -266,7 +266,8 @@
       "place": "East River esplanade railing, Manhattan (late morning)",
       "version": "format_v5: own place, stake and transformation built on the sun.js structure — stake: about to beat a stone-skipping record (best: four), the stone lands in a shopping cart on the dry riverbed, paid off when the next stone skips five times after the water returns; transformation: the blue drains out of the world — river becomes a 12 m mud canyon (ferry, sailboat, tug and fish drop), every cloud boils away, the harbour is a valley with Liberty on a hill, the planet from space is brown; Mittens peeks over the railing delighted, then gets soaked; answer last: ships at sea fell ~120 m. Narrator af_heart 1.0. 3 cuts (Mittens, space, back to hero).",
       "duration_s": 53.6,
-      "notes": "Facts checked: East River ~12 m (40 ft) deep from the Battery to the Navy Yard (Wikipedia, 1939 survey); Brooklyn Bridge towers ~84 m above mean high water, deck 38.7 m (Wikipedia); Statue of Liberty 93 m ground to torch (NPS); Challenger Deep 10,935 m (NOAA/Britannica); free fall for 5 s = 0.5*9.81*25 ≈ 122 m (open-ocean depth averages ~3.7 km, so ships don't reach bottom); clouds are water droplets/ice. Premise scoped on screen: water inside living things stays. QA: 53.6 s, 1080x1920, 33.5 MB, max -1.5 dB, voice-over-bed margin 17.6 dB (no-music 19.1 dB), calm lively opening with title + countdown, end card present. Scene engine/scenes/water.js, cue scripts/water_cue.json, sfx engine/scripts/water_sfx.py."
+      "notes": "Facts checked: East River ~12 m (40 ft) deep from the Battery to the Navy Yard (Wikipedia, 1939 survey); Brooklyn Bridge towers ~84 m above mean high water, deck 38.7 m (Wikipedia); Statue of Liberty 93 m ground to torch (NPS); Challenger Deep 10,935 m (NOAA/Britannica); free fall for 5 s = 0.5*9.81*25 ≈ 122 m (open-ocean depth averages ~3.7 km, so ships don't reach bottom); clouds are water droplets/ice. Premise scoped on screen: water inside living things stays. QA: 53.6 s, 1080x1920, 33.5 MB, max -1.5 dB, voice-over-bed margin 17.6 dB (no-music 19.1 dB), calm lively opening with title + countdown, end card present. Scene engine/scenes/water.js, cue scripts/water_cue.json, sfx engine/scripts/water_sfx.py.",
+      "file_deleted": "2026-11-23 (housekeeping: all platforms posted >3 days)"
     },
     {
       "slug": "jump",
@@ -415,7 +416,8 @@
       "no_narrator_test": false,
       "version": "RUNAWAY FORMAT under STANDARD.md (first video built fully to it): narrator's first line = title question; 12 steps (lengths from real line durations, 4.0-6.0 s) with a DEPTH counter (+ temperature note) rolling 30 cm -> 2 m -> 60 m -> 350 m -> 2.3 km -> 4 km -> 12.3 km -> 35 km -> 100 km -> 2,890 km -> 6,371 km -> 12,742 km. Scene A: cut-away garden ('ant-farm' cross-section) with one continuous pull-back as the hole deepens (hole and hero drawn wider, labelled NOT TO SCALE), white scale outlines on the cut face (20-storey building, Eiffel Tower, Veryovkina cave, Mponeng mine, Kola borehole), mantle glows orange; cut to a cut-away Earth (layers, hole line, hero marker, Madrid/New Zealand labels); cut to a sheep field at Weber, NZ (hero pops out); back to the garden for the payoff (tree still in its pot, pigeon on it) and the narrator's ask over that last shot - no black end card. Stake/thread: the 30 cm hole for the lemon tree (n1 -> n8 'The tree needed thirty centimetres' -> n13 'Still in its pot'). Blame lines: 'That's on you', 'The tree needed thirty centimetres', payoff. Mittens next to the hero in the opening + Mittens cam with a new mood every step.",
       "duration_s": 62.4,
-      "notes": "Facts/formulas in engine/scripts/dighole.json (Veryovkina 2,209 m; Mponeng >4 km, rock ~66 C; Kola 12,262 m 1970-1989 = 19 years, ~180 C; Moho avg 35 km; ~1,400 C at 100 km; core-mantle boundary 2,890 km ~3,500-4,000 C; centre 6,371 km about as hot as the Sun's surface; Earth diameter 12,742 km; Madrid antipode = near Weber, NZ). QA: 62.4 s, 1080x1920, 37.9 MB (no-music 37.9 MB), max -1.0 dB (no-music -0.9 dB), voice-over-bed margin 15.6 dB (no-music 18.9 dB), title + counter from frame 0, 3 contact sheets + 12-frame final sheet checked. Ending: payoff line 1.8 s + ask line 2.6 s over the last shot (slightly over the 2 s target). Encode: lanczos 1080x1920 + unsharp, CRF 21 maxrate 4.6M (40 MB repo limit). Render note: first full render had a see-through gap at the shaft edges (shaft half-cylinder centred behind the cut plane + float precision of a 1,200 km face quad); fixed (shaft centred on the cut plane, log-spaced face grid) and 0-34 s re-rendered; 34-62.4 s kept from the first render (no visible difference at that scale). Scene engine/scenes/dighole.js, cue scripts/dighole_cue.json, sfx scripts/dighole_sfx.py."
+      "notes": "Facts/formulas in engine/scripts/dighole.json (Veryovkina 2,209 m; Mponeng >4 km, rock ~66 C; Kola 12,262 m 1970-1989 = 19 years, ~180 C; Moho avg 35 km; ~1,400 C at 100 km; core-mantle boundary 2,890 km ~3,500-4,000 C; centre 6,371 km about as hot as the Sun's surface; Earth diameter 12,742 km; Madrid antipode = near Weber, NZ). QA: 62.4 s, 1080x1920, 37.9 MB (no-music 37.9 MB), max -1.0 dB (no-music -0.9 dB), voice-over-bed margin 15.6 dB (no-music 18.9 dB), title + counter from frame 0, 3 contact sheets + 12-frame final sheet checked. Ending: payoff line 1.8 s + ask line 2.6 s over the last shot (slightly over the 2 s target). Encode: lanczos 1080x1920 + unsharp, CRF 21 maxrate 4.6M (40 MB repo limit). Render note: first full render had a see-through gap at the shaft edges (shaft half-cylinder centred behind the cut plane + float precision of a 1,200 km face quad); fixed (shaft centred on the cut plane, log-spaced face grid) and 0-34 s re-rendered; 34-62.4 s kept from the first render (no visible difference at that scale). Scene engine/scenes/dighole.js, cue scripts/dighole_cue.json, sfx scripts/dighole_sfx.py.",
+      "file_deleted": "2026-11-23 (housekeeping: all platforms posted >3 days)"
     },
     {
       "slug": "mittensgrow",
@@ -556,8 +558,12 @@
         "metricool_id": 438105012
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-23T06:35"
+        "status": "posted",
+        "due": "2026-11-23T06:35",
+        "id": "DgFE0gzD5CJ",
+        "media_id": "18123922273948972",
+        "url": "https://www.instagram.com/reel/DgFE0gzD5CJ/",
+        "posted_at": "2026-11-23T06:40-03:00"
       },
       "style": "A_explainer",
       "opening": "freeze",
