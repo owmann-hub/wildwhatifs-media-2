@@ -9,7 +9,7 @@
   "blogId": "7970179",
   "free_plan_posts_per_month": 20,
   "posts_used": {
-   "2026-11": 11
+   "2026-11": 12
   }
  },
  "zapier_youtube_connection_id": "024e8223-8129-8378-ae74-36264dc05b99",
@@ -587,12 +587,16 @@
    "caption": "You trip over a pigeon on the way to your tram, and your speed doubles every second. Usain Bolt, a cheetah, the sound barrier, orbit, the fastest spacecraft ever built… then light speed says no, so you just keep adding nines. At least the coffee stays hot. What speed would you stop at? 👇",
    "hashtags": "#whatif #physics #science #animation #shorts",
    "youtube": {
-    "status": "pending",
-    "due": "2026-11-23T20:57-03:00"
+    "status": "posted",
+    "due": "2026-11-23T20:57-03:00",
+    "id": "0XYw_WM9KF8",
+    "url": "https://www.youtube.com/shorts/0XYw_WM9KF8",
+    "posted_at": "2026-11-23T20:58-03:00"
    },
    "tiktok": {
-    "status": "pending",
-    "due": "2026-11-23T23:05-03:00"
+    "status": "scheduled",
+    "due": "2026-11-23T23:05-03:00",
+    "metricool_id": 439606092
    },
    "instagram": {
     "status": "pending",
