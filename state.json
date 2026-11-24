@@ -456,7 +456,8 @@
    "version": "RUNAWAY FORMAT under STANDARD.md: narrator's first line = title question; physics line (twice as tall, wide and long = 8x heavier, square-cube law) and reality line (real cats stop growing after about a year; record Stewie 1.23 m) before the what-if; 12 steps (4.0-4.55 s from real line durations) with a HEIGHT counter (weight as the note) 30 cm -> 60 cm -> 1.2 m -> 2.4 m -> 4.8 m -> 9.6 m -> 38 m -> 154 m -> 1.2 km -> 9.8 km -> 157 km -> 40,265 km -> 644,245 km. One continuous pull-back (room -> house breaks open -> street -> town -> clouds -> airliners -> edge of space), one cut to space (Earth held like a ball under her chin, the Moon beside her face). Thread: dinner (n1 -> n6 'found her dinner. It was the cake' -> payoff 'And she still wants her dinner'). Blame lines: 'You stay on the couch', 'Bye, couch', 'All because you stayed on the couch'. Mittens is the star and in every shot with a new mood every step; round inset = HERO cam (your face; holds up the empty MITTENS bowl at the payoff). Ending: ask line over the last shot, no black card.",
    "duration_s": 57.23,
    "notes": "Facts/formulas in engine/scripts/mittensgrow.json (h = 0.30 m x 2^n, w = 4 kg x 8^n; Stewie 123 cm Guinness; cats full-size ~12 months; blue whale up to ~150 t; Burj Khalifa 828 m; Everest 8,849 m; airliners 10-12 km; Karman line 100 km; Earth circumference 40,075 km; Earth mass 5.97e24 kg < 9.67e24 kg at n=27; Moon 384,400 km < 644,245 km at n=31). Scene engine/scenes/mittensgrow.js, cue scripts/mittensgrow_cue.json (+ _nomusic), sfx scripts/mittensgrow_sfx.py.",
-   "qa": "PASS: render.mjs qa 0.5 s -> 2 focus_hidden flags at 22.5/24.0 s checked by eye (ray hit a tree, cat fully visible: false alarm); qa.py clean (57.2 s, no black/frozen stretches, loudness ok, first line = title, last line asks for comments); 4 sheets (1 fps) viewed: walls/roof break open visibly, no clipping, counter matches narration, Mittens in every shot with changing mood, hero face bright, labels clear of faces. Mix: voice-over-music 9.0 dB, voice-over-effects 15.7 dB; max -0.9 dB; 1080x1920, 35.9 MB (no-music 35.8 MB). Encode CRF 21 maxrate 5M (40 MB repo limit). Ending: payoff 1.43 s + ask 2.43 s over the last shot (ask ~2.9 s after payoff, slightly over the 2 s target, same as dighole)."
+   "qa": "PASS: render.mjs qa 0.5 s -> 2 focus_hidden flags at 22.5/24.0 s checked by eye (ray hit a tree, cat fully visible: false alarm); qa.py clean (57.2 s, no black/frozen stretches, loudness ok, first line = title, last line asks for comments); 4 sheets (1 fps) viewed: walls/roof break open visibly, no clipping, counter matches narration, Mittens in every shot with changing mood, hero face bright, labels clear of faces. Mix: voice-over-music 9.0 dB, voice-over-effects 15.7 dB; max -0.9 dB; 1080x1920, 35.9 MB (no-music 35.8 MB). Encode CRF 21 maxrate 5M (40 MB repo limit). Ending: payoff 1.43 s + ask 2.43 s over the last shot (ask ~2.9 s after payoff, slightly over the 2 s target, same as dighole).",
+   "files_deleted": "2026-11-24 (housekeeping: all platforms posted >3 days)"
   },
   {
    "slug": "snowball",
@@ -599,8 +600,11 @@
     "metricool_id": 439606092
    },
    "instagram": {
-    "status": "pending",
-    "due": "2026-11-24T06:35"
+    "status": "posted",
+    "due": "2026-11-24T06:35",
+    "media_id": "18135651679751969",
+    "permalink": "https://www.instagram.com/reel/DgHpxU2gReV/",
+    "posted_at": "2026-11-24T06:41-03:00"
    },
    "style": "A_explainer",
    "opening": "zoom",
