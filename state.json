@@ -618,6 +618,39 @@
    "version": "Nov 20 STANDARD + NO-NARRATOR TEST (plan entry 2026-11-23, STANDARD 5.3): no voice; the story is carried by the italic on-screen lines, music + effects. Title on screen from frame 0 over the ZOOM payoff opening (sudden zoom on your face at the final moment, our own snapzoom boom; the frame before the zoom = the last frame, so it loops). Rate in the title. Triple hook: context 0-2.6 s (title + you running for your tram with coffee and Mittens), wish 2.6 s ('Your tram is leaving. You just want to go faster.'), lean 4.35 s ('A normal trip stops you in a second.'), snapback 5.9 s ('This one doubles your speed. Every second.'). Real-time rule: 1 video second = 1 doubling (counter 'SECOND n'). Gauge = speedometer dial (log scale to a red LIGHT mark) + big counter + NEXT/PASSED line. Milestones: Usain Bolt 44.7, cheetah 104, bullet train 320, sound barrier 1,235 (vapour cone, boom), Mach 5 air 1,500 °C (glow), orbit 28,500, escape 40,300, faster than Earth around the Sun 107,000, Parker Solar Probe 692,000, around Earth in 1 min 2.4M, 1% light, Moon in 1 min 23M, 10%, 50% light ('can't double any more'), then nines with time dilation (99% 1 s = 7 s, 99.99% 1 min = 71 min, 99.9999% 1 day = 2 years), Milky Way in 1 year, Milky Way in 5 minutes (biggest, last); the counter keeps adding nines to the last frame while you cross the galaxy. Thread: wish 'go faster' -> 'Well. You wanted to go faster.'; coffee blame 'You could let go of the coffee. You don't.' -> 'Cross the whole galaxy before your coffee cools.'",
    "notes": "Facts/formulas in engine/scripts/fallforever.json. Scene engine/scenes/fallforever.js, cue engine/scripts/fallforever_cue.json (+ _nomusic). Rendered as 4 pieces (0-1.2 teaser, 1.2-21.7, 21.7-29.0, 29.0-43.4 re-rendered after limiting star aberration so the nines part keeps visible star streaks) joined in ffmpeg.",
    "qa": "PASS: render.mjs qa 0.5 s -> 0 problem ranges. qa.py clean (43.4 s, no black/frozen stretches, loudness ok, first line = title, last line is a question, loop ok, ending motion ok). 3 sheets (1 fps) viewed: title from frame 0; counter matches every milestone line; label next to the racer/object (Bolt, cheetah, train, Parker probe, Moon, light pulse, Earth); caption top, gauge left; Mittens on your backpack in every shot with changing faces; your face bright in the street. Minor: the Pigeon is at the right frame edge when you trip; the Milky Way disc only becomes visible from ~39 s, so the 36.4 s 'MILKY WAY IN 1 YEAR' label shows over star streaks; the Moon is not to scale (labelled). Mix: no narrator (test), so no voice-over numbers; music + effects, loudnorm -14 LUFS; 1080x1920, 44.8 MB (no-music 44.7 MB)."
+  },
+  {
+   "slug": "ants",
+   "post_date": "2026-11-24",
+   "file": "videos/2026-11-24-ants.mp4",
+   "file_tiktok": "videos/2026-11-24-ants-nomusic.mp4",
+   "title": "WHAT IF one ant doubled every minute? 🐜",
+   "caption": "One ant lands on your picnic sandwich and you say one ant is fine. But it doubles every minute: heavier than your sandwich, Mittens, an elephant, the Eiffel Tower, every human on Earth… and after two hours, the Sun. At which minute would you have flicked it away? 👇",
+   "hashtags": "#whatif #ants #science #animation #shorts",
+   "youtube": {
+    "status": "pending",
+    "due": "2026-11-24T20:57-03:00"
+   },
+   "tiktok": {
+    "status": "pending",
+    "due": "2026-11-24T23:05-03:00"
+   },
+   "instagram": {
+    "status": "pending",
+    "due": "2026-11-25T06:35"
+   },
+   "style": "A_explainer",
+   "opening": "pov",
+   "place": "picnic blanket in a town park (checked blanket, sandwich on a plate, wicker basket, bench, fountain, lamps, trees, varied town houses with GELATERIA SOLE / BÄCKEREI ROSA / FIORI / CAFÉ PARC signs), golden late-afternoon light; big part: clean meadow in farmland with one real-size object beside the ant pile (elephant, blue whale, Eiffel Tower, a small town), then space (the ant ball on Earth, the Moon, Jupiter, the Sun, the blue giant R136a1)",
+   "cast": [
+    "THE UNBOTHERED PERSON (bald man on the park bench keeps eating his own sandwich while the pile grows)",
+    "BAD TIMING (your friend arrives with a birthday cake: 'SURPRISE!' ... '...OH NO.')"
+   ],
+   "no_narrator_test": false,
+   "duration_s": 38.9,
+   "version": "Nov 20 STANDARD. Title on screen and spoken from frame 0 over the POV payoff opening (last frame: the ant ball next to the heaviest known star, 'POV: you said one ant is fine', Mittens cam), so the loop matches. Rate in the title. Triple hook: context 0-2 s (question + title + you and Mittens at a picnic, one ant tagged on the sandwich), wish/problem 1.96 s ('One ant crashes your quiet picnic.'), lean 3.89 s ('Real ants need six weeks to grow.'), snapback 5.93 s ('This one doubles every minute. In two hours, it outweighs the Sun.'). Thread/blame: 'You could flick it away. You say one ant is fine.' (bubble 'ONE ANT IS FINE.') -> 'One ant was fine, you said.' -> payoff 'Well. You did say one ant was fine.' Gauge = vertical minute bar (0-130 = log2 of the ant count) with milestone ticks + big ant count (exact up to 1 billion, then words) + 'MINUTE n · weight' + NEXT/PASSED line + '×2 EVERY MINUTE'. Exactly 2^n individual ants are shown crawling up to 1,024, then the pile (hemisphere at water density). Milestones (label next to the pile/ball): min 17 sandwich, 22 Mittens, 26 you, 32 elephant, 37 blue whale, 43 Eiffel Tower, 55 all ants on Earth, 58 all 8 billion humans, 90 all the oceans (pulled round), 95 Moon, 102 Earth, 110 Jupiter, 120 Sun (2 hours), 128 heaviest known star R136a1 (biggest, last); the counter keeps doubling to minute 130 on the last frame while the camera pulls back.",
+   "notes": "Facts/formulas in engine/scripts/ants.json (ant 2 mg: common garden ants 1-2 mg, Prof. Ratnieks via BBC; ants 1-5 mg Wilson & Hoelldobler; egg to adult 6-10 weeks, UGA; 20 quadrillion ants, Schultheiss et al. 2022 PNAS; human biomass 0.06 Gt C ~ 400 Mt, Bar-On et al. 2018; Eiffel 10,100 t; blue whale ~150 t; oceans 1.4e21 kg; Moon 7.342e22, Earth 5.972e24, Jupiter 1.898e27, Sun 1.989e30 kg; R136a1 ~200 solar masses). Each milestone minute checked as the first n with 2^n x 2 mg above the object's mass. Scene engine/scenes/ants.js, cue engine/scripts/ants_cue.json (+ _nomusic), sfx engine/scripts/ants_sfx.py. Ants drawn ~12 mm so one reads on a phone.",
+   "qa": "PASS: render.mjs qa 0.5 s -> 0 problem ranges. qa.py clean (38.9 s, no black/frozen stretches, loudness ok, max -1.4 dB, first line = title, last line is a question, loop ok, ending motion ok). 3 sheets (1 fps) viewed: title from frame 0; counter matches every narrated milestone (17 min sandwich, half an hour elephant, 102 min Earth, 2 h Sun); labels next to the pile/ball; caption top, gauge left; Mittens in the scene with changing faces to 20 s, then the Mittens cam; faces bright. Fixed during QA: camera framing of the picnic, elephant/Eiffel framing, weight readout formatting ('111,288 × EARTH'). Minor: the friend with the cake is partly cut at the right edge at 15-17 s; the pile reads as a smooth brown dome from far away (ants only visible up close); the town beside the pile at 25-26 s is small. Mix: voice-over-music 9.0 dB, voice-over-effects 19.5 dB; 1080x1920, 43.9 MB (no-music 43.9 MB)."
   }
  ],
  "premise_bank": [
@@ -791,7 +824,9 @@
    "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Count + total weight counter: 2^n ants; when they outweigh a person, an elephant, all humans (~390 Mt), Earth. Place: picnic in the park. Check every number before scripting.",
    "tiktok": true,
    "style": "A_explainer",
-   "no_narrator_test": false
+   "no_narrator_test": false,
+   "made": "2026-11-24",
+   "note_made": "title with the rate as planned: 'WHAT IF one ant doubled every minute?'; picnic in a town park; weight milestones sandwich -> Mittens -> you -> elephant -> blue whale -> Eiffel Tower -> all ants on Earth -> all humans -> oceans -> Moon -> Earth -> Jupiter -> Sun (2 hours) -> heaviest known star"
   },
   {
    "post_date": "2026-11-25",
@@ -1436,6 +1471,10 @@
   {
    "slug": "fallforever",
    "place": "cobbled Lisbon-style tram street with azulejo houses and a yellow tram (late afternoon, golden light)"
+  },
+  {
+   "slug": "ants",
+   "place": "picnic blanket in a town park with town houses at the edge (golden late afternoon)"
   }
  ],
  "cast_log": [
@@ -1502,6 +1541,13 @@
    "cast": [
     "pigeon (you trip over him)",
     "filmer (café table)"
+   ]
+  },
+  {
+   "slug": "ants",
+   "cast": [
+    "unbothered (bench, eating his sandwich)",
+    "bad timing (friend with birthday cake)"
    ]
   }
  ]

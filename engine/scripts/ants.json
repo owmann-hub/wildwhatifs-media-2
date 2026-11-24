@@ -1,0 +1,92 @@
+[
+ {
+  "id": "n0",
+  "text": "What if one ant doubled every minute?",
+  "formula": "Title question word for word (STANDARD 1.3); the rate is in the title (STANDARD 0.13). Count after n minutes = 2^n. Ant mass m = 2 mg (a common garden ant: 'the common ants which live in British gardens weigh about 1mg or 2mg', Prof. Francis Ratnieks, BBC News 2014; workers 1-5 mg, Wilson & Hoelldobler). Weight after n minutes = 2^n x 2e-6 kg. Pile size assumes ants about as dense as water (1,000 kg/m3): hemisphere radius r = (3 M / (2 pi rho))^(1/3); in space a ball r = (3 M / (4 pi rho))^(1/3)."
+ },
+ {
+  "id": "n1",
+  "text": "One ant crashes your quiet picnic.",
+  "formula": "Opening wish/problem (STANDARD 0.14). Paid off by n16."
+ },
+ {
+  "id": "n2",
+  "text": "Real ants need six weeks to grow.",
+  "formula": "LEAN + reality first (STANDARD 2.11): 'The total life cycle of an ant, from egg to adult, can take six to 10 weeks' (UGA CAES Field Report, Ant biology)."
+ },
+ {
+  "id": "n3",
+  "text": "This one doubles every minute. In two hours, it outweighs the Sun.",
+  "formula": "SNAPBACK: Sun 1.989e30 kg / 2e-6 kg = 9.95e35 ants = 2^119.6 -> minute 120 = exactly 2 hours: 2^120 = 1.33e36 ants = 2.66e30 kg > 1.989e30 kg."
+ },
+ {
+  "id": "n4",
+  "text": "You could flick it away. You say one ant is fine.",
+  "formula": "Blame + thread setup (STANDARD 2.3, 2.6); on screen your bubble 'ONE ANT IS FINE.' Paid off by n16."
+ },
+ {
+  "id": "n5",
+  "text": "Each minute, every ant becomes two.",
+  "formula": "Physics/why: doubling. Minute 10 = 2^10 = 1,024 ants = 2 g."
+ },
+ {
+  "id": "n6",
+  "text": "Seventeen minutes. They outweigh your sandwich.",
+  "formula": "Minute 17: 2^17 = 131,072 ants x 2 mg = 262 g > a ~150 g sandwich (2^16 = 131 g < 150 g). Pile r = (3 x 0.262/1000/(2 pi))^(1/3) = 5 cm."
+ },
+ {
+  "id": "n7",
+  "text": "Now they outweigh Mittens. He is not impressed.",
+  "formula": "Minute 22: 2^22 = 4,194,304 ants = 8.4 kg > Mittens, a typical 4.5 kg house cat (2^21 = 4.2 kg < 4.5 kg). Joke from the screen: Mittens' unimpressed face."
+ },
+ {
+  "id": "n8",
+  "text": "Now they outweigh you. One ant was fine, you said.",
+  "formula": "Minute 26: 2^26 = 67,108,864 ants = 134 kg > you at 75 kg (2^25 = 67 kg < 75 kg). Blame callback to n4."
+ },
+ {
+  "id": "n9",
+  "text": "Half an hour. Heavier than an elephant.",
+  "formula": "Minute 32 (about half an hour): 2^32 = 4.29 billion ants = 8,590 kg > a 6,000 kg African elephant bull (2^31 = 4,295 kg < 6,000). Next: minute 37: 2^37 = 137 billion = 275 t > a 150 t blue whale (NOAA: up to ~150 t / 330,000 lb). Pile r: elephant 1.6 m, whale 5.1 m."
+ },
+ {
+  "id": "n10",
+  "text": "Heavier than the Eiffel Tower.",
+  "formula": "Minute 43: 2^43 = 8.80 trillion ants = 17,600 t > Eiffel Tower 10,100 t total (2^42 = 8,800 t < 10,100). Pile r = 20 m."
+ },
+ {
+  "id": "n11",
+  "text": "More ants than every ant on Earth.",
+  "formula": "Schultheiss et al. 2022, PNAS: about 20 quadrillion (2e16) ants on Earth. 2^54 = 1.8e16 < 2e16 < 2^55 = 3.6e16 -> minute 55."
+ },
+ {
+  "id": "n12",
+  "text": "They outweigh all eight billion humans.",
+  "formula": "Human biomass ~0.06 Gt carbon (Bar-On et al. 2018, PNAS) ~ 400 million t wet mass (8 billion x ~50 kg average incl. children). Minute 58: 2^58 = 2.88e17 ants = 576 million t > 400 million t (2^57 = 288 million t < 400). Pile r = 650 m."
+ },
+ {
+  "id": "n13",
+  "text": "So heavy, its own gravity pulls it round.",
+  "formula": "Bodies bigger than a few hundred km across are pulled round by their own gravity (e.g. Ceres, 940 km). Minute 90: 2^90 = 1.24e27 ants = 2.5e21 kg > all the oceans, 1.4e21 kg (1.335 billion km3 x 1,025 kg/m3; 2^89 = 1.24e21 < 1.4e21); ball radius (3 x 2.5e18/(4 pi))^(1/3) = 839 km. Minute 95: 2^95 = 7.9e22 kg > the Moon, 7.342e22 kg (2^94 = 3.96e22 < 7.34e22)."
+ },
+ {
+  "id": "n14",
+  "text": "A hundred and two minutes. Heavier than Earth.",
+  "formula": "Earth 5.972e24 kg: 2^101 = 5.07e24 kg < 5.972e24 < 2^102 = 1.01e25 kg -> minute 102. Ball radius 13,400 km (Earth 6,371 km). Next: minute 110: 2^110 = 2.6e27 kg > Jupiter 1.898e27 kg (2^109 = 1.3e27 < 1.898e27)."
+ },
+ {
+  "id": "n15",
+  "text": "Two hours. Heavier than the Sun.",
+  "formula": "Minute 120 = 2 h: 2^120 = 1.33e36 ants = 2.66e30 kg > Sun 1.989e30 kg (2^119 = 1.33e30 < 1.989e30). Ball radius (3 x 2.66e27/(4 pi))^(1/3) = 859,000 km vs the Sun's 696,000 km. Counter keeps doubling to minute 126 on the last frame."
+ },
+ {
+  "id": "n16",
+  "text": "Well. You did say one ant was fine.",
+  "formula": "Callback ending (pays off n4 and the quiet-picnic wish), said while the counter keeps climbing."
+ },
+ {
+  "id": "n17",
+  "text": "At which minute would you have flicked it away?",
+  "formula": "Closing question, specific and answerable (STANDARD 1.9)."
+ }
+]
