@@ -663,6 +663,40 @@
    "version": "Nov 20 STANDARD. Title on screen and spoken from frame 0 over the POV payoff opening (last frame: the ant ball next to the heaviest known star, 'POV: you said one ant is fine', Mittens cam), so the loop matches. Rate in the title. Triple hook: context 0-2 s (question + title + you and Mittens at a picnic, one ant tagged on the sandwich), wish/problem 1.96 s ('One ant crashes your quiet picnic.'), lean 3.89 s ('Real ants need six weeks to grow.'), snapback 5.93 s ('This one doubles every minute. In two hours, it outweighs the Sun.'). Thread/blame: 'You could flick it away. You say one ant is fine.' (bubble 'ONE ANT IS FINE.') -> 'One ant was fine, you said.' -> payoff 'Well. You did say one ant was fine.' Gauge = vertical minute bar (0-130 = log2 of the ant count) with milestone ticks + big ant count (exact up to 1 billion, then words) + 'MINUTE n · weight' + NEXT/PASSED line + '×2 EVERY MINUTE'. Exactly 2^n individual ants are shown crawling up to 1,024, then the pile (hemisphere at water density). Milestones (label next to the pile/ball): min 17 sandwich, 22 Mittens, 26 you, 32 elephant, 37 blue whale, 43 Eiffel Tower, 55 all ants on Earth, 58 all 8 billion humans, 90 all the oceans (pulled round), 95 Moon, 102 Earth, 110 Jupiter, 120 Sun (2 hours), 128 heaviest known star R136a1 (biggest, last); the counter keeps doubling to minute 130 on the last frame while the camera pulls back.",
    "notes": "Facts/formulas in engine/scripts/ants.json (ant 2 mg: common garden ants 1-2 mg, Prof. Ratnieks via BBC; ants 1-5 mg Wilson & Hoelldobler; egg to adult 6-10 weeks, UGA; 20 quadrillion ants, Schultheiss et al. 2022 PNAS; human biomass 0.06 Gt C ~ 400 Mt, Bar-On et al. 2018; Eiffel 10,100 t; blue whale ~150 t; oceans 1.4e21 kg; Moon 7.342e22, Earth 5.972e24, Jupiter 1.898e27, Sun 1.989e30 kg; R136a1 ~200 solar masses). Each milestone minute checked as the first n with 2^n x 2 mg above the object's mass. Scene engine/scenes/ants.js, cue engine/scripts/ants_cue.json (+ _nomusic), sfx engine/scripts/ants_sfx.py. Ants drawn ~12 mm so one reads on a phone.",
    "qa": "PASS: render.mjs qa 0.5 s -> 0 problem ranges. qa.py clean (38.9 s, no black/frozen stretches, loudness ok, max -1.4 dB, first line = title, last line is a question, loop ok, ending motion ok). 3 sheets (1 fps) viewed: title from frame 0; counter matches every narrated milestone (17 min sandwich, half an hour elephant, 102 min Earth, 2 h Sun); labels next to the pile/ball; caption top, gauge left; Mittens in the scene with changing faces to 20 s, then the Mittens cam; faces bright. Fixed during QA: camera framing of the picnic, elephant/Eiffel framing, weight readout formatting ('111,288 × EARTH'). Minor: the friend with the cake is partly cut at the right edge at 15-17 s; the pile reads as a smooth brown dome from far away (ants only visible up close); the town beside the pile at 25-26 s is small. Mix: voice-over-music 9.0 dB, voice-over-effects 19.5 dB; 1080x1920, 43.9 MB (no-music 43.9 MB)."
+  },
+  {
+   "slug": "bubblegum",
+   "post_date": "2026-11-25",
+   "file": "videos/2026-11-25-bubblegum.mp4",
+   "file_tiktok": "videos/2026-11-25-bubblegum-nomusic.mp4",
+   "title": "WHAT IF every breath doubled your gum bubble? 🫧",
+   "caption": "You just want one good bubble at your desk. But every breath doubles it: past the 51 cm world record, through the office ceiling, past Everest, into space… bigger than the Sun. What's the biggest bubble you've ever blown? 👇",
+   "hashtags": "#whatif #bubblegum #space #animation #shorts",
+   "youtube": {
+    "status": "pending",
+    "due": "2026-11-25T20:57-03:00"
+   },
+   "tiktok": {
+    "status": "pending",
+    "due": "2026-11-25T23:05-03:00"
+   },
+   "instagram": {
+    "status": "pending",
+    "due": "2026-11-26T06:35"
+   },
+   "style": "A_explainer",
+   "opening": "rewind",
+   "place": "open-plan office at a desk (golden late-afternoon light through the window onto a street of town houses, pin board, clock, drop ceiling with light panels, desk with monitor, paper stack and a red coffee mug, office chair); big part: clean shots of the pink bubble at a fixed size while the world shrinks beside it (the town house roof you burst out of, farmland and a small town, Statue of Liberty, Burj Khalifa, Everest), then space (Earth's atmosphere edge, the Moon, Earth, Jupiter, the Sun, Earth's orbit, Neptune's orbit)",
+   "cast": [
+    "THE FILMER (red-haired coworker films the whole thing behind you: 'THIS LIGHTING IS AWFUL!' as the ceiling falls)",
+    "THE SALESMAN (behind the desk, already selling 'I ♥ BUBBLE' T-shirts: 'BUBBLE T-SHIRTS! €20!' at breath 2)"
+   ],
+   "no_narrator_test": false,
+   "duration_s": 39.6,
+   "qa": "PASS: render.mjs qa 0.5 s -> 0 problem ranges. qa.py clean (39.6 s, no black/frozen stretches, loudness ok, max -0.9 dB, first line = title, last line is a question, loop: last frame matches first, ending motion ok after adding a camera orbit + bubble spin in the last 5 s; first render failed the ending-motion check and was fixed). 3 sheets (1 fps) viewed + ~40 stills: title on screen and spoken from frame 0 over the REWIND teaser; lean (record 51 cm) ~4 s, snapback ~6 s; counter (bubble width + breath + NEXT/PASSED line) matches every narrated milestone; milestone label next to the bubble / comparison object; caption top, gauge left; Mittens on the desk then on your head with changing faces in the office, then in the hero cam (you hanging by the lips, Mittens on your head) for the big part; your face bright. Fixed during QA: office camera too close (your head cut off), you hidden behind the bubble (you now face 3/4 to camera, camera swings to your side), ceiling broke before the 'breath six' line, Earth's pole showing as a white ground, hero cam covering Earth at breath 28 (moved bottom-left), orbit rings off screen. Minor: hero cam slightly overlaps the bottom of the gauge; the bubble passes through the dark slab above the broken ceiling without breaking it; after the cut (10-12 s) the town house reads more as a wall than a roof; Burj Khalifa is thin and small next to the 1.6 km bubble; the Sun drifts away fast after breath 35. Mix: voice-over-music 9.0 dB, voice-over-effects 15.7 dB; 1080x1920, 40.4 MB (no-music 40.4 MB).",
+   "version": "Nov 20 STANDARD. Rate in the title ('every breath doubled'). Teaser = REWIND of the last frame (loop). Triple hook: question 0-2 s, wish + lean 'You want one good bubble. The record is 51 cm.' 2.3 s, snapback 'But yours never pops. Every breath doubles it.' 5.7 s. Physics: warm breath is lighter than room air -> 13 m bubble lifts you like a hot-air balloon. Real thresholds: world record 50.8 cm, desk 1.4 m, ceiling 2.7 m, lift 72 kg, Statue of Liberty 93 m, Burj Khalifa 828 m, Everest 8,849 m, Karman line 100 km, Moon, Earth, Jupiter, Sun, Earth's orbit (2 AU), Neptune's orbit (9 billion km); keeps doubling to breath 52 on the last frame. Callback: 'Well. That's one good bubble.' Question: 'What's the biggest bubble you've ever blown?'",
+   "scene": "engine/scenes/bubblegum.js",
+   "script": "engine/scripts/bubblegum.json"
   }
  ],
  "premise_bank": [
@@ -686,7 +720,8 @@
   "mittensgrow",
   "snowball",
   "humansgone",
-  "rain"
+  "rain",
+  "bubblegum"
  ],
  "plan_november": [
   {
@@ -847,7 +882,9 @@
    "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). Diameter counter; lifts the hero; comparisons: beach ball, hot-air balloon, stadium, the Moon. Place: school/office desk. Check every number before scripting.",
    "tiktok": true,
    "style": "A_explainer",
-   "no_narrator_test": false
+   "no_narrator_test": false,
+   "made": "2026-11-25",
+   "note_made": "title with the rate: 'WHAT IF every breath doubled your gum bubble?'; place: office desk as planned; lifts you (warm breath = hot-air balloon) as planned; comparisons extended past the Moon to the Sun, Earth's orbit and Neptune's orbit (STANDARD 0.15)"
   },
   {
    "post_date": "2026-11-26",
@@ -1487,6 +1524,10 @@
   {
    "slug": "ants",
    "place": "picnic blanket in a town park with town houses at the edge (golden late afternoon)"
+  },
+  {
+   "slug": "bubblegum",
+   "place": "open-plan office desk with golden light through the window (town houses outside)"
   }
  ],
  "cast_log": [
@@ -1560,6 +1601,13 @@
    "cast": [
     "unbothered (bench, eating his sandwich)",
     "bad timing (friend with birthday cake)"
+   ]
+  },
+  {
+   "slug": "bubblegum",
+   "cast": [
+    "filmer (coworker behind you, lighting complaint)",
+    "salesman (I ♥ BUBBLE T-shirts €20)"
    ]
   }
  ],
