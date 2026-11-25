@@ -1463,7 +1463,7 @@
   ],
   "rebuild": null
  },
- "tiktok_note": "Nov 16: owner kept forgetting manual TikTok posts and asked to go back to AUTOMATIC. The 20:57 run schedules TikTok at 23:05 via Metricool (music version of the file, isAigc true). The earlier scheduled post got 12 views vs ~900 for manual ones, so watch the first 3 automatic posts: if all stay under ~200 views after 24 h, tell the owner and suggest going back to manual. Catch-up posts already scheduled by hand on Nov 16: gravity2x Nov 17 13:05, friction Nov 18 13:05, water Nov 19 13:05.",
+ "tiktok_note": "Nov 16: owner kept forgetting manual TikTok posts and asked to go back to AUTOMATIC. The 20:57 run schedules TikTok at 23:05 via Metricool (music version of the file, isAigc true). The earlier scheduled post got 12 views vs ~900 for manual ones, so watch the first 3 automatic posts: if all stay under ~200 views after 24 h, tell the owner and suggest going back to manual. Catch-up posts already scheduled by hand on Nov 16: gravity2x Nov 17 13:05, friction Nov 18 13:05, water Nov 19 13:05. | Nov 25 data: automatic Metricool TikTok posts get 110-240 views vs 600-1,500 when the owner posted by hand with an in-app sound.",
  "comments": {
   "how": "Owner sends chosen comments in chat. YouTube comments: vidiq_video_comments; TikTok: vidiq_tiktok_video_comments (both cost vidIQ credits — check at most once a week). Instagram comments can't be read.",
   "picked": []
@@ -1611,5 +1611,5 @@
    ]
   }
  ],
- "youtube_note": "Nov 24: Zapier YouTube upload returned 429 (Too Many Requests). Fallback = Metricool (brand 7970179 has YouTube UC1Tuh1LGH4nso6erU1LpDJA connected). Owner: everything must be fully automatic, never ask him to upload."
+ "youtube_note": "Nov 25: NEVER post YouTube via Metricool - the ants Short posted that way (with the synthetic-content flag) got 17 views in 11 h vs a 1,000-2,700 floor for Zapier uploads. If Zapier fails: retry, then the 23:31 check asks the owner to upload by hand."
 }
