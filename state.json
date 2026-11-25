@@ -9,7 +9,7 @@
   "blogId": "7970179",
   "free_plan_posts_per_month": 20,
   "posts_used": {
-   "2026-11": 13
+   "2026-11": 14
   }
  },
  "zapier_youtube_connection_id": "024e8223-8129-8378-ae74-36264dc05b99",
@@ -628,9 +628,10 @@
    "caption": "One ant lands on your picnic sandwich and you say one ant is fine. But it doubles every minute: heavier than your sandwich, Mittens, an elephant, the Eiffel Tower, every human on Earth… and after two hours, the Sun. At which minute would you have flicked it away? 👇",
    "hashtags": "#whatif #ants #science #animation #shorts",
    "youtube": {
-    "status": "manual_requested",
-    "due": "2026-11-24T20:57-03:00",
-    "error": "error: Zapier YouTube upload returned 429 (Too Many Requests) twice (20:58 and 21:00 -03:00)"
+    "status": "scheduled_metricool",
+    "due": "2026-11-24T21:15-03:00",
+    "metricool_id": 441075615,
+    "note": "Zapier returned 429 at 20:58, 21:00 and 21:01; scheduled through Metricool instead (owner wants no manual uploads)"
    },
    "tiktok": {
     "status": "scheduled",
@@ -1552,5 +1553,6 @@
     "bad timing (friend with birthday cake)"
    ]
   }
- ]
+ ],
+ "youtube_note": "Nov 24: Zapier YouTube upload returned 429 (Too Many Requests). Fallback = Metricool (brand 7970179 has YouTube UC1Tuh1LGH4nso6erU1LpDJA connected). Owner: everything must be fully automatic, never ask him to upload."
 }
