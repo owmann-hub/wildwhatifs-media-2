@@ -645,8 +645,11 @@
     "posted_at": "2026-11-24T23:05-03:00"
    },
    "instagram": {
-    "status": "pending",
-    "due": "2026-11-25T06:35"
+    "status": "posted",
+    "due": "2026-11-25T06:35",
+    "media_id": "18139552918709788",
+    "permalink": "https://www.instagram.com/reel/DgKOaE7Bl0T/",
+    "posted_at": "2026-11-25T06:40-03:00"
    },
    "style": "A_explainer",
    "opening": "pov",
