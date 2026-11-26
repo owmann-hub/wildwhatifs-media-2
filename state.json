@@ -9,7 +9,7 @@
   "blogId": "7970179",
   "free_plan_posts_per_month": 20,
   "posts_used": {
-   "2026-11": 15
+   "2026-11": 16
   }
  },
  "zapier_youtube_connection_id": "024e8223-8129-8378-ae74-36264dc05b99",
@@ -715,12 +715,17 @@
    "caption": "You just want a slow sunset on the beach. But Earth's spin doubles every 2 seconds: you get lighter, float, the sea flies off into space… and then a day lasts one second. How long would you hold on? 👇",
    "hashtags": "#whatif #earth #space #physics #shorts",
    "youtube": {
-    "status": "pending",
-    "due": "2026-11-26T20:57-03:00"
+    "status": "posted",
+    "due": "2026-11-26T20:57-03:00",
+    "id": "wu1CsyOD6gI",
+    "url": "https://www.youtube.com/shorts/wu1CsyOD6gI",
+    "posted_at": "2026-11-26T20:58-03:00",
+    "via": "zapier"
    },
    "tiktok": {
-    "status": "pending",
-    "due": "2026-11-26T23:05-03:00"
+    "status": "scheduled",
+    "due": "2026-11-26T23:05-03:00",
+    "metricool_id": 443777116
    },
    "instagram": {
     "status": "pending",
