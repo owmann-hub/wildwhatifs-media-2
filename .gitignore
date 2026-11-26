@@ -5,3 +5,4 @@ engine/out/
 engine/audio/
 engine/__pycache__/
 engine/package-lock.json
+out/
