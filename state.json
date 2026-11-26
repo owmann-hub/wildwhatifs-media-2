@@ -686,8 +686,11 @@
         "tiktok_id": "7712294754427407622"
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-26T06:35"
+        "status": "posted",
+        "due": "2026-11-26T06:35",
+        "media_id": "18093512423299793",
+        "permalink": "https://www.instagram.com/reel/DgMzK6Nhq_X/",
+        "posted_at": "2026-11-26T06:38-03:00"
       },
       "style": "A_explainer",
       "opening": "rewind",
