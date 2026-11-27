@@ -772,6 +772,39 @@
       "version": "Nov 20 STANDARD. Rate in the title ('doubled every 2 seconds'), k = 2^((t-2)/2). Teaser = FREEZE on the last frame (loop). Triple hook: question 0-2.4 s, wish 'You just want a slow sunset.' 2.45 s, lean 'Earth already spins you faster than sound.' 4.0 s, snapback/physics 6.2 s. Real thresholds: bullet 930 m/s, 22% lighter, half weight (x12), weightless/orbit speed x17 (84-min day), escape speed x24 (sea flies off), honest limit 'A real Earth would rip apart. Ours holds.', faster than Earth's orbit 29.8 km/s, Solar System escape 42 km/s, Parker Solar Probe 192 km/s, Milky Way escape ~550 km/s, day = 30 s, 1% light, day = 3 s, day = 1 s, 25%, 50%, 90% light; ends at 96% of light speed on the last frame. Callback: 'Well. You did get a lot of sunsets.' Question: 'How long would you hold on?'",
       "scene": "engine/scenes/spinfaster.js",
       "script": "engine/scripts/spinfaster.json"
+    },
+    {
+      "slug": "jumpdouble",
+      "post_date": "2026-11-27",
+      "file": "videos/2026-11-27-jumpdouble.mp4",
+      "file_tiktok": "videos/2026-11-27-jumpdouble-nomusic.mp4",
+      "title": "WHAT IF every jump was twice as high as the last? 🦘",
+      "caption": "You just want your frisbee back from the roof. But every jump is twice as high as the last: past the roof, a balcony proposal, the Eiffel Tower, the planes, the space station… and Mittens comes along. Which jump would you stop at? 👇",
+      "hashtags": "#whatif #space #physics #trampoline #shorts",
+      "youtube": {
+        "status": "pending",
+        "due": "2026-11-27T20:57-03:00"
+      },
+      "tiktok": {
+        "status": "pending",
+        "due": "2026-11-27T23:05-03:00"
+      },
+      "instagram": {
+        "status": "pending",
+        "due": "2026-11-28T06:35"
+      },
+      "style": "A_explainer",
+      "opening": "calm (★.1: hero on the trampoline + Mittens + title only for the first 4 s; the Filmer walks in at 4.2 s)",
+      "place": "back-yard trampoline in a town outside Paris at golden hour (two-storey house with the frisbee stuck on its roof, picket fence, apartment block with a balcony, church tower with pigeons, Eiffel Tower on the horizon); the camera rides with you up each jump; second climb in space (Earth, Moon, Sun, Neptune, Proxima Centauri, passing stars)",
+      "cast": [
+        "THE FILMER (neighbour behind the back fence, films everything, bubble 'UGH. THE LIGHTING.')",
+        "BAD TIMING (balcony proposal at 15 m: she turns to stare at you, he drops the ring box: '…IS THAT A YES?')"
+      ],
+      "no_narrator_test": false,
+      "duration_s": 62.5,
+      "qa": "PASS (with 2 noted deviations): render.mjs qa 0.5 s -> 2 flags, both fixed (36.5 s focus offscreen while you fall back into the yard: camera now follows the fall; 32.0 s focus_hidden = Mittens in front of your legs on the trampoline, false alarm checked by eye). qa.py: 62.5 s, no black/frozen stretches, loudness ok (max -0.9 dB), first line = title, last line is a question. 4 sheets (1 fps) + ~40 stills viewed: title spoken + on screen from frame 0; calm opening; one big number (JUMP n + height) + one italic caption line only; every step shows the real thing at scale next to you (frisbee on the roof, the balcony couple, church tower + pigeons scatter, Eiffel Tower below, an airliner passing below and wobbling, the ISS + Earth's curve, Earth, Moon, Sun, Neptune, the nearest star); counter matches every narrated milestone; Mittens cam 3x (proposal, Eiffel, twist), Mittens rides on your shoulders for the whole second climb with changing faces; your face bright. Counter still climbing on the last frame (jump 59, 30.5 light-years) with stars streaming past. DEVIATIONS: (1) no loop - the last frame (deep space) cannot match the calm yard opening while the counter keeps climbing (qa.py loop check fails); (2) between the yard steps Mittens is on the trampoline far below and only seen in the Mittens circle. Mix: voice-over-music 9.0 dB, voice-over-effects 19.3 dB; 1080x1920, 37.6 MB (no-music 37.4 MB).",
+      "version": "Nov 26 STANDARD (★ calm, rewarding, simple). Jump n = 0.5 m x 2^n, formulas in engine/scripts/jumpdouble.json. Triple hook: question 0-2.4 s, wish (frisbee) 2.6 s, lean (record 2.45 m) 5.5 s, snapback (1, 2, 4 m) 8.9 s, physics (+41% speed for twice the height) 12.1 s. Twist at 37 s: Mittens jumps on. Callback: 'And the frisbee? Still on the roof.'",
+      "notes": "Facts checked: high jump world record 2.45 m, Javier Sotomayor 1993 (topendsports); ISS ~413-422 km (May 2026, issinfo/Wikipedia); Eiffel Tower 330 m; airliner cruise 10-12 km; Earth diameter 12,742 km; Moon 384,400 km; Sun 149.6 million km; Neptune 4.50 billion km; Proxima Centauri 4.24 ly. Each milestone is the FIRST jump that passes it (previous jump stays below)."
     }
   ],
   "premise_bank": [
@@ -797,7 +830,8 @@
     "humansgone",
     "rain",
     "bubblegum",
-    "spinfaster"
+    "spinfaster",
+    "jumpdouble"
   ],
   "plan_november": [
     {
@@ -980,7 +1014,9 @@
       "notes": "RUNAWAY FORMAT (see format_v5.rules[0]). 0.5 m x 2^n: jump 10 ~512 m, 20 ~524 km (space), 30 ~537,000 km (past the Moon). Place: trampoline in a back yard. Check every number before scripting.",
       "tiktok": true,
       "style": "A_explainer",
-      "no_narrator_test": false
+      "no_narrator_test": false,
+      "made": "2026-11-27",
+      "note_made": "title with the rate as planned; place: back-yard trampoline as planned (town outside Paris so the Eiffel Tower is in view); steps 1-2-4-8-16-64-512 m, 16 km, 524 km, then twist (Mittens jumps on) and 16,777 km -> Moon -> Sun -> Neptune -> nearest star; ends at jump 59 (30.5 light-years), still climbing"
     },
     {
       "post_date": "2026-11-28",
@@ -1610,6 +1646,10 @@
     {
       "slug": "spinfaster",
       "place": "beach on the equator at sunset (palm tree, umbrella, deckchair, waves)"
+    },
+    {
+      "slug": "jumpdouble",
+      "place": "back-yard trampoline in a town outside Paris (golden hour, Eiffel Tower on the horizon)"
     }
   ],
   "cast_log": [
@@ -1697,6 +1737,13 @@
       "cast": [
         "pigeon (judging on the sand, floats off)",
         "unbothered (deckchair, keeps eating his sandwich)"
+      ]
+    },
+    {
+      "slug": "jumpdouble",
+      "cast": [
+        "filmer (behind the back fence, lighting complaint)",
+        "bad timing (balcony proposal, drops the ring box)"
       ]
     }
   ],

@@ -1,0 +1,21 @@
+[
+ {"id": "n0", "text": "What if every jump was twice as high as the last?", "formula": "Title question word for word (STANDARD 1.3); rate in the title (0.13). Jump n reaches h(n) = 0.5 m x 2^n (jump 1 = 1 m, 2 = 2 m, 3 = 4 m ...)."},
+ {"id": "n1", "text": "Your frisbee is stuck on the roof. You just want it back.", "formula": "Opening wish / stake (0.14, 2.3): frisbee on the house roof (ridge ~7.5 m). Paid off by n17."},
+ {"id": "n2", "text": "The world record high jump is 2.45 metres.", "say": "The world record high jump is two point four five metres.", "formula": "LEAN + reality first (2.11): Javier Sotomayor, 2.45 m, Salamanca, 27 July 1993 - still the men's world record (topendsports.com, World Athletics)."},
+ {"id": "n3", "text": "But your jumps double. One metre. Two. Four.", "formula": "SNAPBACK: h(1) = 0.5 x 2 = 1 m, h(2) = 2 m, h(3) = 4 m > 2.45 m record."},
+ {"id": "n4", "text": "Twice as high only takes 41% more speed.", "say": "Twice as high only takes forty-one percent more speed.", "formula": "Physics (1.4): take-off speed v = sqrt(2 g h); doubling h multiplies v by sqrt(2) = 1.414 (+41%). Jump 1: v = sqrt(2 x 9.81 x 1) = 4.4 m/s."},
+ {"id": "n5", "text": "Eight metres. You fly right past the frisbee.", "formula": "h(4) = 0.5 x 2^4 = 8 m > roof with the frisbee at ~7.5 m (two-storey house)."},
+ {"id": "n6", "text": "Sixteen metres. You just ruined a proposal.", "formula": "h(5) = 16 m: the fifth-floor balcony across the street (~5 x 3 m = 15 m), where a neighbour is proposing (seen in the opening shots)."},
+ {"id": "n7", "text": "Sixty-four metres. Higher than the church tower.", "formula": "h(7) = 0.5 x 2^7 = 64 m > the town's church tower (~45 m); h(6) = 32 m is below it."},
+ {"id": "n8", "text": "Jump ten. Higher than the Eiffel Tower.", "formula": "h(10) = 0.5 x 2^10 = 512 m > Eiffel Tower 330 m (with antennas, since 2022); h(9) = 256 m is below. Take-off speed sqrt(2 x 9.81 x 512) = 100 m/s = 360 km/h."},
+ {"id": "n9", "text": "Jump fifteen. Above the planes.", "formula": "h(15) = 0.5 x 2^15 = 16,384 m = 16.4 km > airliner cruise ~10-12 km (33,000-39,000 ft); h(14) = 8.2 km is below."},
+ {"id": "n10", "text": "Jump twenty. Higher than the space station.", "formula": "h(20) = 0.5 x 2^20 = 524,288 m = 524 km > ISS altitude ~413-422 km (May 2026); h(19) = 262 km is below. Space (Karman line 100 km) was passed at jump 18 = 131 km."},
+ {"id": "n11", "text": "Then Mittens jumps on. He's coming too.", "formula": "Halfway twist (STANDARD 4): Mittens lands on your back on the trampoline and rides every jump from here on."},
+ {"id": "n12", "text": "Jump twenty-five. Higher than Earth is wide.", "formula": "h(25) = 0.5 x 2^25 = 16,777,216 m = 16,777 km > Earth's diameter 12,742 km; h(24) = 8,389 km is below."},
+ {"id": "n13", "text": "Jump thirty. Past the Moon.", "formula": "h(30) = 0.5 x 2^30 = 536,870,912 m = 536,871 km > average Earth-Moon distance 384,400 km; h(29) = 268,435 km is below."},
+ {"id": "n14", "text": "Jump thirty-nine. Farther than the Sun.", "formula": "h(39) = 0.5 x 2^39 = 2.749e11 m = 275 million km > Earth-Sun distance 149.6 million km; h(38) = 137 million km is below."},
+ {"id": "n15", "text": "Jump forty-four. Past Neptune.", "formula": "h(44) = 0.5 x 2^44 = 8.796e12 m = 8.8 billion km > Neptune's average distance from the Sun 4.50 billion km (30.07 AU); h(43) = 4.40 billion km is just below."},
+ {"id": "n16", "text": "Jump fifty-seven. Past the nearest star.", "formula": "h(57) = 0.5 x 2^57 = 7.206e16 m / 9.461e15 m per light-year = 7.6 light-years > Proxima Centauri 4.24 ly; h(56) = 3.8 ly is below."},
+ {"id": "n17", "text": "And the frisbee? Still on the roof.", "formula": "Callback paying off n1 (narrator against the hero; set up by n5 'you fly right past the frisbee'). Said while the jumps keep going: h(58) = 15.2 ly, h(59) = 30.5 ly on screen."},
+ {"id": "n18", "text": "Which jump would you stop at?", "formula": "Closing question, specific and answerable (STANDARD 1.9)."}
+]
