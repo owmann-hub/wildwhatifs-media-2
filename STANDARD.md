@@ -32,6 +32,7 @@ Model: polystoriesdaily "What would happen if your speed doubled every minute?" 
    - one caption line.
    Nothing else: no gauge lines, no landmark boxes, no "NEXT" lines, no extra tags.
 7. **Mittens circle** (the round close-up): only once in a while, 2–3 times per video at the funniest moments. Mittens can be in the scene itself whenever it fits.
+9. **One "boom zoom" per video** (owner, Nov 27): at ONE specific moment that deserves an exaggerated reaction, a sudden zoom onto Mittens' (or the hero's) shocked or deadpan face, with our own deep boom sound (`snapzoom` in mix.py), held about 0.5–0.8 s, then straight back to the action. Never the real "vine boom" file or any downloaded meme sound.
 8. **One trend or meme nod per video** (owner, Nov 27: "stuff related to memes or stuff that's going on… that will get people talking in the comments"). Put one light, recognisable reference to something people are talking about into a step or a background gag, made by us. Examples:
    - Mittens playing chess like the famous unbeatable chess-bot cat (no chess.com logo or character design, only the idea);
    - a viral dance, a trending sound idea, a big game or sports moment, a famous internet joke.
@@ -106,7 +107,7 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
      - she reacts within about half a second of every event;
    - she changes expression at every step (`setCatFace(cat, mood)` + `catLife(cat, t)` on the in-scene cat: unimpressed, annoyed, shock, smug, sleepy, happy, scared), with ears, tail and eyes always moving a little;
    - she is fine and mildly annoyed whatever happens;
-   - **running gag (owner, Nov 27): Mittens is a smug chess genius**, a nod to the famous unbeatable chess-bot cat. He keeps playing (and winning) whenever it fits, even in the middle of the disaster. Our own cat design only; no chess.com logo or character.
+   - **occasional gag (owner, Nov 27): Mittens the smug chess genius**, a nod to the famous unbeatable chess-bot cat. Use it in about 1 video out of 3, not every video; the rest of the time Mittens is a normal cat. When used, he keeps playing (and winning) even in the middle of the disaster. Our own cat design only: no chess.com logo, and never a recreation of the chess.com Mittens picture.
    - the **Mittens cam** (round close-up) is optional: 2–3 times per video at most, at the funniest moments (owner, Nov 26).
 4. **Background cast:** 2–3 per video, a different mix each time, each with a fixed look.
    - Regulars: the Filmer (films instead of helping, complains about the lighting), the Salesman (already selling T-shirts), the Pigeon (watches and judges), Bad Timing (someone proposing or carrying a cake), the Unbothered Person (keeps eating a sandwich).
@@ -178,7 +179,7 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
 
 ## 9. Not approved, or on hold
 
-- Meme-style edits in the middle of the video: still on hold (only the opening uses them, see 1.2b).
+- Meme-style edits in the middle of the video: only the one boom zoom (★.9); the others are still on hold.
 - Random absurd cameos (the skeleton): on hold.
 - Angry or swearing narrator: rejected.
 - Thicker sculpted hair: proposed Nov 17, not approved; keep the current hair.
