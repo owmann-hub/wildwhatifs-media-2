@@ -750,8 +750,14 @@
         "posted_at": "2026-11-26T23:05-03:00"
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-27T06:35"
+        "status": "posted",
+        "due": "2026-11-27T06:35",
+        "id": "18122834368993659",
+        "url": "https://www.instagram.com/reel/DgPX86WgEnF/",
+        "permalink": "https://www.instagram.com/reel/DgPX86WgEnF/",
+        "posted_at": "2026-11-27T06:38-03:00",
+        "via": "vidiq",
+        "ai_label": true
       },
       "style": "A_explainer",
       "opening": "freeze",
