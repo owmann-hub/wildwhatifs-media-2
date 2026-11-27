@@ -106,6 +106,7 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
      - she reacts within about half a second of every event;
    - she changes expression at every step (`setCatFace(cat, mood)` + `catLife(cat, t)` on the in-scene cat: unimpressed, annoyed, shock, smug, sleepy, happy, scared), with ears, tail and eyes always moving a little;
    - she is fine and mildly annoyed whatever happens;
+   - **running gag (owner, Nov 27): Mittens is a smug chess genius**, a nod to the famous unbeatable chess-bot cat. He keeps playing (and winning) whenever it fits, even in the middle of the disaster. Our own cat design only; no chess.com logo or character.
    - the **Mittens cam** (round close-up) is optional: 2–3 times per video at most, at the funniest moments (owner, Nov 26).
 4. **Background cast:** 2–3 per video, a different mix each time, each with a fixed look.
    - Regulars: the Filmer (films instead of helping, complains about the lighting), the Salesman (already selling T-shirts), the Pigeon (watches and judges), Bad Timing (someone proposing or carrying a cake), the Unbothered Person (keeps eating a sandwich).
