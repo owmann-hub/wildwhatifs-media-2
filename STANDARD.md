@@ -32,11 +32,11 @@ Model: polystoriesdaily "What would happen if your speed doubled every minute?" 
    - one caption line.
    Nothing else: no gauge lines, no landmark boxes, no "NEXT" lines, no extra tags.
 7. **Mittens circle** (the round close-up): only once in a while, 2–3 times per video at the funniest moments. Mittens can be in the scene itself whenever it fits.
-9. **One "boom zoom" per video** (owner, Nov 27): at ONE specific moment that deserves an exaggerated reaction, a sudden zoom onto Mittens' (or the hero's) shocked or deadpan face, with our own deep boom sound (`snapzoom` in mix.py), held about 0.5–0.8 s, then straight back to the action. Never the real "vine boom" file or any downloaded meme sound.
 8. **One trend or meme nod per video** (owner, Nov 27: "stuff related to memes or stuff that's going on… that will get people talking in the comments"). Put one light, recognisable reference to something people are talking about into a step or a background gag, made by us. Examples:
    - Mittens playing chess like the famous unbeatable chess-bot cat (no chess.com logo or character design, only the idea);
    - a viral dance, a trending sound idea, a big game or sports moment, a famous internet joke.
    Never: wars, attacks, disasters, deaths, terrorism, elections or other political fights (owner asked about the US–Iran war; declined because it's a real war with real victims, it limits ads on YouTube and it splits the comments). Generic military things are fine as scale steps without naming a real conflict ("faster than a fighter jet"). No real people's faces or names, no copyrighted characters, logos or songs. Check that the trend is current when the video is made.
+9. **One "boom zoom" per video** (owner, Nov 27): at ONE specific moment that deserves an exaggerated reaction, a sudden zoom onto Mittens' (or the hero's) shocked or deadpan face, with our own deep boom sound (`snapzoom` in mix.py), held about 0.5–0.8 s, then straight back to the action. Never the real "vine boom" file or any downloaded meme sound.
 
 ---
 
