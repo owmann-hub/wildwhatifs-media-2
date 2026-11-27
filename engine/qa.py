@@ -9,11 +9,11 @@ name = os.path.splitext(os.path.basename(vid))[0]; out = f'out/qa_final_{name}';
 run = lambda c: subprocess.run(c, shell=True, capture_output=True, text=True)
 dur = float(run(f'ffprobe -v error -show_entries format=duration -of csv=p=0 "{vid}"').stdout)
 issues = []
-if not 35 <= dur <= 46: issues.append(f'duration {dur:.1f}s is outside 35-45 s')
+if not 30 <= dur <= 125: issues.append(f'duration {dur:.1f}s is outside 30-120 s')
 bl = run(f'ffmpeg -i "{vid}" -vf blackdetect=d=0.4:pix_th=0.06 -an -f null - 2>&1').stdout + run(f'ffmpeg -i "{vid}" -vf blackdetect=d=0.4:pix_th=0.06 -an -f null - 2>&1').stderr
 for m in re.finditer(r'black_start:([\d.]+) black_end:([\d.]+)', bl): issues.append(f'black/dark screen {float(m[1]):.1f}-{float(m[2]):.1f}s (no black end cards; nothing dark for >0.4 s)')
-fz = run(f'ffmpeg -i "{vid}" -vf freezedetect=n=0.004:d=1.5 -an -f null - 2>&1'); fz = fz.stdout + fz.stderr
-for m in re.finditer(r'freeze_start: ([\d.]+)', fz): issues.append(f'picture frozen or almost still for 1.5 s+ from {float(m[1]):.1f}s (something new must happen every 2 s)')
+fz = run(f'ffmpeg -i "{vid}" -vf freezedetect=n=0.004:d=3.0 -an -f null - 2>&1'); fz = fz.stdout + fz.stderr
+for m in re.finditer(r'freeze_start: ([\d.]+)', fz): issues.append(f'picture frozen or almost still for 3 s+ from {float(m[1]):.1f}s (something new must happen every 4-5 s)')
 ln = run(f'ffmpeg -i "{vid}" -af ebur128 -f null - 2>&1'); ln = ln.stdout + ln.stderr
 I = re.findall(r'I:\s+(-?[\d.]+) LUFS', ln)
 if I and not -17 <= float(I[-1]) <= -11: issues.append(f'loudness {I[-1]} LUFS (target about -14)')
