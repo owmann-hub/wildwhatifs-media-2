@@ -673,10 +673,14 @@
    "caption": "You just want one good bubble at your desk. But every breath doubles it: past the 51 cm world record, through the office ceiling, past Everest, into space… bigger than the Sun. What's the biggest bubble you've ever blown? 👇",
    "hashtags": "#whatif #bubblegum #space #animation #shorts",
    "youtube": {
-    "status": "manual_requested",
+    "status": "posted",
     "due": "2026-11-25T20:57-03:00",
     "error": "Zapier youtube_upload_video returned 429 (Too Many Requests) at ~20:59 and again at ~21:04 Buenos Aires (retried once after 5 min)",
-    "reason": "Zapier youtube_upload_video 429 again on the 23:32 check retry (3rd failure); owner notified to upload manually"
+    "reason": "Zapier youtube_upload_video 429 again on the 23:32 check retry (3rd failure); owner notified to upload manually",
+    "id": "pEMA8-_um2E",
+    "url": "https://www.youtube.com/shorts/pEMA8-_um2E",
+    "posted_at": "2026-11-26T23:11-03:00",
+    "note": "catch-up upload by chat on Nov 26 after 3 Zapier 429s on Nov 25"
    },
    "tiktok": {
     "status": "posted",
