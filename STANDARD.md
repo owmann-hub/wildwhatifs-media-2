@@ -16,6 +16,13 @@ Model: polystoriesdaily "What would happen if your speed doubled every minute?" 
    - he races the dog, then the cars, then the bullet train, then a jet;
    - the bubble swallows the lamp, then the bus, then the stadium.
    Not just a label beside the object; a moment with an action and a reaction. Each step must be more impressive than the last.
+   **What "rewarding" means** (owner, Nov 26, about the "Earth spins faster" video): show the CONSEQUENCES happening to normal, everyday things, big and visible:
+   - cups, chairs, cars and people sliding or flying around;
+   - water lifting out of the sea, pools and glasses and floating;
+   - planes struggling, turning back or being thrown off course;
+   - trees bending, roofs ripping off, buildings and whole cities breaking apart;
+   - each step a bigger, more spectacular disaster than the last.
+   A number going up is not a reward. Seeing what that number DOES to the world is. Every step must show at least one of these moments clearly, with the hero and Mittens reacting.
 3. **Steady pace:** about 4–5 seconds per step, one short sentence per step (in the caption and spoken by the narrator). Never rushed, never nerve-wracking.
 4. **Halfway twist** (around the middle): something resets or changes the race. A rival joins with their own counter, the rules flip, or it starts again in a new place. Then a second climb, bigger than the first, all the way to the end.
 5. **No length limit.** Any length is fine (40–120 s) as long as every step pays off. Cut any step that isn't a reward.
@@ -192,7 +199,7 @@ Model: the viral "folds to cross the universe" reel (30 s, 175K likes, 14.7K sha
 - [ ] Bright, golden light; varied buildings; lively street
 - [ ] All numbers computed and stored with their formulas
 - [ ] Calm opening: only hero, Mittens and title for ~4 s
-- [ ] Every step is a visible reward (hero vs. something real), each bigger than the last; ~4–5 s per step; twist halfway
+- [ ] Every step is a visible reward: everyday things visibly affected (flying, floating, breaking), each bigger than the last; ~4–5 s per step; twist halfway
 - [ ] On screen only: hero + thing, one big number, one caption; Mittens circle 2–3 times at most
 - [ ] Ending: narrator asks one specific answerable question over the last shot, 2 s or less, no black card
 - [ ] Mix log: voice-over-music 8–10 dB, voice-over-effects ≥ 14 dB; no-music copy made
