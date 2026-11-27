@@ -1676,5 +1676,33 @@
    ]
   }
  ],
- "youtube_note": "Nov 25: NEVER post YouTube via Metricool - the ants Short posted that way (with the synthetic-content flag) got 17 views in 11 h vs a 1,000-2,700 floor for Zapier uploads. If Zapier fails: retry, then the 23:31 check asks the owner to upload by hand."
+ "youtube_note": "Nov 25: NEVER post YouTube via Metricool - the ants Short posted that way (with the synthetic-content flag) got 17 views in 11 h vs a 1,000-2,700 floor for Zapier uploads. If Zapier fails: retry, then the 23:31 check asks the owner to upload by hand.",
+ "watchlist": [
+  {
+   "platform": "tiktok",
+   "handle": "man_ia_c",
+   "why": "owner reference Nov 10 (5-second slow-mo what-ifs, 297K followers)"
+  },
+  {
+   "platform": "tiktok",
+   "handle": "polystoriesdaily",
+   "why": "owner reference (300K sneeze, speed doubling every minute - the Nov 26 model)"
+  },
+  {
+   "platform": "instagram",
+   "handle": "whatifpov",
+   "why": "owner reference Nov 20 (body temperature doubling - physics chain)"
+  },
+  {
+   "platform": "instagram",
+   "handle": "yami.loops",
+   "why": "owner reference Nov 20 (folds to cross the universe - clarity)"
+  },
+  {
+   "platform": "tiktok",
+   "handle": "zenith.whatif",
+   "why": "owner reference Nov 15 (humans disappeared time-lapse)"
+  }
+ ],
+ "watchlist_last": null
 }
