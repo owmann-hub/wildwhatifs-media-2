@@ -632,7 +632,8 @@
       "duration_s": 43.4,
       "version": "Nov 20 STANDARD + NO-NARRATOR TEST (plan entry 2026-11-23, STANDARD 5.3): no voice; the story is carried by the italic on-screen lines, music + effects. Title on screen from frame 0 over the ZOOM payoff opening (sudden zoom on your face at the final moment, our own snapzoom boom; the frame before the zoom = the last frame, so it loops). Rate in the title. Triple hook: context 0-2.6 s (title + you running for your tram with coffee and Mittens), wish 2.6 s ('Your tram is leaving. You just want to go faster.'), lean 4.35 s ('A normal trip stops you in a second.'), snapback 5.9 s ('This one doubles your speed. Every second.'). Real-time rule: 1 video second = 1 doubling (counter 'SECOND n'). Gauge = speedometer dial (log scale to a red LIGHT mark) + big counter + NEXT/PASSED line. Milestones: Usain Bolt 44.7, cheetah 104, bullet train 320, sound barrier 1,235 (vapour cone, boom), Mach 5 air 1,500 °C (glow), orbit 28,500, escape 40,300, faster than Earth around the Sun 107,000, Parker Solar Probe 692,000, around Earth in 1 min 2.4M, 1% light, Moon in 1 min 23M, 10%, 50% light ('can't double any more'), then nines with time dilation (99% 1 s = 7 s, 99.99% 1 min = 71 min, 99.9999% 1 day = 2 years), Milky Way in 1 year, Milky Way in 5 minutes (biggest, last); the counter keeps adding nines to the last frame while you cross the galaxy. Thread: wish 'go faster' -> 'Well. You wanted to go faster.'; coffee blame 'You could let go of the coffee. You don't.' -> 'Cross the whole galaxy before your coffee cools.'",
       "notes": "Facts/formulas in engine/scripts/fallforever.json. Scene engine/scenes/fallforever.js, cue engine/scripts/fallforever_cue.json (+ _nomusic). Rendered as 4 pieces (0-1.2 teaser, 1.2-21.7, 21.7-29.0, 29.0-43.4 re-rendered after limiting star aberration so the nines part keeps visible star streaks) joined in ffmpeg.",
-      "qa": "PASS: render.mjs qa 0.5 s -> 0 problem ranges. qa.py clean (43.4 s, no black/frozen stretches, loudness ok, first line = title, last line is a question, loop ok, ending motion ok). 3 sheets (1 fps) viewed: title from frame 0; counter matches every milestone line; label next to the racer/object (Bolt, cheetah, train, Parker probe, Moon, light pulse, Earth); caption top, gauge left; Mittens on your backpack in every shot with changing faces; your face bright in the street. Minor: the Pigeon is at the right frame edge when you trip; the Milky Way disc only becomes visible from ~39 s, so the 36.4 s 'MILKY WAY IN 1 YEAR' label shows over star streaks; the Moon is not to scale (labelled). Mix: no narrator (test), so no voice-over numbers; music + effects, loudnorm -14 LUFS; 1080x1920, 44.8 MB (no-music 44.7 MB)."
+      "qa": "PASS: render.mjs qa 0.5 s -> 0 problem ranges. qa.py clean (43.4 s, no black/frozen stretches, loudness ok, first line = title, last line is a question, loop ok, ending motion ok). 3 sheets (1 fps) viewed: title from frame 0; counter matches every milestone line; label next to the racer/object (Bolt, cheetah, train, Parker probe, Moon, light pulse, Earth); caption top, gauge left; Mittens on your backpack in every shot with changing faces; your face bright in the street. Minor: the Pigeon is at the right frame edge when you trip; the Milky Way disc only becomes visible from ~39 s, so the 36.4 s 'MILKY WAY IN 1 YEAR' label shows over star streaks; the Moon is not to scale (labelled). Mix: no narrator (test), so no voice-over numbers; music + effects, loudnorm -14 LUFS; 1080x1920, 44.8 MB (no-music 44.7 MB).",
+      "files_deleted": "2026-11-28 (housekeeping: all platforms posted >3 days)"
     },
     {
       "slug": "ants",
@@ -798,8 +799,13 @@
         "posted_at": "2026-11-27T23:05-03:00"
       },
       "instagram": {
-        "status": "pending",
-        "due": "2026-11-28T06:35"
+        "status": "posted",
+        "due": "2026-11-28T06:35",
+        "id": "18124485310822599",
+        "shortcode": "DgR8wJdNr8F",
+        "url": "https://www.instagram.com/reel/DgR8wJdNr8F/",
+        "posted_at": "2026-11-28T06:39-03:00",
+        "ai_label": true
       },
       "style": "A_explainer",
       "opening": "calm (★.1: hero on the trampoline + Mittens + title only for the first 4 s; the Filmer walks in at 4.2 s)",
