@@ -790,9 +790,12 @@
         "via": "zapier"
       },
       "tiktok": {
-        "status": "scheduled",
+        "status": "posted",
         "due": "2026-11-27T23:05-03:00",
-        "metricool_id": 445002209
+        "metricool_id": 445002209,
+        "id": "7713037633760349448",
+        "url": "https://www.tiktok.com/@wild.what.if/video/7713037633760349448",
+        "posted_at": "2026-11-27T23:05-03:00"
       },
       "instagram": {
         "status": "pending",
